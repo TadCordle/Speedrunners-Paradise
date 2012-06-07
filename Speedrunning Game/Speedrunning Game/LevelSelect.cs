@@ -18,14 +18,28 @@ namespace Speedrunning_Game
 		bool pressEnter = false;
 		int maxSelected;
 		int scope;
-		string[] choices;
+		List<string> levels;
 
 		public LevelSelect()
 		{
+			levels = new List<string>();
 			selected = 0;
 			scope = 0;
-			maxSelected = Directory.GetFiles("Content\\rooms").Length - 1;
-			choices = Directory.GetFiles("Content\\rooms");
+			string[] choices = Directory.GetFiles("Content\\rooms");
+
+			StreamReader findMainLevels = new StreamReader("Content\\records.txt");
+			SimpleAES decryptor = new SimpleAES();
+			while (!findMainLevels.EndOfStream)
+			{
+				string name = decryptor.DecryptString(findMainLevels.ReadLine()).Split(' ')[0];
+				if (name.Length > 6 && name.Substring(0, 6) == ".MAIN.")
+					levels.Add(name);
+			}
+			findMainLevels.Close();
+			findMainLevels.Dispose();
+
+			levels.AddRange(choices);
+			maxSelected = levels.Count - 1;
 		}
 
 		public override void Update(GameTime gameTime)
@@ -62,7 +76,21 @@ namespace Speedrunning_Game
 
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
-				Game1.currentRoom = new Room(choices[selected]);
+				if (levels[selected].Substring(0, 6) == ".MAIN.")
+				{
+					int ret = 0;
+					int newRet = 0;
+					int index = levels[selected].Length - 1;
+					while (int.TryParse(levels[selected].Substring(index), out ret))
+					{
+						newRet = ret;
+						index--;
+					}
+					Levels.index = newRet - 1;
+					Game1.currentRoom = new Room(Levels.levels[Levels.index]);
+				}
+				else
+					Game1.currentRoom = new Room(levels[selected]);
 			}
 		}
 
@@ -70,9 +98,9 @@ namespace Speedrunning_Game
 		{
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(264, 10), Color.White);
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
-			for (int i = 0; i < choices.Length; i++)
+			for (int i = 0; i < levels.Count; i++)
 			{
-				sb.DrawString(Game1.mnufont, choices[i].Split('\\')[choices[i].Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 7) * 60 + 10 - scope * 480), i == selected ? Color.Yellow : Color.White);
+				sb.DrawString(Game1.mnufont, levels[i].Split('\\')[levels[i].Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 7) * 60 + 10 - scope * 480), i == selected ? Color.Yellow : Color.White);
 			}
 		}
 	}

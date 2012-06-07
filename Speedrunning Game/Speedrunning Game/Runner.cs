@@ -315,21 +315,6 @@ namespace Speedrunning_Game
 
 			// Apply ground friction to horizontal acceleration
 			acceleration.X += groundFriction.X;
-/*			if (Math.Sign(velocity.X + acceleration.X) != Math.Sign(velocity.X) && velocity.X != 0) // This was to fix some weird moving back and forth bug
-			{
-				acceleration.X = 0;
-				velocity.X = 0;
-			}
-			else
-			{
-				// Cap speed
-				if (Math.Abs(velocity.X + acceleration.X) < 8.0f || velocity.X * acceleration.X < 0)
-					velocity.X += acceleration.X;
-			}
-			// Apply accel to velocity and velocity to position
-			velocity.Y += acceleration.Y;
-			position += velocity;
-			UpdateHitBox();*/
 
 			// Update midair animation based on vertical speed
 			int midairFrame = (int)velocity.Y * 2 + 3;
@@ -372,11 +357,11 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb)
 		{
-			sb.Draw(Game1.wallTex, hitBox, Color.Black);
-			sb.Draw(Game1.wallTex, groundHitBox, Color.White);
-			sb.Draw(Game1.wallTex, leftWallBox, Color.Blue);
-			sb.Draw(Game1.wallTex, rightWallBox, Color.Blue);
-			sb.Draw(Game1.wallTex, ziplineBox, Color.Lime);
+//			sb.Draw(Game1.wallTex, hitBox, Color.Black);
+//			sb.Draw(Game1.wallTex, groundHitBox, Color.White);
+//			sb.Draw(Game1.wallTex, leftWallBox, Color.Blue);
+//			sb.Draw(Game1.wallTex, rightWallBox, Color.Blue);
+//			sb.Draw(Game1.wallTex, ziplineBox, Color.Lime);
 			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), Color.White, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}

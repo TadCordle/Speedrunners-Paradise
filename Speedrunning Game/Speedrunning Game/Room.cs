@@ -159,7 +159,28 @@ namespace Speedrunning_Game
 					theme = Theme.Factory;
 					break;
 			}
-			levelName = theme.ToString() + "_-_level_" + (Levels.index + 1).ToString();
+			levelName = ".MAIN.Level" + (Levels.index + 1).ToString();
+			bool recordFound = false;
+			StreamReader reader = new StreamReader("Content\\records.txt");
+			while (!reader.EndOfStream)
+			{
+				string s = decryptor.DecryptString(reader.ReadLine());
+				if (s.Split(' ')[0] == levelName)
+				{
+					recordFound = true;
+					break;
+				}
+			}
+			reader.Close();
+			reader.Dispose();
+			if (!recordFound)
+			{
+				StreamWriter writer = new StreamWriter("Content\\records.txt", true);
+				writer.WriteLine(decryptor.EncryptToString(levelName + " -1"));
+				writer.Flush();
+				writer.Dispose();
+			}
+
 			line = decryptor.DecryptString(lines[1]).Split(' ');
 			roomWidth = int.Parse(line[0]);
 			roomHeight = int.Parse(line[1]);
@@ -275,14 +296,6 @@ namespace Speedrunning_Game
 					write = false;
 					StreamWriter writer;
 					SimpleAES encryptor = new SimpleAES();
-					if (!custom && !File.Exists("Content\\rooms\\" + theme.ToString() + "_-_level_" + (Levels.index + 1).ToString()))
-					{
-						writer = new StreamWriter("Content\\rooms\\" + theme.ToString() + "_-_level_" + (Levels.index + 1).ToString(), false);
-						for (int i = 0; i < Levels.levels[Levels.index].Length; i++)
-							writer.WriteLine(Levels.levels[Levels.index][i]);
-						writer.Flush();
-						writer.Dispose();
-					}
 
 					if (time < record || record == -1)
 					{
@@ -356,8 +369,17 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(16, 2), Color.White);
 				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(18, 4), Color.Black);
 
-				sb.DrawString(Game1.mnufont, "Previous Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(74, 100), Color.White);
-				sb.DrawString(Game1.mnufont, "Time: " + TimeToString(time), new Vector2(213, 130), time < record || record == -1 ? Color.Lime : Color.Red);
+				sb.DrawString(Game1.mnufont, "Previous Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(60, 100), Color.White);
+				if (record != -1)
+				{
+					if (record <= goals[0])
+						sb.Draw(Game1.medalTex, new Vector2(382, 100), Color.Gold);
+					else if (record <= goals[1])
+						sb.Draw(Game1.medalTex, new Vector2(382, 100), Color.Silver);
+					else if (record <= goals[2])
+						sb.Draw(Game1.medalTex, new Vector2(382, 100), Color.Brown);
+				}
+				sb.DrawString(Game1.mnufont, "Time: " + TimeToString(time), new Vector2(199, 130), time < record || record == -1 ? Color.Lime : Color.Red);
 				if (time < record || record == -1)
 					sb.DrawString(Game1.mnufont, "New Personal Record!", new Vector2(114, 160), Color.Yellow);
 
@@ -377,6 +399,15 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.titlefont, "Paused ", new Vector2(40, 2), Color.White);
 				sb.DrawString(Game1.titlefont, "Paused", new Vector2(42, 4), Color.Black);
 				sb.DrawString(Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(74, 100), Color.White);
+				if (record != -1)
+				{
+					if (record <= goals[0])
+						sb.Draw(Game1.medalTex, new Vector2(382, 100), Color.Gold);
+					else if (record <= goals[1])
+						sb.Draw(Game1.medalTex, new Vector2(382, 100), Color.Silver);
+					else if (record <= goals[2])
+						sb.Draw(Game1.medalTex, new Vector2(382, 100), Color.Brown);
+				}
 				sb.DrawString(Game1.mnufont, "Current Time: " + TimeToString(time), new Vector2(106, 130), time < record || record == -1 ? Color.Lime : Color.Red);
 				sb.Draw(Game1.medalTex, new Vector2(432, 100), Color.Gold);
 				sb.Draw(Game1.medalTex, new Vector2(432, 130), Color.White);
