@@ -532,6 +532,15 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\box.xnb</Output>
       <Time>2012-06-07T19:41:05.5787931-04:00</Time>
     </Item>
+    <Item>
+      <Source>floating platform.png</Source>
+      <Name>floating platform</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\floating platform.xnb</Output>
+      <Time>2012-06-08T15:36:16.9949557-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

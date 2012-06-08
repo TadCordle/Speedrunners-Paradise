@@ -23,9 +23,12 @@ namespace Speedrunning_Game
 		public bool controllable;
 		bool jumppresscheck = false;
 		bool wallpresscheck = false;
+		ZipLine zippingLine;
 
 		public Runner(Vector2 position)
 		{
+			zippingLine = null;
+
 			// Set up animations
 			normal = Game1.guyNormal;
 			running = Game1.guyRunning;
@@ -102,8 +105,6 @@ namespace Speedrunning_Game
 				// Apply other wall collisions
 				if (this.hitBox.Intersects(w.bounds))
 				{
-					// Subtract position until not touching wall
-
 					//--------------------------
 					// REPLACE THIS WITH SAT
 					//--------------------------
@@ -223,6 +224,15 @@ namespace Speedrunning_Game
 				}
 			}
 
+			if (zippingLine != null)
+			{
+				current = ziplining;
+				position.Y = zippingLine.GetY(ziplineBox.Center.X);
+				acceleration = zippingLine.acceleration * 3;
+				velocity = zippingLine.GetNewVelocity(velocity);
+				movedLeft = velocity.X < 0;
+			}
+
 			if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl))
 			{
 				bool zipping = false;
@@ -231,25 +241,32 @@ namespace Speedrunning_Game
 					if ((z.pos1.X < z.pos2.X ? (ziplineBox.Left >= z.pos1.X && ziplineBox.X <= z.pos2.X) : (ziplineBox.Left <= z.pos1.X && ziplineBox.X >= z.pos2.X))
 							&& ziplineBox.Contains(ziplineBox.Center.X, (int)z.GetY(ziplineBox.Center.X)))
 					{
-						current = ziplining;
-						position.Y = z.GetY(ziplineBox.Center.X);
-						acceleration = z.acceleration * 3;
-						velocity = z.GetNewVelocity(velocity);
-						movedLeft = velocity.X < 0;
 						zipping = true;
 						isZipping = true;
+						if (zippingLine == null)
+						{
+							zippingLine = z;
+							current = ziplining;
+							position.Y = z.GetY(ziplineBox.Center.X);
+							acceleration = z.acceleration * 3;
+							velocity = z.GetNewVelocity(velocity);
+							movedLeft = velocity.X < 0;
+						}
 						break;
+
 					}
 				}
 
 				if (!zipping)
 				{
+					zippingLine = null;
 					isZipping = false;
 					acceleration.Y = 0.4f;
 				}
 			}
 			else
 			{
+				zippingLine = null;
 				isZipping = false;
 				acceleration.Y = 0.4f;
 			}

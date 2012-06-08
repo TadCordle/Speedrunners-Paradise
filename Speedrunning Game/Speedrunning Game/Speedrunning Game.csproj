@@ -111,6 +111,7 @@
     <Compile Include="AnimatedTexture.cs" />
     <Compile Include="Booster.cs" />
     <Compile Include="Finish.cs" />
+    <Compile Include="FloatingPlatform.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Levels.cs" />
     <Compile Include="LevelSelect.cs" />

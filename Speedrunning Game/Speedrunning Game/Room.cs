@@ -20,6 +20,7 @@ namespace Speedrunning_Game
 		public List<Wall> walls;
 		public List<ZipLine> ziplines;
 		public List<Booster> boosters;
+		public List<FloatingPlatform> platforms;
 		public List<Vector3> tiles; // x, y, z = index
 		public Runner runner;
 		public Finish finish;
@@ -47,6 +48,7 @@ namespace Speedrunning_Game
 			walls = new List<Wall>();
 			ziplines = new List<ZipLine>();
 			boosters = new List<Booster>();
+			platforms = new List<FloatingPlatform>();
 			viewBox = new Rectangle(0, 0, 640, 480);
 		}
 
@@ -114,6 +116,8 @@ namespace Speedrunning_Game
 					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4]))));
 				else if (line[0] == "booster")
 					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
+				else if (line[0] == "floatingplatform")
+					walls.Add(new FloatingPlatform(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 			}
 			levelReader.Dispose();
 
@@ -214,6 +218,8 @@ namespace Speedrunning_Game
 					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4]))));
 				else if (line[0] == "booster")
 					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
+				else if (line[0] == "floatingplatform")
+					walls.Add(new FloatingPlatform(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 				index++;
 			}
 
@@ -265,6 +271,11 @@ namespace Speedrunning_Game
 				{
 					foreach (Booster b in boosters)
 						b.Update();
+					var plats = from Wall f in walls
+								where f is FloatingPlatform
+								select f as FloatingPlatform;
+					foreach (FloatingPlatform f in plats)
+						f.Update();
 					runner.Update();
 					if (runner.position.X + 32 > viewBox.X + 330)
 						viewBox.X = (int)runner.position.X + 32 - 330;
@@ -361,6 +372,12 @@ namespace Speedrunning_Game
 								 select b;
 			foreach (Booster b in boostersInView)
 				b.Draw(sb);
+
+			var platsInView = from Wall f in walls
+							  where f is FloatingPlatform && f.bounds.Intersects(viewBox)
+							  select f as FloatingPlatform;
+			foreach (FloatingPlatform f in platsInView)
+				f.Draw(sb);
 
 			if (runner != null) runner.Draw(sb);
 			if (finish != null) finish.Draw(sb);

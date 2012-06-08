@@ -24,7 +24,7 @@ namespace Speedrunning_Game
 			tex = Game1.wallTex;
 		}
 
-		public void Draw(SpriteBatch sb)
+		public virtual void Draw(SpriteBatch sb)
 		{
 			sb.Draw(tex, new Rectangle(bounds.X - Game1.currentRoom.viewBox.X, bounds.Y - Game1.currentRoom.viewBox.Y, bounds.Width, bounds.Height), Color.White);
 		}

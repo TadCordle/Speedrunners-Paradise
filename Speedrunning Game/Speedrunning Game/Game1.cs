@@ -24,6 +24,7 @@ namespace Speedrunning_Game
 		public static Texture2D finishTex;
 		public static Texture2D poleTex, lineTex;
 		public static Texture2D medalTex;
+		public static Texture2D platformTex;
 		public static AnimatedTexture boosterTex;
 		public static SpriteFont titlefont, mnufont;
 		public static Texture2D tileSet;
@@ -80,6 +81,8 @@ namespace Speedrunning_Game
 			for (int i = 1; i <= images.Length; i++)
 				images[i - 1] = Content.Load<Texture2D>("booster000" + i.ToString());
 			boosterTex = new AnimatedTexture(images, 100, true, false);
+
+			platformTex = Content.Load<Texture2D>("floating platform");
 
 			tileSet = Content.Load<Texture2D>("tilestest");
 
