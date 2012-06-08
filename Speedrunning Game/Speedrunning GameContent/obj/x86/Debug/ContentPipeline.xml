@@ -496,6 +496,42 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\medal.xnb</Output>
       <Time>2012-06-07T06:16:48.8392614-04:00</Time>
     </Item>
+    <Item>
+      <Source>booster0001.png</Source>
+      <Name>booster0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\booster0001.xnb</Output>
+      <Time>2012-06-07T19:52:39.3884767-04:00</Time>
+    </Item>
+    <Item>
+      <Source>booster0002.png</Source>
+      <Name>booster0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\booster0002.xnb</Output>
+      <Time>2012-06-07T19:52:39.5134839-04:00</Time>
+    </Item>
+    <Item>
+      <Source>booster0003.png</Source>
+      <Name>booster0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\booster0003.xnb</Output>
+      <Time>2012-06-07T19:52:39.6314906-04:00</Time>
+    </Item>
+    <Item>
+      <Source>box.png</Source>
+      <Name>box</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\box.xnb</Output>
+      <Time>2012-06-07T19:41:05.5787931-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

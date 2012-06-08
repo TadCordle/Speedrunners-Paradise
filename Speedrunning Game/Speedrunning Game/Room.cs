@@ -19,6 +19,7 @@ namespace Speedrunning_Game
 		int[] goals; // 0 = gold, 1 = silver, 2 = bronze
 		public List<Wall> walls;
 		public List<ZipLine> ziplines;
+		public List<Booster> boosters;
 		public List<Vector3> tiles; // x, y, z = index
 		public Runner runner;
 		public Finish finish;
@@ -45,6 +46,7 @@ namespace Speedrunning_Game
 			goals = new int[3];
 			walls = new List<Wall>();
 			ziplines = new List<ZipLine>();
+			boosters = new List<Booster>();
 			viewBox = new Rectangle(0, 0, 640, 480);
 		}
 
@@ -110,6 +112,8 @@ namespace Speedrunning_Game
 					finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
 				else if (line[0] == "zipline")
 					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4]))));
+				else if (line[0] == "booster")
+					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 			}
 			levelReader.Dispose();
 
@@ -208,6 +212,8 @@ namespace Speedrunning_Game
 					finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
 				else if (line[0] == "zipline")
 					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4]))));
+				else if (line[0] == "booster")
+					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 				index++;
 			}
 
@@ -257,6 +263,8 @@ namespace Speedrunning_Game
 			{
 				if (!paused)
 				{
+					foreach (Booster b in boosters)
+						b.Update();
 					runner.Update();
 					if (runner.position.X + 32 > viewBox.X + 330)
 						viewBox.X = (int)runner.position.X + 32 - 330;
@@ -347,6 +355,12 @@ namespace Speedrunning_Game
 							  select v;
 			foreach (Vector3 v in tilesInView)
 				sb.Draw(Game1.tileSet, new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], Color.White);
+
+			var boostersInView = from Booster b in boosters
+								 where b.hitBox.Intersects(viewBox)
+								 select b;
+			foreach (Booster b in boostersInView)
+				b.Draw(sb);
 
 			if (runner != null) runner.Draw(sb);
 			if (finish != null) finish.Draw(sb);

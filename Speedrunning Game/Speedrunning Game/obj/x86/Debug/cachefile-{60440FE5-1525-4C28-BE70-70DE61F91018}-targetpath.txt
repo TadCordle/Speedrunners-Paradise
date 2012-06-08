@@ -53,3 +53,7 @@ Content\tilestest.xnb
 Content\finish.xnb
 Content\pole.xnb
 Content\medal.xnb
+Content\booster0001.xnb
+Content\booster0002.xnb
+Content\booster0003.xnb
+Content\box.xnb

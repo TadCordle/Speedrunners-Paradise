@@ -171,6 +171,10 @@ namespace Speedrunning_Game
 				}
 			}
 
+			foreach (Booster b in Game1.currentRoom.boosters)
+				if (b.hitBox.Intersects(this.hitBox))
+					velocity += b.acceleration;
+
 			if (Game1.currentRoom.finish != null)
 				if (this.hitBox.Intersects(Game1.currentRoom.finish.hitBox))
 					Game1.currentRoom.finished = true;
@@ -211,7 +215,8 @@ namespace Speedrunning_Game
 				{
 					velocity.X = canWallToRight ? 8 : -8;
 					movedLeft = !movedLeft;
-					velocity.Y = -7.5f;
+					if (velocity.Y > -7.5f)
+						velocity.Y = -7.5f;
 					wallpresscheck = true;
 					canWallToRight = false;
 					canWallToLeft = false;
