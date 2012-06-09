@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="AnimatedTexture.cs" />
     <Compile Include="Booster.cs" />
+    <Compile Include="PlatformWall.cs" />
     <Compile Include="Finish.cs" />
     <Compile Include="FloatingPlatform.cs" />
     <Compile Include="GameObject.cs" />

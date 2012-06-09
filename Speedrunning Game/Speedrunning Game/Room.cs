@@ -118,6 +118,8 @@ namespace Speedrunning_Game
 					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 				else if (line[0] == "floatingplatform")
 					walls.Add(new FloatingPlatform(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
+				else if (line[0] == "platformwall")
+					walls.Add(new PlatformWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 			}
 			levelReader.Dispose();
 
@@ -220,6 +222,8 @@ namespace Speedrunning_Game
 					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 				else if (line[0] == "floatingplatform")
 					walls.Add(new FloatingPlatform(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
+				else if (line[0] == "platformwall")
+					walls.Add(new PlatformWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 				index++;
 			}
 

@@ -24,6 +24,7 @@ namespace Speedrunning_Game
 		bool jumppresscheck = false;
 		bool wallpresscheck = false;
 		ZipLine zippingLine;
+		FloatingPlatform platform;
 
 		public Runner(Vector2 position)
 		{
@@ -51,6 +52,7 @@ namespace Speedrunning_Game
 			this.ziplineBox = new Rectangle((int)position.X + 24, (int)position.Y - 16, 8, 32);
 			isTouchingGround = false;
 			isSliding = false;
+			isZipping = false;
 			staySliding = false;
 
 			controllable = true; // CHANGE THIS WHEN COUNT DOWN IS IMPLEMENTED
@@ -76,10 +78,13 @@ namespace Speedrunning_Game
 			// Apply accel to velocity and velocity to position
 			velocity.Y += acceleration.Y;
 			position += velocity;
+			if (platform != null)
+				position += platform.velocity;
 			UpdateHitBox();
 
 			isTouchingGround = false;
 			bool isTouchingWall = false;
+			bool isOnPlatform = false;
 			foreach (Wall w in Game1.currentRoom.walls)
 			{
 				// If you're standing on it, apply ground friction and say that you're standing
@@ -89,6 +94,12 @@ namespace Speedrunning_Game
 					{
 						isZipping = false;
 						isTouchingGround = true;
+						if (w is FloatingPlatform )
+						{
+							if (platform == null)
+								platform = (FloatingPlatform)w;
+							isOnPlatform = true;
+						}
 					}
 					else if (w.bounds.Intersects(leftWallBox))
 					{
@@ -103,7 +114,7 @@ namespace Speedrunning_Game
 				}
 
 				// Apply other wall collisions
-				if (this.hitBox.Intersects(w.bounds))
+				if (this.hitBox.Intersects(w.bounds) && !(w is PlatformWall))
 				{
 					//--------------------------
 					// REPLACE THIS WITH SAT
@@ -157,6 +168,12 @@ namespace Speedrunning_Game
 					{
 						isZipping = false;
 						isTouchingGround = true;
+						if (w is FloatingPlatform)
+						{
+							if (platform == null)
+								platform = (FloatingPlatform)w;
+							isOnPlatform = true;
+						}
 						groundFriction.X = Math.Sign(velocity.X) * -1 * 0.5f;
 					}
 					else if (w.bounds.Intersects(leftWallBox))
@@ -172,10 +189,19 @@ namespace Speedrunning_Game
 				}
 			}
 
+			// Apply platform velocity when leaving platform
+			if (!isOnPlatform && platform != null)
+			{
+				velocity += platform.velocity;
+				platform = null;
+			}
+
+			// Apply booster acceleration
 			foreach (Booster b in Game1.currentRoom.boosters)
 				if (b.hitBox.Intersects(this.hitBox))
 					velocity += b.acceleration;
 
+			// Check if level finish reached
 			if (Game1.currentRoom.finish != null)
 				if (this.hitBox.Intersects(Game1.currentRoom.finish.hitBox))
 					Game1.currentRoom.finished = true;

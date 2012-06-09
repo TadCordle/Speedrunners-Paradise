@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speedrunning Game", "Speedrunning Game\Speedrunning Game\Speedrunning Game.csproj", "{021C9A0C-78DC-4D8D-82A9-4465B0E967B8}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Speedrunning GameContent", "Speedrunning Game\Speedrunning GameContent\Speedrunning GameContent.contentproj", "{60440FE5-1525-4C28-BE70-70DE61F91018}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speedrunning GameContent", "Speedrunning Game\Speedrunning GameContent\Speedrunning GameContent.contentproj", "{60440FE5-1525-4C28-BE70-70DE61F91018}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
