@@ -21,10 +21,13 @@ namespace Speedrunning_Game
 		float imageAngle;
 		bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping;
 		public bool controllable;
-		bool jumppresscheck = false;
-		bool wallpresscheck = false;
+		bool jumppresscheck;
+		bool wallpresscheck;
 		ZipLine zippingLine;
 		FloatingPlatform platform;
+
+		int health, healthTracker;
+		const int HEALTHINTERVAL = 2000;
 
 		public Runner(Vector2 position)
 		{
@@ -55,13 +58,28 @@ namespace Speedrunning_Game
 			isZipping = false;
 			staySliding = false;
 
+			health = 10;
+			healthTracker = 0;
 			controllable = true; // CHANGE THIS WHEN COUNT DOWN IS IMPLEMENTED
+			jumppresscheck = false;
+			wallpresscheck = false;
 		}
 
 		public void Update()
 		{
 			// Update animation
 			current.Update();
+
+			// Update health regen
+			if (health < 10)
+			{
+				healthTracker++;
+				if (healthTracker >= HEALTHINTERVAL)
+				{
+					healthTracker = 0;
+					health++;
+				}
+			}
 
 			if (Math.Sign(velocity.X + acceleration.X) != Math.Sign(velocity.X) && velocity.X != 0) // This was to fix some weird moving back and forth bug
 			{
@@ -85,8 +103,23 @@ namespace Speedrunning_Game
 			isTouchingGround = false;
 			bool isTouchingWall = false;
 			bool isOnPlatform = false;
+
+			if (hitBox.Left < 0)
+			{
+				position.X = 0;
+				UpdateHitBox();
+			}
+			else if (hitBox.Right > Game1.currentRoom.roomWidth)
+			{
+				position.X = Game1.currentRoom.roomWidth - 48;
+				UpdateHitBox();
+			}
+
 			foreach (Wall w in Game1.currentRoom.walls)
 			{
+				if (w is PlatformWall || !w.bounds.Intersects(Game1.currentRoom.viewBox))
+					continue;
+
 				// If you're standing on it, apply ground friction and say that you're standing
 				if (isSliding)
 				{
@@ -403,14 +436,14 @@ namespace Speedrunning_Game
 			}
 		}
 
-		public void Draw(SpriteBatch sb)
+		public void Draw(SpriteBatch sb, Color c)
 		{
 //			sb.Draw(Game1.wallTex, hitBox, Color.Black);
 //			sb.Draw(Game1.wallTex, groundHitBox, Color.White);
 //			sb.Draw(Game1.wallTex, leftWallBox, Color.Blue);
 //			sb.Draw(Game1.wallTex, rightWallBox, Color.Blue);
 //			sb.Draw(Game1.wallTex, ziplineBox, Color.Lime);
-			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), Color.White, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
+			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}
 }

@@ -461,15 +461,6 @@
       <Time>2012-06-03T22:07:08.6387251-04:00</Time>
     </Item>
     <Item>
-      <Source>tilestest.png</Source>
-      <Name>tilestest</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tilestest.xnb</Output>
-      <Time>2012-06-04T15:40:34.8041309-04:00</Time>
-    </Item>
-    <Item>
       <Source>finish.png</Source>
       <Name>finish</Name>
       <Importer>TextureImporter</Importer>
@@ -540,6 +531,105 @@
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\floating platform.xnb</Output>
       <Time>2012-06-08T15:36:16.9949557-04:00</Time>
+    </Item>
+    <Item>
+      <Source>backgrounds\bgcave.jpg</Source>
+      <Name>backgrounds\bgcave</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\backgrounds\bgcave.xnb</Output>
+      <Time>2012-06-10T16:46:17.6123444-04:00</Time>
+    </Item>
+    <Item>
+      <Source>backgrounds\bgfactory.jpg</Source>
+      <Name>backgrounds\bgfactory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\backgrounds\bgfactory.xnb</Output>
+      <Time>2012-06-10T16:48:29.209381-04:00</Time>
+    </Item>
+    <Item>
+      <Source>backgrounds\bggrass.jpg</Source>
+      <Name>backgrounds\bggrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\backgrounds\bggrass.xnb</Output>
+      <Time>2012-06-10T16:49:16.442657-04:00</Time>
+    </Item>
+    <Item>
+      <Source>backgrounds\bglava.jpg</Source>
+      <Name>backgrounds\bglava</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\backgrounds\bglava.xnb</Output>
+      <Time>2012-06-10T16:49:58.1659321-04:00</Time>
+    </Item>
+    <Item>
+      <Source>backgrounds\bgnight.jpg</Source>
+      <Name>backgrounds\bgnight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\backgrounds\bgnight.xnb</Output>
+      <Time>2012-06-10T16:50:38.9864782-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\tilegrass.png</Source>
+      <Name>tiles\tilegrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilegrass.xnb</Output>
+      <Time>2012-06-10T17:13:13.6095081-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\tilestest.png</Source>
+      <Name>tiles\tilestest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilestest.xnb</Output>
+      <Time>2012-06-04T15:40:34.8041309-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\tilelava.png</Source>
+      <Name>tiles\tilelava</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilelava.xnb</Output>
+      <Time>2012-06-10T17:19:55.3444368-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\tilenight.png</Source>
+      <Name>tiles\tilenight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilenight.xnb</Output>
+      <Time>2012-06-10T17:26:21.6902939-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\tilecave.png</Source>
+      <Name>tiles\tilecave</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilecave.xnb</Output>
+      <Time>2012-06-10T17:43:12.796152-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\tilefactory.png</Source>
+      <Name>tiles\tilefactory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilefactory.xnb</Output>
+      <Time>2012-06-10T17:51:01.658751-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

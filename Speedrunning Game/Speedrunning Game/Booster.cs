@@ -30,9 +30,9 @@ namespace Speedrunning_Game
 			texture.Update();
 		}
 
-		public void Draw(SpriteBatch sb)
+		public void Draw(SpriteBatch sb, Color c)
 		{
-			texture.Draw(sb, new Vector2(hitBox.X + 16 - Game1.currentRoom.viewBox.X, hitBox.Y + 16 - Game1.currentRoom.viewBox.Y), Color.White, angle, new Vector2(16, 16), Vector2.One, SpriteEffects.None, 0);
+			texture.Draw(sb, new Vector2(hitBox.X + 16 - Game1.currentRoom.viewBox.X, hitBox.Y + 16 - Game1.currentRoom.viewBox.Y), c, angle, new Vector2(16, 16), Vector2.One, SpriteEffects.None, 0);
 		}
 	}
 }

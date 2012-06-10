@@ -44,9 +44,9 @@ namespace Speedrunning_Game
 			}
 		}
 
-		public override void Draw(SpriteBatch sb)
+		public override void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(texture, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), Color.White);
+			sb.Draw(texture, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), c);
 		}
 	}
 }

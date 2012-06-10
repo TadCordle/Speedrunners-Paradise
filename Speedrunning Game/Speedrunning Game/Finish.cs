@@ -19,9 +19,9 @@ namespace Speedrunning_Game
 			finishTex = Game1.finishTex;
 		}
 
-		public void Draw(SpriteBatch sb)
+		public void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(finishTex, new Rectangle(hitBox.X - Game1.currentRoom.viewBox.X, hitBox.Y - Game1.currentRoom.viewBox.Y, hitBox.Width, hitBox.Height), Color.White);
+			sb.Draw(finishTex, new Rectangle(hitBox.X - Game1.currentRoom.viewBox.X, hitBox.Y - Game1.currentRoom.viewBox.Y, hitBox.Width, hitBox.Height), c);
 		}
 	}
 }

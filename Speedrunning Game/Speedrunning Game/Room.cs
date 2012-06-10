@@ -24,7 +24,7 @@ namespace Speedrunning_Game
 		public List<Vector3> tiles; // x, y, z = index
 		public Runner runner;
 		public Finish finish;
-		Theme theme;
+		public Theme theme;
 		Tileset wallSet;
 		string levelName;
 		bool custom;
@@ -41,7 +41,6 @@ namespace Speedrunning_Game
 			rcheck = false;
 			write = true;
 			time = 0;
-			wallSet = new Tileset(Game1.tileSet, 32, 32, 3, 3);
 			tiles = new List<Vector3>();
 			finished = false;
 			goals = new int[3];
@@ -88,6 +87,7 @@ namespace Speedrunning_Game
 					theme = Theme.Factory;
 					break;
 			}
+			wallSet = new Tileset(Game1.tileSet[(int)theme], 32, 32, 3, 3);
 			line = decrypter.DecryptString(levelReader.ReadLine()).Split(' ');
 			roomWidth = int.Parse(line[0]);
 			roomHeight = int.Parse(line[1]);
@@ -113,7 +113,7 @@ namespace Speedrunning_Game
 				else if (line[0] == "finish")
 					finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
 				else if (line[0] == "zipline")
-					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4]))));
+					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4])), theme));
 				else if (line[0] == "booster")
 					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 				else if (line[0] == "floatingplatform")
@@ -169,6 +169,7 @@ namespace Speedrunning_Game
 					theme = Theme.Factory;
 					break;
 			}
+			wallSet = new Tileset(Game1.tileSet[(int)theme], 32, 32, 3, 3);
 			levelName = ".MAIN.Level" + (Levels.index + 1).ToString();
 			bool recordFound = false;
 			StreamReader reader = new StreamReader("Content\\records.txt");
@@ -217,7 +218,7 @@ namespace Speedrunning_Game
 				else if (line[0] == "finish")
 					finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
 				else if (line[0] == "zipline")
-					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4]))));
+					ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4])), theme));
 				else if (line[0] == "booster")
 					boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 				else if (line[0] == "floatingplatform")
@@ -365,44 +366,48 @@ namespace Speedrunning_Game
 
 		public virtual void Draw(SpriteBatch sb)
 		{
+			Color drawHue = (paused || finished ? new Color(100, 100, 100) : Color.White);
+
+			sb.Draw(Game1.backgrounds[(int)theme], new Rectangle(0, 0, viewBox.Width, viewBox.Height), drawHue);
+
 			var tilesInView = from Vector3 v in tiles
 							  where v.X >= viewBox.Left - 32 && v.X <= viewBox.Right && v.Y >= viewBox.Top - 32 && v.Y <= viewBox.Bottom
 							  select v;
 			foreach (Vector3 v in tilesInView)
-				sb.Draw(Game1.tileSet, new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], Color.White);
+				sb.Draw(Game1.tileSet[(int)theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
 
 			var boostersInView = from Booster b in boosters
 								 where b.hitBox.Intersects(viewBox)
 								 select b;
 			foreach (Booster b in boostersInView)
-				b.Draw(sb);
+				b.Draw(sb, drawHue);
 
 			var platsInView = from Wall f in walls
 							  where f is FloatingPlatform && f.bounds.Intersects(viewBox)
 							  select f as FloatingPlatform;
 			foreach (FloatingPlatform f in platsInView)
-				f.Draw(sb);
+				f.Draw(sb, drawHue);
 
-			if (runner != null) runner.Draw(sb);
-			if (finish != null) finish.Draw(sb);
+			if (runner != null) runner.Draw(sb, drawHue);
+			if (finish != null) finish.Draw(sb, drawHue);
 
 			var zipsInView = from ZipLine z in ziplines
-							 where (z.pos1.X < z.pos2.X ?  
+							 where (z.pos1.X < z.pos2.X ?
 										(z.pos1.Y > z.pos2.Y ?
-											new Rectangle((int)z.pos1.X, (int)z.pos2.Y, (int)z.pos2.X, (int)z.pos1.Y).Intersects(viewBox) : 
-											new Rectangle((int)z.pos1.X, (int)z.pos1.Y, (int)z.pos2.X, (int)z.pos2.Y).Intersects(viewBox) ) :
+											new Rectangle((int)z.pos1.X, (int)z.pos2.Y, (int)z.pos2.X, (int)z.pos1.Y).Intersects(viewBox) :
+											new Rectangle((int)z.pos1.X, (int)z.pos1.Y, (int)z.pos2.X, (int)z.pos2.Y).Intersects(viewBox)) :
 										(z.pos1.Y > z.pos2.Y ?
-											new Rectangle((int)z.pos2.X, (int)z.pos2.Y, (int)z.pos1.X, (int)z.pos1.Y).Intersects(viewBox) : 
-											new Rectangle((int)z.pos2.X, (int)z.pos1.Y, (int)z.pos1.X, (int)z.pos2.Y).Intersects(viewBox) )
+											new Rectangle((int)z.pos2.X, (int)z.pos2.Y, (int)z.pos1.X, (int)z.pos1.Y).Intersects(viewBox) :
+											new Rectangle((int)z.pos2.X, (int)z.pos1.Y, (int)z.pos1.X, (int)z.pos2.Y).Intersects(viewBox))
 									)
 							 select z;
 			foreach (ZipLine z in zipsInView)
-				z.Draw(sb);
+				z.Draw(sb, Color.White);
 
 			if (finished)
 			{
 				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(16, 2), Color.White);
-				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(18, 4), Color.Black);
+				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(18, 4), drawHue);
 
 				sb.DrawString(Game1.mnufont, "Previous Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(60, 100), Color.White);
 				if (record != -1)
@@ -425,14 +430,14 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(464, 130), goalBeaten == 2 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(464, 160), goalBeaten == 3 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, goalBeaten != 0 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : "Do better next time!", new Vector2(202, 220), Color.Yellow);
-				
+
 				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(350, 420), Color.White);
 				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(430, 450), Color.White);
 			}
 			else if (paused)
 			{
 				sb.DrawString(Game1.titlefont, "Paused ", new Vector2(40, 2), Color.White);
-				sb.DrawString(Game1.titlefont, "Paused", new Vector2(42, 4), Color.Black);
+				sb.DrawString(Game1.titlefont, "Paused", new Vector2(42, 4), drawHue);
 				sb.DrawString(Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(74, 100), Color.White);
 				if (record != -1)
 				{
@@ -454,7 +459,10 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(430, 450), Color.White);
 			}
 			else
+			{
 				sb.DrawString(Game1.mnufont, TimeToString(time), Vector2.Zero, Color.White);
+				sb.DrawString(Game1.mnufont, TimeToString(time), Vector2.One, new Color(100, 100, 100));
+			}
 		}
 		private string TimeToString(int time)
 		{
@@ -463,11 +471,11 @@ namespace Speedrunning_Game
 
 		public enum Theme
 		{
-			Grass,
-			Lava,
-			Night,
-			Cave,
-			Factory
+			Grass = 0,
+			Lava = 1,
+			Night = 2,
+			Cave = 3,
+			Factory = 4
 		}
 	}
 }

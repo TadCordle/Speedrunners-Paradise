@@ -13,10 +13,11 @@ namespace Speedrunning_Game
 		public Vector2 pos1, pos2, acceleration;
 		Rectangle pole1, pole2;
 		float dY, dX, slope, angle;
+		Color lineColor;
 
 		Texture2D poleTex, lineTex;
 
-		public ZipLine(Vector2 pos1, Vector2 pos2)
+		public ZipLine(Vector2 pos1, Vector2 pos2, Room.Theme theme)
 		{
 			this.pos1 = pos1;
 			this.pos2 = pos2;
@@ -27,6 +28,11 @@ namespace Speedrunning_Game
 
 			poleTex = Game1.poleTex;
 			lineTex = Game1.lineTex;
+
+			if (theme == Room.Theme.Grass || theme == Room.Theme.Factory)
+				lineColor = Color.Black;
+			else
+				lineColor = Color.White;
 
 			acceleration = new Vector2(0.4f * (float)(Math.Sin(angle) * Math.Cos(angle)), 0.4f * (float)(Math.Sin(angle) * Math.Sin(angle)));
 		}
@@ -84,11 +90,11 @@ namespace Speedrunning_Game
 			return new Vector2(newM * (float)Math.Cos(angle), newM * (float)Math.Sin(angle));
 		}
 
-		public void Draw(SpriteBatch sb)
+		public void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.viewBox.X, pole1.Y - Game1.currentRoom.viewBox.Y, pole1.Width, pole1.Height), Color.White);
-			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.viewBox.X, pole2.Y - Game1.currentRoom.viewBox.Y, pole2.Width, pole2.Height), Color.White);
-			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.viewBox.X + 8, (int)pos1.Y - Game1.currentRoom.viewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, Color.Black, angle, Vector2.Zero, SpriteEffects.None, 0);
+			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.viewBox.X, pole1.Y - Game1.currentRoom.viewBox.Y, pole1.Width, pole1.Height), c);
+			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.viewBox.X, pole2.Y - Game1.currentRoom.viewBox.Y, pole2.Width, pole2.Height), c);
+			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.viewBox.X + 8, (int)pos1.Y - Game1.currentRoom.viewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
 		}
 	}
 }

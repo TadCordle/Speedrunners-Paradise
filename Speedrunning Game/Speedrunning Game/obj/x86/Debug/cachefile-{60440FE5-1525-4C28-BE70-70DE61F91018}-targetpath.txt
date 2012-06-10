@@ -49,7 +49,6 @@ Content\character\speed runner sliding.xnb
 Content\pixel.xnb
 Content\mnufont.xnb
 Content\titlefont.xnb
-Content\tilestest.xnb
 Content\finish.xnb
 Content\pole.xnb
 Content\medal.xnb
@@ -58,3 +57,14 @@ Content\booster0002.xnb
 Content\booster0003.xnb
 Content\box.xnb
 Content\floating platform.xnb
+Content\backgrounds\bgcave.xnb
+Content\backgrounds\bgfactory.xnb
+Content\backgrounds\bggrass.xnb
+Content\backgrounds\bglava.xnb
+Content\backgrounds\bgnight.xnb
+Content\tiles\tilegrass.xnb
+Content\tiles\tilestest.xnb
+Content\tiles\tilelava.xnb
+Content\tiles\tilenight.xnb
+Content\tiles\tilecave.xnb
+Content\tiles\tilefactory.xnb

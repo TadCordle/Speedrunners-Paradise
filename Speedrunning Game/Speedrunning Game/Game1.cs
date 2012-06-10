@@ -27,7 +27,8 @@ namespace Speedrunning_Game
 		public static Texture2D platformTex;
 		public static AnimatedTexture boosterTex;
 		public static SpriteFont titlefont, mnufont;
-		public static Texture2D tileSet;
+		public static Texture2D[] tileSet;
+		public static Texture2D[] backgrounds;
 		public static bool exit = false;
 
 		bool pressEscape = false;
@@ -37,6 +38,7 @@ namespace Speedrunning_Game
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 480;
 			graphics.PreferredBackBufferWidth = 640;
+//			graphics.IsFullScreen = true;
 			Content.RootDirectory = "Content";
 			if (!File.Exists("Content\\records.txt"))
 			{
@@ -84,7 +86,18 @@ namespace Speedrunning_Game
 
 			platformTex = Content.Load<Texture2D>("floating platform");
 
-			tileSet = Content.Load<Texture2D>("tilestest");
+			tileSet = new Texture2D[5];
+			backgrounds = new Texture2D[5];
+			tileSet[0] = Content.Load<Texture2D>("tiles/tilegrass");
+			tileSet[1] = Content.Load<Texture2D>("tiles/tilelava");
+			tileSet[2] = Content.Load<Texture2D>("tiles/tilenight");
+			tileSet[3] = Content.Load<Texture2D>("tiles/tilecave");
+			tileSet[4] = Content.Load<Texture2D>("tiles/tilefactory");
+			backgrounds[0] = Content.Load<Texture2D>("backgrounds/bggrass");
+			backgrounds[1] = Content.Load<Texture2D>("backgrounds/bglava");
+			backgrounds[2] = Content.Load<Texture2D>("backgrounds/bgnight");
+			backgrounds[3] = Content.Load<Texture2D>("backgrounds/bgcave");
+			backgrounds[4] = Content.Load<Texture2D>("backgrounds/bgfactory");
 
 			medalTex = Content.Load<Texture2D>("medal");
 
