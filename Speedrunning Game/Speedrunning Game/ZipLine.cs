@@ -94,7 +94,7 @@ namespace Speedrunning_Game
 		{
 			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.viewBox.X, pole1.Y - Game1.currentRoom.viewBox.Y, pole1.Width, pole1.Height), c);
 			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.viewBox.X, pole2.Y - Game1.currentRoom.viewBox.Y, pole2.Width, pole2.Height), c);
-			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.viewBox.X + 8, (int)pos1.Y - Game1.currentRoom.viewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
+			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.viewBox.X + 8, (int)pos1.Y - Game1.currentRoom.viewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
 		}
 	}
 }

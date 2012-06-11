@@ -15,12 +15,11 @@ namespace Speedrunning_Game
 		bool pressDown = true;
 		bool pressUp = true;
 		public bool pressEnter = true;
-		int maxSelected;
+		const int MAX_SELECTED = 3;
 
 		public MainMenu()
 		{
 			selected = 0;
-			maxSelected = 2;
 		}
 
 		public override void Update(GameTime gameTime)
@@ -52,24 +51,27 @@ namespace Speedrunning_Game
 					Game1.currentRoom = new Room(Levels.levels[0]);
 				else if (selected == 1)
 					Game1.currentRoom = new LevelSelect();
-				else if (selected == 2)
+//				else if (selected == 2)
+//					Game1.currentRoom = new HelpRoom();
+				else if (selected == 3)
 					Game1.exit = true;
 			}
 
 			if (selected < 0)
 				selected = 0;
-			else if (selected > maxSelected)
-				selected = 2;
+			else if (selected > MAX_SELECTED)
+				selected = MAX_SELECTED;
 		}
 
 		public override void Draw(SpriteBatch sb)
 		{
-			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(32, 0), Color.White);
-			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(34, 2), Color.Black);
+			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(182, 100), Color.White);
+			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(184, 102), Color.Black);
 
-			sb.DrawString(Game1.mnufont, "New game", new Vector2(270, 200), selected == 0 ? Color.Yellow : Color.White);
-			sb.DrawString(Game1.mnufont, "Select level", new Vector2(260, 270), selected == 1 ? Color.Yellow : Color.White);
-			sb.DrawString(Game1.mnufont, "Exit", new Vector2(310, 340), selected == 2 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "New game", new Vector2(420, 330), selected == 0 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Select level", new Vector2(410, 400), selected == 1 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Help", new Vector2(456, 470), selected == 2 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Exit", new Vector2(460, 540), selected == 3 ? Color.Yellow : Color.White);
 			return;
 		}
 	}

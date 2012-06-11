@@ -13,26 +13,22 @@ namespace Speedrunning_Game
 {
 	public class Runner
 	{
-		AnimatedTexture normal, running, midair, sliding, ziplining;
-		AnimatedTexture current;
-		public Vector2 position, velocity, acceleration;
+		AnimatedTexture normal, running, midair, sliding, ziplining; // Animations
+		AnimatedTexture current; // Current animation to be drawn
+		public Vector2 position, velocity, acceleration; // Kinematics
 		Vector2 groundFriction;
-		Rectangle hitBox, groundHitBox, leftWallBox, rightWallBox, ziplineBox;
-		float imageAngle;
-		bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping;
-		public bool controllable;
-		bool jumppresscheck;
-		bool wallpresscheck;
-		ZipLine zippingLine;
-		FloatingPlatform platform;
-
-		int health, healthTracker;
-		const int HEALTHINTERVAL = 2000;
+		Rectangle hitBox, groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Hit boxes
+		float imageAngle; // The angle at which to draw the image. Might need this later
+		bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
+			jumppresscheck, wallpresscheck; // A bunch of flags
+		public bool controllable; // Only reads key feedback when true
+		ZipLine zippingLine; // Current zipline being used
+		FloatingPlatform platform; // Current platform standing on
+		int health, healthTracker; // Health variable and timer used for health regeneration
+		const int HEALTHINTERVAL = 2000; // Healt regeneration timer limit
 
 		public Runner(Vector2 position)
 		{
-			zippingLine = null;
-
 			// Set up animations
 			normal = Game1.guyNormal;
 			running = Game1.guyRunning;
@@ -43,26 +39,27 @@ namespace Speedrunning_Game
 			imageAngle = 0.0f;
 			current = normal;
 
-			// Set up kinematics
+			// Set up character physics
 			this.position = position;
 			velocity = new Vector2();
+			isTouchingGround = false;
+			isSliding = false;
+			isZipping = false;
+			staySliding = false;
+			controllable = true; // CHANGE THIS WHEN COUNT DOWN IS IMPLEMENTED
+			jumppresscheck = false;
+			wallpresscheck = false;
 
-			// Set up hit boxes and things that have to do with interaction with other objects
+			// Set up hit boxes
 			this.hitBox = new Rectangle((int)position.X + 16, (int)position.Y, 32, 64);
 			this.groundHitBox = new Rectangle((int)position.X + 18, (int)position.Y + 64, 28, 2);
 			this.leftWallBox = new Rectangle((int)position.X + 14, (int)position.Y + 2, 2, 60);
 			this.rightWallBox = new Rectangle((int)position.X + 48, (int)position.Y + 2, 2, 60);
 			this.ziplineBox = new Rectangle((int)position.X + 24, (int)position.Y - 16, 8, 32);
-			isTouchingGround = false;
-			isSliding = false;
-			isZipping = false;
-			staySliding = false;
 
+			// Set up other variables
 			health = 10;
 			healthTracker = 0;
-			controllable = true; // CHANGE THIS WHEN COUNT DOWN IS IMPLEMENTED
-			jumppresscheck = false;
-			wallpresscheck = false;
 		}
 
 		public void Update()
@@ -81,7 +78,8 @@ namespace Speedrunning_Game
 				}
 			}
 
-			if (Math.Sign(velocity.X + acceleration.X) != Math.Sign(velocity.X) && velocity.X != 0) // This was to fix some weird moving back and forth bug
+			// If something is slowing you down, stop it from speeding you up in the opposite direction
+			if (Math.Sign(velocity.X + acceleration.X) != Math.Sign(velocity.X) && velocity.X != 0)
 			{
 				acceleration.X = 0;
 				velocity.X = 0;
@@ -100,13 +98,10 @@ namespace Speedrunning_Game
 				position += platform.velocity;
 			UpdateHitBox();
 
-			isTouchingGround = false;
-			bool isTouchingWall = false;
-			bool isOnPlatform = false;
-
+			// Stay inside screen
 			if (hitBox.Left < 0)
 			{
-				position.X = 0;
+				position.X = -16;
 				UpdateHitBox();
 			}
 			else if (hitBox.Right > Game1.currentRoom.roomWidth)
@@ -115,8 +110,19 @@ namespace Speedrunning_Game
 				UpdateHitBox();
 			}
 
+			// Die if character falls below room bounds
+			if (hitBox.Top > Game1.currentRoom.roomHeight)
+				health = 0;
+
+			// Reset flags
+			isTouchingGround = false;
+			bool isTouchingWall = false;
+			bool isOnPlatform = false;
+
+			// Iterate through walls
 			foreach (Wall w in Game1.currentRoom.walls)
 			{
+				// Make sure wall effects player
 				if (w is PlatformWall || !w.bounds.Intersects(Game1.currentRoom.viewBox))
 					continue;
 
@@ -283,6 +289,7 @@ namespace Speedrunning_Game
 				}
 			}
 
+			// If ziplining, update according to zipline's values
 			if (zippingLine != null)
 			{
 				current = ziplining;
@@ -292,6 +299,7 @@ namespace Speedrunning_Game
 				movedLeft = velocity.X < 0;
 			}
 
+			// Check for whether or not ziplining if control is being held
 			if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl))
 			{
 				bool zipping = false;
@@ -316,6 +324,7 @@ namespace Speedrunning_Game
 					}
 				}
 
+				// If not hitting a zipline, turn off zipling variables
 				if (!zipping)
 				{
 					zippingLine = null;
@@ -405,6 +414,7 @@ namespace Speedrunning_Game
 		}
 		private void UpdateHitBox()
 		{
+			// Move each hitbox to its corresponding spot relative to the position vector
 			if (isSliding && isTouchingGround)
 			{
 				hitBox.Height = 32;
@@ -438,11 +448,14 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
+			// Draw hit boxes (for debugging)
 //			sb.Draw(Game1.wallTex, hitBox, Color.Black);
 //			sb.Draw(Game1.wallTex, groundHitBox, Color.White);
 //			sb.Draw(Game1.wallTex, leftWallBox, Color.Blue);
 //			sb.Draw(Game1.wallTex, rightWallBox, Color.Blue);
 //			sb.Draw(Game1.wallTex, ziplineBox, Color.Lime);
+
+			// Draw character
 			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}

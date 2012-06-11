@@ -36,8 +36,8 @@ namespace Speedrunning_Game
 		public Game1()
 		{
 			graphics = new GraphicsDeviceManager(this);
-			graphics.PreferredBackBufferHeight = 480;
-			graphics.PreferredBackBufferWidth = 640;
+			graphics.PreferredBackBufferHeight = 720;
+			graphics.PreferredBackBufferWidth = 960;
 //			graphics.IsFullScreen = true;
 			Content.RootDirectory = "Content";
 			if (!File.Exists("Content\\records.txt"))

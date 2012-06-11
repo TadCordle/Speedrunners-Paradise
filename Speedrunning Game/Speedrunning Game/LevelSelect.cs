@@ -69,7 +69,7 @@ namespace Speedrunning_Game
 			else if (selected > maxSelected)
 				selected = maxSelected;
 
-			scope = selected / 7;
+			scope = selected / 11;
 
 			if (!Keyboard.GetState().IsKeyDown(Keys.Enter))
 				pressEnter = true;
@@ -100,7 +100,7 @@ namespace Speedrunning_Game
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
 			for (int i = 0; i < levels.Count; i++)
 			{
-				sb.DrawString(Game1.mnufont, levels[i].Split('\\')[levels[i].Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 7) * 60 + 10 - scope * 480), i == selected ? Color.Yellow : Color.White);
+				sb.DrawString(Game1.mnufont, levels[i].Split('\\')[levels[i].Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
 			}
 		}
 	}
