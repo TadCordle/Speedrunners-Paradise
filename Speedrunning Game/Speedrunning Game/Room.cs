@@ -45,7 +45,7 @@ namespace Speedrunning_Game
 		public bool Finished { get; set; }
 		public bool Paused { get; set; }
 
-		private List<Vector3> tiles; // x, y, z = index
+		private HashSet<Vector3> tiles; // x, y, z = index
 		private int[] goals; // 0 = gold, 1 = silver, 2 = bronze
 		private Tileset wallSet;
 		private string levelName;
@@ -59,7 +59,7 @@ namespace Speedrunning_Game
 			rcheck = false;
 			write = true;
 			time = 0;
-			tiles = new List<Vector3>();
+			tiles = new HashSet<Vector3>();
 			Finished = false;
 			goals = new int[3];
 			walls = new List<Wall>();
@@ -103,6 +103,8 @@ namespace Speedrunning_Game
 			}
 			levelReader.Dispose();
 
+			BuildTiles();
+
 			// Generate zipline poles
 			foreach (ZipLine z in ziplines)
 				z.SetPoles(this);
@@ -143,6 +145,7 @@ namespace Speedrunning_Game
 				ParseObjectOrTile(line);
 				index++;
 			}
+			BuildTiles();
 
 			// Generate zipline poles
 			foreach (ZipLine z in ziplines)
@@ -208,8 +211,6 @@ namespace Speedrunning_Game
 			}
 			else if (line[0] == "wall")
 				walls.Add(new Wall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
-			else if (line[0] == "tile")
-				tiles.Add(new Vector3(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3])));
 			else if (line[0] == "finish")
 				Finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
 			else if (line[0] == "zipline")
@@ -220,6 +221,48 @@ namespace Speedrunning_Game
 				walls.Add(new FloatingPlatform(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 			else if (line[0] == "platformwall")
 				walls.Add(new PlatformWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
+		}
+
+		private void BuildTiles()
+		{
+			tiles.Clear();
+
+			// Fill each wall object with middle tiles
+			var realWalls = from Wall w in walls
+							where !(w is PlatformWall) && !(w is FloatingPlatform) // && !(w is DeathWall)
+							select w;
+			foreach (Wall w in realWalls)
+			{
+				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
+					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
+						tiles.Add(new Vector3(x, y, 4));
+			}
+
+			// Find all corners and sides and attach corresponding tile
+			for (int x = 0; x < roomWidth; x += 32)
+				for (int y = 0; y < roomHeight; y++)
+					if (tiles.Contains(new Vector3(x, y, 4)))
+					{
+						// Corners
+						if (!tiles.Contains(new Vector3(x - 32, y, 4)) && !tiles.Contains(new Vector3(x - 32, y - 32, 4)) && !tiles.Contains(new Vector3(x, y - 32, 4)))
+							tiles.Add(new Vector3(x - 32, y - 32, 0));
+						if (!tiles.Contains(new Vector3(x - 32, y, 4)) && !tiles.Contains(new Vector3(x - 32, y + 32, 4)) && !tiles.Contains(new Vector3(x, y + 32, 4)))
+							tiles.Add(new Vector3(x - 32, y + 32, 2));
+						if (!tiles.Contains(new Vector3(x + 32, y, 4)) && !tiles.Contains(new Vector3(x + 32, y - 32, 4)) && !tiles.Contains(new Vector3(x, y - 32, 4)))
+							tiles.Add(new Vector3(x + 32, y - 32, 6));
+						if (!tiles.Contains(new Vector3(x + 32, y, 4)) && !tiles.Contains(new Vector3(x + 32, y + 32, 4)) && !tiles.Contains(new Vector3(x, y + 32, 4)))
+							tiles.Add(new Vector3(x + 32, y + 32, 8));
+
+						// Sides
+						if (!tiles.Contains(new Vector3(x - 32, y, 4)))
+							tiles.Add(new Vector3(x - 32, y, 1));
+						if (!tiles.Contains(new Vector3(x, y - 32, 4)))
+							tiles.Add(new Vector3(x, y - 32, 3));
+						if (!tiles.Contains(new Vector3(x, y + 32, 4)))
+							tiles.Add(new Vector3(x, y + 32, 5));
+						if (!tiles.Contains(new Vector3(x + 32, y, 4)))
+							tiles.Add(new Vector3(x + 32, y, 7));
+					}
 		}
 
 		// Searches through records file and finds this level's current record, sets it to -1 if not found
@@ -380,25 +423,25 @@ namespace Speedrunning_Game
 			Color drawHue = (Paused || Finished ? new Color(100, 100, 100) : Color.White);
 
 			// Draw background
-			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, ViewBox.Width, ViewBox.Height), drawHue);
+			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, viewBox.Width, viewBox.Height), drawHue);
 
 			// Draw tiles
 			var tilesInView = from Vector3 v in tiles
-							  where v.X >= ViewBox.Left - 32 && v.X <= ViewBox.Right && v.Y >= ViewBox.Top - 32 && v.Y <= ViewBox.Bottom
+							  where v.X >= viewBox.Left - 32 && v.X <= viewBox.Right && v.Y >= viewBox.Top - 32 && v.Y <= viewBox.Bottom
 							  select v;
 			foreach (Vector3 v in tilesInView)
-				sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - ViewBox.X, (int)v.Y - ViewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
+				sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
 
 			// Draw boosters
 			var boostersInView = from Booster b in boosters
-								 where b.HitBox.Intersects(ViewBox)
+								 where b.HitBox.Intersects(viewBox)
 								 select b;
 			foreach (Booster b in boostersInView)
 				b.Draw(sb, drawHue);
 
 			// Draw moving platforms
 			var platsInView = from Wall f in walls
-							  where f is FloatingPlatform && f.Bounds.Intersects(ViewBox)
+							  where f is FloatingPlatform && f.Bounds.Intersects(viewBox)
 							  select f as FloatingPlatform;
 			foreach (FloatingPlatform f in platsInView)
 				f.Draw(sb, drawHue);
@@ -412,14 +455,7 @@ namespace Speedrunning_Game
 			// Draw ziplines
 			// TODO: Use full hitbox after poles are generated so poles don't get cut off
 			var zipsInView = from ZipLine z in ziplines
-							 where (z.pos1.X < z.pos2.X ?
-										(z.pos1.Y > z.pos2.Y ?
-											new Rectangle((int)z.pos1.X, (int)z.pos2.Y, (int)z.pos2.X, (int)z.pos1.Y).Intersects(ViewBox) :
-											new Rectangle((int)z.pos1.X, (int)z.pos1.Y, (int)z.pos2.X, (int)z.pos2.Y).Intersects(ViewBox)) :
-										(z.pos1.Y > z.pos2.Y ?
-											new Rectangle((int)z.pos2.X, (int)z.pos2.Y, (int)z.pos1.X, (int)z.pos1.Y).Intersects(ViewBox) :
-											new Rectangle((int)z.pos2.X, (int)z.pos1.Y, (int)z.pos1.X, (int)z.pos2.Y).Intersects(ViewBox))
-									)
+							 where z.DrawBox.Intersects(viewBox)
 							 select z;
 			foreach (ZipLine z in zipsInView)
 				z.Draw(sb, Color.White);

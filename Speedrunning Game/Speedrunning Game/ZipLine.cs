@@ -13,7 +13,8 @@ namespace Speedrunning_Game
 		public Vector2 pos1, pos2;
 		private Vector2 acceleration;
 		public Vector2 Acceleration { get { return acceleration; } }
-		
+		public Rectangle DrawBox { get; set; }
+
 		private Rectangle pole1, pole2;
 		private float dY, dX, slope, angle;
 		private Color lineColor;
@@ -44,6 +45,11 @@ namespace Speedrunning_Game
 		{
 			pole1 = FindPole(r, pos1);
 			pole2 = FindPole(r, pos2);
+
+			if (pole1.X < pole2.X)
+				DrawBox = new Rectangle(pole1.X, Math.Min(pole1.Y, pole2.Y), pole2.X + 16 - pole1.X, Math.Max(pole1.Bottom, pole2.Bottom) - Math.Min(pole1.Top, pole2.Top));
+			else
+				DrawBox = new Rectangle(pole2.X, Math.Min(pole1.Y, pole2.Y), pole1.X + 16 - pole2.X, Math.Max(pole1.Height, pole2.Height));
 		}
 
 		private Rectangle FindPole(Room r, Vector2 pos)

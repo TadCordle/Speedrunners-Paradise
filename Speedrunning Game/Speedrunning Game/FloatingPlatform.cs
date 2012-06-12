@@ -31,6 +31,7 @@ namespace Speedrunning_Game
 		public void Update()
 		{
 			position += velocity;
+			UpdateHitBox();
 			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				if (this == w)
@@ -39,6 +40,7 @@ namespace Speedrunning_Game
 				{
 					velocity *= -1;
 					position += velocity;
+					UpdateHitBox();
 				}
 			}
 		}
