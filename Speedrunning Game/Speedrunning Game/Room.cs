@@ -17,25 +17,40 @@ namespace Speedrunning_Game
 		public const int VIEWSIZE_X = 960;
 		public const int VIEWSIZE_Y = 720;
 
-		public Rectangle viewBox;
-		public int roomWidth, roomHeight;
-		int[] goals; // 0 = gold, 1 = silver, 2 = bronze
-		public List<Wall> walls;
-		public List<ZipLine> ziplines;
-		public List<Booster> boosters;
-		public List<FloatingPlatform> platforms;
-		public List<Vector3> tiles; // x, y, z = index
-		public Runner runner;
-		public Finish finish;
-		public Theme theme;
-		Tileset wallSet;
-		string levelName;
-		bool custom;
-		public bool finished, paused;
-		int time, record;
-		bool write;
-		bool pcheck, rcheck;
-		int goalBeaten;
+		private Rectangle viewBox;
+		public Rectangle ViewBox 
+		{ 
+			get { return viewBox; } 
+			set { viewBox = value; } 
+		}
+
+		public int roomWidth { get; set; }
+		public int roomHeight { get; set; }
+
+		private List<Wall> walls;
+		public List<Wall> Walls { get { return walls; } }
+
+		private List<ZipLine> ziplines;
+		public List<ZipLine> ZipLines { get { return ziplines; } }
+		
+		private List<Booster> boosters;
+		public List<Booster> Boosters { get { return boosters; } }
+
+		private List<FloatingPlatform> platforms;
+		public List<FloatingPlatform> Platforms { get { return platforms; } }
+		
+		public Runner Runner { get; set; }
+		public Finish Finish { get; set; }
+		public LevelTheme Theme { get; set; }
+		public bool Finished { get; set; }
+		public bool Paused { get; set; }
+
+		private List<Vector3> tiles; // x, y, z = index
+		private int[] goals; // 0 = gold, 1 = silver, 2 = bronze
+		private Tileset wallSet;
+		private string levelName;
+		private int time, record, goalBeaten;
+		private bool custom, write, pcheck, rcheck;
 
 		public Room()
 		{
@@ -45,13 +60,13 @@ namespace Speedrunning_Game
 			write = true;
 			time = 0;
 			tiles = new List<Vector3>();
-			finished = false;
+			Finished = false;
 			goals = new int[3];
 			walls = new List<Wall>();
 			ziplines = new List<ZipLine>();
 			boosters = new List<Booster>();
 			platforms = new List<FloatingPlatform>();
-			viewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
+			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 		}
 
 		public Room(string file)
@@ -67,8 +82,8 @@ namespace Speedrunning_Game
 
 			// Get level theme
 			line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
-			theme = FindTheme(line[0]);
-			wallSet = new Tileset(Game1.tileSet[(int)theme], 32, 32, 3, 3);
+			Theme = FindTheme(line[0]);
+			wallSet = new Tileset(Game1.tileSet[(int)Theme], 32, 32, 3, 3);
 			
 			// Get room dimensions
 			line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
@@ -99,7 +114,7 @@ namespace Speedrunning_Game
 		public Room(string[] lines) : this()
 		{
 			// Get level name
-			levelName = ".MAIN.Level" + (Levels.index + 1).ToString();
+			levelName = ".MAIN.Level" + (Levels.Index + 1).ToString();
 			custom = false;
 
 			SimpleAES decryptor = new SimpleAES();
@@ -107,8 +122,8 @@ namespace Speedrunning_Game
 
 			// Get level theme
 			line = decryptor.DecryptString(lines[0]).Split(' ');
-			theme = FindTheme(line[0]);
-			wallSet = new Tileset(Game1.tileSet[(int)theme], 32, 32, 3, 3);
+			Theme = FindTheme(line[0]);
+			wallSet = new Tileset(Game1.tileSet[(int)Theme], 32, 32, 3, 3);
 
 			// Get room dimensions
 			line = decryptor.DecryptString(lines[1]).Split(' ');
@@ -161,22 +176,22 @@ namespace Speedrunning_Game
 		}
 
 		// Parses a theme from a line of text
-		private Theme FindTheme(string t)
+		private LevelTheme FindTheme(string t)
 		{
 			switch (t)
 			{
 				case "Grass":
-					return Theme.Grass;
+					return LevelTheme.Grass;
 				case "Lava":
-					return Theme.Lava;
+					return LevelTheme.Lava;
 				case "Night":
-					return Theme.Night;
+					return LevelTheme.Night;
 				case "Cave":
-					return Theme.Cave;
+					return LevelTheme.Cave;
 				case "Factory":
-					return Theme.Factory;
+					return LevelTheme.Factory;
 				default:
-					return Theme.Grass;
+					return LevelTheme.Grass;
 			}
 		}
 
@@ -185,20 +200,20 @@ namespace Speedrunning_Game
 		{
 			if (line[0] == "runner")
 			{
-				runner = new Runner(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
-				viewBox.X = (int)runner.position.X - VIEWSIZE_X / 2 - 32;
-				viewBox.Y = (int)runner.position.Y - VIEWSIZE_Y / 2 - 32;
-				if (viewBox.X < 0) viewBox.X = 0;
-				if (viewBox.Y < 0) viewBox.Y = 0;
+				Runner = new Runner(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
+				viewBox.X = (int)Runner.position.X - VIEWSIZE_X / 2 - 32;
+				viewBox.Y = (int)Runner.position.Y - VIEWSIZE_Y / 2 - 32;
+				if (ViewBox.X < 0) viewBox.X = 0;
+				if (ViewBox.Y < 0) viewBox.Y = 0;
 			}
 			else if (line[0] == "wall")
 				walls.Add(new Wall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 			else if (line[0] == "tile")
 				tiles.Add(new Vector3(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3])));
 			else if (line[0] == "finish")
-				finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
+				Finish = new Finish(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
 			else if (line[0] == "zipline")
-				ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4])), theme));
+				ziplines.Add(new ZipLine(new Vector2(int.Parse(line[1]), int.Parse(line[2])), new Vector2(int.Parse(line[3]), int.Parse(line[4])), Theme));
 			else if (line[0] == "booster")
 				boosters.Add(new Booster(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 			else if (line[0] == "floatingplatform")
@@ -242,19 +257,19 @@ namespace Speedrunning_Game
 				if (custom)
 					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl");
 				else
-					Game1.currentRoom = new Room(Levels.levels[Levels.index]);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
 			}
 
 			// Pause the game when P is pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.P) && pcheck)
 			{
 				pcheck = false;
-				paused = !paused;
+				Paused = !Paused;
 			}
 
-			if (!finished)
+			if (!Finished)
 			{
-				if (!paused)
+				if (!Paused)
 				{
 					// Update booster animations
 					foreach (Booster b in boosters)
@@ -268,31 +283,31 @@ namespace Speedrunning_Game
 						f.Update();
 
 					// Update character
-					runner.Update();
+					Runner.Update();
 
 					// Move viewbox to keep up with character
-					if (runner.position.X + 32 > viewBox.X + (VIEWSIZE_X / 2 + 10))
-						viewBox.X = (int)runner.position.X + 32 - (VIEWSIZE_X / 2 + 10);
-					else if (runner.position.X + 32 < viewBox.X + (VIEWSIZE_X / 2 - 10))
-						viewBox.X = (int)runner.position.X + 32 - (VIEWSIZE_X / 2 - 10);
+					if (Runner.position.X + 32 > ViewBox.X + (VIEWSIZE_X / 2 + 10))
+						viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 + 10);
+					else if (Runner.position.X + 32 < ViewBox.X + (VIEWSIZE_X / 2 - 10))
+						viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 - 10);
 
-					if (viewBox.X < 0 || VIEWSIZE_X > roomWidth)
+					if (ViewBox.X < 0 || VIEWSIZE_X > roomWidth)
 						viewBox.X = 0;
-					else if (viewBox.Right > roomWidth)
-						viewBox.X = roomWidth - viewBox.Width;
+					else if (ViewBox.Right > roomWidth)
+						viewBox.X = roomWidth - ViewBox.Width;
 
-					if (runner.position.Y + 32 > viewBox.Y + (VIEWSIZE_Y / 2 + 10))
-						viewBox.Y = (int)runner.position.Y + 32 - (VIEWSIZE_Y / 2 + 10);
-					else if (runner.position.Y + 32 < viewBox.Y + (VIEWSIZE_Y / 2 - 10))
-						viewBox.Y = (int)runner.position.Y + 32 - (VIEWSIZE_Y / 2 - 10);
+					if (Runner.position.Y + 32 > ViewBox.Y + (VIEWSIZE_Y / 2 + 10))
+						viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 + 10);
+					else if (Runner.position.Y + 32 < ViewBox.Y + (VIEWSIZE_Y / 2 - 10))
+						viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 - 10);
 
-					if (viewBox.Bottom > roomHeight || VIEWSIZE_Y > roomHeight)
-						viewBox.Y = roomHeight - viewBox.Height;
-					else if (viewBox.Y < 0)
+					if (ViewBox.Bottom > roomHeight || VIEWSIZE_Y > roomHeight)
+						viewBox.Y = roomHeight - ViewBox.Height;
+					else if (ViewBox.Y < 0)
 						viewBox.Y = 0;
 
 					// If the runner can be moved, increment the timer
-					if (runner.controllable)
+					if (Runner.controllable)
 						time += gameTime.ElapsedGameTime.Milliseconds;
 				}
 			}
@@ -347,13 +362,12 @@ namespace Speedrunning_Game
 				{
 					if (!custom)
 					{
-						Levels.index++;
-						Game1.currentRoom = new Room(Levels.levels[Levels.index]);
+						Levels.Index++;
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
 					}
 					else
 					{
-						MainMenu back = new MainMenu();
-						back.pressEnter = false;
+						MainMenu back = new MainMenu(false);
 						Game1.currentRoom = back;
 					}
 				}
@@ -363,53 +377,54 @@ namespace Speedrunning_Game
 		public virtual void Draw(SpriteBatch sb)
 		{
 			// Used to darken drawings when game is paused or level is finished
-			Color drawHue = (paused || finished ? new Color(100, 100, 100) : Color.White);
+			Color drawHue = (Paused || Finished ? new Color(100, 100, 100) : Color.White);
 
 			// Draw background
-			sb.Draw(Game1.backgrounds[(int)theme], new Rectangle(0, 0, viewBox.Width, viewBox.Height), drawHue);
+			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, ViewBox.Width, ViewBox.Height), drawHue);
 
 			// Draw tiles
 			var tilesInView = from Vector3 v in tiles
-							  where v.X >= viewBox.Left - 32 && v.X <= viewBox.Right && v.Y >= viewBox.Top - 32 && v.Y <= viewBox.Bottom
+							  where v.X >= ViewBox.Left - 32 && v.X <= ViewBox.Right && v.Y >= ViewBox.Top - 32 && v.Y <= ViewBox.Bottom
 							  select v;
 			foreach (Vector3 v in tilesInView)
-				sb.Draw(Game1.tileSet[(int)theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
+				sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - ViewBox.X, (int)v.Y - ViewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
 
 			// Draw boosters
 			var boostersInView = from Booster b in boosters
-								 where b.hitBox.Intersects(viewBox)
+								 where b.HitBox.Intersects(ViewBox)
 								 select b;
 			foreach (Booster b in boostersInView)
 				b.Draw(sb, drawHue);
 
 			// Draw moving platforms
 			var platsInView = from Wall f in walls
-							  where f is FloatingPlatform && f.bounds.Intersects(viewBox)
+							  where f is FloatingPlatform && f.Bounds.Intersects(ViewBox)
 							  select f as FloatingPlatform;
 			foreach (FloatingPlatform f in platsInView)
 				f.Draw(sb, drawHue);
 
 			// Draw runner
-			if (runner != null) runner.Draw(sb, drawHue);
+			if (Runner != null) Runner.Draw(sb, drawHue);
 			
 			// Draw finish platform
-			if (finish != null) finish.Draw(sb, drawHue);
+			if (Finish != null) Finish.Draw(sb, drawHue);
 
 			// Draw ziplines
+			// TODO: Use full hitbox after poles are generated so poles don't get cut off
 			var zipsInView = from ZipLine z in ziplines
 							 where (z.pos1.X < z.pos2.X ?
 										(z.pos1.Y > z.pos2.Y ?
-											new Rectangle((int)z.pos1.X, (int)z.pos2.Y, (int)z.pos2.X, (int)z.pos1.Y).Intersects(viewBox) :
-											new Rectangle((int)z.pos1.X, (int)z.pos1.Y, (int)z.pos2.X, (int)z.pos2.Y).Intersects(viewBox)) :
+											new Rectangle((int)z.pos1.X, (int)z.pos2.Y, (int)z.pos2.X, (int)z.pos1.Y).Intersects(ViewBox) :
+											new Rectangle((int)z.pos1.X, (int)z.pos1.Y, (int)z.pos2.X, (int)z.pos2.Y).Intersects(ViewBox)) :
 										(z.pos1.Y > z.pos2.Y ?
-											new Rectangle((int)z.pos2.X, (int)z.pos2.Y, (int)z.pos1.X, (int)z.pos1.Y).Intersects(viewBox) :
-											new Rectangle((int)z.pos2.X, (int)z.pos1.Y, (int)z.pos1.X, (int)z.pos2.Y).Intersects(viewBox))
+											new Rectangle((int)z.pos2.X, (int)z.pos2.Y, (int)z.pos1.X, (int)z.pos1.Y).Intersects(ViewBox) :
+											new Rectangle((int)z.pos2.X, (int)z.pos1.Y, (int)z.pos1.X, (int)z.pos2.Y).Intersects(ViewBox))
 									)
 							 select z;
 			foreach (ZipLine z in zipsInView)
 				z.Draw(sb, Color.White);
 
-			if (finished)
+			if (Finished)
 			{
 				// Draw finished level screen
 
@@ -442,7 +457,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 660), Color.White);
 				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
 			}
-			else if (paused)
+			else if (Paused)
 			{
 				// Draw pause menu
 
@@ -483,10 +498,11 @@ namespace Speedrunning_Game
 		// Returns millisecond count in "mm:ss.sss" format
 		private string TimeToString(int time)
 		{
-			return ((int)(time / 60000) >= 10 ? "" : "0") + ((int)(time / 60000)).ToString() + ":" + (((time - (int)(time / 60000)) % 60000 / 1000.0) >= 10 ? "" : "0") + (((time - (int)(time / 60000)) % 60000 / 1000.0f)).ToString();
+			TimeSpan t = TimeSpan.FromMilliseconds(time);
+			return String.Format("{0:00}:{1:00}.{2:000}", (int)t.TotalMinutes, t.Seconds, t.Milliseconds % 1000);
 		}
 
-		public enum Theme
+		public enum LevelTheme
 		{
 			Grass = 0,
 			Lava = 1,

@@ -13,18 +13,21 @@ namespace Speedrunning_Game
 {
 	public class Runner
 	{
-		AnimatedTexture normal, running, midair, sliding, ziplining; // Animations
-		AnimatedTexture current; // Current animation to be drawn
 		public Vector2 position, velocity, acceleration; // Kinematics
-		Vector2 groundFriction;
-		Rectangle hitBox, groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Hit boxes
-		float imageAngle; // The angle at which to draw the image. Might need this later
-		bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
-			jumppresscheck, wallpresscheck; // A bunch of flags
 		public bool controllable; // Only reads key feedback when true
-		ZipLine zippingLine; // Current zipline being used
-		FloatingPlatform platform; // Current platform standing on
-		int health, healthTracker; // Health variable and timer used for health regeneration
+		public int health; // Tells you when to die
+
+		private AnimatedTexture normal, running, midair, sliding, ziplining; // Animations
+		private AnimatedTexture current; // Current animation to be drawn
+		private Vector2 groundFriction;
+		private Rectangle hitBox, groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Hit boxes
+		private float imageAngle; // The angle at which to draw the image. Might need this later
+		private bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
+			jumppresscheck, wallpresscheck; // A bunch of flags
+		private ZipLine zippingLine; // Current zipline being used
+		private FloatingPlatform platform; // Current platform standing on
+		private int healthTracker; // Health variable and timer used for health regeneration
+		
 		const int HEALTHINTERVAL = 2000; // Healt regeneration timer limit
 
 		public Runner(Vector2 position)
@@ -120,16 +123,16 @@ namespace Speedrunning_Game
 			bool isOnPlatform = false;
 
 			// Iterate through walls
-			foreach (Wall w in Game1.currentRoom.walls)
+			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				// Make sure wall effects player
-				if (w is PlatformWall || !w.bounds.Intersects(Game1.currentRoom.viewBox))
+				if (w is PlatformWall || !w.Bounds.Intersects(Game1.currentRoom.ViewBox))
 					continue;
 
 				// If you're standing on it, apply ground friction and say that you're standing
 				if (isSliding)
 				{
-					if (w.bounds.Intersects(groundHitBox))
+					if (w.Bounds.Intersects(groundHitBox))
 					{
 						isZipping = false;
 						isTouchingGround = true;
@@ -140,12 +143,12 @@ namespace Speedrunning_Game
 							isOnPlatform = true;
 						}
 					}
-					else if (w.bounds.Intersects(leftWallBox))
+					else if (w.Bounds.Intersects(leftWallBox))
 					{
 						canWallToRight = true;
 						isTouchingWall = true;
 					}
-					else if (w.bounds.Intersects(rightWallBox))
+					else if (w.Bounds.Intersects(rightWallBox))
 					{
 						canWallToLeft = true;
 						isTouchingWall = true;
@@ -153,14 +156,14 @@ namespace Speedrunning_Game
 				}
 
 				// Apply other wall collisions
-				if (this.hitBox.Intersects(w.bounds) && !(w is PlatformWall))
+				if (this.hitBox.Intersects(w.Bounds) && !(w is PlatformWall))
 				{
 					//--------------------------
 					// REPLACE THIS WITH SAT
 					//--------------------------
 					Vector2 unit = velocity;
 					unit.Normalize();
-					while (this.hitBox.Intersects(w.bounds))
+					while (this.hitBox.Intersects(w.Bounds))
 					{
 						this.position -= unit;
 						UpdateHitBox();
@@ -170,30 +173,30 @@ namespace Speedrunning_Game
 					//--------------------------
 
 					// Check for position of wall relative to character and collide accordingly
-					if (this.hitBox.Top < w.bounds.Bottom && this.hitBox.Bottom > w.bounds.Top)
+					if (this.hitBox.Top < w.Bounds.Bottom && this.hitBox.Bottom > w.Bounds.Top)
 					{
-						if (this.hitBox.Right <= w.bounds.Left)
+						if (this.hitBox.Right <= w.Bounds.Left)
 						{
-							this.position.X = w.bounds.Left - 49;
+							this.position.X = w.Bounds.Left - 49;
 							velocity.X = 0;
 						}
 						else
 						{
-							this.position.X = w.bounds.Right - 15;
+							this.position.X = w.Bounds.Right - 15;
 							velocity.X = 0;
 						}
 					}
 
-					if (this.hitBox.Left < w.bounds.Right && this.hitBox.Right > w.bounds.Left)
+					if (this.hitBox.Left < w.Bounds.Right && this.hitBox.Right > w.Bounds.Left)
 					{
-						if (this.hitBox.Top >= w.bounds.Bottom)
+						if (this.hitBox.Top >= w.Bounds.Bottom)
 						{
-							this.position.Y = w.bounds.Bottom;
+							this.position.Y = w.Bounds.Bottom;
 							velocity.Y = 0;
 						}
 						else
 						{
-							this.position.Y = w.bounds.Top - 64;
+							this.position.Y = w.Bounds.Top - 64;
 							velocity.Y = 0;
 						}
 					}
@@ -203,7 +206,7 @@ namespace Speedrunning_Game
 				// If you're standing on it, apply ground friction and say that you're standing
 				if (!isSliding)
 				{
-					if (w.bounds.Intersects(groundHitBox))
+					if (w.Bounds.Intersects(groundHitBox))
 					{
 						isZipping = false;
 						isTouchingGround = true;
@@ -215,12 +218,12 @@ namespace Speedrunning_Game
 						}
 						groundFriction.X = Math.Sign(velocity.X) * -1 * 0.5f;
 					}
-					else if (w.bounds.Intersects(leftWallBox))
+					else if (w.Bounds.Intersects(leftWallBox))
 					{
 						canWallToRight = true;
 						isTouchingWall = true;
 					}
-					else if (w.bounds.Intersects(rightWallBox))
+					else if (w.Bounds.Intersects(rightWallBox))
 					{
 						canWallToLeft = true;
 						isTouchingWall = true;
@@ -236,14 +239,14 @@ namespace Speedrunning_Game
 			}
 
 			// Apply booster acceleration
-			foreach (Booster b in Game1.currentRoom.boosters)
-				if (b.hitBox.Intersects(this.hitBox))
-					velocity += b.acceleration;
+			foreach (Booster b in Game1.currentRoom.Boosters)
+				if (b.HitBox.Intersects(this.hitBox))
+					velocity += b.Acceleration;
 
 			// Check if level finish reached
-			if (Game1.currentRoom.finish != null)
-				if (this.hitBox.Intersects(Game1.currentRoom.finish.hitBox))
-					Game1.currentRoom.finished = true;
+			if (Game1.currentRoom.Finish != null)
+				if (this.hitBox.Intersects(Game1.currentRoom.Finish.HitBox))
+					Game1.currentRoom.Finished = true;
 	
 			// Remove ground friction if midair
 			if (!isTouchingGround)
@@ -294,7 +297,7 @@ namespace Speedrunning_Game
 			{
 				current = ziplining;
 				position.Y = zippingLine.GetY(ziplineBox.Center.X);
-				acceleration = zippingLine.acceleration * 3;
+				acceleration = zippingLine.Acceleration * 3;
 				velocity = zippingLine.GetNewVelocity(velocity);
 				movedLeft = velocity.X < 0;
 			}
@@ -303,7 +306,7 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl))
 			{
 				bool zipping = false;
-				foreach (ZipLine z in Game1.currentRoom.ziplines)
+				foreach (ZipLine z in Game1.currentRoom.ZipLines)
 				{
 					if ((z.pos1.X < z.pos2.X ? (ziplineBox.Left >= z.pos1.X && ziplineBox.X <= z.pos2.X) : (ziplineBox.Left <= z.pos1.X && ziplineBox.X >= z.pos2.X))
 							&& ziplineBox.Contains(ziplineBox.Center.X, (int)z.GetY(ziplineBox.Center.X)))
@@ -315,7 +318,7 @@ namespace Speedrunning_Game
 							zippingLine = z;
 							current = ziplining;
 							position.Y = z.GetY(ziplineBox.Center.X);
-							acceleration = z.acceleration * 3;
+							acceleration = z.Acceleration * 3;
 							velocity = z.GetNewVelocity(velocity);
 							movedLeft = velocity.X < 0;
 						}
@@ -346,9 +349,9 @@ namespace Speedrunning_Game
 			bool flag = true;
 			if (isSliding || staySliding)
 			{
-				foreach (Wall w in Game1.currentRoom.walls)
+				foreach (Wall w in Game1.currentRoom.Walls)
 				{
-					if (w.bounds.Left < hitBox.Right && w.bounds.Right > hitBox.Left && w.bounds.Bottom + 32 > hitBox.Top && w.bounds.Top < hitBox.Top)
+					if (w.Bounds.Left < hitBox.Right && w.Bounds.Right > hitBox.Left && w.Bounds.Bottom + 32 > hitBox.Top && w.Bounds.Top < hitBox.Top)
 					{
 						staySliding = true;
 						flag = false;
@@ -410,7 +413,7 @@ namespace Speedrunning_Game
 			int midairFrame = (int)velocity.Y * 2 + 3;
 			if (midairFrame < 0) midairFrame = 0;
 			if (midairFrame > 8) midairFrame = 8;
-			midair.frame = midairFrame;
+			midair.Frame = midairFrame;
 		}
 		private void UpdateHitBox()
 		{
@@ -456,7 +459,7 @@ namespace Speedrunning_Game
 //			sb.Draw(Game1.wallTex, ziplineBox, Color.Lime);
 
 			// Draw character
-			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
+			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}
 }

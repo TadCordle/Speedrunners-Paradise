@@ -10,20 +10,25 @@ namespace Game_Maker_Library
 {
 	public class AnimatedTexture
 	{
-		Texture2D[] images;
-		bool playOnce;
-		public bool isPlaying;
-		int timePerFrame, currentTime;
-		public int frame;
+		public bool IsPlaying { get; set; }
+		public int Frame { get; set; }
+		public int Length
+		{
+			get { return images.Length; }
+		}
+
+		private Texture2D[] images;
+		private bool playOnce;
+		private int timePerFrame, currentTime;
 
 		public AnimatedTexture(Texture2D[] images, int timePerFrame, bool isPlaying, bool playOnce)
 		{
-			this.isPlaying = isPlaying;
+			this.IsPlaying = isPlaying;
 			this.images = images;
 			this.timePerFrame = timePerFrame;
 			this.playOnce = playOnce;
 			currentTime = 0;
-			frame = 0;
+			Frame = 0;
 		}
 
 		public AnimatedTexture(Texture2D texture)
@@ -31,30 +36,30 @@ namespace Game_Maker_Library
 			this.images = new Texture2D[1];
 			this.images[0] = texture;
 			this.playOnce = true;
-			this.isPlaying = false;
+			this.IsPlaying = false;
 			this.timePerFrame = 1;
 			currentTime = 0;
-			frame = 0;
+			Frame = 0;
 		}
 
 		// Returns whether or not to call animation end event
 		public bool Update()
 		{
-			if (isPlaying)
+			if (IsPlaying)
 			{
 				currentTime++;
 				if (currentTime > timePerFrame)
 				{
 					currentTime = 0;
-					frame++;
-					if (frame >= images.Length)
+					Frame++;
+					if (Frame >= images.Length)
 					{
 						if (playOnce)
 						{
-							isPlaying = false;
+							IsPlaying = false;
 							return true;
 						}
-						frame = 0;
+						Frame = 0;
 					}
 				}
 			}
@@ -69,12 +74,12 @@ namespace Game_Maker_Library
 
 		public void Draw(SpriteBatch sb, Vector2 position, Color c)
 		{
-			sb.Draw(images[frame], position, c);
+			sb.Draw(images[Frame], position, c);
 		}
 
 		public void Draw(SpriteBatch sb, Vector2 position, Color c, float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float layerDepth)
 		{
-			sb.Draw(images[frame], position, null, c, rotation, origin, scale, effects, layerDepth);
+			sb.Draw(images[Frame], position, null, c, rotation, origin, scale, effects, layerDepth);
 		}
 	}
 }

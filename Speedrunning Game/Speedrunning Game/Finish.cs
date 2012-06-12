@@ -10,8 +10,10 @@ namespace Speedrunning_Game
 {
 	public class Finish
 	{
-		Texture2D finishTex;
-		public Rectangle hitBox;
+		private Rectangle hitBox;
+		public Rectangle HitBox { get { return hitBox; } }
+		
+		private Texture2D finishTex;
 
 		public Finish(Vector2 position)
 		{
@@ -21,7 +23,7 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(finishTex, new Rectangle(hitBox.X - Game1.currentRoom.viewBox.X, hitBox.Y - Game1.currentRoom.viewBox.Y, hitBox.Width, hitBox.Height), c);
+			sb.Draw(finishTex, new Rectangle(HitBox.X - Game1.currentRoom.ViewBox.X, HitBox.Y - Game1.currentRoom.ViewBox.Y, HitBox.Width, HitBox.Height), c);
 		}
 	}
 }

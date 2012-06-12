@@ -31,14 +31,13 @@ namespace Speedrunning_Game
 		public static Texture2D[] backgrounds;
 		public static bool exit = false;
 
-		bool pressEscape = false;
+		private bool pressEscape = false;
 
 		public Game1()
 		{
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 720;
 			graphics.PreferredBackBufferWidth = 960;
-//			graphics.IsFullScreen = true;
 			Content.RootDirectory = "Content";
 			if (!File.Exists("Content\\records.txt"))
 			{
@@ -105,7 +104,7 @@ namespace Speedrunning_Game
 			finishTex = Content.Load<Texture2D>("finish");
 			titlefont = Content.Load<SpriteFont>("titlefont");
 			mnufont = Content.Load<SpriteFont>("mnufont");
-			currentRoom = new MainMenu();
+			currentRoom = new MainMenu(true);
 		}
 
 		protected override void UnloadContent()
@@ -123,7 +122,7 @@ namespace Speedrunning_Game
 				if (currentRoom is MainMenu)
 					this.Exit();
 				else
-					currentRoom = new MainMenu();
+					currentRoom = new MainMenu(true);
 			}
 
 			currentRoom.Update(gameTime);
@@ -132,7 +131,7 @@ namespace Speedrunning_Game
 
 		protected override void Draw(GameTime gameTime)
 		{
-			GraphicsDevice.Clear(Color.CornflowerBlue);
+			GraphicsDevice.Clear(Color.Black);
 
 			spriteBatch.Begin();
 			currentRoom.Draw(spriteBatch);

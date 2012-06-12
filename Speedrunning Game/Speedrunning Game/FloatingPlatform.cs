@@ -13,14 +13,14 @@ namespace Speedrunning_Game
 	public class FloatingPlatform : Wall
 	{
 		public Vector2 velocity, position;
-		Texture2D texture;
+		
+		private Texture2D texture;
 
 		public FloatingPlatform(Vector2 position, float angle, float speed) : base(new Rectangle((int)position.X, (int)position.Y, 96, 32))
 		{
 			this.position = position;
 			this.velocity = new Vector2(speed * (float)Math.Cos(angle), speed * (float)Math.Sin(angle));
 			texture = Game1.platformTex;
-			UpdateHitBox();
 		}
 		private void UpdateHitBox()
 		{
@@ -31,12 +31,11 @@ namespace Speedrunning_Game
 		public void Update()
 		{
 			position += velocity;
-			UpdateHitBox();
-			foreach (Wall w in Game1.currentRoom.walls)
+			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				if (this == w)
 					continue;
-				if (w.bounds.Intersects(bounds))
+				if (w.Bounds.Intersects(bounds))
 				{
 					velocity *= -1;
 					position += velocity;
@@ -46,7 +45,7 @@ namespace Speedrunning_Game
 
 		public override void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(texture, new Vector2(position.X - Game1.currentRoom.viewBox.X, position.Y - Game1.currentRoom.viewBox.Y), c);
+			sb.Draw(texture, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), c);
 		}
 	}
 }

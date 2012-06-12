@@ -11,14 +11,21 @@ namespace Speedrunning_Game
 {
 	class MainMenu : Room
 	{
-		int selected;
-		bool pressDown = true;
-		bool pressUp = true;
-		public bool pressEnter = true;
+		private int selected;
+		private bool pressDown;
+		private bool pressUp;
+		private bool pressEnter;
+
 		const int MAX_SELECTED = 3;
 
-		public MainMenu()
+		public MainMenu(bool pressEnter)
 		{
+			this.pressEnter = pressEnter;
+			this.pressDown = true;
+			this.pressUp = true;
+			roomHeight = 720;
+			roomWidth = 960;
+			Theme = LevelTheme.Grass;
 			selected = 0;
 		}
 
@@ -65,6 +72,8 @@ namespace Speedrunning_Game
 
 		public override void Draw(SpriteBatch sb)
 		{
+			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, roomWidth, roomHeight), Color.White);
+
 			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(182, 100), Color.White);
 			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(184, 102), Color.Black);
 

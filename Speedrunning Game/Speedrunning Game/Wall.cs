@@ -10,8 +10,10 @@ namespace Speedrunning_Game
 {
 	public class Wall
 	{
-		public Rectangle bounds;
-		public Texture2D tex;
+		protected Rectangle bounds;
+		public Rectangle Bounds { get { return bounds; } }
+		
+		private Texture2D tex;
 
 		public Wall(Rectangle bounds)
 		{
@@ -26,7 +28,7 @@ namespace Speedrunning_Game
 
 		public virtual void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(tex, new Rectangle(bounds.X - Game1.currentRoom.viewBox.X, bounds.Y - Game1.currentRoom.viewBox.Y, bounds.Width, bounds.Height), c);
+			sb.Draw(tex, new Rectangle(bounds.X - Game1.currentRoom.ViewBox.X, bounds.Y - Game1.currentRoom.ViewBox.Y, bounds.Width, bounds.Height), c);
 		}
 	}
 }

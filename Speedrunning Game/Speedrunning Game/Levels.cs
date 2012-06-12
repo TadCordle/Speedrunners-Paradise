@@ -7,7 +7,7 @@ namespace Speedrunning_Game
 {
 	class Levels
 	{
-		public static int index = 0;
+		public static int Index = 0;
 
 		public static string[][] levels = { new string[] 
 		{

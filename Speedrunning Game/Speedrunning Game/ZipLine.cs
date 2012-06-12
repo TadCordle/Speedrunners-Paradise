@@ -10,14 +10,17 @@ namespace Speedrunning_Game
 {
 	public class ZipLine
 	{
-		public Vector2 pos1, pos2, acceleration;
-		Rectangle pole1, pole2;
-		float dY, dX, slope, angle;
-		Color lineColor;
+		public Vector2 pos1, pos2;
+		private Vector2 acceleration;
+		public Vector2 Acceleration { get { return acceleration; } }
+		
+		private Rectangle pole1, pole2;
+		private float dY, dX, slope, angle;
+		private Color lineColor;
 
 		Texture2D poleTex, lineTex;
 
-		public ZipLine(Vector2 pos1, Vector2 pos2, Room.Theme theme)
+		public ZipLine(Vector2 pos1, Vector2 pos2, Room.LevelTheme theme)
 		{
 			this.pos1 = pos1;
 			this.pos2 = pos2;
@@ -29,7 +32,7 @@ namespace Speedrunning_Game
 			poleTex = Game1.poleTex;
 			lineTex = Game1.lineTex;
 
-			if (theme == Room.Theme.Grass || theme == Room.Theme.Factory)
+			if (theme == Room.LevelTheme.Grass || theme == Room.LevelTheme.Factory)
 				lineColor = Color.Black;
 			else
 				lineColor = Color.White;
@@ -55,14 +58,14 @@ namespace Speedrunning_Game
 			bool hit = false;
 			while (!hit && (above > 0 || below < r.roomHeight))
 			{
-				foreach (Wall w in r.walls)
+				foreach (Wall w in r.Walls)
 				{
-					if (w.bounds.Contains((int)pos.X + 1, above))
+					if (w.Bounds.Contains((int)pos.X + 1, above))
 					{
 						final = new Rectangle((int)pos.X, above + 16, 16, (int)pos.Y - above + 16);
 						hit = true;
 					}
-					else if (w.bounds.Contains((int)pos.X + 1, below))
+					else if (w.Bounds.Contains((int)pos.X + 1, below))
 					{
 						final = new Rectangle((int)pos.X, (int)pos.Y, 16, below - (int)pos.Y - 16);
 						hit = true;
@@ -92,9 +95,9 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.viewBox.X, pole1.Y - Game1.currentRoom.viewBox.Y, pole1.Width, pole1.Height), c);
-			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.viewBox.X, pole2.Y - Game1.currentRoom.viewBox.Y, pole2.Width, pole2.Height), c);
-			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.viewBox.X + 8, (int)pos1.Y - Game1.currentRoom.viewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
+			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.ViewBox.X, pole1.Y - Game1.currentRoom.ViewBox.Y, pole1.Width, pole1.Height), c);
+			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.ViewBox.X, pole2.Y - Game1.currentRoom.ViewBox.Y, pole2.Width, pole2.Height), c);
+			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.ViewBox.X + 8, (int)pos1.Y - Game1.currentRoom.ViewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
 		}
 	}
 }

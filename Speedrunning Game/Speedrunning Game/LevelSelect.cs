@@ -12,16 +12,25 @@ namespace Speedrunning_Game
 {
 	class LevelSelect : Room
 	{
-		int selected;
-		bool pressDown = true;
-		bool pressUp = true;
-		bool pressEnter = false;
-		int maxSelected;
-		int scope;
-		List<string> levels;
+		private int selected;
+		private bool pressDown;
+		private bool pressUp;
+		private bool pressEnter;
+		private int maxSelected;
+		private int scope;
+		private List<string> levels;
+		private Texture2D background;
 
 		public LevelSelect()
 		{
+			pressDown = true;
+			pressUp = true;
+			pressEnter = false;
+
+			background = Game1.backgrounds[0];
+			roomHeight = 720;
+			roomWidth = 960;
+
 			levels = new List<string>();
 			selected = 0;
 			scope = 0;
@@ -64,16 +73,21 @@ namespace Speedrunning_Game
 				selected--;
 			}
 
+			// Bound selections
 			if (selected < 0)
 				selected = 0;
 			else if (selected > maxSelected)
 				selected = maxSelected;
 
+			// Set page and change background according to page
 			scope = selected / 11;
+			background = Game1.backgrounds[scope % 5];
 
+			// Reset enter key
 			if (!Keyboard.GetState().IsKeyDown(Keys.Enter))
 				pressEnter = true;
 
+			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
 				if (levels[selected].Substring(0, 6) == ".MAIN.")
@@ -86,8 +100,8 @@ namespace Speedrunning_Game
 						newRet = ret;
 						index--;
 					}
-					Levels.index = newRet - 1;
-					Game1.currentRoom = new Room(Levels.levels[Levels.index]);
+					Levels.Index = newRet - 1;
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
 				}
 				else
 					Game1.currentRoom = new Room(levels[selected]);
@@ -96,12 +110,12 @@ namespace Speedrunning_Game
 
 		public override void Draw(SpriteBatch sb)
 		{
+			sb.Draw(background, new Rectangle(0, 0, roomWidth, roomHeight), Color.White);
+
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(264, 10), Color.White);
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
 			for (int i = 0; i < levels.Count; i++)
-			{
 				sb.DrawString(Game1.mnufont, levels[i].Split('\\')[levels[i].Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
-			}
 		}
 	}
 }
