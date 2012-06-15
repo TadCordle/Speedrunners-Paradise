@@ -9,6 +9,19 @@ namespace Speedrunning_Game
 	{
 		public static int Index = 0;
 
+		/*
+		 * IDEAS
+		 * 
+		 * - Training level
+		 * - Fragmented level, lots of blank space, few platforms
+		 * - Level with only floating platforms
+		 * - Kill yourself to get gold time (jump through fence land on finish)
+		 * - Level that plays itself
+		 * - 
+		 * 
+		 */
+
+
 		public static string[][] levels = { new string[] 
 		{
 			"224074001005166162108076242175039144012042219090",
