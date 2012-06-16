@@ -1,0 +1,1 @@
+Save levels in bin/debug/rooms folder. Don't use spaces in the save file name, because I don't remember if that works yet. Otherwise the level editor is pretty straightforward to use.
