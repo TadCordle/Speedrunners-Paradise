@@ -297,7 +297,7 @@ namespace Speedrunning_Game
 			{
 				current = ziplining;
 				position.Y = zippingLine.GetY(ziplineBox.Center.X);
-				acceleration = zippingLine.Acceleration * 3;
+				acceleration = zippingLine.Acceleration * (Math.Abs(zippingLine.Slope) > 1.5f ? 1 : 3	);
 				velocity = zippingLine.GetNewVelocity(velocity);
 				movedLeft = velocity.X < 0;
 			}

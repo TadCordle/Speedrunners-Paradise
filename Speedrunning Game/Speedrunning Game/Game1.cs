@@ -25,8 +25,9 @@ namespace Speedrunning_Game
 		public static Texture2D poleTex, lineTex;
 		public static Texture2D medalTex;
 		public static Texture2D platformTex;
+		public static Texture2D messageTex;
 		public static AnimatedTexture boosterTex;
-		public static SpriteFont titlefont, mnufont;
+		public static SpriteFont titlefont, mnufont, msgfont;
 		public static Texture2D[] tileSet;
 		public static Texture2D[] backgrounds;
 		public static bool exit = false;
@@ -85,6 +86,8 @@ namespace Speedrunning_Game
 
 			platformTex = Content.Load<Texture2D>("floating platform");
 
+			messageTex = Content.Load<Texture2D>("message");
+
 			tileSet = new Texture2D[5];
 			backgrounds = new Texture2D[5];
 			tileSet[0] = Content.Load<Texture2D>("tiles/tilegrass");
@@ -101,8 +104,10 @@ namespace Speedrunning_Game
 			medalTex = Content.Load<Texture2D>("medal");
 
 			wallTex = Content.Load<Texture2D>("pixel");
+
 			finishTex = Content.Load<Texture2D>("finish");
 			titlefont = Content.Load<SpriteFont>("titlefont");
+			msgfont = Content.Load<SpriteFont>("msgfont");
 			mnufont = Content.Load<SpriteFont>("mnufont");
 			currentRoom = new MainMenu(true);
 		}

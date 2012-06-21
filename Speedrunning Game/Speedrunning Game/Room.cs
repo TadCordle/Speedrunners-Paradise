@@ -38,6 +38,9 @@ namespace Speedrunning_Game
 
 		private List<FloatingPlatform> platforms;
 		public List<FloatingPlatform> Platforms { get { return platforms; } }
+
+		private List<Message> messages;
+		public List<Message> Messages { get { return messages; } }
 		
 		public Runner Runner { get; set; }
 		public Finish Finish { get; set; }
@@ -66,6 +69,7 @@ namespace Speedrunning_Game
 			ziplines = new List<ZipLine>();
 			boosters = new List<Booster>();
 			platforms = new List<FloatingPlatform>();
+			messages = new List<Message>();
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 		}
 
@@ -221,6 +225,8 @@ namespace Speedrunning_Game
 				walls.Add(new FloatingPlatform(new Vector2(int.Parse(line[1]), int.Parse(line[2])), float.Parse(line[3]), float.Parse(line[4])));
 			else if (line[0] == "platformwall")
 				walls.Add(new PlatformWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
+			else if (line[0] == "message")
+				messages.Add(new Message(new Vector2(int.Parse(line[1]), int.Parse(line[2])), line[3].Replace('_', ' ').Replace("\\n", "\n")));
 		}
 
 		private void BuildTiles()
@@ -432,6 +438,13 @@ namespace Speedrunning_Game
 			foreach (Vector3 v in tilesInView)
 				sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
 
+			// Draw messages
+			var msgInView = from Message m in messages
+							where m.DrawBox.Intersects(viewBox)
+							select m;
+			foreach (Message m in msgInView)
+				m.Draw(sb, drawHue);
+
 			// Draw boosters
 			var boostersInView = from Booster b in boosters
 								 where b.HitBox.Intersects(viewBox)
@@ -453,12 +466,11 @@ namespace Speedrunning_Game
 			if (Finish != null) Finish.Draw(sb, drawHue);
 
 			// Draw ziplines
-			// TODO: Use full hitbox after poles are generated so poles don't get cut off
 			var zipsInView = from ZipLine z in ziplines
 							 where z.DrawBox.Intersects(viewBox)
 							 select z;
 			foreach (ZipLine z in zipsInView)
-				z.Draw(sb, Color.White);
+				z.Draw(sb, drawHue);
 
 			if (Finished)
 			{

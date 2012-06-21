@@ -68,3 +68,5 @@ Content\tiles\tilelava.xnb
 Content\tiles\tilenight.xnb
 Content\tiles\tilecave.xnb
 Content\tiles\tilefactory.xnb
+Content\message.xnb
+Content\msgfont.xnb

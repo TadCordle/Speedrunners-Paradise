@@ -112,6 +112,11 @@ namespace Speedrunning_Game
 		{
 			sb.Draw(background, new Rectangle(0, 0, roomWidth, roomHeight), Color.White);
 
+			if (scope > 0)
+				sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
+			else if (scope < maxSelected / 11 && maxSelected >= 11)
+				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
+
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(264, 10), Color.White);
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
 			for (int i = 0; i < levels.Count; i++)

@@ -14,6 +14,7 @@ namespace Speedrunning_Game
 		private Vector2 acceleration;
 		public Vector2 Acceleration { get { return acceleration; } }
 		public Rectangle DrawBox { get; set; }
+		public float Slope { get { return slope; } }
 
 		private Rectangle pole1, pole2;
 		private float dY, dX, slope, angle;

@@ -631,6 +631,24 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilefactory.xnb</Output>
       <Time>2012-06-10T17:51:01.658751-04:00</Time>
     </Item>
+    <Item>
+      <Source>message.png</Source>
+      <Name>message</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\message.xnb</Output>
+      <Time>2012-06-21T14:24:34.4389723-04:00</Time>
+    </Item>
+    <Item>
+      <Source>msgfont.spritefont</Source>
+      <Name>msgfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\msgfont.xnb</Output>
+      <Time>2012-06-21T14:23:39.6211026-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
