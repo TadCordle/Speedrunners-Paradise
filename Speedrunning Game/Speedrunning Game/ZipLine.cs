@@ -96,7 +96,7 @@ namespace Speedrunning_Game
 		public Vector2 GetNewVelocity(Vector2 velocity)
 		{
 			float newAngle = (float)Math.Atan2(velocity.Y, velocity.X) - angle;
-			float newM = velocity.Length() * (float)Math.Cos(newAngle);
+			float newM = velocity.Length() *(float)Math.Cos(newAngle);
 			return new Vector2(newM * (float)Math.Cos(angle), newM * (float)Math.Sin(angle));
 		}
 

@@ -23,16 +23,16 @@ namespace Speedrunning_Game
 		private Rectangle hitBox, groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Hit boxes
 		private float imageAngle; // The angle at which to draw the image. Might need this later
 		private bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
-			jumppresscheck, wallpresscheck; // A bunch of flags
+			jumppresscheck, wallpresscheck; // A bunch of ballers
 		private ZipLine zippingLine; // Current zipline being used
 		private FloatingPlatform platform; // Current platform standing on
 		private int healthTracker; // Health variable and timer used for health regeneration
 		
-		const int HEALTHINTERVAL = 2000; // Healt regeneration timer limit
+		const int HEALTHINTERVAL = 2000; // Health regeneration timer limit
 
 		public Runner(Vector2 position)
 		{
-			// Set up animations
+			// Set up animations, like a baller
 			normal = Game1.guyNormal;
 			running = Game1.guyRunning;
 			midair = Game1.guyMidair;
@@ -49,7 +49,7 @@ namespace Speedrunning_Game
 			isSliding = false;
 			isZipping = false;
 			staySliding = false;
-			controllable = true; // CHANGE THIS WHEN COUNT DOWN IS IMPLEMENTED
+			controllable = true; // CHANGE THIS WHEN (if) COUNT DOWN IS IMPLEMENTED
 			jumppresscheck = false;
 			wallpresscheck = false;
 
@@ -158,6 +158,66 @@ namespace Speedrunning_Game
 				// Apply other wall collisions
 				if (this.hitBox.Intersects(w.Bounds) && !(w is PlatformWall))
 				{
+					List<Vector2> resolutions = new List<Vector2>();
+					// resolve y
+					if (this.hitBox.Bottom <= w.Bounds.Top)
+					{
+					}
+					else if (this.hitBox.Top >= w.Bounds.Bottom)
+					{
+					}
+					else
+					{
+						if (this.hitBox.Top < w.Bounds.Bottom)
+						{
+							resolutions.Add(new Vector2(0, w.Bounds.Bottom - this.hitBox.Top));
+						}
+						if (this.hitBox.Bottom > w.Bounds.Top)
+						{
+							resolutions.Add(new Vector2(0, w.Bounds.Top - this.hitBox.Bottom));
+						}
+					}
+					// resolve x
+					if (this.hitBox.Right <= w.Bounds.Left)
+					{
+					}
+					else if (this.hitBox.Left >= w.Bounds.Right)
+					{
+					}
+					else
+					{
+						if (this.hitBox.Right > w.Bounds.Left)
+						{
+							resolutions.Add(new Vector2(w.Bounds.Left - this.hitBox.Right, 0));
+						}
+						if (this.hitBox.Left < w.Bounds.Right)
+						{
+							resolutions.Add(new Vector2(w.Bounds.Right - this.hitBox.Left, 0));
+						}
+					}
+					while (resolutions.Count > 1)
+					{
+						if (resolutions[0].Length() > resolutions[1].Length())
+						{
+							resolutions.RemoveAt(0);
+						}
+						else
+						{
+							resolutions.RemoveAt(1);
+						}
+					}
+					Vector2 resV = resolutions[0];
+					if (resV.X != 0)
+					{
+						this.velocity.X = 0;
+					}
+					else
+					{
+						this.velocity.Y = 0;
+					}
+					this.position += resV;
+					UpdateHitBox();
+					/*
 					//--------------------------
 					// REPLACE THIS WITH SAT
 					//--------------------------
@@ -200,7 +260,7 @@ namespace Speedrunning_Game
 							velocity.Y = 0;
 						}
 					}
-					UpdateHitBox();
+					UpdateHitBox();*/
 				}
 
 				// If you're standing on it, apply ground friction and say that you're standing
@@ -228,6 +288,14 @@ namespace Speedrunning_Game
 						canWallToLeft = true;
 						isTouchingWall = true;
 					}
+				}
+			}
+
+			foreach (Wall w in Game1.currentRoom.Walls)
+			{
+				if (!(w is PlatformWall) && this.hitBox.Intersects(w.Bounds))
+				{
+					health = 0;
 				}
 			}
 
@@ -430,7 +498,7 @@ namespace Speedrunning_Game
 				leftWallBox.Height = 60;
 				rightWallBox.Height = 60;
 			}
-			ziplineBox.X = (int)position.X + 24;
+			ziplineBox.X = (int)position.X + 28;
 			ziplineBox.Y = (int)position.Y - 8;
 			hitBox.X = (int)position.X + 16;
 			hitBox.Y = (int)position.Y;
@@ -452,14 +520,14 @@ namespace Speedrunning_Game
 		public void Draw(SpriteBatch sb, Color c)
 		{
 			// Draw hit boxes (for debugging)
-//			sb.Draw(Game1.wallTex, hitBox, Color.Black);
-//			sb.Draw(Game1.wallTex, groundHitBox, Color.White);
-//			sb.Draw(Game1.wallTex, leftWallBox, Color.Blue);
-//			sb.Draw(Game1.wallTex, rightWallBox, Color.Blue);
-//			sb.Draw(Game1.wallTex, ziplineBox, Color.Lime);
+			sb.Draw(Game1.wallTex, new Rectangle(hitBox.X - Game1.currentRoom.ViewBox.X, hitBox.Y - Game1.currentRoom.ViewBox.Y, hitBox.Width, hitBox.Height), Color.Black);
+			sb.Draw(Game1.wallTex, new Rectangle(groundHitBox.X - Game1.currentRoom.ViewBox.X, groundHitBox.Y - Game1.currentRoom.ViewBox.Y, groundHitBox.Width, groundHitBox.Height), Color.White);
+			sb.Draw(Game1.wallTex, new Rectangle(leftWallBox.X - Game1.currentRoom.ViewBox.X, leftWallBox.Y - Game1.currentRoom.ViewBox.Y, leftWallBox.Width, leftWallBox.Height), Color.Blue);
+			sb.Draw(Game1.wallTex, new Rectangle(rightWallBox.X - Game1.currentRoom.ViewBox.X, rightWallBox.Y - Game1.currentRoom.ViewBox.Y, rightWallBox.Width, rightWallBox.Height), Color.Blue);
+			sb.Draw(Game1.wallTex, new Rectangle(ziplineBox.X - Game1.currentRoom.ViewBox.X, ziplineBox.Y - Game1.currentRoom.ViewBox.Y, ziplineBox.Width, ziplineBox.Height), Color.Lime);
 
 			// Draw character
-			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
+			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), health == 0 ? Color.Red : c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}
 }

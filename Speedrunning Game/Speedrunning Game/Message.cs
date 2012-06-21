@@ -25,7 +25,7 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color drawHue)
 		{
-			sb.Draw(Game1.messageTex, new Rectangle((int)position.X - 1, (int)position.Y - 1, (int)Game1.msgfont.MeasureString(msg).X + 2, (int)Game1.msgfont.MeasureString(msg).Y + 2), drawHue);
+			sb.Draw(Game1.messageTex, new Rectangle((int)position.X - 1 - Game1.currentRoom.ViewBox.X, (int)position.Y - 1 - Game1.currentRoom.ViewBox.Y, (int)Game1.msgfont.MeasureString(msg).X + 2, (int)Game1.msgfont.MeasureString(msg).Y + 2), drawHue);
 			sb.DrawString(Game1.msgfont, msg, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), Color.Black);
 		}
 	}

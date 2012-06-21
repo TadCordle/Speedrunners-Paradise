@@ -40,6 +40,9 @@ namespace Speedrunning_Game
 			graphics.PreferredBackBufferHeight = 720;
 			graphics.PreferredBackBufferWidth = 960;
 			Content.RootDirectory = "Content";
+
+//			this.TargetElapsedTime = TimeSpan.FromSeconds(0.5f);
+
 			if (!File.Exists("Content\\records.txt"))
 			{
 				StreamWriter w = new StreamWriter("Content\\records.txt");
