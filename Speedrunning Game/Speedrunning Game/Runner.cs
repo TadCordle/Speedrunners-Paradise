@@ -209,58 +209,16 @@ namespace Speedrunning_Game
 					Vector2 resV = resolutions[0];
 					if (resV.X != 0)
 					{
-						this.velocity.X = 0;
+						if (resV.X > 0 && velocity.X < 0 || resV.X < 0 && velocity.X > 0)
+							this.velocity.X = 0;
 					}
 					else
 					{
-						this.velocity.Y = 0;
+						if (resV.Y > 0 && velocity.Y < 0 || resV.Y < 0 && velocity.Y > 0)
+							this.velocity.Y = 0;
 					}
 					this.position += resV;
 					UpdateHitBox();
-					/*
-					//--------------------------
-					// REPLACE THIS WITH SAT
-					//--------------------------
-					Vector2 unit = velocity;
-					unit.Normalize();
-					while (this.hitBox.Intersects(w.Bounds))
-					{
-						this.position -= unit;
-						UpdateHitBox();
-					}
-					//--------------------------
-					//--------------------------
-					//--------------------------
-
-					// Check for position of wall relative to character and collide accordingly
-					if (this.hitBox.Top < w.Bounds.Bottom && this.hitBox.Bottom > w.Bounds.Top)
-					{
-						if (this.hitBox.Right <= w.Bounds.Left)
-						{
-							this.position.X = w.Bounds.Left - 49;
-							velocity.X = 0;
-						}
-						else
-						{
-							this.position.X = w.Bounds.Right - 15;
-							velocity.X = 0;
-						}
-					}
-
-					if (this.hitBox.Left < w.Bounds.Right && this.hitBox.Right > w.Bounds.Left)
-					{
-						if (this.hitBox.Top >= w.Bounds.Bottom)
-						{
-							this.position.Y = w.Bounds.Bottom;
-							velocity.Y = 0;
-						}
-						else
-						{
-							this.position.Y = w.Bounds.Top - 64;
-							velocity.Y = 0;
-						}
-					}
-					UpdateHitBox();*/
 				}
 
 				// If you're standing on it, apply ground friction and say that you're standing
@@ -499,7 +457,7 @@ namespace Speedrunning_Game
 				rightWallBox.Height = 60;
 			}
 			ziplineBox.X = (int)position.X + 28;
-			ziplineBox.Y = (int)position.Y - 8;
+			ziplineBox.Y = (int)position.Y - 16;
 			hitBox.X = (int)position.X + 16;
 			hitBox.Y = (int)position.Y;
 			groundHitBox.X = (int)position.X + 18;
@@ -520,11 +478,11 @@ namespace Speedrunning_Game
 		public void Draw(SpriteBatch sb, Color c)
 		{
 			// Draw hit boxes (for debugging)
-			sb.Draw(Game1.wallTex, new Rectangle(hitBox.X - Game1.currentRoom.ViewBox.X, hitBox.Y - Game1.currentRoom.ViewBox.Y, hitBox.Width, hitBox.Height), Color.Black);
-			sb.Draw(Game1.wallTex, new Rectangle(groundHitBox.X - Game1.currentRoom.ViewBox.X, groundHitBox.Y - Game1.currentRoom.ViewBox.Y, groundHitBox.Width, groundHitBox.Height), Color.White);
-			sb.Draw(Game1.wallTex, new Rectangle(leftWallBox.X - Game1.currentRoom.ViewBox.X, leftWallBox.Y - Game1.currentRoom.ViewBox.Y, leftWallBox.Width, leftWallBox.Height), Color.Blue);
-			sb.Draw(Game1.wallTex, new Rectangle(rightWallBox.X - Game1.currentRoom.ViewBox.X, rightWallBox.Y - Game1.currentRoom.ViewBox.Y, rightWallBox.Width, rightWallBox.Height), Color.Blue);
-			sb.Draw(Game1.wallTex, new Rectangle(ziplineBox.X - Game1.currentRoom.ViewBox.X, ziplineBox.Y - Game1.currentRoom.ViewBox.Y, ziplineBox.Width, ziplineBox.Height), Color.Lime);
+//			sb.Draw(Game1.wallTex, new Rectangle(hitBox.X - Game1.currentRoom.ViewBox.X, hitBox.Y - Game1.currentRoom.ViewBox.Y, hitBox.Width, hitBox.Height), Color.Black);
+//			sb.Draw(Game1.wallTex, new Rectangle(groundHitBox.X - Game1.currentRoom.ViewBox.X, groundHitBox.Y - Game1.currentRoom.ViewBox.Y, groundHitBox.Width, groundHitBox.Height), Color.White);
+//			sb.Draw(Game1.wallTex, new Rectangle(leftWallBox.X - Game1.currentRoom.ViewBox.X, leftWallBox.Y - Game1.currentRoom.ViewBox.Y, leftWallBox.Width, leftWallBox.Height), Color.Blue);
+//			sb.Draw(Game1.wallTex, new Rectangle(rightWallBox.X - Game1.currentRoom.ViewBox.X, rightWallBox.Y - Game1.currentRoom.ViewBox.Y, rightWallBox.Width, rightWallBox.Height), Color.Blue);
+//			sb.Draw(Game1.wallTex, new Rectangle(ziplineBox.X - Game1.currentRoom.ViewBox.X, ziplineBox.Y - Game1.currentRoom.ViewBox.Y, ziplineBox.Width, ziplineBox.Height), Color.Lime);
 
 			// Draw character
 			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), health == 0 ? Color.Red : c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
