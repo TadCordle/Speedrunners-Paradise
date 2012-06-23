@@ -440,7 +440,7 @@ namespace Speedrunning_Game
 
 			// Draw messages
 			var msgInView = from Message m in messages
-							where m.DrawBox.Intersects(viewBox)
+							where m.HitBox.Intersects(viewBox)
 							select m;
 			foreach (Message m in msgInView)
 				m.Draw(sb, drawHue);

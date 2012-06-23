@@ -20,7 +20,8 @@ namespace Speedrunning_Game
 		private AnimatedTexture normal, running, midair, sliding, ziplining; // Animations
 		private AnimatedTexture current; // Current animation to be drawn
 		private Vector2 groundFriction;
-		private Rectangle hitBox, groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Hit boxes
+		public Rectangle hitBox; // Main hitbox
+		private Rectangle groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Other hit boxes
 		private float imageAngle; // The angle at which to draw the image. Might need this later
 		private bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
 			jumppresscheck, wallpresscheck; // A bunch of ballers
