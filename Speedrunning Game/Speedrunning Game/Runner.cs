@@ -29,7 +29,7 @@ namespace Speedrunning_Game
 		private FloatingPlatform platform; // Current platform standing on
 		private int healthTracker; // Health variable and timer used for health regeneration
 		
-		const int HEALTHINTERVAL = 2000; // Health regeneration timer limit
+		const int HEALTHINTERVAL = 30; // Health regeneration timer limit
 
 		public Runner(Vector2 position)
 		{
@@ -72,7 +72,7 @@ namespace Speedrunning_Game
 			current.Update();
 
 			// Update health regen
-			if (health < 10)
+			if (health < 10 && health > 0)
 			{
 				healthTracker++;
 				if (healthTracker >= HEALTHINTERVAL)
@@ -80,6 +80,10 @@ namespace Speedrunning_Game
 					healthTracker = 0;
 					health++;
 				}
+			}
+			else
+			{
+				healthTracker = 0;
 			}
 
 			// If something is slowing you down, stop it from speeding you up in the opposite direction
@@ -131,7 +135,7 @@ namespace Speedrunning_Game
 					continue;
 
 				// If you're standing on it, apply ground friction and say that you're standing
-				if (isSliding)
+				if (isSliding && !(w is DeathWall))
 				{
 					if (w.Bounds.Intersects(groundHitBox))
 					{
@@ -157,66 +161,61 @@ namespace Speedrunning_Game
 				}
 
 				// Apply other wall collisions
-				if (this.hitBox.Intersects(w.Bounds) && !(w is PlatformWall))
+				if (this.hitBox.Intersects(w.Bounds))
 				{
+					if (w is DeathWall)
+						health -= 9;
+					
 					List<Vector2> resolutions = new List<Vector2>();
-					// resolve y
-					if (this.hitBox.Bottom <= w.Bounds.Top)
-					{
-					}
-					else if (this.hitBox.Top >= w.Bounds.Bottom)
-					{
-					}
-					else
+
+					// Resolve Y
+					if (!(this.hitBox.Bottom <= w.Bounds.Top || this.hitBox.Top >= w.Bounds.Bottom))
 					{
 						if (this.hitBox.Top < w.Bounds.Bottom)
-						{
 							resolutions.Add(new Vector2(0, w.Bounds.Bottom - this.hitBox.Top));
-						}
 						if (this.hitBox.Bottom > w.Bounds.Top)
-						{
 							resolutions.Add(new Vector2(0, w.Bounds.Top - this.hitBox.Bottom));
-						}
 					}
-					// resolve x
-					if (this.hitBox.Right <= w.Bounds.Left)
-					{
-					}
-					else if (this.hitBox.Left >= w.Bounds.Right)
-					{
-					}
-					else
+
+					// Resolve X
+					if (!(this.hitBox.Right <= w.Bounds.Left || this.hitBox.Left >= w.Bounds.Right))
 					{
 						if (this.hitBox.Right > w.Bounds.Left)
-						{
 							resolutions.Add(new Vector2(w.Bounds.Left - this.hitBox.Right, 0));
-						}
 						if (this.hitBox.Left < w.Bounds.Right)
-						{
 							resolutions.Add(new Vector2(w.Bounds.Right - this.hitBox.Left, 0));
-						}
 					}
+
+					// Find smallest overlap
 					while (resolutions.Count > 1)
 					{
 						if (resolutions[0].Length() > resolutions[1].Length())
-						{
 							resolutions.RemoveAt(0);
-						}
 						else
-						{
 							resolutions.RemoveAt(1);
-						}
 					}
+
+					// Set new velocity and position
 					Vector2 resV = resolutions[0];
 					if (resV.X != 0)
 					{
 						if (resV.X > 0 && velocity.X < 0 || resV.X < 0 && velocity.X > 0)
-							this.velocity.X = 0;
+						{
+							if (w is DeathWall)
+								this.velocity.X = Math.Sign(velocity.X) * -6;
+							else
+								this.velocity.X = 0;
+						}
 					}
 					else
 					{
 						if (resV.Y > 0 && velocity.Y < 0 || resV.Y < 0 && velocity.Y > 0)
-							this.velocity.Y = 0;
+						{
+							if (w is DeathWall)
+								this.velocity.Y = Math.Sign(velocity.Y) * -6;
+							else
+								this.velocity.Y = 0;
+						}
 					}
 					this.position += resV;
 					UpdateHitBox();
@@ -253,9 +252,7 @@ namespace Speedrunning_Game
 			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				if (!(w is PlatformWall) && this.hitBox.Intersects(w.Bounds))
-				{
 					health = 0;
-				}
 			}
 
 			// Apply platform velocity when leaving platform
@@ -486,7 +483,10 @@ namespace Speedrunning_Game
 //			sb.Draw(Game1.wallTex, new Rectangle(ziplineBox.X - Game1.currentRoom.ViewBox.X, ziplineBox.Y - Game1.currentRoom.ViewBox.Y, ziplineBox.Width, ziplineBox.Height), Color.Lime);
 
 			// Draw character
-			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), health == 0 ? Color.Red : c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
+			sb.DrawString(Game1.mnufont, health.ToString(), new Vector2(0, 32), Color.White);
+			sb.DrawString(Game1.mnufont, healthTracker.ToString(), new Vector2(0, 64), Color.Blue);
+
+			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), health < 10 ? (health <= 0 ? Color.Red : Color.Salmon) : c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}
 }

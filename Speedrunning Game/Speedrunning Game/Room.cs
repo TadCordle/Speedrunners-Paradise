@@ -227,6 +227,8 @@ namespace Speedrunning_Game
 				walls.Add(new PlatformWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 			else if (line[0] == "message")
 				messages.Add(new Message(new Vector2(int.Parse(line[1]), int.Parse(line[2])), line[3].Replace('_', ' ').Replace("\\n", "\n")));
+			else if (line[0] == "deathwall")
+				walls.Add(new DeathWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 		}
 
 		private void BuildTiles()
@@ -362,6 +364,15 @@ namespace Speedrunning_Game
 			}
 			else
 			{
+				if (time == 0)
+				{
+					if (custom)
+						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl");
+					else
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
+					return;
+				}
+
 				if (write)
 				{
 					write = false;
