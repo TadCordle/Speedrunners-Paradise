@@ -237,13 +237,24 @@ namespace Speedrunning_Game
 
 			// Fill each wall object with middle tiles
 			var realWalls = from Wall w in walls
-							where !(w is PlatformWall) && !(w is FloatingPlatform) // && !(w is DeathWall)
+							where !(w is PlatformWall) && !(w is FloatingPlatform) && !(w is DeathWall)
 							select w;
 			foreach (Wall w in realWalls)
 			{
 				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
 					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
 						tiles.Add(new Vector3(x, y, 4));
+			}
+			
+			// Fill each death wall with death tile
+			var deathWalls = from Wall w in walls
+							 where w is DeathWall
+							 select w;
+			foreach (Wall w in deathWalls)
+			{
+				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
+					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
+						tiles.Add(new Vector3(x, y, 9));
 			}
 
 			// Find all corners and sides and attach corresponding tile
@@ -447,7 +458,12 @@ namespace Speedrunning_Game
 							  where v.X >= viewBox.Left - 32 && v.X <= viewBox.Right && v.Y >= viewBox.Top - 32 && v.Y <= viewBox.Bottom
 							  select v;
 			foreach (Vector3 v in tilesInView)
-				sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
+			{
+				if (v.Z <= 8)
+					sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
+				else
+					sb.Draw(Game1.deathWallSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), drawHue);
+			}
 
 			// Draw messages
 			var msgInView = from Message m in messages

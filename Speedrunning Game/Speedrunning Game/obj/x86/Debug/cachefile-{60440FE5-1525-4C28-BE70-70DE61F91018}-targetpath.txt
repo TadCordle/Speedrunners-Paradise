@@ -70,3 +70,5 @@ Content\tiles\tilecave.xnb
 Content\tiles\tilefactory.xnb
 Content\message.xnb
 Content\msgfont.xnb
+Content\tiles\deathgrass.xnb
+Content\tiles\deathlava.xnb

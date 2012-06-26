@@ -28,7 +28,7 @@ namespace Speedrunning_Game
 		public static Texture2D messageTex;
 		public static AnimatedTexture boosterTex;
 		public static SpriteFont titlefont, mnufont, msgfont;
-		public static Texture2D[] tileSet;
+		public static Texture2D[] tileSet, deathWallSet;
 		public static Texture2D[] backgrounds;
 		public static bool exit = false;
 
@@ -92,12 +92,18 @@ namespace Speedrunning_Game
 			messageTex = Content.Load<Texture2D>("message");
 
 			tileSet = new Texture2D[5];
+			deathWallSet = new Texture2D[5];
 			backgrounds = new Texture2D[5];
 			tileSet[0] = Content.Load<Texture2D>("tiles/tilegrass");
 			tileSet[1] = Content.Load<Texture2D>("tiles/tilelava");
 			tileSet[2] = Content.Load<Texture2D>("tiles/tilenight");
 			tileSet[3] = Content.Load<Texture2D>("tiles/tilecave");
 			tileSet[4] = Content.Load<Texture2D>("tiles/tilefactory");
+			deathWallSet[0] = Content.Load<Texture2D>("tiles/deathgrass");
+			deathWallSet[1] = Content.Load<Texture2D>("tiles/deathlava");
+//			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathnight");
+//			deathWallSet[3] = Content.Load<Texture2D>("tiles/deathcave");
+//			deathWallSet[4] = Content.Load<Texture2D>("tiles/deathfactory");
 			backgrounds[0] = Content.Load<Texture2D>("backgrounds/bggrass");
 			backgrounds[1] = Content.Load<Texture2D>("backgrounds/bglava");
 			backgrounds[2] = Content.Load<Texture2D>("backgrounds/bgnight");

@@ -649,6 +649,24 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\msgfont.xnb</Output>
       <Time>2012-06-21T16:14:52.0622828-04:00</Time>
     </Item>
+    <Item>
+      <Source>tiles\deathgrass.png</Source>
+      <Name>tiles\deathgrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\deathgrass.xnb</Output>
+      <Time>2012-06-26T15:15:06.6201099-04:00</Time>
+    </Item>
+    <Item>
+      <Source>tiles\deathlava.png</Source>
+      <Name>tiles\deathlava</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\deathlava.xnb</Output>
+      <Time>2012-06-26T15:15:06.639111-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
