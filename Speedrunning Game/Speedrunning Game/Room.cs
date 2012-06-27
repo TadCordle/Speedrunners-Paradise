@@ -115,6 +115,8 @@ namespace Speedrunning_Game
 
 			// Get current record for this level
 			FindRecord(decryptor);
+
+			UpdateViewBox();
 		}
 
 		public Room(string[] lines) : this()
@@ -180,6 +182,8 @@ namespace Speedrunning_Game
 				writer.Flush();
 				writer.Dispose();
 			}
+
+			UpdateViewBox();
 		}
 
 		// Parses a theme from a line of text
@@ -348,25 +352,7 @@ namespace Speedrunning_Game
 					Runner.Update();
 
 					// Move viewbox to keep up with character
-					if (Runner.position.X + 32 > ViewBox.X + (VIEWSIZE_X / 2 + 10))
-						viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 + 10);
-					else if (Runner.position.X + 32 < ViewBox.X + (VIEWSIZE_X / 2 - 10))
-						viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 - 10);
-
-					if (ViewBox.X < 0 || VIEWSIZE_X > roomWidth)
-						viewBox.X = 0;
-					else if (ViewBox.Right > roomWidth)
-						viewBox.X = roomWidth - ViewBox.Width;
-
-					if (Runner.position.Y + 32 > ViewBox.Y + (VIEWSIZE_Y / 2 + 10))
-						viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 + 10);
-					else if (Runner.position.Y + 32 < ViewBox.Y + (VIEWSIZE_Y / 2 - 10))
-						viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 - 10);
-
-					if (ViewBox.Bottom > roomHeight || VIEWSIZE_Y > roomHeight)
-						viewBox.Y = roomHeight - ViewBox.Height;
-					else if (ViewBox.Y < 0)
-						viewBox.Y = 0;
+					UpdateViewBox();
 
 					// If the runner can be moved, increment the timer
 					if (Runner.controllable)
@@ -443,6 +429,29 @@ namespace Speedrunning_Game
 					}
 				}
 			}
+		}
+
+		private void UpdateViewBox()
+		{
+			if (Runner.position.X + 32 > ViewBox.X + (VIEWSIZE_X / 2 + 10))
+				viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 + 10);
+			else if (Runner.position.X + 32 < ViewBox.X + (VIEWSIZE_X / 2 - 10))
+				viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 - 10);
+
+			if (ViewBox.X < 0 || VIEWSIZE_X > roomWidth)
+				viewBox.X = 0;
+			else if (ViewBox.Right > roomWidth)
+				viewBox.X = roomWidth - ViewBox.Width;
+
+			if (Runner.position.Y + 32 > ViewBox.Y + (VIEWSIZE_Y / 2 + 10))
+				viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 + 10);
+			else if (Runner.position.Y + 32 < ViewBox.Y + (VIEWSIZE_Y / 2 - 10))
+				viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 - 10);
+
+			if (ViewBox.Bottom > roomHeight || VIEWSIZE_Y > roomHeight)
+				viewBox.Y = roomHeight - ViewBox.Height;
+			else if (ViewBox.Y < 0)
+				viewBox.Y = 0;
 		}
 
 		public virtual void Draw(SpriteBatch sb)

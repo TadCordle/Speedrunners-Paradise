@@ -28,6 +28,7 @@ namespace Speedrunning_Game
 		private ZipLine zippingLine; // Current zipline being used
 		private FloatingPlatform platform; // Current platform standing on
 		private int healthTracker; // Health variable and timer used for health regeneration
+		private int crushCount; // Used to fix crushing glitch
 		
 		const int HEALTHINTERVAL = 30; // Health regeneration timer limit
 
@@ -249,11 +250,21 @@ namespace Speedrunning_Game
 				}
 			}
 
+			// Check for crushing
+			bool iscrushed = false;
 			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				if (!(w is PlatformWall) && this.hitBox.Intersects(w.Bounds))
-					health = 0;
+				{
+					crushCount++;
+					if (crushCount >= 3)
+						health = 0;
+					iscrushed = true;
+					break;
+				}
 			}
+			if (!iscrushed)
+				crushCount = 0;
 
 			// Apply platform velocity when leaving platform
 			if (!isOnPlatform && platform != null)
