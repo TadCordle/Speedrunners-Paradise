@@ -26,6 +26,7 @@ namespace Speedrunning_Game
 		public static Texture2D medalTex;
 		public static Texture2D platformTex;
 		public static Texture2D messageTex;
+		public static Texture2D boxTex;
 		public static AnimatedTexture boosterTex;
 		public static SpriteFont titlefont, mnufont, msgfont;
 		public static Texture2D[] tileSet, deathWallSet;
@@ -84,17 +85,16 @@ namespace Speedrunning_Game
 				images[i - 1] = Content.Load<Texture2D>("character/speed runner dead midair00" + (i > 9 ? "" : "0") + i.ToString());
 			guyDeadMidair = new AnimatedTexture(images, 1, true, false);
 
+			finishTex = Content.Load<Texture2D>("finish");
 			poleTex = Content.Load<Texture2D>("pole");
 			lineTex = Content.Load<Texture2D>("pixel");
-
 			images = new Texture2D[3];
 			for (int i = 1; i <= images.Length; i++)
 				images[i - 1] = Content.Load<Texture2D>("booster000" + i.ToString());
 			boosterTex = new AnimatedTexture(images, 100, true, false);
-
 			platformTex = Content.Load<Texture2D>("floating platform");
-
 			messageTex = Content.Load<Texture2D>("message");
+			boxTex = Content.Load<Texture2D>("box");
 
 			tileSet = new Texture2D[5];
 			deathWallSet = new Texture2D[5];
@@ -116,10 +116,8 @@ namespace Speedrunning_Game
 			backgrounds[4] = Content.Load<Texture2D>("backgrounds/bgfactory");
 
 			medalTex = Content.Load<Texture2D>("medal");
-
 			wallTex = Content.Load<Texture2D>("pixel");
 
-			finishTex = Content.Load<Texture2D>("finish");
 			titlefont = Content.Load<SpriteFont>("titlefont");
 			msgfont = Content.Load<SpriteFont>("msgfont");
 			mnufont = Content.Load<SpriteFont>("mnufont");

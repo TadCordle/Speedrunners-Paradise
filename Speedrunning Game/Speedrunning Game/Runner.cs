@@ -15,6 +15,7 @@ namespace Speedrunning_Game
 	{
 		public Vector2 position, velocity, acceleration; // Kinematics
 		public bool controllable; // Only reads key feedback when true
+		public bool movedLeft; // To determine which way the character is facing
 		public int health; // Tells you when to die
 
 		private AnimatedTexture normal, running, midair, sliding, ziplining, deadGround, deadMidair; // Animations
@@ -23,10 +24,11 @@ namespace Speedrunning_Game
 		public Rectangle hitBox; // Main hitbox
 		private Rectangle groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Other hit boxes
 		private float imageAngle; // The angle at which to draw the image. Might need this later
-		private bool isTouchingGround, movedLeft, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
+		private bool isTouchingGround, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
 			jumppresscheck, wallpresscheck; // A bunch of ballers
 		private ZipLine zippingLine; // Current zipline being used
 		private FloatingPlatform platform; // Current platform standing on
+		private Box heldBox;
 		private int healthTracker; // Health variable and timer used for health regeneration
 		private int crushCount; // Used to fix crushing glitch
 		
@@ -254,6 +256,24 @@ namespace Speedrunning_Game
 				}
 			}
 
+			// Land on boxes
+			if (velocity.Y > 0 && !isTouchingGround)
+			{
+				foreach (Box b in Game1.currentRoom.Boxes)
+				{
+					if (groundHitBox.Intersects(b.hitBox))
+					{
+						position.Y = b.position.Y - 64;
+						velocity.Y = 0;
+						if (!isSliding)
+							groundFriction.X = Math.Sign(velocity.X) * -1 * 0.5f;
+						else
+							groundFriction.X = 0;
+						isTouchingGround = true;
+					}
+				}
+			}
+
 			// Check for crushing
 			bool iscrushed = false;
 			foreach (Wall w in Game1.currentRoom.Walls)
@@ -310,7 +330,7 @@ namespace Speedrunning_Game
 			// Reset space key
 			if (!Keyboard.GetState().IsKeyDown(Keys.Space))
 			{
-				if (isTouchingGround)
+				if (isTouchingGround || heldBox != null)
 					jumppresscheck = false;
 				else if (canWallToLeft || canWallToRight)
 					wallpresscheck = false;
@@ -318,6 +338,18 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.Space) && controllable)
 			{
 				// Jumping
+				if (heldBox != null && isTouchingGround == false && !jumppresscheck)
+				{
+					velocity.Y = -10.0f;
+					current = midair;
+					isTouchingGround = false;
+					jumppresscheck = true;
+					wallpresscheck = true;
+					heldBox.velocity.Y = 4;
+					heldBox.velocity.X = this.velocity.X;
+					heldBox.grabbed = false;
+					heldBox = null;
+				}
 				if (isTouchingGround && !staySliding && !jumppresscheck)
 				{
 					velocity.Y = -10.0f;
@@ -387,6 +419,30 @@ namespace Speedrunning_Game
 				zippingLine = null;
 				isZipping = false;
 				acceleration.Y = 0.4f;
+			}
+
+			// Check for picking up boxes
+			if (Keyboard.GetState().IsKeyDown(Keys.LeftShift) || Keyboard.GetState().IsKeyDown(Keys.RightShift))
+			{
+				if (isTouchingGround && heldBox == null)
+					foreach (Box b in Game1.currentRoom.Boxes)
+					{
+						if (b.hitBox.Intersects(rightWallBox) && !movedLeft || b.hitBox.Intersects(leftWallBox) && movedLeft)
+						{
+							b.grabbed = true;
+							heldBox = b;
+							break;
+						}
+					}
+			}
+			else
+			{
+				if (heldBox != null)
+				{
+					heldBox.grabbed = false;
+					heldBox.velocity = this.velocity;
+					heldBox = null;
+				}
 			}
 
 			// Slide when holding control

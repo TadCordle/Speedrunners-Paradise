@@ -43,6 +43,16 @@ namespace Speedrunning_Game
 					UpdateHitBox();
 				}
 			}
+
+			foreach (Box b in Game1.currentRoom.Boxes)
+			{
+				if (bounds.Intersects(b.hitBox) && b.crushed)
+				{
+					velocity *= -1;
+					position += velocity;
+					UpdateHitBox();
+				}
+			}
 		}
 
 		public override void Draw(SpriteBatch sb, Color c)

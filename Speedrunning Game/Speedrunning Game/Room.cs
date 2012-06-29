@@ -41,6 +41,9 @@ namespace Speedrunning_Game
 
 		private List<Message> messages;
 		public List<Message> Messages { get { return messages; } }
+
+		private List<Box> boxes;
+		public List<Box> Boxes { get { return boxes; } }
 		
 		public Runner Runner { get; set; }
 		public Finish Finish { get; set; }
@@ -70,6 +73,7 @@ namespace Speedrunning_Game
 			boosters = new List<Booster>();
 			platforms = new List<FloatingPlatform>();
 			messages = new List<Message>();
+			boxes = new List<Box>();
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 		}
 
@@ -233,6 +237,8 @@ namespace Speedrunning_Game
 				messages.Add(new Message(new Vector2(int.Parse(line[1]), int.Parse(line[2])), line[3].Replace('_', ' ').Replace("\\n", "\n")));
 			else if (line[0] == "deathwall")
 				walls.Add(new DeathWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
+			else if (line[0] == "box")
+				boxes.Add(new Box(int.Parse(line[1]), int.Parse(line[2])));
 		}
 
 		private void BuildTiles()
@@ -340,11 +346,15 @@ namespace Speedrunning_Game
 					// Update booster animations
 					foreach (Booster b in boosters)
 						b.Update();
+
+					// Update boxes
+					foreach (Box b in boxes)
+						b.Update();
+
+					// Update floating platforms
 					var plats = from Wall f in walls
 								where f is FloatingPlatform
 								select f as FloatingPlatform;
-
-					// Update floating platforms
 					foreach (FloatingPlatform f in plats)
 						f.Update();
 
@@ -486,6 +496,13 @@ namespace Speedrunning_Game
 								 where b.HitBox.Intersects(viewBox)
 								 select b;
 			foreach (Booster b in boostersInView)
+				b.Draw(sb, drawHue);
+
+			// Draw boxes
+			var boxesInView = from Box b in boxes
+							  where b.hitBox.Intersects(viewBox)
+							  select b;
+			foreach (Box b in boxesInView)
 				b.Draw(sb, drawHue);
 
 			// Draw moving platforms

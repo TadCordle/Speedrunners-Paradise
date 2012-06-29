@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="AnimatedTexture.cs" />
     <Compile Include="Booster.cs" />
+    <Compile Include="Box.cs" />
     <Compile Include="DeathWall.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="PlatformWall.cs" />
