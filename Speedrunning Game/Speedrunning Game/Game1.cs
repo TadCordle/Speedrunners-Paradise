@@ -30,6 +30,7 @@ namespace Speedrunning_Game
 		public static AnimatedTexture boosterTex;
 		public static SpriteFont titlefont, mnufont, msgfont;
 		public static Texture2D[] tileSet, deathWallSet;
+		public static Texture2D mirrorTex;
 		public static Texture2D[] backgrounds;
 		public static bool exit = false;
 
@@ -103,12 +104,14 @@ namespace Speedrunning_Game
 			tileSet[1] = Content.Load<Texture2D>("tiles/tilelava");
 			tileSet[2] = Content.Load<Texture2D>("tiles/tilenight");
 			tileSet[3] = Content.Load<Texture2D>("tiles/tilecave");
-			tileSet[4] = Content.Load<Texture2D>("tiles/tilefactory");
+//			tileSet[4] = Content.Load<Texture2D>("tiles/tilefactory");
+			tileSet[4] = Content.Load<Texture2D>("tiles/tilestest");
 			deathWallSet[0] = Content.Load<Texture2D>("tiles/deathgrass");
 			deathWallSet[1] = Content.Load<Texture2D>("tiles/deathlava");
 //			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathnight");
 //			deathWallSet[3] = Content.Load<Texture2D>("tiles/deathcave");
 //			deathWallSet[4] = Content.Load<Texture2D>("tiles/deathfactory");
+			mirrorTex = Content.Load<Texture2D>("tiles/mirror");
 			backgrounds[0] = Content.Load<Texture2D>("backgrounds/bggrass");
 			backgrounds[1] = Content.Load<Texture2D>("backgrounds/bglava");
 			backgrounds[2] = Content.Load<Texture2D>("backgrounds/bgnight");

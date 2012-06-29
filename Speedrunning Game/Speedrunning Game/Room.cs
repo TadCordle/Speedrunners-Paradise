@@ -239,6 +239,8 @@ namespace Speedrunning_Game
 				walls.Add(new DeathWall(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 			else if (line[0] == "box")
 				boxes.Add(new Box(int.Parse(line[1]), int.Parse(line[2])));
+			else if (line[0] == "mirror")
+				walls.Add(new Mirror(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 		}
 
 		private void BuildTiles()
@@ -247,7 +249,7 @@ namespace Speedrunning_Game
 
 			// Fill each wall object with middle tiles
 			var realWalls = from Wall w in walls
-							where !(w is PlatformWall) && !(w is FloatingPlatform) && !(w is DeathWall)
+							where !(w is PlatformWall) && !(w is FloatingPlatform) && !(w is DeathWall) && !(w is Mirror)
 							select w;
 			foreach (Wall w in realWalls)
 			{
@@ -265,6 +267,17 @@ namespace Speedrunning_Game
 				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
 					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
 						tiles.Add(new Vector3(x, y, 9));
+			}
+
+			// Fill each mirror with mirror tile
+			var mirrors = from Wall w in walls
+							 where w is Mirror
+							 select w;
+			foreach (Wall w in mirrors)
+			{
+				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
+					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
+						tiles.Add(new Vector3(x, y, 10));
 			}
 
 			// Find all corners and sides and attach corresponding tile
@@ -480,8 +493,10 @@ namespace Speedrunning_Game
 			{
 				if (v.Z <= 8)
 					sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
-				else
+				else if (v.Z == 9)
 					sb.Draw(Game1.deathWallSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), drawHue);
+				else if (v.Z == 10)
+					sb.Draw(Game1.mirrorTex, new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), drawHue);
 			}
 
 			// Draw messages

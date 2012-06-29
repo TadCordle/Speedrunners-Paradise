@@ -418,13 +418,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="tiles\tilefactory.png">
-      <Name>tilefactory</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="message.png">
       <Name>message</Name>
       <Importer>TextureImporter</Importer>
@@ -580,6 +573,13 @@
     </Compile>
     <Compile Include="character\speed runner dead midair0025.png">
       <Name>speed runner dead midair0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="tiles\mirror.png">
+      <Name>mirror</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

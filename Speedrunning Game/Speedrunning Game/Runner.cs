@@ -151,12 +151,12 @@ namespace Speedrunning_Game
 							isOnPlatform = true;
 						}
 					}
-					else if (w.Bounds.Intersects(leftWallBox))
+					else if (w.Bounds.Intersects(leftWallBox) && !(w is Mirror))
 					{
 						canWallToRight = true;
 						isTouchingWall = true;
 					}
-					else if (w.Bounds.Intersects(rightWallBox))
+					else if (w.Bounds.Intersects(rightWallBox) && !(w is Mirror))
 					{
 						canWallToLeft = true;
 						isTouchingWall = true;
@@ -243,12 +243,12 @@ namespace Speedrunning_Game
 						}
 						groundFriction.X = Math.Sign(velocity.X) * -1 * 0.5f;
 					}
-					else if (w.Bounds.Intersects(leftWallBox))
+					else if (w.Bounds.Intersects(leftWallBox) && !(w is Mirror))
 					{
 						canWallToRight = true;
 						isTouchingWall = true;
 					}
-					else if (w.Bounds.Intersects(rightWallBox))
+					else if (w.Bounds.Intersects(rightWallBox) && !(w is Mirror))
 					{
 						canWallToLeft = true;
 						isTouchingWall = true;
