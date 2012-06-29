@@ -17,7 +17,7 @@ namespace Speedrunning_Game
 		public bool controllable; // Only reads key feedback when true
 		public int health; // Tells you when to die
 
-		private AnimatedTexture normal, running, midair, sliding, ziplining; // Animations
+		private AnimatedTexture normal, running, midair, sliding, ziplining, deadGround, deadMidair; // Animations
 		private AnimatedTexture current; // Current animation to be drawn
 		private Vector2 groundFriction;
 		public Rectangle hitBox; // Main hitbox
@@ -40,6 +40,8 @@ namespace Speedrunning_Game
 			midair = Game1.guyMidair;
 			sliding = Game1.guySliding;
 			ziplining = Game1.guyZiplining;
+			deadGround = Game1.guyDeadGround;
+			deadMidair = Game1.guyDeadMidair;
 			movedLeft = true;
 			imageAngle = 0.0f;
 			current = normal;
@@ -83,9 +85,7 @@ namespace Speedrunning_Game
 				}
 			}
 			else
-			{
 				healthTracker = 0;
-			}
 
 			// If something is slowing you down, stop it from speeding you up in the opposite direction
 			if (Math.Sign(velocity.X + acceleration.X) != Math.Sign(velocity.X) && velocity.X != 0)
@@ -163,10 +163,7 @@ namespace Speedrunning_Game
 
 				// Apply other wall collisions
 				if (this.hitBox.Intersects(w.Bounds))
-				{
-					if (w is DeathWall)
-						health -= 9;
-					
+				{					
 					List<Vector2> resolutions = new List<Vector2>();
 
 					// Resolve Y
@@ -202,8 +199,11 @@ namespace Speedrunning_Game
 					{
 						if (resV.X > 0 && velocity.X < 0 || resV.X < 0 && velocity.X > 0)
 						{
-							if (w is DeathWall)
+							if (w is DeathWall && health > 0)
+							{
 								this.velocity.X = Math.Sign(velocity.X) * -6;
+								health -= 9;
+							}
 							else
 								this.velocity.X = 0;
 						}
@@ -212,13 +212,17 @@ namespace Speedrunning_Game
 					{
 						if (resV.Y > 0 && velocity.Y < 0 || resV.Y < 0 && velocity.Y > 0)
 						{
-							if (w is DeathWall)
+							if (w is DeathWall && health > 0)
+							{
 								this.velocity.Y = Math.Sign(velocity.Y) * -6;
+								health -= 9;
+							}
 							else
 								this.velocity.Y = 0;
 						}
 					}
-					this.position += resV;
+					if (!(w is FloatingPlatform && health <= 0))
+						this.position += resV;
 					UpdateHitBox();
 				}
 
@@ -266,6 +270,9 @@ namespace Speedrunning_Game
 			if (!iscrushed)
 				crushCount = 0;
 
+			if (health <= 0)
+				controllable = false;
+
 			// Apply platform velocity when leaving platform
 			if (!isOnPlatform && platform != null)
 			{
@@ -286,12 +293,17 @@ namespace Speedrunning_Game
 			// Remove ground friction if midair
 			if (!isTouchingGround)
 			{
-				current = midair;
+				if (health <= 0)
+					current = deadMidair;
+				else
+					current = midair;
 				groundFriction = Vector2.Zero;
 			}
 			else
 			{	// Change to normal animation if standing still
-				if (velocity.X == 0)
+				if (health <= 0)
+					current = deadGround;
+				else if (velocity.X == 0)
 					current = normal;
 			}
 
@@ -303,7 +315,7 @@ namespace Speedrunning_Game
 				else if (canWallToLeft || canWallToRight)
 					wallpresscheck = false;
 			}
-			if (Keyboard.GetState().IsKeyDown(Keys.Space))
+			if (Keyboard.GetState().IsKeyDown(Keys.Space) && controllable)
 			{
 				// Jumping
 				if (isTouchingGround && !staySliding && !jumppresscheck)
@@ -338,7 +350,7 @@ namespace Speedrunning_Game
 			}
 
 			// Check for whether or not ziplining if control is being held
-			if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl))
+			if ((Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl)) && controllable)
 			{
 				bool zipping = false;
 				foreach (ZipLine z in Game1.currentRoom.ZipLines)
@@ -378,7 +390,7 @@ namespace Speedrunning_Game
 			}
 
 			// Slide when holding control
-			isSliding = (Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl) || staySliding) && isTouchingGround;
+			isSliding = (Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl) || staySliding) && controllable && isTouchingGround;
 
 			// Don't get up if sliding under low ceiling
 			bool flag = true;
@@ -398,7 +410,7 @@ namespace Speedrunning_Game
 				staySliding = false;
 
 			// Move right
-			if (Keyboard.GetState().IsKeyDown(Keys.Right) && !isSliding && !isZipping)
+			if (Keyboard.GetState().IsKeyDown(Keys.Right) && !isSliding && !isZipping && controllable)
 			{
 				canWallToRight = false;
 				acceleration.X = isTouchingGround ? 1.0f : 0.5f;
@@ -413,7 +425,7 @@ namespace Speedrunning_Game
 				}
 			}
 			// Move left
-			else if (Keyboard.GetState().IsKeyDown(Keys.Left) && !isSliding && !isZipping)
+			else if (Keyboard.GetState().IsKeyDown(Keys.Left) && !isSliding && !isZipping && controllable)
 			{
 				canWallToLeft = false;
 				acceleration.X = isTouchingGround ? -1.0f : -0.5f;
@@ -492,12 +504,20 @@ namespace Speedrunning_Game
 //			sb.Draw(Game1.wallTex, new Rectangle(leftWallBox.X - Game1.currentRoom.ViewBox.X, leftWallBox.Y - Game1.currentRoom.ViewBox.Y, leftWallBox.Width, leftWallBox.Height), Color.Blue);
 //			sb.Draw(Game1.wallTex, new Rectangle(rightWallBox.X - Game1.currentRoom.ViewBox.X, rightWallBox.Y - Game1.currentRoom.ViewBox.Y, rightWallBox.Width, rightWallBox.Height), Color.Blue);
 //			sb.Draw(Game1.wallTex, new Rectangle(ziplineBox.X - Game1.currentRoom.ViewBox.X, ziplineBox.Y - Game1.currentRoom.ViewBox.Y, ziplineBox.Width, ziplineBox.Height), Color.Lime);
+			
+			// Draw health numbers (for debugging)
+//			sb.DrawString(Game1.mnufont, health.ToString(), new Vector2(0, 32), Color.White);
+//			sb.DrawString(Game1.mnufont, healthTracker.ToString(), new Vector2(0, 64), Color.Blue);
 
+			// Adjust player color based on health
+			if (health > 0)
+			{
+				c.B -= (byte)((10 - health) * 25.5);
+				c.G -= (byte)((10 - health) * 25.5);
+			}
+			
 			// Draw character
-			sb.DrawString(Game1.mnufont, health.ToString(), new Vector2(0, 32), Color.White);
-			sb.DrawString(Game1.mnufont, healthTracker.ToString(), new Vector2(0, 64), Color.Blue);
-
-			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), health < 10 ? (health <= 0 ? Color.Red : Color.Salmon) : c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
+			current.Draw(sb, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), c, imageAngle, Vector2.Zero, Vector2.One, (!movedLeft ? SpriteEffects.None : SpriteEffects.FlipHorizontally), 0);
 		}
 	}
 }

@@ -18,7 +18,7 @@ namespace Speedrunning_Game
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public static AnimatedTexture guyNormal, guyRunning, guyMidair, guySliding, guyZiplining;
+		public static AnimatedTexture guyNormal, guyRunning, guyMidair, guySliding, guyZiplining, guyDeadGround, guyDeadMidair;
 		public static Room currentRoom;
 		public static Texture2D wallTex;
 		public static Texture2D finishTex;
@@ -78,6 +78,11 @@ namespace Speedrunning_Game
 
 			guyZiplining = new AnimatedTexture(images[images.Length - 1]);
 			guySliding = new AnimatedTexture(Content.Load<Texture2D>("character/speed runner sliding"));
+			guyDeadGround = new AnimatedTexture(Content.Load<Texture2D>("character/speed runner dead"));
+			images = new Texture2D[25];
+			for (int i = 1; i <= images.Length; i++)
+				images[i - 1] = Content.Load<Texture2D>("character/speed runner dead midair00" + (i > 9 ? "" : "0") + i.ToString());
+			guyDeadMidair = new AnimatedTexture(images, 1, true, false);
 
 			poleTex = Content.Load<Texture2D>("pole");
 			lineTex = Content.Load<Texture2D>("pixel");

@@ -571,6 +571,33 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 660), Color.White);
 				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
 			}
+			else if (Runner.health <= 0)
+			{
+				sb.DrawString(Game1.titlefont, "You died!", new Vector2(360, 182), Color.White);
+				sb.DrawString(Game1.titlefont, "You died!", new Vector2(362, 184), Color.Black);
+
+				sb.DrawString(Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 280), Color.White);
+				if (record != -1)
+				{
+					if (record <= goals[0])
+						sb.Draw(Game1.medalTex, new Vector2(495, 280), Color.Gold);
+					else if (record <= goals[1])
+						sb.Draw(Game1.medalTex, new Vector2(495, 280), Color.Silver);
+					else if (record <= goals[2])
+						sb.Draw(Game1.medalTex, new Vector2(495, 280), Color.Brown);
+				}
+
+				sb.DrawString(Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 310), Color.Red);
+
+				sb.Draw(Game1.medalTex, new Vector2(612, 280), Color.Gold);
+				sb.Draw(Game1.medalTex, new Vector2(612, 310), Color.White);
+				sb.Draw(Game1.medalTex, new Vector2(612, 340), Color.Brown);
+				sb.DrawString(Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 280), goalBeaten == 1 ? Color.Lime : Color.White);
+				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 310), goalBeaten == 2 ? Color.Lime : Color.White);
+				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
+
+				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
+			}
 			else
 			{
 				// Draw timer
