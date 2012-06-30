@@ -41,19 +41,21 @@ namespace Speedrunning_Game
 		{
 			if (grabbed)
 			{
+				// Snap to player
 				position.X = Game1.currentRoom.Runner.movedLeft ? Game1.currentRoom.Runner.hitBox.Left - 16 : Game1.currentRoom.Runner.hitBox.Right - 16;
 				position.Y = (int)Game1.currentRoom.Runner.position.Y + 24;
 				UpdateHitBox();
 			}
 			else
 			{
+				// Update position and velocity
 				position += velocity;
 				velocity += acceleration;
 				UpdateHitBox();
 
+				// Wall collisions
 				foreach (Wall w in Game1.currentRoom.Walls)
 				{
-					// Make sure wall effects player
 					if (w is PlatformWall)
 						continue;
 
@@ -123,16 +125,23 @@ namespace Speedrunning_Game
 					}
 				}
 
+				// Box collisions
 				foreach (Box b in Game1.currentRoom.Boxes)
 				{
 					if (this.groundBox.Intersects(b.hitBox))
 					{
 						this.position.Y = b.position.Y - 32;
 						this.velocity.Y = 0;
+						this.velocity.Y = 0;
+						float temp = this.velocity.X;
+						this.velocity.X += Math.Sign(velocity.X) * -1 * 0.5f;
+						if (Math.Sign(temp) != Math.Sign(velocity.X))
+							velocity.X = 0;
 						UpdateHitBox();
 					}
 				}
 
+				// Used to block platforms
 				crushed = false;
 				foreach (Wall w in Game1.currentRoom.Walls)
 				{
@@ -151,6 +160,7 @@ namespace Speedrunning_Game
 					}
 				}
 
+				// Send back to starting position if fallen off screen
 				if (this.position.Y > Game1.currentRoom.roomHeight)
 					position = startPosition;
 
@@ -160,7 +170,7 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
-			sb.Draw(tex, hitBox, c);
+			sb.Draw(tex, new Vector2(position.X - Game1.currentRoom.ViewBox.X, position.Y - Game1.currentRoom.ViewBox.Y), c);
 		}
 	}
 }

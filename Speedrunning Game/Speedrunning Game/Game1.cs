@@ -92,7 +92,7 @@ namespace Speedrunning_Game
 			images = new Texture2D[3];
 			for (int i = 1; i <= images.Length; i++)
 				images[i - 1] = Content.Load<Texture2D>("booster000" + i.ToString());
-			boosterTex = new AnimatedTexture(images, 100, true, false);
+			boosterTex = new AnimatedTexture(images, 600, true, false);
 			platformTex = Content.Load<Texture2D>("floating platform");
 			messageTex = Content.Load<Texture2D>("message");
 			boxTex = Content.Load<Texture2D>("box");

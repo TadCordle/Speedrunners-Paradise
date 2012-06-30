@@ -24,7 +24,7 @@ namespace Speedrunning_Game
 		public Rectangle hitBox; // Main hitbox
 		private Rectangle groundHitBox, leftWallBox, rightWallBox, ziplineBox; // Other hit boxes
 		private float imageAngle; // The angle at which to draw the image. Might need this later
-		private bool isTouchingGround, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
+		private bool isTouchingGround, isTouchingWall, isSliding, staySliding, canWallToRight, canWallToLeft, isZipping, 
 			jumppresscheck, wallpresscheck; // A bunch of ballers
 		private ZipLine zippingLine; // Current zipline being used
 		private FloatingPlatform platform; // Current platform standing on
@@ -127,7 +127,7 @@ namespace Speedrunning_Game
 
 			// Reset flags
 			isTouchingGround = false;
-			bool isTouchingWall = false;
+			isTouchingWall = false;
 			bool isOnPlatform = false;
 
 			// Iterate through walls
@@ -309,7 +309,7 @@ namespace Speedrunning_Game
 			if (Game1.currentRoom.Finish != null)
 				if (this.hitBox.Intersects(Game1.currentRoom.Finish.HitBox))
 					Game1.currentRoom.Finished = true;
-	
+
 			// Remove ground friction if midair
 			if (!isTouchingGround)
 			{
@@ -330,7 +330,9 @@ namespace Speedrunning_Game
 			// Reset space key
 			if (!Keyboard.GetState().IsKeyDown(Keys.Space))
 			{
-				if (isTouchingGround || heldBox != null)
+				if (heldBox != null)
+					jumppresscheck = false;
+				if (isTouchingGround)
 					jumppresscheck = false;
 				else if (canWallToLeft || canWallToRight)
 					wallpresscheck = false;
@@ -338,18 +340,6 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.Space) && controllable)
 			{
 				// Jumping
-				if (heldBox != null && isTouchingGround == false && !jumppresscheck)
-				{
-					velocity.Y = -10.0f;
-					current = midair;
-					isTouchingGround = false;
-					jumppresscheck = true;
-					wallpresscheck = true;
-					heldBox.velocity.Y = 4;
-					heldBox.velocity.X = this.velocity.X;
-					heldBox.grabbed = false;
-					heldBox = null;
-				}
 				if (isTouchingGround && !staySliding && !jumppresscheck)
 				{
 					velocity.Y = -10.0f;
@@ -366,8 +356,21 @@ namespace Speedrunning_Game
 					if (velocity.Y > -7.5f)
 						velocity.Y = -7.5f;
 					wallpresscheck = true;
+					jumppresscheck = true;
 					canWallToRight = false;
 					canWallToLeft = false;
+				}
+				// Box jumping
+				else if (heldBox != null && !isTouchingGround && !jumppresscheck)
+				{
+					velocity.Y = -10.0f;
+					current = midair;
+					jumppresscheck = true;
+					wallpresscheck = true;
+					heldBox.velocity.Y = 4;
+					heldBox.velocity.X = this.velocity.X;
+					heldBox.grabbed = false;
+					heldBox = null;
 				}
 			}
 
@@ -402,7 +405,6 @@ namespace Speedrunning_Game
 							movedLeft = velocity.X < 0;
 						}
 						break;
-
 					}
 				}
 
@@ -564,6 +566,13 @@ namespace Speedrunning_Game
 			// Draw health numbers (for debugging)
 //			sb.DrawString(Game1.mnufont, health.ToString(), new Vector2(0, 32), Color.White);
 //			sb.DrawString(Game1.mnufont, healthTracker.ToString(), new Vector2(0, 64), Color.Blue);
+
+			// Draw other values
+//			sb.DrawString(Game1.mnufont, isTouchingGround.ToString(), new Vector2(0, 32), Color.Lime);
+//			sb.DrawString(Game1.mnufont, wallpresscheck.ToString(), new Vector2(0, 64), Color.Lime);
+//			sb.DrawString(Game1.mnufont, isTouchingWall.ToString(), new Vector2(0, 96), Color.Lime);
+//			sb.DrawString(Game1.mnufont, canWallToLeft.ToString(), new Vector2(0, 128), Color.Lime);
+//			sb.DrawString(Game1.mnufont, canWallToRight.ToString(), new Vector2(0, 160), Color.Lime);
 
 			// Adjust player color based on health
 			if (health > 0)
