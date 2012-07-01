@@ -111,6 +111,7 @@
     <Compile Include="AnimatedTexture.cs" />
     <Compile Include="Booster.cs" />
     <Compile Include="Box.cs" />
+    <Compile Include="Explosion.cs" />
     <Compile Include="Mirror.cs" />
     <Compile Include="DeathWall.cs" />
     <Compile Include="Message.cs" />
@@ -120,6 +121,8 @@
     <Compile Include="Levels.cs" />
     <Compile Include="LevelSelect.cs" />
     <Compile Include="MainMenu.cs" />
+    <Compile Include="Rocket.cs" />
+    <Compile Include="RocketLauncher.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="Runner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

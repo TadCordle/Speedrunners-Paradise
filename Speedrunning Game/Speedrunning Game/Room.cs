@@ -44,7 +44,10 @@ namespace Speedrunning_Game
 
 		private List<Box> boxes;
 		public List<Box> Boxes { get { return boxes; } }
-		
+
+		private List<RocketLauncher> launchers;
+		public List<RocketLauncher> Launchers { get { return launchers; } }
+
 		public Runner Runner { get; set; }
 		public Finish Finish { get; set; }
 		public LevelTheme Theme { get; set; }
@@ -74,6 +77,7 @@ namespace Speedrunning_Game
 			platforms = new List<FloatingPlatform>();
 			messages = new List<Message>();
 			boxes = new List<Box>();
+			launchers = new List<RocketLauncher>();
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 		}
 
@@ -241,6 +245,8 @@ namespace Speedrunning_Game
 				boxes.Add(new Box(int.Parse(line[1]), int.Parse(line[2])));
 			else if (line[0] == "mirror")
 				walls.Add(new Mirror(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
+			else if (line[0] == "launcher")
+				launchers.Add(new RocketLauncher(new Vector2(int.Parse(line[1]), int.Parse(line[2]))));
 		}
 
 		private void BuildTiles()
@@ -373,6 +379,22 @@ namespace Speedrunning_Game
 
 					// Update character
 					Runner.Update();
+
+					// Update rocket launchers
+					foreach (RocketLauncher r in launchers)
+					{
+						if (r.explosion != null)
+							r.explosion.Update();
+						if (r.Update())
+						{
+							r.explosion = new Explosion(new Vector2(r.rocket.hitBox.X, r.rocket.hitBox.Y), Color.OrangeRed);
+							r.pause = 0;
+							r.rocket.position.X = -10000;
+							r.rocket.position.Y = -10000;
+							r.rocket.hitBox.X = -10000;
+							r.rocket.hitBox.Y = -10000;
+						}
+					}
 
 					// Move viewbox to keep up with character
 					UpdateViewBox();
@@ -529,7 +551,7 @@ namespace Speedrunning_Game
 
 			// Draw runner
 			if (Runner != null) Runner.Draw(sb, drawHue);
-			
+
 			// Draw finish platform
 			if (Finish != null) Finish.Draw(sb, drawHue);
 
@@ -539,6 +561,15 @@ namespace Speedrunning_Game
 							 select z;
 			foreach (ZipLine z in zipsInView)
 				z.Draw(sb, drawHue);
+
+			// Draw launchers
+			foreach (RocketLauncher r in launchers)
+			{
+				if (r.explosion != null)
+					r.explosion.Draw(sb);
+				if (r.hitBox.Intersects(viewBox) || r.rocket.hitBox.Intersects(viewBox))
+					r.Draw(sb, drawHue);
+			}
 
 			if (Finished)
 			{

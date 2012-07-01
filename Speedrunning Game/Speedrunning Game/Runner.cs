@@ -304,6 +304,14 @@ namespace Speedrunning_Game
 			foreach (Booster b in Game1.currentRoom.Boosters)
 				if (b.HitBox.Intersects(this.hitBox))
 					velocity += b.Acceleration;
+			
+			// Check for rocket collision
+			foreach (RocketLauncher r in Game1.currentRoom.Launchers)
+				if (r.rocket.hitBox.Intersects(this.hitBox))
+				{
+					this.health -= 5;
+					this.velocity += r.rocket.velocity * 2.0f;
+				}
 
 			// Check if level finish reached
 			if (Game1.currentRoom.Finish != null)
@@ -523,7 +531,7 @@ namespace Speedrunning_Game
 		private void UpdateHitBox()
 		{
 			// Move each hitbox to its corresponding spot relative to the position vector
-			if (isSliding && isTouchingGround)
+			if (isSliding && isTouchingGround || health <= 0)
 			{
 				hitBox.Height = 32;
 				leftWallBox.Height = 28;
@@ -545,7 +553,7 @@ namespace Speedrunning_Game
 			leftWallBox.Y = (int)position.Y + 2;
 			rightWallBox.X = (int)position.X + 48;
 			rightWallBox.Y = (int)position.Y + 2;
-			if (isSliding && isTouchingGround)
+			if (isSliding && isTouchingGround || health <= 0)
 			{
 				hitBox.Y += 32;
 				ziplineBox.Y += 32;
