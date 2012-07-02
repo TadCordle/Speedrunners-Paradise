@@ -309,8 +309,8 @@ namespace Speedrunning_Game
 			foreach (RocketLauncher r in Game1.currentRoom.Launchers)
 				if (r.rocket.hitBox.Intersects(this.hitBox))
 				{
-					this.health -= 5;
-					this.velocity += r.rocket.velocity * 2.0f;
+					this.health -= 6;
+					this.velocity += r.rocket.velocity * 1.5f;
 				}
 
 			// Check if level finish reached
@@ -393,7 +393,7 @@ namespace Speedrunning_Game
 			}
 
 			// Check for whether or not ziplining if control is being held
-			if ((Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl)) && controllable)
+			if ((Keyboard.GetState().IsKeyDown(Keys.LeftControl) || Keyboard.GetState().IsKeyDown(Keys.RightControl)) && controllable && !isTouchingGround)
 			{
 				bool zipping = false;
 				foreach (ZipLine z in Game1.currentRoom.ZipLines)
