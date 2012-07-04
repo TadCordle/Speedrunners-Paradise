@@ -501,11 +501,13 @@ namespace Speedrunning_Game
 			}
 			// Slow down if no keys are being held
 			else
-			{
 				acceleration.X = 0.0f;
-				if (acceleration.X < 0 && velocity.X < 0 && !isSliding && isTouchingGround)
+
+			if (Math.Abs(velocity.X) > 8.0f && !isSliding && isTouchingGround)
+			{
+				if (acceleration.X < 0 && velocity.X < 0)
 					velocity.X++;
-				else if (acceleration.X > 0 && velocity.X > 0 && !isSliding && isTouchingGround)
+				else if (acceleration.X > 0 && velocity.X > 0)
 					velocity.X--;
 			}
 
