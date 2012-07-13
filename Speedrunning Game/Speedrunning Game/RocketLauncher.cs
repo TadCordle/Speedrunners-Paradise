@@ -45,6 +45,7 @@ namespace Speedrunning_Game
 				{
 					if (Game1.currentRoom.Runner.position.Y <= Game1.currentRoom.roomHeight)
 					{
+						Game1.rocketLaunch.Play(0.5f, 0f, 0f);
 						rocket.position.X = hitBox.X + 8;
 						rocket.position.Y = hitBox.Y + 16;
 						rocket.angle = angle;

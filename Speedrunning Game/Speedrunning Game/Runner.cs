@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 using Game_Maker_Library;
 
@@ -28,6 +29,7 @@ namespace Speedrunning_Game
 			jumppresscheck, wallpresscheck; // A bunch of ballers
 		private ZipLine zippingLine; // Current zipline being used
 		private FloatingPlatform platform; // Current platform standing on
+		private float prevPlatSpeed;
 		private Box heldBox;
 		private int healthTracker; // Health variable and timer used for health regeneration
 		private int crushCount; // Used to fix crushing glitch
@@ -58,6 +60,7 @@ namespace Speedrunning_Game
 			controllable = true; // CHANGE THIS WHEN (if) COUNT DOWN IS IMPLEMENTED
 			jumppresscheck = false;
 			wallpresscheck = false;
+			prevPlatSpeed = 0;
 
 			// Set up hit boxes
 			this.hitBox = new Rectangle((int)position.X + 16, (int)position.Y, 32, 64);
@@ -106,7 +109,13 @@ namespace Speedrunning_Game
 			velocity.Y += acceleration.Y;
 			position += velocity;
 			if (platform != null)
+			{
+				if (Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed))
+					position.Y = platform.position.Y - 66;
 				position += platform.velocity;
+				prevPlatSpeed = platform.velocity.Y;
+
+			}
 			UpdateHitBox();
 
 			// Stay inside screen
@@ -144,7 +153,7 @@ namespace Speedrunning_Game
 					{
 						isZipping = false;
 						isTouchingGround = true;
-						if (w is FloatingPlatform )
+						if (w is FloatingPlatform)
 						{
 							if (platform == null)
 								platform = (FloatingPlatform)w;
@@ -165,7 +174,7 @@ namespace Speedrunning_Game
 
 				// Apply other wall collisions
 				if (this.hitBox.Intersects(w.Bounds))
-				{					
+				{
 					List<Vector2> resolutions = new List<Vector2>();
 
 					// Resolve Y
@@ -203,6 +212,7 @@ namespace Speedrunning_Game
 						{
 							if (w is DeathWall && health > 0)
 							{
+								// Play damage sound
 								this.velocity.X = Math.Sign(velocity.X) * -6;
 								health -= 9;
 							}
@@ -216,11 +226,16 @@ namespace Speedrunning_Game
 						{
 							if (w is DeathWall && health > 0)
 							{
+								// Play damage sound
 								this.velocity.Y = Math.Sign(velocity.Y) * -6;
 								health -= 9;
 							}
 							else
+							{
+								if (Math.Abs(this.velocity.Y) >= 3)
+									Game1.collide.Play(0.3f, 0f, 0f);
 								this.velocity.Y = 0;
+							}
 						}
 					}
 					if (!(w is FloatingPlatform && health <= 0))
@@ -303,8 +318,11 @@ namespace Speedrunning_Game
 			// Apply booster acceleration
 			foreach (Booster b in Game1.currentRoom.Boosters)
 				if (b.HitBox.Intersects(this.hitBox))
+				{
+					Game1.boost.Play(0.5f, 0f, 0f);
 					velocity += b.Acceleration;
-			
+				}
+
 			// Check for rocket collision
 			foreach (RocketLauncher r in Game1.currentRoom.Launchers)
 				if (r.rocket.hitBox.Intersects(this.hitBox))
@@ -314,13 +332,17 @@ namespace Speedrunning_Game
 				}
 
 			// Check if level finish reached
-			if (Game1.currentRoom.Finish != null)
+			if (Game1.currentRoom.Finish != null && !Game1.currentRoom.Finished)
 				if (this.hitBox.Intersects(Game1.currentRoom.Finish.HitBox))
+				{
+					// Play finished sound
 					Game1.currentRoom.Finished = true;
+				}
 
 			// Remove ground friction if midair
 			if (!isTouchingGround)
 			{
+				Game1.run.Stop();
 				if (health <= 0)
 					current = deadMidair;
 				else
@@ -350,6 +372,7 @@ namespace Speedrunning_Game
 				// Jumping
 				if (isTouchingGround && !staySliding && !jumppresscheck)
 				{
+					Game1.jump.Play();
 					velocity.Y = -10.0f;
 					current = midair;
 					isTouchingGround = false;
@@ -359,6 +382,7 @@ namespace Speedrunning_Game
 				// Wall jumping
 				else if (!wallpresscheck && !isTouchingGround && isTouchingWall)
 				{
+					Game1.jump.Play();
 					velocity.X = canWallToRight ? 8 : -8;
 					movedLeft = !movedLeft;
 					if (velocity.Y > -7.5f)
@@ -371,6 +395,7 @@ namespace Speedrunning_Game
 				// Box jumping
 				else if (heldBox != null && !isTouchingGround && !jumppresscheck)
 				{
+					Game1.jump.Play();
 					velocity.Y = -10.0f;
 					current = midair;
 					jumppresscheck = true;
@@ -387,7 +412,7 @@ namespace Speedrunning_Game
 			{
 				current = ziplining;
 				position.Y = zippingLine.GetY(ziplineBox.Center.X);
-				acceleration = zippingLine.Acceleration * (Math.Abs(zippingLine.Slope) > 1.5f ? 1 : 3	);
+				acceleration = zippingLine.Acceleration * (Math.Abs(zippingLine.Slope) > 1.5f ? 1 : 3);
 				velocity = zippingLine.GetNewVelocity(velocity);
 				movedLeft = velocity.X < 0;
 			}
@@ -529,6 +554,22 @@ namespace Speedrunning_Game
 			if (midairFrame < 0) midairFrame = 0;
 			if (midairFrame > 8) midairFrame = 8;
 			midair.Frame = midairFrame;
+
+			// Play sounds
+			if (current == running)
+			{
+				if (Game1.run.State != SoundState.Playing)
+					Game1.run.Play();
+			}
+			else if (current == ziplining || current == sliding)
+			{
+				Game1.run.Stop();
+				// Loop sliding/ziplining sound
+			}
+			else
+			{
+				Game1.run.Stop();
+			}
 		}
 		private void UpdateHitBox()
 		{

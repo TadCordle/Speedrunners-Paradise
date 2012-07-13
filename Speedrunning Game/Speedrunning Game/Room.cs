@@ -345,6 +345,7 @@ namespace Speedrunning_Game
 			// Restart the current level when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.R) && rcheck)
 			{
+				// Play damaged sound
 				if (custom)
 					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl");
 				else

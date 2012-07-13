@@ -14,6 +14,21 @@ namespace Speedrunning_Game
 {
 	public class Game1 : Microsoft.Xna.Framework.Game
 	{
+		/* Need sounds:
+		 * Player
+		 *	Sliding/Ziplining
+		 *	Damaged
+		 *	Finish
+		 * 
+		 * Need music:
+		 * Menu
+		 * Grass
+		 * Lava
+		 * Night
+		 * Cave
+		 * Factory
+		 */
+
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
@@ -32,6 +47,9 @@ namespace Speedrunning_Game
 		public static Texture2D[] tileSet, deathWallSet;
 		public static Texture2D mirrorTex;
 		public static Texture2D[] backgrounds;
+		public static SoundEffect rocketLaunch, explosion;
+		public static SoundEffect boost, collide, jump;
+		public static SoundEffectInstance run;
 		public static bool exit = false;
 
 		private bool pressEscape = false;
@@ -107,14 +125,12 @@ namespace Speedrunning_Game
 			tileSet[1] = Content.Load<Texture2D>("tiles/tilelava");
 			tileSet[2] = Content.Load<Texture2D>("tiles/tilenight");
 			tileSet[3] = Content.Load<Texture2D>("tiles/tilecave");
-//			tileSet[4] = Content.Load<Texture2D>("tiles/tilefactory");
-			tileSet[4] = Content.Load<Texture2D>("tiles/tilestest");
+			tileSet[4] = Content.Load<Texture2D>("tiles/tilefactory");
 			deathWallSet[0] = Content.Load<Texture2D>("tiles/deathgrass");
 			deathWallSet[1] = Content.Load<Texture2D>("tiles/deathlava");
-			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathgrass");
-//			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathnight");
-//			deathWallSet[3] = Content.Load<Texture2D>("tiles/deathcave");
-//			deathWallSet[4] = Content.Load<Texture2D>("tiles/deathfactory");
+			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathnight");
+			deathWallSet[3] = Content.Load<Texture2D>("tiles/deathcave");
+			deathWallSet[4] = Content.Load<Texture2D>("tiles/deathfactory");
 			mirrorTex = Content.Load<Texture2D>("tiles/mirror");
 			backgrounds[0] = Content.Load<Texture2D>("backgrounds/bggrass");
 			backgrounds[1] = Content.Load<Texture2D>("backgrounds/bglava");
@@ -124,6 +140,13 @@ namespace Speedrunning_Game
 
 			medalTex = Content.Load<Texture2D>("medal");
 			wallTex = Content.Load<Texture2D>("pixel");
+
+			run = Content.Load<SoundEffect>("sounds/run").CreateInstance();
+			jump = Content.Load<SoundEffect>("sounds/jump");
+			boost = Content.Load<SoundEffect>("sounds/boost");
+			collide = Content.Load<SoundEffect>("sounds/collision");
+			rocketLaunch = Content.Load<SoundEffect>("sounds/rocket launch");
+			explosion = Content.Load<SoundEffect>("sounds/explosion");
 
 			titlefont = Content.Load<SpriteFont>("titlefont");
 			msgfont = Content.Load<SpriteFont>("msgfont");

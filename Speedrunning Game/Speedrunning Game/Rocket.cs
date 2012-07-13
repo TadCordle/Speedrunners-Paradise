@@ -61,10 +61,17 @@ namespace Speedrunning_Game
 		public bool Update()
 		{
 			if (hitBox.Intersects(Game1.currentRoom.Runner.hitBox))
+			{
+				Game1.explosion.Play(0.5f, 0f, 0f);
 				return true;
+			}
+
 			foreach (Wall w in Game1.currentRoom.Walls)
 				if (hitBox.Intersects(w.Bounds))
+				{
+					Game1.explosion.Play(0.5f, 0f, 0f);
 					return true;
+				}
 
 			Vector2 direction = new Vector2(Game1.currentRoom.Runner.hitBox.X - position.X, Game1.currentRoom.Runner.hitBox.Y - position.Y);
 			float angleTo = (float)Math.Acos(direction.X / direction.Length());

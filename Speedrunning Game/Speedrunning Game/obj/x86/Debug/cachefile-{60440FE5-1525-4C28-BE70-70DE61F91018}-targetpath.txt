@@ -101,3 +101,13 @@ Content\tiles\mirror.xnb
 Content\explosion particle.xnb
 Content\launcher.xnb
 Content\rocket.xnb
+Content\tiles\tilefactory.xnb
+Content\tiles\deathnight.xnb
+Content\tiles\deathcave.xnb
+Content\tiles\deathfactory.xnb
+Content\sounds\explosion.xnb
+Content\sounds\rocket launch.xnb
+Content\sounds\boost.xnb
+Content\sounds\collision.xnb
+Content\sounds\run.xnb
+Content\sounds\jump.xnb
