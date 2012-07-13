@@ -12,12 +12,12 @@ namespace Speedrunning_Game
 		/*
 		 * IDEAS
 		 * 
-		 * - Training level
+		 * x Training level
 		 * - Fragmented level, lots of blank space, few platforms
 		 * - Level with only floating platforms
 		 * - Kill yourself to get gold time (jump through fence land on finish)
 		 * - Level that plays itself
-		 * - 
+		 * - Beat level to get box, beat level backwards with box to finish
 		 * 
 		 */
 

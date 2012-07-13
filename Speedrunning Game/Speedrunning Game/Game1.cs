@@ -111,6 +111,7 @@ namespace Speedrunning_Game
 			tileSet[4] = Content.Load<Texture2D>("tiles/tilestest");
 			deathWallSet[0] = Content.Load<Texture2D>("tiles/deathgrass");
 			deathWallSet[1] = Content.Load<Texture2D>("tiles/deathlava");
+			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathgrass");
 //			deathWallSet[2] = Content.Load<Texture2D>("tiles/deathnight");
 //			deathWallSet[3] = Content.Load<Texture2D>("tiles/deathcave");
 //			deathWallSet[4] = Content.Load<Texture2D>("tiles/deathfactory");

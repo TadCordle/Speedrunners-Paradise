@@ -34,8 +34,12 @@ namespace Speedrunning_Game
 			levels = new List<string>();
 			selected = 0;
 			scope = 0;
+			if (!Directory.Exists("Content\\rooms"))
+				Directory.CreateDirectory("Content\\rooms");
 			string[] choices = Directory.GetFiles("Content\\rooms");
 
+			if (!File.Exists("Content\\records.txt"))
+				File.Create("Content\\records.txt");
 			StreamReader findMainLevels = new StreamReader("Content\\records.txt");
 			SimpleAES decryptor = new SimpleAES();
 			while (!findMainLevels.EndOfStream)
@@ -61,7 +65,7 @@ namespace Speedrunning_Game
 			if (!Keyboard.GetState().IsKeyDown(Keys.Enter))
 				pressEnter = true;
 
-			// Cycle through choices
+			// Cycle through choices when keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown)
 			{
 				pressDown = false;
@@ -110,13 +114,16 @@ namespace Speedrunning_Game
 
 		public override void Draw(SpriteBatch sb)
 		{
+			// Draw background
 			sb.Draw(background, new Rectangle(0, 0, roomWidth, roomHeight), Color.White);
 
+			// Draw scroll arrows
 			if (scope > 0)
 				sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
-			else if (scope < maxSelected / 11 && maxSelected >= 11)
+			if (scope < maxSelected / 11 && maxSelected > 11)
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
 
+			// Draw text
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(264, 10), Color.White);
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
 			for (int i = 0; i < levels.Count; i++)
