@@ -644,8 +644,8 @@ namespace Speedrunning_Game
 			if (Paused || Finished || Runner.health <= 0 || freeroaming)
 			{
 				sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming ? 782 : 750, 690), Color.White);
-				if (freeroaming && !Paused)
-					sb.DrawString(Game1.mnufont, "Press R to play", new Vector2(783, 691), Color.Black);
+				if (freeroaming && !Paused || Runner.health <= 0 && !Paused)
+					sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming? 783 : 751, 691), Color.Black);
 			}
 
 			if (Finished)
@@ -737,6 +737,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 
 				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
+				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(726, 661), Color.Black);
 			}
 			else
 			{

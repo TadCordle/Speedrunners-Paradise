@@ -1058,6 +1058,43 @@
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.wma</Extra>
       <Time>2012-07-14T11:11:52.1309779-04:00</Time>
     </Item>
+    <Item>
+      <Source>music\factory.mp3</Source>
+      <Name>music\factory</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\factory.xnb</Output>
+      <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\factory.wma</Extra>
+      <Time>2012-07-14T14:08:01.1146247-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\slide.wav</Source>
+      <Name>sounds\slide</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\slide.xnb</Output>
+      <Time>2012-07-14T14:41:18.3423423-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\damage.wav</Source>
+      <Name>sounds\damage</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\damage.xnb</Output>
+      <Time>2012-07-14T14:51:10.7396932-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\finish.wav</Source>
+      <Name>sounds\finish</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\finish.xnb</Output>
+      <Time>2012-07-14T14:54:55.261122-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

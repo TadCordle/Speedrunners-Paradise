@@ -155,7 +155,11 @@ namespace Speedrunning_Game
 						if (w is FloatingPlatform)
 						{
 							if (platform == null)
+							{
 								platform = (FloatingPlatform)w;
+								if (!Keyboard.GetState().IsKeyDown(Keys.Left) && !Keyboard.GetState().IsKeyDown(Keys.Right))
+									velocity.X = 0;
+							}
 							isOnPlatform = true;
 						}
 					}
@@ -211,7 +215,7 @@ namespace Speedrunning_Game
 						{
 							if (w is DeathWall && health > 0)
 							{
-								// Play damage sound
+								Game1.damage.Play(0.5f, 0f, 0f);
 								this.velocity.X = Math.Sign(velocity.X) * -6;
 								health -= 9;
 							}
@@ -225,7 +229,7 @@ namespace Speedrunning_Game
 						{
 							if (w is DeathWall && health > 0)
 							{
-								// Play damage sound
+								Game1.damage.Play(0.5f, 0f, 0f);
 								this.velocity.Y = Math.Sign(velocity.Y) * -6;
 								health -= 9;
 							}
@@ -252,7 +256,11 @@ namespace Speedrunning_Game
 						if (w is FloatingPlatform)
 						{
 							if (platform == null)
+							{
 								platform = (FloatingPlatform)w;
+								if (!Keyboard.GetState().IsKeyDown(Keys.Left) && !Keyboard.GetState().IsKeyDown(Keys.Right))
+									velocity.X = 0;
+							}
 							isOnPlatform = true;
 						}
 						groundFriction.X = Math.Sign(velocity.X) * -1 * 0.5f;
@@ -294,6 +302,11 @@ namespace Speedrunning_Game
 			{
 				if (!(w is PlatformWall) && this.hitBox.Intersects(w.Bounds))
 				{
+					if (!(isSliding || staySliding))
+					{
+						staySliding = true;
+						break;
+					}
 					crushCount++;
 					if (crushCount >= 3)
 						health = 0;
@@ -334,7 +347,7 @@ namespace Speedrunning_Game
 			if (Game1.currentRoom.Finish != null && !Game1.currentRoom.Finished)
 				if (this.hitBox.Intersects(Game1.currentRoom.Finish.HitBox))
 				{
-					// Play finished sound
+					Game1.finish.Play();
 					Game1.currentRoom.Finished = true;
 				}
 
@@ -557,18 +570,20 @@ namespace Speedrunning_Game
 			// Play sounds
 			if (current == running)
 			{
+				Game1.slide.Stop();
 				if (Game1.run.State != SoundState.Playing)
 					Game1.run.Play();
 			}
 			else if (current == ziplining || current == sliding)
 			{
 				Game1.run.Stop();
-				// Loop sliding/ziplining sound
+				if (Game1.slide.State != SoundState.Playing && velocity.X != 0)
+					Game1.slide.Play();
 			}
 			else
 			{
 				Game1.run.Stop();
-				// Stop sliding/ziplining sound
+				Game1.slide.Stop();
 			}
 		}
 		private void UpdateHitBox()

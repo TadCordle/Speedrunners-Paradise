@@ -119,3 +119,8 @@ Content\music\night.xnb
 Content\music\night.wma
 Content\music\cave.xnb
 Content\music\cave.wma
+Content\music\factory.xnb
+Content\music\factory.wma
+Content\sounds\slide.xnb
+Content\sounds\damage.xnb
+Content\sounds\finish.xnb

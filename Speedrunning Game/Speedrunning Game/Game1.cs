@@ -16,16 +16,8 @@ namespace Speedrunning_Game
 	{
 		/* Need sounds:
 		 * Player
-		 *	Sliding/Ziplining
 		 *	Damaged
 		 *	Finish
-		 * 
-		 * Need music:
-		 * Menu
-		 * Grass
-		 * Night
-		 * Cave
-		 * Factory
 		 */
 
 		GraphicsDeviceManager graphics;
@@ -47,8 +39,8 @@ namespace Speedrunning_Game
 		public static Texture2D mirrorTex;
 		public static Texture2D[] backgrounds;
 		public static SoundEffect rocketLaunch, explosion;
-		public static SoundEffect boost, collide, jump;
-		public static SoundEffectInstance run;
+		public static SoundEffect boost, collide, jump, damage, finish;
+		public static SoundEffectInstance run, slide;
 		public static Song grassMusic, lavaMusic, nightMusic, caveMusic, factoryMusic;
 		public static bool playingGrass, playingLava, playingNight, playingCave, playingFactory;
 		public static bool exit = false;
@@ -143,9 +135,12 @@ namespace Speedrunning_Game
 			wallTex = Content.Load<Texture2D>("pixel");
 
 			run = Content.Load<SoundEffect>("sounds/run").CreateInstance();
+			slide = Content.Load<SoundEffect>("sounds/slide").CreateInstance();
 			jump = Content.Load<SoundEffect>("sounds/jump");
 			boost = Content.Load<SoundEffect>("sounds/boost");
 			collide = Content.Load<SoundEffect>("sounds/collision");
+			finish = Content.Load<SoundEffect>("sounds/finish");
+			damage = Content.Load<SoundEffect>("sounds/damage");
 			rocketLaunch = Content.Load<SoundEffect>("sounds/rocket launch");
 			explosion = Content.Load<SoundEffect>("sounds/explosion");
 
@@ -158,7 +153,7 @@ namespace Speedrunning_Game
 			lavaMusic = Content.Load<Song>("music/lava");
 			nightMusic = Content.Load<Song>("music/night");
 			caveMusic = Content.Load<Song>("music/cave");
-			factoryMusic = Content.Load<Song>("music/lava");
+			factoryMusic = Content.Load<Song>("music/factory");
 
 			titlefont = Content.Load<SpriteFont>("titlefont");
 			msgfont = Content.Load<SpriteFont>("msgfont");
