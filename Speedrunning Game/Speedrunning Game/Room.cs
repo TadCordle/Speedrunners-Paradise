@@ -399,6 +399,7 @@ namespace Speedrunning_Game
 				Paused = !Paused;
 			}
 
+			// Update freeroam cam
 			if (freeroaming)
 			{
 				if (Keyboard.GetState().IsKeyDown(Keys.Left))
@@ -459,6 +460,7 @@ namespace Speedrunning_Game
 			}
 			else
 			{
+				// Fix glitch where you can restart at the same time you hit the finish and achieve a time of 0 seconds
 				if (time == 0)
 				{
 					if (custom)
@@ -518,7 +520,7 @@ namespace Speedrunning_Game
 					if (!custom)
 					{
 						Levels.Index++;
-						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 					}
 					else
 					{
@@ -630,8 +632,21 @@ namespace Speedrunning_Game
 					r.Draw(sb, drawHue);
 			}
 
+			// Freeroam instructions
+			if (freeroaming)
+			{
+				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(0, 30), Color.White);
+				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(1, 31), Color.Black);
+				sb.DrawString(Game1.mnufont, "Use the arrow keys to check out the level before you play", new Vector2(0, 60), Color.White);
+				sb.DrawString(Game1.mnufont, "Use the arrow keys to check out the level before you play", new Vector2(1, 61), Color.Black);
+			}
+
 			if (Paused || Finished || Runner.health <= 0 || freeroaming)
-				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
+			{
+				sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming ? 782 : 750, 690), Color.White);
+				if (freeroaming && !Paused)
+					sb.DrawString(Game1.mnufont, "Press R to play", new Vector2(783, 691), Color.Black);
+			}
 
 			if (Finished)
 			{

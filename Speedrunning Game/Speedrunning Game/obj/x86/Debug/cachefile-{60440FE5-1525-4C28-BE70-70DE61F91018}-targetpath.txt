@@ -113,3 +113,9 @@ Content\sounds\run.xnb
 Content\sounds\jump.xnb
 Content\music\lava.xnb
 Content\music\lava.wma
+Content\music\grass.xnb
+Content\music\grass.wma
+Content\music\night.xnb
+Content\music\night.wma
+Content\music\cave.xnb
+Content\music\cave.wma

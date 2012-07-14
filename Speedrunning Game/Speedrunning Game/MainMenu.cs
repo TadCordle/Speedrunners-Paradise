@@ -28,10 +28,10 @@ namespace Speedrunning_Game
 			roomWidth = 960;
 			Theme = LevelTheme.Grass;
 			selected = 0;
-			if (!Game1.playingMenu)
-				MediaPlayer.Play(Game1.menuMusic);
+			if (!Game1.playingGrass)
+				MediaPlayer.Play(Game1.grassMusic);
 			Game1.ResetMusic();
-			Game1.playingMenu = true;
+			Game1.playingGrass = true;
 		}
 
 		public override void Update(GameTime gameTime)

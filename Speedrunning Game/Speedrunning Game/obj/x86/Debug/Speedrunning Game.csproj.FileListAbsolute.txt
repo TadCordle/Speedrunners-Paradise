@@ -123,3 +123,9 @@ C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Spe
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\jump.xnb
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\lava.xnb
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\lava.wma
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\grass.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\grass.wma
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\night.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\night.wma
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.wma

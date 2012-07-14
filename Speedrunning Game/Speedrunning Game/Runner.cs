@@ -110,7 +110,7 @@ namespace Speedrunning_Game
 			position += velocity;
 			if (platform != null)
 			{
-				if (Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed))
+				if (Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed) && prevPlatSpeed != 0)
 					position.Y = platform.position.Y - 66;
 				position += platform.velocity;
 				prevPlatSpeed = platform.velocity.Y;

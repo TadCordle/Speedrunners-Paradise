@@ -55,10 +55,10 @@ namespace Speedrunning_Game
 			levels.AddRange(choices);
 			maxSelected = levels.Count - 1;
 
-			if (!Game1.playingMenu)
-				MediaPlayer.Play(Game1.menuMusic);
+			if (!Game1.playingGrass)
+				MediaPlayer.Play(Game1.grassMusic);
 			Game1.ResetMusic();
-			Game1.playingMenu = true;
+			Game1.playingGrass = true;
 		}
 
 		public override void Update(GameTime gameTime)
@@ -111,10 +111,10 @@ namespace Speedrunning_Game
 						index--;
 					}
 					Levels.Index = newRet - 1;
-					Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 				}
 				else
-					Game1.currentRoom = new Room(levels[selected], false);
+					Game1.currentRoom = new Room(levels[selected], true);
 			}
 		}
 

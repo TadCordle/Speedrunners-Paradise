@@ -1028,6 +1028,36 @@
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\lava.wma</Extra>
       <Time>2012-07-13T18:12:00.2851632-04:00</Time>
     </Item>
+    <Item>
+      <Source>music\grass.mp3</Source>
+      <Name>music\grass</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\grass.xnb</Output>
+      <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\grass.wma</Extra>
+      <Time>2012-07-13T23:44:37.3665233-04:00</Time>
+    </Item>
+    <Item>
+      <Source>music\night.mp3</Source>
+      <Name>music\night</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\night.xnb</Output>
+      <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\night.wma</Extra>
+      <Time>2012-07-14T10:25:18.5186081-04:00</Time>
+    </Item>
+    <Item>
+      <Source>music\cave.mp3</Source>
+      <Name>music\cave</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.xnb</Output>
+      <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.wma</Extra>
+      <Time>2012-07-14T11:11:52.1309779-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
