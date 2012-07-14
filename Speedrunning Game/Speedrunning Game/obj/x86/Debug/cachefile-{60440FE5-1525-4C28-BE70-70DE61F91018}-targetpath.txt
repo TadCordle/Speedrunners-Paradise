@@ -111,3 +111,5 @@ Content\sounds\boost.xnb
 Content\sounds\collision.xnb
 Content\sounds\run.xnb
 Content\sounds\jump.xnb
+Content\music\lava.xnb
+Content\music\lava.wma

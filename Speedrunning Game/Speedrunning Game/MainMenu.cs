@@ -6,6 +6,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 namespace Speedrunning_Game
 {
@@ -27,6 +28,10 @@ namespace Speedrunning_Game
 			roomWidth = 960;
 			Theme = LevelTheme.Grass;
 			selected = 0;
+			if (!Game1.playingMenu)
+				MediaPlayer.Play(Game1.menuMusic);
+			Game1.ResetMusic();
+			Game1.playingMenu = true;
 		}
 
 		public override void Update(GameTime gameTime)
@@ -55,7 +60,7 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
 				if (selected == 0)
-					Game1.currentRoom = new Room(Levels.levels[0]);
+					Game1.currentRoom = new Room(Levels.levels[0], false);
 				else if (selected == 1)
 					Game1.currentRoom = new LevelSelect();
 //				else if (selected == 2)

@@ -36,7 +36,7 @@ namespace Speedrunning_Game
 		
 		const int HEALTHINTERVAL = 30; // Health regeneration timer limit
 
-		public Runner(Vector2 position)
+		public Runner(Vector2 position, bool freeroam)
 		{
 			// Set up animations, like a baller
 			normal = Game1.guyNormal;
@@ -57,7 +57,7 @@ namespace Speedrunning_Game
 			isSliding = false;
 			isZipping = false;
 			staySliding = false;
-			controllable = true; // CHANGE THIS WHEN (if) COUNT DOWN IS IMPLEMENTED
+			controllable = !freeroam;
 			jumppresscheck = false;
 			wallpresscheck = false;
 			prevPlatSpeed = 0;
@@ -114,7 +114,6 @@ namespace Speedrunning_Game
 					position.Y = platform.position.Y - 66;
 				position += platform.velocity;
 				prevPlatSpeed = platform.velocity.Y;
-
 			}
 			UpdateHitBox();
 
@@ -143,7 +142,7 @@ namespace Speedrunning_Game
 			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				// Make sure wall effects player
-				if (w is PlatformWall || !w.Bounds.Intersects(Game1.currentRoom.ViewBox))
+				if (w is PlatformWall || (!w.Bounds.Intersects(Game1.currentRoom.ViewBox) && controllable))
 					continue;
 
 				// If you're standing on it, apply ground friction and say that you're standing
@@ -569,6 +568,7 @@ namespace Speedrunning_Game
 			else
 			{
 				Game1.run.Stop();
+				// Stop sliding/ziplining sound
 			}
 		}
 		private void UpdateHitBox()

@@ -7,6 +7,7 @@ using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 using Game_Maker_Library;
 
@@ -59,7 +60,7 @@ namespace Speedrunning_Game
 		private Tileset wallSet;
 		private string levelName;
 		private int time, record, goalBeaten;
-		private bool custom, write, pcheck, rcheck;
+		private bool custom, write, pcheck, rcheck, fcheck, freeroaming;
 
 		public Room()
 		{
@@ -81,9 +82,11 @@ namespace Speedrunning_Game
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 		}
 
-		public Room(string file)
+		public Room(string file, bool freeroam)
 			: this()
 		{
+			freeroaming = freeroam;
+			
 			// Get level name
 			levelName = file.Split('\\')[file.Split('\\').Length - 1].Replace(".srl", "");
 			custom = true;
@@ -111,7 +114,7 @@ namespace Speedrunning_Game
 			while (!levelReader.EndOfStream)
 			{
 				line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
-				ParseObjectOrTile(line);
+				ParseObjectOrTile(line, freeroam);
 			}
 			levelReader.Dispose();
 
@@ -124,11 +127,14 @@ namespace Speedrunning_Game
 			// Get current record for this level
 			FindRecord(decryptor);
 
-			UpdateViewBox();
+			UpdateViewBox(false);
 		}
 
-		public Room(string[] lines) : this()
+		public Room(string[] lines, bool freeroam) 
+			: this()
 		{
+			freeroaming = freeroam;
+			
 			// Get level name
 			levelName = ".MAIN.Level" + (Levels.Index + 1).ToString();
 			custom = false;
@@ -156,7 +162,7 @@ namespace Speedrunning_Game
 			while (index < lines.Length)
 			{
 				line = decryptor.DecryptString(lines[index]).Split(' ');
-				ParseObjectOrTile(line);
+				ParseObjectOrTile(line, freeroam);
 				index++;
 			}
 			BuildTiles();
@@ -191,7 +197,7 @@ namespace Speedrunning_Game
 				writer.Dispose();
 			}
 
-			UpdateViewBox();
+			UpdateViewBox(false);
 		}
 
 		// Parses a theme from a line of text
@@ -200,26 +206,50 @@ namespace Speedrunning_Game
 			switch (t)
 			{
 				case "Grass":
+					if (!Game1.playingGrass)
+						MediaPlayer.Play(Game1.grassMusic);
+					Game1.ResetMusic();
+					Game1.playingGrass = true;
 					return LevelTheme.Grass;
 				case "Lava":
+					if (!Game1.playingLava)
+						MediaPlayer.Play(Game1.lavaMusic);
+					Game1.ResetMusic();
+					Game1.playingLava = true;
 					return LevelTheme.Lava;
 				case "Night":
+					if (!Game1.playingNight)
+						MediaPlayer.Play(Game1.nightMusic);
+					Game1.ResetMusic();
+					Game1.playingNight = true;
 					return LevelTheme.Night;
 				case "Cave":
+					if (!Game1.playingCave)
+						MediaPlayer.Play(Game1.caveMusic);
+					Game1.ResetMusic();
+					Game1.playingCave = true;
 					return LevelTheme.Cave;
 				case "Factory":
+					if (!Game1.playingFactory)
+						MediaPlayer.Play(Game1.factoryMusic);
+					Game1.ResetMusic();
+					Game1.playingFactory = true;
 					return LevelTheme.Factory;
 				default:
+					if (!Game1.playingGrass)
+						MediaPlayer.Play(Game1.grassMusic);
+					Game1.ResetMusic();
+					Game1.playingGrass = true;
 					return LevelTheme.Grass;
 			}
 		}
 
 		// Instantiates an object from a line of text and adds it to the appropriate list
-		private void ParseObjectOrTile(string[] line)
+		private void ParseObjectOrTile(string[] line, bool freeroam)
 		{
 			if (line[0] == "runner")
 			{
-				Runner = new Runner(new Vector2(int.Parse(line[1]), int.Parse(line[2])));
+				Runner = new Runner(new Vector2(int.Parse(line[1]), int.Parse(line[2])), freeroam);
 				viewBox.X = (int)Runner.position.X - VIEWSIZE_X / 2 - 32;
 				viewBox.Y = (int)Runner.position.Y - VIEWSIZE_Y / 2 - 32;
 				if (ViewBox.X < 0) viewBox.X = 0;
@@ -341,15 +371,25 @@ namespace Speedrunning_Game
 				rcheck = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.P))
 				pcheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.F))
+				fcheck = true;
 
 			// Restart the current level when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.R) && rcheck)
 			{
 				// Play damaged sound
 				if (custom)
-					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl");
+					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false);
 				else
-					Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
+			}
+			else if (Keyboard.GetState().IsKeyDown(Keys.F) && fcheck)
+			{
+				// Play damaged sound
+				if (custom)
+					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", true);
+				else
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 			}
 
 			// Pause the game when P is pressed
@@ -357,6 +397,18 @@ namespace Speedrunning_Game
 			{
 				pcheck = false;
 				Paused = !Paused;
+			}
+
+			if (freeroaming)
+			{
+				if (Keyboard.GetState().IsKeyDown(Keys.Left))
+					viewBox.X -= 8;
+				if (Keyboard.GetState().IsKeyDown(Keys.Right))
+					viewBox.X += 8;
+				if (Keyboard.GetState().IsKeyDown(Keys.Up))
+					viewBox.Y -= 8;
+				if (Keyboard.GetState().IsKeyDown(Keys.Down))
+					viewBox.Y += 8;
 			}
 
 			if (!Finished)
@@ -398,7 +450,7 @@ namespace Speedrunning_Game
 					}
 
 					// Move viewbox to keep up with character
-					UpdateViewBox();
+					UpdateViewBox(freeroaming);
 
 					// If the runner can be moved, increment the timer
 					if (Runner.controllable)
@@ -410,9 +462,9 @@ namespace Speedrunning_Game
 				if (time == 0)
 				{
 					if (custom)
-						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl");
+						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false);
 					else
-						Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
 					return;
 				}
 
@@ -466,7 +518,7 @@ namespace Speedrunning_Game
 					if (!custom)
 					{
 						Levels.Index++;
-						Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
 					}
 					else
 					{
@@ -477,22 +529,28 @@ namespace Speedrunning_Game
 			}
 		}
 
-		private void UpdateViewBox()
+		private void UpdateViewBox(bool freeroam)
 		{
-			if (Runner.position.X + 32 > ViewBox.X + (VIEWSIZE_X / 2 + 10))
-				viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 + 10);
-			else if (Runner.position.X + 32 < ViewBox.X + (VIEWSIZE_X / 2 - 10))
-				viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 - 10);
+			if (!freeroam)
+			{
+				if (Runner.position.X + 32 > ViewBox.X + (VIEWSIZE_X / 2 + 10))
+					viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 + 10);
+				else if (Runner.position.X + 32 < ViewBox.X + (VIEWSIZE_X / 2 - 10))
+					viewBox.X = (int)Runner.position.X + 32 - (VIEWSIZE_X / 2 - 10);
+			}
 
 			if (ViewBox.X < 0 || VIEWSIZE_X > roomWidth)
 				viewBox.X = 0;
 			else if (ViewBox.Right > roomWidth)
 				viewBox.X = roomWidth - ViewBox.Width;
 
-			if (Runner.position.Y + 32 > ViewBox.Y + (VIEWSIZE_Y / 2 + 10))
-				viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 + 10);
-			else if (Runner.position.Y + 32 < ViewBox.Y + (VIEWSIZE_Y / 2 - 10))
-				viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 - 10);
+			if (!freeroam)
+			{
+				if (Runner.position.Y + 32 > ViewBox.Y + (VIEWSIZE_Y / 2 + 10))
+					viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 + 10);
+				else if (Runner.position.Y + 32 < ViewBox.Y + (VIEWSIZE_Y / 2 - 10))
+					viewBox.Y = (int)Runner.position.Y + 32 - (VIEWSIZE_Y / 2 - 10);
+			}
 
 			if (ViewBox.Bottom > roomHeight || VIEWSIZE_Y > roomHeight)
 				viewBox.Y = roomHeight - ViewBox.Height;
@@ -572,6 +630,9 @@ namespace Speedrunning_Game
 					r.Draw(sb, drawHue);
 			}
 
+			if (Paused || Finished || Runner.health <= 0 || freeroaming)
+				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
+
 			if (Finished)
 			{
 				// Draw finished level screen
@@ -602,8 +663,8 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, goalBeaten != 0 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : "Do better next time!", new Vector2(382, 400), Color.Yellow);
 
-				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 660), Color.White);
-				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
+				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 630), Color.White);
+				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
 			}
 			else if (Paused)
 			{
@@ -632,8 +693,8 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 310), goalBeaten == 2 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 
-				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 660), Color.White);
-				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
+				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White);
+				sb.DrawString(Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White);
 			}
 			else if (Runner.health <= 0)
 			{
@@ -660,7 +721,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 310), goalBeaten == 2 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 
-				sb.DrawString(Game1.mnufont, "Press R to restart", new Vector2(750, 690), Color.White);
+				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
 			}
 			else
 			{

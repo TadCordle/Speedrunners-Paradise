@@ -83,14 +83,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="199168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="200704">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>irNEdOwxyapAK/PY871UFWveaC4=</dsig:DigestValue>
+        <dsig:DigestValue>f1VrnkvXGd8ikYCt6PZAk9i25pg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -911,6 +911,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>QFevnmMXTUGy/UXnwwRlHSqfT74=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\music\lava.wma" size="1427711">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dI5may5/YHz7KTpWxbp6TFTO9yM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\music\lava.xnb" size="122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6otnRDgGMYp/pm1E8JBPpbvxQuI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\pixel.xnb" size="9403">

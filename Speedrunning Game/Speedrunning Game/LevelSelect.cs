@@ -7,6 +7,7 @@ using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 namespace Speedrunning_Game
 {
@@ -53,6 +54,11 @@ namespace Speedrunning_Game
 
 			levels.AddRange(choices);
 			maxSelected = levels.Count - 1;
+
+			if (!Game1.playingMenu)
+				MediaPlayer.Play(Game1.menuMusic);
+			Game1.ResetMusic();
+			Game1.playingMenu = true;
 		}
 
 		public override void Update(GameTime gameTime)
@@ -105,10 +111,10 @@ namespace Speedrunning_Game
 						index--;
 					}
 					Levels.Index = newRet - 1;
-					Game1.currentRoom = new Room(Levels.levels[Levels.Index]);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
 				}
 				else
-					Game1.currentRoom = new Room(levels[selected]);
+					Game1.currentRoom = new Room(levels[selected], false);
 			}
 		}
 

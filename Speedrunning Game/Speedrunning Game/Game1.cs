@@ -23,7 +23,6 @@ namespace Speedrunning_Game
 		 * Need music:
 		 * Menu
 		 * Grass
-		 * Lava
 		 * Night
 		 * Cave
 		 * Factory
@@ -50,6 +49,8 @@ namespace Speedrunning_Game
 		public static SoundEffect rocketLaunch, explosion;
 		public static SoundEffect boost, collide, jump;
 		public static SoundEffectInstance run;
+		public static Song menuMusic, grassMusic, lavaMusic, nightMusic, caveMusic, factoryMusic;
+		public static bool playingMenu, playingGrass, playingLava, playingNight, playingCave, playingFactory;
 		public static bool exit = false;
 
 		private bool pressEscape = false;
@@ -148,10 +149,36 @@ namespace Speedrunning_Game
 			rocketLaunch = Content.Load<SoundEffect>("sounds/rocket launch");
 			explosion = Content.Load<SoundEffect>("sounds/explosion");
 
+			playingMenu = true;
+			playingGrass = false;
+			playingLava = false;
+			playingNight = false;
+			playingCave = false;
+			playingFactory = false;
+			menuMusic  = Content.Load<Song>("music/lava");
+			grassMusic  = Content.Load<Song>("music/lava");
+			lavaMusic = Content.Load<Song>("music/lava");
+			nightMusic = Content.Load<Song>("music/lava");
+			caveMusic = Content.Load<Song>("music/lava");
+			factoryMusic = Content.Load<Song>("music/lava");
+
 			titlefont = Content.Load<SpriteFont>("titlefont");
 			msgfont = Content.Load<SpriteFont>("msgfont");
 			mnufont = Content.Load<SpriteFont>("mnufont");
 			currentRoom = new MainMenu(true);
+
+			MediaPlayer.IsRepeating = true;
+			MediaPlayer.Volume = 0.3f;
+			MediaPlayer.Play(menuMusic);
+		}
+		public static void ResetMusic()
+		{
+			playingMenu = false;
+			playingGrass = false;
+			playingLava = false;
+			playingNight = false;
+			playingCave = false;
+			playingFactory = false;
 		}
 
 		protected override void UnloadContent()
