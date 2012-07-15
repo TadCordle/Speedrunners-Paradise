@@ -67,6 +67,9 @@ namespace Speedrunning_Game
 			{
 				foreach (Wall w in r.Walls)
 				{
+					if (w is PlatformWall || w is FloatingPlatform)
+						continue;
+
 					if (w.Bounds.Contains((int)pos.X + 1, above))
 					{
 						final = new Rectangle((int)pos.X, above + 16, 16, (int)pos.Y - above + 16);

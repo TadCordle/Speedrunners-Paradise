@@ -1,0 +1,10 @@
+MusicVolume 1
+SFXVolume 1
+MoveLeft Left
+MoveRight Right
+Jump/WallJump Space
+Slide/Zipline LeftControl
+PickUpBox LeftShift
+Pause P
+Restart/Play R
+Restart/Freeroam F

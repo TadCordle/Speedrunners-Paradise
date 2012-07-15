@@ -62,6 +62,8 @@ namespace Speedrunning_Game
 		private int time, record, goalBeaten;
 		private bool custom, write, pcheck, rcheck, fcheck, freeroaming;
 
+		public bool Freeroam { get { return freeroaming; } }
+
 		public Room()
 		{
 			goalBeaten = 0;
@@ -367,15 +369,15 @@ namespace Speedrunning_Game
 		public virtual void Update(GameTime gameTime)
 		{
 			// Reset keys
-			if (!Keyboard.GetState().IsKeyDown(Keys.R))
+			if (!Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]))
 				rcheck = true;
-			if (!Keyboard.GetState().IsKeyDown(Keys.P))
+			if (!Keyboard.GetState().IsKeyDown(Settings.controls["Pause"]))
 				pcheck = true;
-			if (!Keyboard.GetState().IsKeyDown(Keys.F))
+			if (!Keyboard.GetState().IsKeyDown(Settings.controls["Freeroam"]))
 				fcheck = true;
 
 			// Restart the current level when R is pressed
-			if (Keyboard.GetState().IsKeyDown(Keys.R) && rcheck)
+			if (Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]) && rcheck)
 			{
 				// Play damaged sound
 				if (custom)
@@ -383,7 +385,7 @@ namespace Speedrunning_Game
 				else
 					Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
 			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.F) && fcheck)
+			else if (Keyboard.GetState().IsKeyDown(Settings.controls["Freeroam"]) && fcheck)
 			{
 				// Play damaged sound
 				if (custom)
@@ -393,7 +395,7 @@ namespace Speedrunning_Game
 			}
 
 			// Pause the game when P is pressed
-			if (Keyboard.GetState().IsKeyDown(Keys.P) && pcheck)
+			if (Keyboard.GetState().IsKeyDown(Settings.controls["Pause"]) && pcheck)
 			{
 				pcheck = false;
 				Paused = !Paused;

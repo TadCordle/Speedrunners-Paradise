@@ -63,8 +63,8 @@ namespace Speedrunning_Game
 					Game1.currentRoom = new Room(Levels.levels[0], false);
 				else if (selected == 1)
 					Game1.currentRoom = new LevelSelect();
-//				else if (selected == 2)
-//					Game1.currentRoom = new HelpRoom();
+				else if (selected == 2)
+					Game1.currentRoom = new Settings();
 				else if (selected == 3)
 					Game1.exit = true;
 			}
@@ -84,7 +84,7 @@ namespace Speedrunning_Game
 
 			sb.DrawString(Game1.mnufont, "New game", new Vector2(420, 330), selected == 0 ? Color.Yellow : Color.White);
 			sb.DrawString(Game1.mnufont, "Select level", new Vector2(410, 400), selected == 1 ? Color.Yellow : Color.White);
-			sb.DrawString(Game1.mnufont, "Help", new Vector2(456, 470), selected == 2 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Settings", new Vector2(435, 470), selected == 2 ? Color.Yellow : Color.White);
 			sb.DrawString(Game1.mnufont, "Exit", new Vector2(460, 540), selected == 3 ? Color.Yellow : Color.White);
 			return;
 		}

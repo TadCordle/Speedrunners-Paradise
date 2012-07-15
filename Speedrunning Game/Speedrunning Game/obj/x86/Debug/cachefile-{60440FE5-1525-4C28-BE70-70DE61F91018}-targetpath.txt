@@ -47,8 +47,6 @@ Content\character\speed runner running0018.xnb
 Content\character\speed runner running0019.xnb
 Content\character\speed runner sliding.xnb
 Content\pixel.xnb
-Content\mnufont.xnb
-Content\titlefont.xnb
 Content\finish.xnb
 Content\pole.xnb
 Content\medal.xnb
@@ -68,7 +66,6 @@ Content\tiles\tilelava.xnb
 Content\tiles\tilenight.xnb
 Content\tiles\tilecave.xnb
 Content\message.xnb
-Content\msgfont.xnb
 Content\tiles\deathgrass.xnb
 Content\tiles\deathlava.xnb
 Content\character\speed runner dead.xnb
@@ -105,12 +102,18 @@ Content\tiles\tilefactory.xnb
 Content\tiles\deathnight.xnb
 Content\tiles\deathcave.xnb
 Content\tiles\deathfactory.xnb
+Content\mnufont.xnb
+Content\titlefont.xnb
+Content\msgfont.xnb
 Content\sounds\explosion.xnb
 Content\sounds\rocket launch.xnb
 Content\sounds\boost.xnb
 Content\sounds\collision.xnb
 Content\sounds\run.xnb
 Content\sounds\jump.xnb
+Content\sounds\slide.xnb
+Content\sounds\damage.xnb
+Content\sounds\finish.xnb
 Content\music\lava.xnb
 Content\music\lava.wma
 Content\music\grass.xnb
@@ -121,6 +124,3 @@ Content\music\cave.xnb
 Content\music\cave.wma
 Content\music\factory.xnb
 Content\music\factory.wma
-Content\sounds\slide.xnb
-Content\sounds\damage.xnb
-Content\sounds\finish.xnb

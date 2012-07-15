@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Storage;
 using Game_Maker_Library;
 
 namespace Speedrunning_Game
@@ -48,7 +49,7 @@ namespace Speedrunning_Game
 		private bool pressEscape = false;
 
 		public Game1()
-		{
+		{		
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 720;
 			graphics.PreferredBackBufferWidth = 960;
@@ -160,8 +161,9 @@ namespace Speedrunning_Game
 			mnufont = Content.Load<SpriteFont>("mnufont");
 			currentRoom = new MainMenu(true);
 
+			Settings.GetSettings();
+
 			MediaPlayer.IsRepeating = true;
-			MediaPlayer.Volume = 0.3f;
 			MediaPlayer.Play(grassMusic);
 		}
 		public static void ResetMusic()

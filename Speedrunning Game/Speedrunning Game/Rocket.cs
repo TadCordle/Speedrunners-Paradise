@@ -62,14 +62,14 @@ namespace Speedrunning_Game
 		{
 			if (hitBox.Intersects(Game1.currentRoom.Runner.hitBox))
 			{
-				Game1.explosion.Play(0.5f, 0f, 0f);
+				Game1.explosion.Play(0.5f * Settings.soundVol, 0f, 0f);
 				return true;
 			}
 
 			foreach (Wall w in Game1.currentRoom.Walls)
 				if (hitBox.Intersects(w.Bounds))
 				{
-					Game1.explosion.Play(0.5f, 0f, 0f);
+					Game1.explosion.Play(0.5f * Settings.soundVol, 0f, 0f);
 					return true;
 				}
 

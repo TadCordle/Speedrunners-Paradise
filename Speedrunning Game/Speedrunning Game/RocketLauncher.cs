@@ -32,6 +32,9 @@ namespace Speedrunning_Game
 
 		public bool Update()
 		{
+			if (Game1.currentRoom.Freeroam)
+				return false;
+
 			if (this.hitBox.Intersects(Game1.currentRoom.ViewBox))
 			{
 				Vector2 direction = new Vector2(Game1.currentRoom.Runner.hitBox.X - hitBox.X, Game1.currentRoom.Runner.hitBox.Y - hitBox.Y);
@@ -45,7 +48,7 @@ namespace Speedrunning_Game
 				{
 					if (Game1.currentRoom.Runner.position.Y <= Game1.currentRoom.roomHeight)
 					{
-						Game1.rocketLaunch.Play(0.5f, 0f, 0f);
+						Game1.rocketLaunch.Play(0.5f * Settings.soundVol, 0f, 0f);
 						rocket.position.X = hitBox.X + 8;
 						rocket.position.Y = hitBox.Y + 16;
 						rocket.angle = angle;

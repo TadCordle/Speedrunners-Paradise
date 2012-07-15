@@ -443,24 +443,6 @@
       <Time>2012-06-07T15:33:25.8777075-04:00</Time>
     </Item>
     <Item>
-      <Source>mnufont.spritefont</Source>
-      <Name>mnufont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\mnufont.xnb</Output>
-      <Time>2012-06-03T22:10:17.6455357-04:00</Time>
-    </Item>
-    <Item>
-      <Source>titlefont.spritefont</Source>
-      <Name>titlefont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\titlefont.xnb</Output>
-      <Time>2012-06-03T22:07:08.6387251-04:00</Time>
-    </Item>
-    <Item>
       <Source>finish.png</Source>
       <Name>finish</Name>
       <Importer>TextureImporter</Importer>
@@ -630,15 +612,6 @@
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\message.xnb</Output>
       <Time>2012-06-23T10:00:35.3027604-04:00</Time>
-    </Item>
-    <Item>
-      <Source>msgfont.spritefont</Source>
-      <Name>msgfont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\msgfont.xnb</Output>
-      <Time>2012-06-21T16:14:52.0622828-04:00</Time>
     </Item>
     <Item>
       <Source>tiles\deathgrass.png</Source>
@@ -965,6 +938,33 @@
       <Time>2012-07-13T12:41:05.0855108-04:00</Time>
     </Item>
     <Item>
+      <Source>mnufont.spritefont</Source>
+      <Name>mnufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\mnufont.xnb</Output>
+      <Time>2012-06-03T22:10:17.6455357-04:00</Time>
+    </Item>
+    <Item>
+      <Source>titlefont.spritefont</Source>
+      <Name>titlefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\titlefont.xnb</Output>
+      <Time>2012-06-03T22:07:08.6387251-04:00</Time>
+    </Item>
+    <Item>
+      <Source>msgfont.spritefont</Source>
+      <Name>msgfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\msgfont.xnb</Output>
+      <Time>2012-06-21T16:14:52.0622828-04:00</Time>
+    </Item>
+    <Item>
       <Source>sounds\explosion.wav</Source>
       <Name>sounds\explosion</Name>
       <Importer>WavImporter</Importer>
@@ -1019,6 +1019,33 @@
       <Time>2012-07-13T13:41:51.8580942-04:00</Time>
     </Item>
     <Item>
+      <Source>sounds\slide.wav</Source>
+      <Name>sounds\slide</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\slide.xnb</Output>
+      <Time>2012-07-14T14:41:18.3423423-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\damage.wav</Source>
+      <Name>sounds\damage</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\damage.xnb</Output>
+      <Time>2012-07-14T14:51:10.7396932-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sounds\finish.wav</Source>
+      <Name>sounds\finish</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\finish.xnb</Output>
+      <Time>2012-07-14T14:54:55.261122-04:00</Time>
+    </Item>
+    <Item>
       <Source>music\lava.mp3</Source>
       <Name>music\lava</Name>
       <Importer>Mp3Importer</Importer>
@@ -1068,37 +1095,10 @@
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\factory.wma</Extra>
       <Time>2012-07-14T14:08:01.1146247-04:00</Time>
     </Item>
-    <Item>
-      <Source>sounds\slide.wav</Source>
-      <Name>sounds\slide</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\slide.xnb</Output>
-      <Time>2012-07-14T14:41:18.3423423-04:00</Time>
-    </Item>
-    <Item>
-      <Source>sounds\damage.wav</Source>
-      <Name>sounds\damage</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\damage.xnb</Output>
-      <Time>2012-07-14T14:51:10.7396932-04:00</Time>
-    </Item>
-    <Item>
-      <Source>sounds\finish.wav</Source>
-      <Name>sounds\finish</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\sounds\finish.xnb</Output>
-      <Time>2012-07-14T14:54:55.261122-04:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>HiDef</TargetProfile>
+      <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
       <RootDirectory>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning GameContent\</RootDirectory>

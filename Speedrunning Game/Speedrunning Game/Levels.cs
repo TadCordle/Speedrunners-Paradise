@@ -13,7 +13,7 @@ namespace Speedrunning_Game
 		 * IDEAS
 		 * 
 		 * x Training level
-		 * - Fragmented level, lots of blank space, few platforms
+		 * x Fragmented level, lots of blank space, few platforms
 		 * - Level with only floating platforms
 		 * - Kill yourself to get gold time (jump through fence land on finish)
 		 * - Level that plays itself
