@@ -19,7 +19,7 @@ namespace Speedrunning_Game
 		private bool pressEnter;
 		private int maxSelected;
 		private int scope;
-		private List<string> levels;
+		private List<Tuple<string, int, int>> levels;
 		private Texture2D background;
 
 		public LevelSelect()
@@ -32,13 +32,11 @@ namespace Speedrunning_Game
 			roomHeight = 720;
 			roomWidth = 960;
 
-			levels = new List<string>();
+			levels = new List<Tuple<string, int, int>>();
 			selected = 0;
 			scope = 0;
-			if (!Directory.Exists("Content\\rooms"))
-				Directory.CreateDirectory("Content\\rooms");
-			string[] choices = Directory.GetFiles("Content\\rooms");
 
+			// Add main levels
 			if (!File.Exists("Content\\records.txt"))
 				File.Create("Content\\records.txt");
 			StreamReader findMainLevels = new StreamReader("Content\\records.txt");
@@ -47,13 +45,65 @@ namespace Speedrunning_Game
 			{
 				string name = decryptor.DecryptString(findMainLevels.ReadLine()).Split(' ')[0];
 				if (name.Length > 6 && name.Substring(0, 6) == ".MAIN.")
-					levels.Add(name);
+					levels.Add(new Tuple<string, int, int>(name, -1, -1));
 			}
 			findMainLevels.Close();
 			findMainLevels.Dispose();
 
-			levels.AddRange(choices);
+			// Add custom levels
+			if (!Directory.Exists("Content\\rooms"))
+				Directory.CreateDirectory("Content\\rooms");
+			string[] choices = Directory.GetFiles("Content\\rooms");
+			foreach (string s in choices)
+				levels.Add(new Tuple<string, int, int>(s.Split('\\')[s.Split('\\').Length - 1].Replace(".srl", ""), -1, -1));
 			maxSelected = levels.Count - 1;
+
+			// Find record/medal achieved in each level
+			for (int i = 0; i < levels.Count; i++)
+			{
+				// Find record
+				string name = levels[i].Item1;
+				StreamReader readRecords = new StreamReader("Content\\records.txt");
+				string line = decryptor.DecryptString(readRecords.ReadLine());
+				while (line.Split(' ')[0] != name && !readRecords.EndOfStream)
+					line = decryptor.DecryptString(readRecords.ReadLine());
+				if (line.Split(' ')[0] == name)
+					levels[i] = new Tuple<string, int, int>(levels[i].Item1, int.Parse(line.Split(' ')[1]), -1);
+				readRecords.Close();
+				readRecords.Dispose();
+
+				// Find goal times
+				if (name.Length >= 6 && name.Substring(0, 6) == ".MAIN.")
+				{
+					int index = 0;
+					int temp;
+					int findNum = name.Length - 1;
+					while (int.TryParse(name.Substring(findNum), out temp))
+					{
+						index = int.Parse(name.Substring(findNum));
+						findNum--;
+					}
+					index--;
+					string[] goals = decryptor.DecryptString(Levels.levels[index][2]).Split(' ');
+					for (int j = 2; j >= 0; j--)
+					{
+						if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
+							levels[i] = new Tuple<string, int, int>(levels[i].Item1, levels[i].Item2, j);
+					}
+				}
+				else
+				{
+					StreamReader findGoals = new StreamReader("Content\\rooms\\" + name + ".srl");
+					findGoals.ReadLine();
+					findGoals.ReadLine();
+					string[] goals = decryptor.DecryptString(findGoals.ReadLine()).Split(' ');
+					for (int j = 2; j >= 0; j--)
+					{
+						if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
+							levels[i] = new Tuple<string, int, int>(levels[i].Item1, levels[i].Item2, j);
+					}
+				}
+			}
 
 			if (!Game1.playingGrass)
 				MediaPlayer.Play(Game1.grassMusic);
@@ -100,12 +150,12 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
-				if (levels[selected].Substring(0, 6) == ".MAIN.")
+				if (levels[selected].Item1.Substring(0, 6) == ".MAIN.")
 				{
 					int ret = 0;
 					int newRet = 0;
-					int index = levels[selected].Length - 1;
-					while (int.TryParse(levels[selected].Substring(index), out ret))
+					int index = levels[selected].Item1.Length - 1;
+					while (int.TryParse(levels[selected].Item1.Substring(index), out ret))
 					{
 						newRet = ret;
 						index--;
@@ -114,7 +164,7 @@ namespace Speedrunning_Game
 					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 				}
 				else
-					Game1.currentRoom = new Room(levels[selected], true);
+					Game1.currentRoom = new Room("Content\\rooms\\" + levels[selected].Item1 + ".srl", true);
 			}
 		}
 
@@ -133,7 +183,19 @@ namespace Speedrunning_Game
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(264, 10), Color.White);
 			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
 			for (int i = 0; i < levels.Count; i++)
-				sb.DrawString(Game1.mnufont, levels[i].Split('\\')[levels[i].Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
+			{
+				sb.DrawString(Game1.mnufont, levels[i].Item1.Split('\\')[levels[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
+				sb.DrawString(Game1.mnufont, levels[i].Item2 != -1 ? TimeToString(levels[i].Item2) : "-- : -- . ---", new Vector2(300, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
+				if (levels[i].Item3 != -1)
+					sb.Draw(Game1.medalTex, new Vector2(420, (1 + i + i / 11) * 60 + 10 - scope * 720), levels[i].Item3 == 0 ? Color.Gold : (levels[i].Item3 == 1 ? Color.Silver : Color.Brown));
+			}
+		}
+
+		// Returns millisecond count in "mm:ss.sss" format
+		private string TimeToString(int time) // time = Time in milliseconds
+		{
+			TimeSpan t = TimeSpan.FromMilliseconds(time);
+			return String.Format("{0:00}:{1:00}.{2:000}", (int)t.TotalMinutes, t.Seconds, t.Milliseconds % 1000);
 		}
 	}
 }

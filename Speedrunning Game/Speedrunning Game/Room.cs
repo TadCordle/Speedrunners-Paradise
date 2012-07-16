@@ -459,9 +459,17 @@ namespace Speedrunning_Game
 					if (Runner.controllable)
 						time += gameTime.ElapsedGameTime.Milliseconds;
 				}
+				else
+				{
+					Game1.run.Stop();
+					Game1.slide.Stop();
+				}
 			}
 			else
 			{
+				Game1.run.Stop();
+				Game1.slide.Stop();
+
 				// Fix glitch where you can restart at the same time you hit the finish and achieve a time of 0 seconds
 				if (time == 0)
 				{
@@ -750,7 +758,7 @@ namespace Speedrunning_Game
 		}
 		
 		// Returns millisecond count in "mm:ss.sss" format
-		private string TimeToString(int time)
+		private string TimeToString(int time) // time = Time in milliseconds
 		{
 			TimeSpan t = TimeSpan.FromMilliseconds(time);
 			return String.Format("{0:00}:{1:00}.{2:000}", (int)t.TotalMinutes, t.Seconds, t.Milliseconds % 1000);

@@ -193,6 +193,9 @@ namespace Speedrunning_Game
 					else if (selectedIndex == 10)
 					{
 						ResetToDefault();
+						MediaPlayer.Volume = 0.6f * musicVol;
+						Game1.run.Volume = Settings.soundVol;
+						Game1.slide.Volume = Settings.soundVol;
 						SaveSettings();
 					}
 			}
@@ -225,22 +228,22 @@ namespace Speedrunning_Game
 			sb.DrawString(Game1.mnufont, "SFX Volume: < " + ((int)(soundVol * 100)).ToString() + "% >", new Vector2(44, 120), selectedIndex == 1 ? Color.Yellow : Color.White);
 
 			sb.DrawString(Game1.mnufont, "Controls", new Vector2(56, 170), Color.Lime);
-			sb.DrawString(Game1.mnufont, "Move Left: " + (selected && selectedIndex == 2 ? "-Press key-" : controls["MoveLeft"].ToString()), new Vector2(44, 200),
-				selectedIndex == 2 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Move Right: " + (selected && selectedIndex == 3 ? "-Press key-" : controls["MoveRight"].ToString()), new Vector2(44, 230),
-				selectedIndex == 3 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Jump/Wall Jump: " + (selected && selectedIndex == 4 ? "-Press key-" : controls["Jump"].ToString()), new Vector2(44, 260),
-				selectedIndex == 4 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Slide/Zipline: " + (selected && selectedIndex == 5 ? "-Press key-" : controls["Slide"].ToString()), new Vector2(44, 290),
-				selectedIndex == 5 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Pick Up Box: " + (selected && selectedIndex == 6 ? "-Press key-" : controls["Box"].ToString()), new Vector2(44, 320),
-				selectedIndex == 6 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Pause: " + (selected && selectedIndex == 7 ? "-Press key-" : controls["Pause"].ToString()), new Vector2(44, 350),
-				selectedIndex == 7 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Restart/Play: " + (selected && selectedIndex == 8 ? "-Press key-" : controls["Restart"].ToString()), new Vector2(44, 380),
-				selectedIndex == 8 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
-			sb.DrawString(Game1.mnufont, "Restart/Freeroam: " + (selected && selectedIndex == 9 ? "-Press key-" : controls["Freeroam"].ToString()), new Vector2(44, 410),
-				selectedIndex == 9 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Move Left:", new Vector2(44, 200), selectedIndex == 2 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 2 ? "-Press key-" : controls["MoveLeft"].ToString()), new Vector2(320, 200), selectedIndex == 2 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Move Right:", new Vector2(44, 230), selectedIndex == 3 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 3 ? "-Press key-" : controls["MoveRight"].ToString()), new Vector2(320, 230), selectedIndex == 3 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Jump/Wall Jump:", new Vector2(44, 260), selectedIndex == 4 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 4 ? "-Press key-" : controls["Jump"].ToString()), new Vector2(320, 260), selectedIndex == 4 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Slide/Zipline:", new Vector2(44, 290), selectedIndex == 5 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 5 ? "-Press key-" : controls["Slide"].ToString()), new Vector2(320, 290), selectedIndex == 5 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Pick Up Box:", new Vector2(44, 320), selectedIndex == 6 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 6 ? "-Press key-" : controls["Box"].ToString()), new Vector2(320, 320), selectedIndex == 6 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Pause:", new Vector2(44, 350), selectedIndex == 7 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 7 ? "-Press key-" : controls["Pause"].ToString()), new Vector2(320, 350), selectedIndex == 7 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Restart/Play:", new Vector2(44, 380), selectedIndex == 8 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 8 ? "-Press key-" : controls["Restart"].ToString()), new Vector2(320, 380), selectedIndex == 8 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, "Restart/Freeroam:", new Vector2(44, 410), selectedIndex == 9 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
+			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 9 ? "-Press key-" : controls["Freeroam"].ToString()), new Vector2(320, 410), selectedIndex == 9 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
 
 			sb.DrawString(Game1.mnufont, "Reset Settings to Default", new Vector2(44, 470), selectedIndex == 10 ? Color.Yellow : Color.White);
 		}
