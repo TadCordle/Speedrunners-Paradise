@@ -60,7 +60,7 @@ namespace Speedrunning_Game
 		private Tileset wallSet;
 		private string levelName;
 		private int time, record, goalBeaten;
-		private bool custom, write, pcheck, rcheck, fcheck, freeroaming;
+		private bool custom, write, writeNext, pcheck, rcheck, fcheck, freeroaming;
 
 		public bool Freeroam { get { return freeroaming; } }
 
@@ -70,6 +70,7 @@ namespace Speedrunning_Game
 			pcheck = true;
 			rcheck = false;
 			write = true;
+			writeNext = true;
 			time = 0;
 			tiles = new HashSet<Vector3>();
 			Finished = false;
@@ -521,6 +522,36 @@ namespace Speedrunning_Game
 						writer.Dispose();
 						File.Delete("Content\\records.txt");
 						File.Move("Content\\recordstemp.txt", "Content\\records.txt");
+					}
+				}
+
+				if (writeNext && !custom && Levels.Index < Levels.levels.Count() - 1)
+				{
+					// Add next level to level select if not already unlocked
+					writeNext = false;
+					bool recordFound = false;
+					StreamReader reader = new StreamReader("Content\\records.txt");
+					SimpleAES encryptor = new SimpleAES();
+					string name = ".MAIN.Level" + (Levels.Index + 2).ToString();
+					while (!reader.EndOfStream)
+					{
+						string s = encryptor.DecryptString(reader.ReadLine());
+						if (s.Split(' ')[0] == name)
+						{
+							record = int.Parse(s.Split(' ')[1]);
+							recordFound = true;
+							break;
+						}
+					}
+					reader.Close();
+					reader.Dispose();
+					if (!recordFound)
+					{
+						record = -1;
+						StreamWriter writer = new StreamWriter("Content\\records.txt", true);
+						writer.WriteLine(encryptor.EncryptToString(name + " -1"));
+						writer.Flush();
+						writer.Dispose();
 					}
 				}
 

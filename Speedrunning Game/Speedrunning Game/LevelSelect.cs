@@ -64,6 +64,12 @@ namespace Speedrunning_Game
 				// Find record
 				string name = levels[i].Item1;
 				StreamReader readRecords = new StreamReader("Content\\records.txt");
+				if (readRecords.EndOfStream)
+				{
+					readRecords.Close();
+					readRecords.Dispose();
+					break;
+				}
 				string line = decryptor.DecryptString(readRecords.ReadLine());
 				while (line.Split(' ')[0] != name && !readRecords.EndOfStream)
 					line = decryptor.DecryptString(readRecords.ReadLine());
@@ -150,7 +156,7 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
-				if (levels[selected].Item1.Substring(0, 6) == ".MAIN.")
+				if (levels[selected].Item1.Length >= 6 && levels[selected].Item1.Substring(0, 6) == ".MAIN.")
 				{
 					int ret = 0;
 					int newRet = 0;
@@ -176,7 +182,7 @@ namespace Speedrunning_Game
 			// Draw scroll arrows
 			if (scope > 0)
 				sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
-			if (scope < maxSelected / 11 && maxSelected > 11)
+			if (scope < maxSelected / 11 && maxSelected > 10)
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
 
 			// Draw text
