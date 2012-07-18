@@ -538,7 +538,6 @@ namespace Speedrunning_Game
 						string s = encryptor.DecryptString(reader.ReadLine());
 						if (s.Split(' ')[0] == name)
 						{
-							record = int.Parse(s.Split(' ')[1]);
 							recordFound = true;
 							break;
 						}
@@ -547,7 +546,6 @@ namespace Speedrunning_Game
 					reader.Dispose();
 					if (!recordFound)
 					{
-						record = -1;
 						StreamWriter writer = new StreamWriter("Content\\records.txt", true);
 						writer.WriteLine(encryptor.EncryptToString(name + " -1"));
 						writer.Flush();

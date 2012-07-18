@@ -1,0 +1,36 @@
+-- Grass --
+x Intro
+x Intro 2
+x Outside the box
+x There and back
+x Wall jump
+
+-- Cave --
+x Marathon
+*
+* Plays itself
+*
+*
+
+-- Night --
+x Mystic
+* 
+* Platform Hell
+*
+*
+
+-- Factory --
+x Long Level
+*
+*
+* Kill Yourself
+* The rocket room
+
+-- Lava --
+*
+x Doom Climb
+*
+*
+*
+
+* Credits level (a bunch of sign posts with names)

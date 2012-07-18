@@ -16,18 +16,20 @@ namespace Speedrunning_Game
 		public static float musicVol, soundVol;
 		public static Dictionary<string, Keys> controls = new Dictionary<string,Keys>();
 
-		private int selectedIndex; // 0-10
-		private bool entercheck, upcheck, downcheck, selected;
+		private int selectedIndex; // 0-11
+		private bool entercheck, deleteCheck, verifyCheck, upcheck, downcheck, selected;
 		private string[] selectableControl;
 
 		public Settings()
 		{
 			selectedIndex = 0;
 			entercheck = false;
+			deleteCheck = false;
+			verifyCheck = false;
 			upcheck = true;
 			downcheck = true;
 			selected = false;
-			selectableControl = new string[11];
+			selectableControl = new string[12];
 			selectableControl[0] = "";
 			selectableControl[1] = "";
 			selectableControl[2] = "MoveLeft";
@@ -39,6 +41,7 @@ namespace Speedrunning_Game
 			selectableControl[8] = "Restart";
 			selectableControl[9] = "Freeroam";
 			selectableControl[10] = "";
+			selectableControl[11] = "";
 		}
 
 		public static void GetSettings()
@@ -137,17 +140,17 @@ namespace Speedrunning_Game
 			if (!Keyboard.GetState().IsKeyDown(Keys.Down))
 				downcheck = true;
 
-			if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck)
+			if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck && !deleteCheck)
 			{
 				upcheck = false;
 				if (!selected)
 					selectedIndex = Math.Max(0, selectedIndex - 1);
 			}
-			if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck)
+			if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck && !deleteCheck)
 			{
 				downcheck = false;
 				if (!selected)
-					selectedIndex = Math.Min(selectedIndex + 1, 10);
+					selectedIndex = Math.Min(selectedIndex + 1, 11);
 			}
 
 			if (Keyboard.GetState().IsKeyDown(Keys.Left))
@@ -198,6 +201,24 @@ namespace Speedrunning_Game
 						Game1.slide.Volume = Settings.soundVol;
 						SaveSettings();
 					}
+					else if (selectedIndex == 11)
+					{
+						deleteCheck = !deleteCheck;
+					}
+			}
+
+			if (deleteCheck)
+			{
+				if (Keyboard.GetState().IsKeyDown(Keys.Y))
+				{
+					StreamWriter writer = new StreamWriter("Content\\records.txt");
+					writer.Flush();
+					writer.Dispose();
+					verifyCheck = true;
+					deleteCheck = false;
+				}
+				else if (Keyboard.GetState().IsKeyDown(Keys.N))
+					deleteCheck = false;
 			}
 
 			if (selected)
@@ -245,7 +266,10 @@ namespace Speedrunning_Game
 			sb.DrawString(Game1.mnufont, "Restart/Freeroam:", new Vector2(44, 410), selectedIndex == 9 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
 			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 9 ? "-Press key-" : controls["Freeroam"].ToString()), new Vector2(320, 410), selectedIndex == 9 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
 
-			sb.DrawString(Game1.mnufont, "Reset Settings to Default", new Vector2(44, 470), selectedIndex == 10 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Miscellaneous", new Vector2(56, 470), Color.Lime);
+			sb.DrawString(Game1.mnufont, "Reset Settings to Default", new Vector2(44, 500), selectedIndex == 10 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Reset All Records", new Vector2(44, 530), selectedIndex == 11 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, deleteCheck ? "Are you sure? (y/n)" : (verifyCheck ? "Records deleted." : ""), new Vector2(320, 530), Color.Cyan);
 		}
 	}
 }
