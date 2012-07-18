@@ -1,51 +1,3 @@
-Content\character\speed runner midair0001.xnb
-Content\character\speed runner midair0002.xnb
-Content\character\speed runner midair0003.xnb
-Content\character\speed runner midair0004.xnb
-Content\character\speed runner midair0005.xnb
-Content\character\speed runner midair0006.xnb
-Content\character\speed runner midair0007.xnb
-Content\character\speed runner midair0008.xnb
-Content\character\speed runner midair0009.xnb
-Content\character\speed runner normal0001.xnb
-Content\character\speed runner normal0002.xnb
-Content\character\speed runner normal0003.xnb
-Content\character\speed runner normal0004.xnb
-Content\character\speed runner normal0005.xnb
-Content\character\speed runner normal0006.xnb
-Content\character\speed runner normal0007.xnb
-Content\character\speed runner normal0008.xnb
-Content\character\speed runner normal0009.xnb
-Content\character\speed runner normal0010.xnb
-Content\character\speed runner normal0011.xnb
-Content\character\speed runner normal0012.xnb
-Content\character\speed runner normal0013.xnb
-Content\character\speed runner normal0014.xnb
-Content\character\speed runner normal0015.xnb
-Content\character\speed runner normal0016.xnb
-Content\character\speed runner normal0017.xnb
-Content\character\speed runner normal0018.xnb
-Content\character\speed runner normal0019.xnb
-Content\character\speed runner running0001.xnb
-Content\character\speed runner running0002.xnb
-Content\character\speed runner running0003.xnb
-Content\character\speed runner running0004.xnb
-Content\character\speed runner running0005.xnb
-Content\character\speed runner running0006.xnb
-Content\character\speed runner running0007.xnb
-Content\character\speed runner running0008.xnb
-Content\character\speed runner running0009.xnb
-Content\character\speed runner running0010.xnb
-Content\character\speed runner running0011.xnb
-Content\character\speed runner running0012.xnb
-Content\character\speed runner running0013.xnb
-Content\character\speed runner running0014.xnb
-Content\character\speed runner running0015.xnb
-Content\character\speed runner running0016.xnb
-Content\character\speed runner running0017.xnb
-Content\character\speed runner running0018.xnb
-Content\character\speed runner running0019.xnb
-Content\character\speed runner sliding.xnb
 Content\pixel.xnb
 Content\finish.xnb
 Content\pole.xnb
@@ -68,32 +20,6 @@ Content\tiles\tilecave.xnb
 Content\message.xnb
 Content\tiles\deathgrass.xnb
 Content\tiles\deathlava.xnb
-Content\character\speed runner dead.xnb
-Content\character\speed runner dead midair0001.xnb
-Content\character\speed runner dead midair0002.xnb
-Content\character\speed runner dead midair0003.xnb
-Content\character\speed runner dead midair0004.xnb
-Content\character\speed runner dead midair0005.xnb
-Content\character\speed runner dead midair0006.xnb
-Content\character\speed runner dead midair0007.xnb
-Content\character\speed runner dead midair0008.xnb
-Content\character\speed runner dead midair0009.xnb
-Content\character\speed runner dead midair0010.xnb
-Content\character\speed runner dead midair0011.xnb
-Content\character\speed runner dead midair0012.xnb
-Content\character\speed runner dead midair0013.xnb
-Content\character\speed runner dead midair0014.xnb
-Content\character\speed runner dead midair0015.xnb
-Content\character\speed runner dead midair0016.xnb
-Content\character\speed runner dead midair0017.xnb
-Content\character\speed runner dead midair0018.xnb
-Content\character\speed runner dead midair0019.xnb
-Content\character\speed runner dead midair0020.xnb
-Content\character\speed runner dead midair0021.xnb
-Content\character\speed runner dead midair0022.xnb
-Content\character\speed runner dead midair0023.xnb
-Content\character\speed runner dead midair0024.xnb
-Content\character\speed runner dead midair0025.xnb
 Content\tiles\mirror.xnb
 Content\explosion particle.xnb
 Content\launcher.xnb
@@ -124,3 +50,78 @@ Content\music\cave.xnb
 Content\music\cave.wma
 Content\music\factory.xnb
 Content\music\factory.wma
+Content\skins\speed runner\speed runner dead midair0001.xnb
+Content\skins\speed runner\speed runner dead midair0002.xnb
+Content\skins\speed runner\speed runner dead midair0003.xnb
+Content\skins\speed runner\speed runner dead midair0004.xnb
+Content\skins\speed runner\speed runner dead midair0005.xnb
+Content\skins\speed runner\speed runner dead midair0006.xnb
+Content\skins\speed runner\speed runner dead midair0007.xnb
+Content\skins\speed runner\speed runner dead midair0008.xnb
+Content\skins\speed runner\speed runner dead midair0009.xnb
+Content\skins\speed runner\speed runner dead midair0010.xnb
+Content\skins\speed runner\speed runner dead midair0011.xnb
+Content\skins\speed runner\speed runner dead midair0012.xnb
+Content\skins\speed runner\speed runner dead midair0013.xnb
+Content\skins\speed runner\speed runner dead midair0014.xnb
+Content\skins\speed runner\speed runner dead midair0015.xnb
+Content\skins\speed runner\speed runner dead midair0016.xnb
+Content\skins\speed runner\speed runner dead midair0017.xnb
+Content\skins\speed runner\speed runner dead midair0018.xnb
+Content\skins\speed runner\speed runner dead midair0019.xnb
+Content\skins\speed runner\speed runner dead midair0020.xnb
+Content\skins\speed runner\speed runner dead midair0021.xnb
+Content\skins\speed runner\speed runner dead midair0022.xnb
+Content\skins\speed runner\speed runner dead midair0023.xnb
+Content\skins\speed runner\speed runner dead midair0024.xnb
+Content\skins\speed runner\speed runner dead midair0025.xnb
+Content\skins\speed runner\speed runner dead.xnb
+Content\skins\speed runner\speed runner midair0001.xnb
+Content\skins\speed runner\speed runner midair0002.xnb
+Content\skins\speed runner\speed runner midair0003.xnb
+Content\skins\speed runner\speed runner midair0004.xnb
+Content\skins\speed runner\speed runner midair0005.xnb
+Content\skins\speed runner\speed runner midair0006.xnb
+Content\skins\speed runner\speed runner midair0007.xnb
+Content\skins\speed runner\speed runner midair0008.xnb
+Content\skins\speed runner\speed runner midair0009.xnb
+Content\skins\speed runner\speed runner normal0001.xnb
+Content\skins\speed runner\speed runner normal0002.xnb
+Content\skins\speed runner\speed runner normal0003.xnb
+Content\skins\speed runner\speed runner normal0004.xnb
+Content\skins\speed runner\speed runner normal0005.xnb
+Content\skins\speed runner\speed runner normal0006.xnb
+Content\skins\speed runner\speed runner normal0007.xnb
+Content\skins\speed runner\speed runner normal0008.xnb
+Content\skins\speed runner\speed runner normal0009.xnb
+Content\skins\speed runner\speed runner normal0010.xnb
+Content\skins\speed runner\speed runner normal0011.xnb
+Content\skins\speed runner\speed runner normal0012.xnb
+Content\skins\speed runner\speed runner normal0013.xnb
+Content\skins\speed runner\speed runner normal0014.xnb
+Content\skins\speed runner\speed runner normal0015.xnb
+Content\skins\speed runner\speed runner normal0016.xnb
+Content\skins\speed runner\speed runner normal0017.xnb
+Content\skins\speed runner\speed runner normal0018.xnb
+Content\skins\speed runner\speed runner normal0019.xnb
+Content\skins\speed runner\speed runner running0001.xnb
+Content\skins\speed runner\speed runner running0002.xnb
+Content\skins\speed runner\speed runner running0003.xnb
+Content\skins\speed runner\speed runner running0004.xnb
+Content\skins\speed runner\speed runner running0005.xnb
+Content\skins\speed runner\speed runner running0006.xnb
+Content\skins\speed runner\speed runner running0007.xnb
+Content\skins\speed runner\speed runner running0008.xnb
+Content\skins\speed runner\speed runner running0009.xnb
+Content\skins\speed runner\speed runner running0010.xnb
+Content\skins\speed runner\speed runner running0011.xnb
+Content\skins\speed runner\speed runner running0012.xnb
+Content\skins\speed runner\speed runner running0013.xnb
+Content\skins\speed runner\speed runner running0014.xnb
+Content\skins\speed runner\speed runner running0015.xnb
+Content\skins\speed runner\speed runner running0016.xnb
+Content\skins\speed runner\speed runner running0017.xnb
+Content\skins\speed runner\speed runner running0018.xnb
+Content\skins\speed runner\speed runner running0019.xnb
+Content\skins\speed runner\speed runner sliding.xnb
+Content\skins\locked.xnb

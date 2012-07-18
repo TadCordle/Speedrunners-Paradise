@@ -135,6 +135,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SimpleAES.cs" />
+    <Compile Include="SkinSelection.cs" />
     <Compile Include="Tileset.cs" />
     <Compile Include="Wall.cs" />
     <Compile Include="ZipLine.cs" />

@@ -83,14 +83,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="211456">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="212480">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7Drg5Es6xa2at3uIQRs9FTeKjwg=</dsig:DigestValue>
+        <dsig:DigestValue>scjb//0K8c3vBPnR6C7Dd8N5whU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -173,672 +173,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>CiBYBB7tpERBGHY6G0/rS6Jow40=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0001.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ULWaeTtmN/h1c4hCRotnf8aolQ4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0002.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>M1+AYIggbM04V4FLyv86tI1Y+/E=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0003.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Sz2x/qYNcjXEJRm2QI+p12I2tMs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0004.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>B1fuOMhx5yvqw26NjjaYPSHDfMQ=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0005.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fq3Q6j02jQCpI8mdjx0z5WY8RCU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0006.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>IgEc00CcsQ4la8ho6fVthE3vIy4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0007.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>18Gu1KxHT6R0gCQ1lsqNc2Po8Us=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0008.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>N4dJcSzT+SpzBje/Qre0NGAD1SM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0009.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Pi5P7X7cCJe8Of4jJG802tWmJCw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0010.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>p8yrn3SILu9GhEDA1e/OwPFZZ/A=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0011.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VGJudV4Hrr7Srj+cqOCuIkjD7XQ=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0012.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>yHStmTp0XiB99admIIYX/v5awAg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0013.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>D4L04LzWZpgDDNKd9dAqf2XKMyM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0014.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Fd16LPJUpeSknll4/z/gpEw8v2E=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0015.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VGJudV4Hrr7Srj+cqOCuIkjD7XQ=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0016.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>lS1npW9d6dLMqcK1wy7h7QUrURA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0017.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>5edyiaBy/lTDl91gIOcPL19Rnbg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0018.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>WZybcUUOg9j2LW+DpTXPKIgZyok=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0019.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>TTbEjhKpZwZ4UKLLVj9zmC9i9SU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0020.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>DwrZW+1HPrFvG+ykk6BkPJ8Tk1s=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0021.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>mHKtQUs3oOrQ5olhbRzdAsXXwB4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0022.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>5ByiBtcH/YsICehVxjXZxenpJfA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0023.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>MPEqmrxkTn8NL7+Ussn35kZVyPE=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0024.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>IzRVIu9RzE4Q4fiNKsE2bluWpvM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead midair0025.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+hjBQX213TDY+wqwLi0cY5/LaPE=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner dead.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>7kcxdQLQibxmAYTOwlV+6islDbI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0001.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9sfn5t3vLq9G1o7J1ScO1pBAl+0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0002.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>zkGyFOFdYQFOsZRfWyai2XTKdhY=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0003.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>P6hDlHgvFBImpypuPNbKZ7fpanI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0004.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4e932Q27x5+inHMo8V2fNachuFM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0005.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+Q/xcOEDK2XsPHHt2Ia80Iuf3uI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0006.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>irhg44fu/0XhpODLqUnqZPgrIlA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0007.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>FmUEOR7/M7UDiVCUo97NvB7lNWU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0008.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>J2LMnvWePh4sGvM57MtzTig5qA8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner midair0009.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>NtXQfH3SljoDB0Pe5h+H98ADXnQ=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0001.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VjjMWjuNQ2XcsVaMt4qhvugstus=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0002.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+ke9dzC/dE+rdNCHVBxfLFsmrNs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0003.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>1A3UJhLTijzaRLq043tE9qAnLOc=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0004.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>GsVtzKPPs7Srmq3+rPCd8Y5h0hk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0005.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ITeUeKsHjPN6O5wTAfJfCyNw7+8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0006.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9xV28whS5se3rsUuwul6zVS/Wt0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0007.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4xxHYxYZZOYQEfIK2Ddrkjm6/No=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0008.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>t/0PK+hp1SI9LPxx96TF2bWAuQs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0009.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4Z5rFREnzVqAReFok+j+INpjSR8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0010.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>5FMIG9QPPq/QkLhIaLX9fW0YAAE=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0011.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4Z5rFREnzVqAReFok+j+INpjSR8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0012.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>t/0PK+hp1SI9LPxx96TF2bWAuQs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0013.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4xxHYxYZZOYQEfIK2Ddrkjm6/No=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0014.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9xV28whS5se3rsUuwul6zVS/Wt0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0015.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ITeUeKsHjPN6O5wTAfJfCyNw7+8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0016.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>GsVtzKPPs7Srmq3+rPCd8Y5h0hk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0017.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>1A3UJhLTijzaRLq043tE9qAnLOc=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0018.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+ke9dzC/dE+rdNCHVBxfLFsmrNs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner normal0019.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>lgeYrfPOq5yu6Vj5xwKBAo5c/BQ=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0001.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>E1DKjvf7IeoZBk/I648+f4UaStI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0002.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>MotlSpjhde8I2h/ge4qAWqUlD6Y=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0003.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>HvCgzm9HxcUjMU60uvD26MvDpbg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0004.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>B7qAq0DnI2u4tKXhKgMbop0lFXI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0005.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>YBkkxD/2Gca2ng8YjxC8mQ0KNWI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0006.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>AhlXGPi5kLsYS/mxxMS4EYAzKEU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0007.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>tanQD3mU7cVvJVhMLEaFedPZYUI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0008.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>mUZD1S2P+Qdlbm+m0+HeSpFVAq4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0009.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>8V+/jHquDjMf9T1f29q9oKThIRY=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0010.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>SG4w1tVfYsMkkFn3IpqzkEMVy+Q=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0011.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Sflb4kOGcBCudub2ZMtMNm73R84=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0012.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>v3JwdKDbLye6nVtZYsWttpoywu8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0013.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9HJNgVLnowFZrb6dR5WmHDDqY3M=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0014.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>gLdby+5D+s2R/365e6pomJ7iNK8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0015.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>2JCLRUgW47xjnPPqGRN0TkfSkgg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0016.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>u8puEOxLLzVIwU4wLlwWDazpQ/I=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0017.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>lnCcJkm7+6QHDXRjrOea2FWRQ4Q=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0018.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>TCQEMKo0ljvqPC4Wg8xwuf6hEUc=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner running0019.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>7iznTJIxmPO1rGD9jJ6LmumlQNM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\character\speed runner sliding.xnb" size="16571">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>3rtWvx0GRCjUebkhqaKcXaJcmyo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\explosion particle.xnb" size="443">
@@ -1028,6 +362,681 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>P621kBPqTzB2ihqdBXQ/I+bZcaI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\locked.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Xm+bILc8+oFa+LpJXyLdwmE8ivQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ULWaeTtmN/h1c4hCRotnf8aolQ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>M1+AYIggbM04V4FLyv86tI1Y+/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Sz2x/qYNcjXEJRm2QI+p12I2tMs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>B1fuOMhx5yvqw26NjjaYPSHDfMQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fq3Q6j02jQCpI8mdjx0z5WY8RCU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IgEc00CcsQ4la8ho6fVthE3vIy4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>18Gu1KxHT6R0gCQ1lsqNc2Po8Us=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>N4dJcSzT+SpzBje/Qre0NGAD1SM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Pi5P7X7cCJe8Of4jJG802tWmJCw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>p8yrn3SILu9GhEDA1e/OwPFZZ/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VGJudV4Hrr7Srj+cqOCuIkjD7XQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yHStmTp0XiB99admIIYX/v5awAg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>D4L04LzWZpgDDNKd9dAqf2XKMyM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Fd16LPJUpeSknll4/z/gpEw8v2E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VGJudV4Hrr7Srj+cqOCuIkjD7XQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lS1npW9d6dLMqcK1wy7h7QUrURA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5edyiaBy/lTDl91gIOcPL19Rnbg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WZybcUUOg9j2LW+DpTXPKIgZyok=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TTbEjhKpZwZ4UKLLVj9zmC9i9SU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0020.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DwrZW+1HPrFvG+ykk6BkPJ8Tk1s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0021.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mHKtQUs3oOrQ5olhbRzdAsXXwB4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0022.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5ByiBtcH/YsICehVxjXZxenpJfA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0023.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MPEqmrxkTn8NL7+Ussn35kZVyPE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0024.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IzRVIu9RzE4Q4fiNKsE2bluWpvM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead midair0025.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+hjBQX213TDY+wqwLi0cY5/LaPE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner dead.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7kcxdQLQibxmAYTOwlV+6islDbI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9sfn5t3vLq9G1o7J1ScO1pBAl+0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zkGyFOFdYQFOsZRfWyai2XTKdhY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>P6hDlHgvFBImpypuPNbKZ7fpanI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4e932Q27x5+inHMo8V2fNachuFM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+Q/xcOEDK2XsPHHt2Ia80Iuf3uI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>irhg44fu/0XhpODLqUnqZPgrIlA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FmUEOR7/M7UDiVCUo97NvB7lNWU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>J2LMnvWePh4sGvM57MtzTig5qA8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NtXQfH3SljoDB0Pe5h+H98ADXnQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VjjMWjuNQ2XcsVaMt4qhvugstus=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+ke9dzC/dE+rdNCHVBxfLFsmrNs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1A3UJhLTijzaRLq043tE9qAnLOc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GsVtzKPPs7Srmq3+rPCd8Y5h0hk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ITeUeKsHjPN6O5wTAfJfCyNw7+8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9xV28whS5se3rsUuwul6zVS/Wt0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4xxHYxYZZOYQEfIK2Ddrkjm6/No=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>t/0PK+hp1SI9LPxx96TF2bWAuQs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4Z5rFREnzVqAReFok+j+INpjSR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5FMIG9QPPq/QkLhIaLX9fW0YAAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4Z5rFREnzVqAReFok+j+INpjSR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>t/0PK+hp1SI9LPxx96TF2bWAuQs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4xxHYxYZZOYQEfIK2Ddrkjm6/No=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9xV28whS5se3rsUuwul6zVS/Wt0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ITeUeKsHjPN6O5wTAfJfCyNw7+8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GsVtzKPPs7Srmq3+rPCd8Y5h0hk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1A3UJhLTijzaRLq043tE9qAnLOc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+ke9dzC/dE+rdNCHVBxfLFsmrNs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner normal0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lgeYrfPOq5yu6Vj5xwKBAo5c/BQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>E1DKjvf7IeoZBk/I648+f4UaStI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MotlSpjhde8I2h/ge4qAWqUlD6Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HvCgzm9HxcUjMU60uvD26MvDpbg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>B7qAq0DnI2u4tKXhKgMbop0lFXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YBkkxD/2Gca2ng8YjxC8mQ0KNWI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AhlXGPi5kLsYS/mxxMS4EYAzKEU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tanQD3mU7cVvJVhMLEaFedPZYUI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mUZD1S2P+Qdlbm+m0+HeSpFVAq4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8V+/jHquDjMf9T1f29q9oKThIRY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SG4w1tVfYsMkkFn3IpqzkEMVy+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Sflb4kOGcBCudub2ZMtMNm73R84=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>v3JwdKDbLye6nVtZYsWttpoywu8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9HJNgVLnowFZrb6dR5WmHDDqY3M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gLdby+5D+s2R/365e6pomJ7iNK8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2JCLRUgW47xjnPPqGRN0TkfSkgg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>u8puEOxLLzVIwU4wLlwWDazpQ/I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lnCcJkm7+6QHDXRjrOea2FWRQ4Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TCQEMKo0ljvqPC4Wg8xwuf6hEUc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner running0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7iznTJIxmPO1rGD9jJ6LmumlQNM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\speed runner\speed runner sliding.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3rtWvx0GRCjUebkhqaKcXaJcmyo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\sounds\boost.xnb" size="97037">

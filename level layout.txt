@@ -7,7 +7,7 @@ x Wall jump
 
 -- Cave --
 x Marathon
-*
+* 
 * Plays itself
 *
 *

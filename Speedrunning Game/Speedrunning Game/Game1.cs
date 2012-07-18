@@ -15,16 +15,12 @@ namespace Speedrunning_Game
 {
 	public class Game1 : Microsoft.Xna.Framework.Game
 	{
-		/* Need sounds:
-		 * Player
-		 *	Damaged
-		 *	Finish
-		 */
-
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
-
+		public static Game game;
 		public static AnimatedTexture guyNormal, guyRunning, guyMidair, guySliding, guyZiplining, guyDeadGround, guyDeadMidair;
+		public static Texture2D[] skinPreviews;
+		public static Texture2D prevLocked;
 		public static Room currentRoom;
 		public static Texture2D wallTex;
 		public static Texture2D finishTex;
@@ -46,14 +42,18 @@ namespace Speedrunning_Game
 		public static bool playingGrass, playingLava, playingNight, playingCave, playingFactory;
 		public static bool exit = false;
 
+		static ContentManager skinManager;
+
 		private bool pressEscape = false;
 
 		public Game1()
-		{		
+		{
+			game = this;
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 720;
 			graphics.PreferredBackBufferWidth = 960;
 			Content.RootDirectory = "Content";
+			skinManager = new ContentManager(this.Services, "Content");
 
 //			this.TargetElapsedTime = TimeSpan.FromSeconds(0.5f);
 
@@ -75,33 +75,12 @@ namespace Speedrunning_Game
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			Texture2D[] images = new Texture2D[19];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = Content.Load<Texture2D>("character/speed runner normal00" + (i > 9 ? "" : "0") + i.ToString());
-			guyNormal = new AnimatedTexture(images, 3, true, false);
-
-			images = new Texture2D[19];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = Content.Load<Texture2D>("character/speed runner running00" + (i > 9 ? "" : "0") + i.ToString());
-			guyRunning = new AnimatedTexture(images, 1, true, false);
-
-			images = new Texture2D[9];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = Content.Load<Texture2D>("character/speed runner midair000" + i.ToString());
-			guyMidair = new AnimatedTexture(images, 3, false, true);
-
-			guyZiplining = new AnimatedTexture(images[images.Length - 1]);
-			guySliding = new AnimatedTexture(Content.Load<Texture2D>("character/speed runner sliding"));
-			guyDeadGround = new AnimatedTexture(Content.Load<Texture2D>("character/speed runner dead"));
-			images = new Texture2D[25];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = Content.Load<Texture2D>("character/speed runner dead midair00" + (i > 9 ? "" : "0") + i.ToString());
-			guyDeadMidair = new AnimatedTexture(images, 1, true, false);
+			LoadNewSkin(this, "speed runner");
 
 			finishTex = Content.Load<Texture2D>("finish");
 			poleTex = Content.Load<Texture2D>("pole");
 			lineTex = Content.Load<Texture2D>("pixel");
-			images = new Texture2D[3];
+			Texture2D[] images = new Texture2D[3];
 			for (int i = 1; i <= images.Length; i++)
 				images[i - 1] = Content.Load<Texture2D>("booster000" + i.ToString());
 			boosterTex = new AnimatedTexture(images, 600, true, false);
@@ -134,6 +113,15 @@ namespace Speedrunning_Game
 
 			medalTex = Content.Load<Texture2D>("medal");
 			wallTex = Content.Load<Texture2D>("pixel");
+
+			skinPreviews = new Texture2D[6];
+			skinPreviews[0] = Content.Load<Texture2D>("skins/speed runner/speed runner normal0001");
+//			skinPreviews[1] = Content.Load<Texture2D>("skins/squirrel/squirrel normal0001");
+//			skinPreviews[2] = Content.Load<Texture2D>("skins/stick figure/stick figure normal0001");
+//			skinPreviews[3] = Content.Load<Texture2D>("skins/brody/brody normal0001");
+//			skinPreviews[4] = Content.Load<Texture2D>("skins/newell/newell normal0001");
+//			skinPreviews[5] = Content.Load<Texture2D>("skins/ninja/ninja normal0001");
+			prevLocked = Content.Load<Texture2D>("skins/locked");
 
 			run = Content.Load<SoundEffect>("sounds/run").CreateInstance();
 			slide = Content.Load<SoundEffect>("sounds/slide").CreateInstance();
@@ -174,6 +162,34 @@ namespace Speedrunning_Game
 			playingCave = false;
 			playingFactory = false;
 		}
+		public static void LoadNewSkin(Game game, string skinName)
+		{
+			skinManager.Dispose();
+			skinManager = new ContentManager(game.Services, "Content/skins");
+
+			Texture2D[] images = new Texture2D[19];
+			for (int i = 1; i <= images.Length; i++)
+				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " normal00" + (i > 9 ? "" : "0") + i.ToString());
+			guyNormal = new AnimatedTexture(images, 3, true, false);
+
+			images = new Texture2D[19];
+			for (int i = 1; i <= images.Length; i++)
+				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " running00" + (i > 9 ? "" : "0") + i.ToString());
+			guyRunning = new AnimatedTexture(images, 1, true, false);
+
+			images = new Texture2D[9];
+			for (int i = 1; i <= images.Length; i++)
+				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " midair000" + i.ToString());
+			guyMidair = new AnimatedTexture(images, 3, false, true);
+
+			guyZiplining = new AnimatedTexture(images[images.Length - 1]);
+			guySliding = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " sliding"));
+			guyDeadGround = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " dead"));
+			images = new Texture2D[25];
+			for (int i = 1; i <= images.Length; i++)
+				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " dead midair00" + (i > 9 ? "" : "0") + i.ToString());
+			guyDeadMidair = new AnimatedTexture(images, 1, true, false);
+		}
 
 		protected override void UnloadContent()
 		{
@@ -189,6 +205,8 @@ namespace Speedrunning_Game
 				pressEscape = false;
 				if (currentRoom is MainMenu)
 					this.Exit();
+				else if (currentRoom is SkinSelection)
+					currentRoom = new Settings();
 				else
 					currentRoom = new MainMenu(true);
 			}

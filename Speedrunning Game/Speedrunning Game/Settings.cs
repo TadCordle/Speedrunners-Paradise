@@ -16,7 +16,7 @@ namespace Speedrunning_Game
 		public static float musicVol, soundVol;
 		public static Dictionary<string, Keys> controls = new Dictionary<string,Keys>();
 
-		private int selectedIndex; // 0-11
+		private int selectedIndex;
 		private bool entercheck, deleteCheck, verifyCheck, upcheck, downcheck, selected;
 		private string[] selectableControl;
 
@@ -29,7 +29,7 @@ namespace Speedrunning_Game
 			upcheck = true;
 			downcheck = true;
 			selected = false;
-			selectableControl = new string[12];
+			selectableControl = new string[13];
 			selectableControl[0] = "";
 			selectableControl[1] = "";
 			selectableControl[2] = "MoveLeft";
@@ -42,6 +42,7 @@ namespace Speedrunning_Game
 			selectableControl[9] = "Freeroam";
 			selectableControl[10] = "";
 			selectableControl[11] = "";
+			selectableControl[12] = "";
 		}
 
 		public static void GetSettings()
@@ -150,7 +151,7 @@ namespace Speedrunning_Game
 			{
 				downcheck = false;
 				if (!selected)
-					selectedIndex = Math.Min(selectedIndex + 1, 11);
+					selectedIndex = Math.Min(selectedIndex + 1, selectableControl.Length - 1);
 			}
 
 			if (Keyboard.GetState().IsKeyDown(Keys.Left))
@@ -194,6 +195,8 @@ namespace Speedrunning_Game
 					if (selectableControl[selectedIndex] != "")
 						selected = true;
 					else if (selectedIndex == 10)
+						Game1.currentRoom = new SkinSelection();
+					else if (selectedIndex == 11)
 					{
 						ResetToDefault();
 						MediaPlayer.Volume = 0.6f * musicVol;
@@ -201,10 +204,8 @@ namespace Speedrunning_Game
 						Game1.slide.Volume = Settings.soundVol;
 						SaveSettings();
 					}
-					else if (selectedIndex == 11)
-					{
+					else if (selectedIndex == 12)
 						deleteCheck = !deleteCheck;
-					}
 			}
 
 			if (deleteCheck)
@@ -267,9 +268,10 @@ namespace Speedrunning_Game
 			sb.DrawString(Game1.mnufont, (selected && selectedIndex == 9 ? "-Press key-" : controls["Freeroam"].ToString()), new Vector2(320, 410), selectedIndex == 9 ? (selected ? Color.Cyan : Color.Yellow) : Color.White);
 
 			sb.DrawString(Game1.mnufont, "Miscellaneous", new Vector2(56, 470), Color.Lime);
-			sb.DrawString(Game1.mnufont, "Reset Settings to Default", new Vector2(44, 500), selectedIndex == 10 ? Color.Yellow : Color.White);
-			sb.DrawString(Game1.mnufont, "Reset All Records", new Vector2(44, 530), selectedIndex == 11 ? Color.Yellow : Color.White);
-			sb.DrawString(Game1.mnufont, deleteCheck ? "Are you sure? (y/n)" : (verifyCheck ? "Records deleted." : ""), new Vector2(320, 530), Color.Cyan);
+			sb.DrawString(Game1.mnufont, "Skin Selection", new Vector2(44, 500), selectedIndex == 10 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Reset Settings to Default", new Vector2(44, 530), selectedIndex == 11 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Reset All Records", new Vector2(44, 560), selectedIndex == 12 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, deleteCheck ? "Are you sure? (y/n)" : (verifyCheck ? "Records deleted." : ""), new Vector2(320, 560), Color.Cyan);
 		}
 	}
 }
