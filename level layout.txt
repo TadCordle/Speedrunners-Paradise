@@ -29,7 +29,7 @@ x Long Level
 -- Lava --
 *
 x Doom Climb
-*
+* Maintain Fast Speed
 *
 *
 

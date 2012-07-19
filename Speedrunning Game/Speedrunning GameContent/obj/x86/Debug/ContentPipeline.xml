@@ -1104,6 +1104,672 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\locked.xnb</Output>
       <Time>2012-07-18T16:29:11.3475242-04:00</Time>
     </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0001.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0001.xnb</Output>
+      <Time>2012-07-19T14:40:00.7624045-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0002.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0002.xnb</Output>
+      <Time>2012-07-19T14:40:00.8564099-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0003.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0003.xnb</Output>
+      <Time>2012-07-19T14:40:00.9534155-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0004.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0004.xnb</Output>
+      <Time>2012-07-19T14:40:01.0914233-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0005.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0005.xnb</Output>
+      <Time>2012-07-19T14:40:01.1844287-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0006.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0006.xnb</Output>
+      <Time>2012-07-19T14:40:01.277434-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0007.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0007.xnb</Output>
+      <Time>2012-07-19T14:40:01.38244-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0008.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0008.xnb</Output>
+      <Time>2012-07-19T14:40:01.5304485-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0009.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0009.xnb</Output>
+      <Time>2012-07-19T14:40:01.6644561-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0010.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0010.xnb</Output>
+      <Time>2012-07-19T14:40:01.7584615-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0011.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0011.xnb</Output>
+      <Time>2012-07-19T14:40:01.8514668-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0012.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0012.xnb</Output>
+      <Time>2012-07-19T14:40:01.9464723-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0013.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0013.xnb</Output>
+      <Time>2012-07-19T14:40:02.0394776-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0014.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0014.xnb</Output>
+      <Time>2012-07-19T14:40:02.134483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0015.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0015.xnb</Output>
+      <Time>2012-07-19T14:40:02.2284884-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0016.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0016.xnb</Output>
+      <Time>2012-07-19T14:40:02.3214937-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0017.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0017.xnb</Output>
+      <Time>2012-07-19T14:40:02.4164991-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0018.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0018.xnb</Output>
+      <Time>2012-07-19T14:40:02.5115046-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0019.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0019.xnb</Output>
+      <Time>2012-07-19T14:40:02.60551-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0020.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0020.xnb</Output>
+      <Time>2012-07-19T14:40:02.7015154-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0021.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0021.xnb</Output>
+      <Time>2012-07-19T14:40:02.7945208-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0022.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0022.xnb</Output>
+      <Time>2012-07-19T14:40:02.8895262-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0023.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0023.xnb</Output>
+      <Time>2012-07-19T14:40:02.990532-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0024.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0024.xnb</Output>
+      <Time>2012-07-19T14:40:03.1055386-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead midair0025.png</Source>
+      <Name>skins\stick figure\stick figure dead midair0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead midair0025.xnb</Output>
+      <Time>2012-07-19T14:40:03.1995439-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure dead.png</Source>
+      <Name>skins\stick figure\stick figure dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure dead.xnb</Output>
+      <Time>2012-07-19T14:41:27.8533858-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0001.png</Source>
+      <Name>skins\stick figure\stick figure midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0001.xnb</Output>
+      <Time>2012-07-19T14:32:38.5931139-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0002.png</Source>
+      <Name>skins\stick figure\stick figure midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0002.xnb</Output>
+      <Time>2012-07-19T14:32:38.7161209-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0003.png</Source>
+      <Name>skins\stick figure\stick figure midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0003.xnb</Output>
+      <Time>2012-07-19T14:32:38.823127-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0004.png</Source>
+      <Name>skins\stick figure\stick figure midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0004.xnb</Output>
+      <Time>2012-07-19T14:32:38.9461341-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0005.png</Source>
+      <Name>skins\stick figure\stick figure midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0005.xnb</Output>
+      <Time>2012-07-19T14:32:39.0751415-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0006.png</Source>
+      <Name>skins\stick figure\stick figure midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0006.xnb</Output>
+      <Time>2012-07-19T14:32:39.1931482-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0007.png</Source>
+      <Name>skins\stick figure\stick figure midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0007.xnb</Output>
+      <Time>2012-07-19T14:32:39.3361564-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0008.png</Source>
+      <Name>skins\stick figure\stick figure midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0008.xnb</Output>
+      <Time>2012-07-19T14:32:39.4601635-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure midair0009.png</Source>
+      <Name>skins\stick figure\stick figure midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure midair0009.xnb</Output>
+      <Time>2012-07-19T14:32:39.591171-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0001.png</Source>
+      <Name>skins\stick figure\stick figure normal0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0001.xnb</Output>
+      <Time>2012-07-19T14:15:47.7862991-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0002.png</Source>
+      <Name>skins\stick figure\stick figure normal0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0002.xnb</Output>
+      <Time>2012-07-19T14:15:47.8923051-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0003.png</Source>
+      <Name>skins\stick figure\stick figure normal0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0003.xnb</Output>
+      <Time>2012-07-19T14:15:48.0153121-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0004.png</Source>
+      <Name>skins\stick figure\stick figure normal0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0004.xnb</Output>
+      <Time>2012-07-19T14:15:48.1313188-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0005.png</Source>
+      <Name>skins\stick figure\stick figure normal0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0005.xnb</Output>
+      <Time>2012-07-19T14:15:48.2263242-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0006.png</Source>
+      <Name>skins\stick figure\stick figure normal0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0006.xnb</Output>
+      <Time>2012-07-19T14:15:48.3253299-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0007.png</Source>
+      <Name>skins\stick figure\stick figure normal0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0007.xnb</Output>
+      <Time>2012-07-19T14:15:48.4613377-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0008.png</Source>
+      <Name>skins\stick figure\stick figure normal0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0008.xnb</Output>
+      <Time>2012-07-19T14:15:48.5833446-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0009.png</Source>
+      <Name>skins\stick figure\stick figure normal0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0009.xnb</Output>
+      <Time>2012-07-19T14:15:48.7013514-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0010.png</Source>
+      <Name>skins\stick figure\stick figure normal0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0010.xnb</Output>
+      <Time>2012-07-19T14:15:48.7973569-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0011.png</Source>
+      <Name>skins\stick figure\stick figure normal0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0011.xnb</Output>
+      <Time>2012-07-19T14:15:48.8923623-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0012.png</Source>
+      <Name>skins\stick figure\stick figure normal0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0012.xnb</Output>
+      <Time>2012-07-19T14:15:48.9883678-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0013.png</Source>
+      <Name>skins\stick figure\stick figure normal0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0013.xnb</Output>
+      <Time>2012-07-19T14:15:49.0833732-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0014.png</Source>
+      <Name>skins\stick figure\stick figure normal0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0014.xnb</Output>
+      <Time>2012-07-19T14:15:49.1793787-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0015.png</Source>
+      <Name>skins\stick figure\stick figure normal0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0015.xnb</Output>
+      <Time>2012-07-19T14:15:49.2743842-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0016.png</Source>
+      <Name>skins\stick figure\stick figure normal0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0016.xnb</Output>
+      <Time>2012-07-19T14:15:49.3523886-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0017.png</Source>
+      <Name>skins\stick figure\stick figure normal0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0017.xnb</Output>
+      <Time>2012-07-19T14:15:49.4543945-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0018.png</Source>
+      <Name>skins\stick figure\stick figure normal0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0018.xnb</Output>
+      <Time>2012-07-19T14:15:49.5504-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure normal0019.png</Source>
+      <Name>skins\stick figure\stick figure normal0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure normal0019.xnb</Output>
+      <Time>2012-07-19T14:15:49.6454054-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0001.png</Source>
+      <Name>skins\stick figure\stick figure running0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0001.xnb</Output>
+      <Time>2012-07-19T14:24:53.796529-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0002.png</Source>
+      <Name>skins\stick figure\stick figure running0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0002.xnb</Output>
+      <Time>2012-07-19T14:24:53.9215362-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0003.png</Source>
+      <Name>skins\stick figure\stick figure running0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0003.xnb</Output>
+      <Time>2012-07-19T14:24:54.0525437-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0004.png</Source>
+      <Name>skins\stick figure\stick figure running0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0004.xnb</Output>
+      <Time>2012-07-19T14:24:54.1555496-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0005.png</Source>
+      <Name>skins\stick figure\stick figure running0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0005.xnb</Output>
+      <Time>2012-07-19T14:24:54.2815568-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0006.png</Source>
+      <Name>skins\stick figure\stick figure running0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0006.xnb</Output>
+      <Time>2012-07-19T14:24:54.3755622-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0007.png</Source>
+      <Name>skins\stick figure\stick figure running0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0007.xnb</Output>
+      <Time>2012-07-19T14:24:54.4725677-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0008.png</Source>
+      <Name>skins\stick figure\stick figure running0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0008.xnb</Output>
+      <Time>2012-07-19T14:24:54.6105756-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0009.png</Source>
+      <Name>skins\stick figure\stick figure running0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0009.xnb</Output>
+      <Time>2012-07-19T14:24:54.7365828-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0010.png</Source>
+      <Name>skins\stick figure\stick figure running0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0010.xnb</Output>
+      <Time>2012-07-19T14:24:54.8315883-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0011.png</Source>
+      <Name>skins\stick figure\stick figure running0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0011.xnb</Output>
+      <Time>2012-07-19T14:24:54.9255936-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0012.png</Source>
+      <Name>skins\stick figure\stick figure running0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0012.xnb</Output>
+      <Time>2012-07-19T14:24:55.0205991-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0013.png</Source>
+      <Name>skins\stick figure\stick figure running0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0013.xnb</Output>
+      <Time>2012-07-19T14:24:55.1156045-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0014.png</Source>
+      <Name>skins\stick figure\stick figure running0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0014.xnb</Output>
+      <Time>2012-07-19T14:24:55.2096099-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0015.png</Source>
+      <Name>skins\stick figure\stick figure running0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0015.xnb</Output>
+      <Time>2012-07-19T14:24:55.3046153-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0016.png</Source>
+      <Name>skins\stick figure\stick figure running0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0016.xnb</Output>
+      <Time>2012-07-19T14:24:55.403621-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0017.png</Source>
+      <Name>skins\stick figure\stick figure running0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0017.xnb</Output>
+      <Time>2012-07-19T14:24:55.4986264-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0018.png</Source>
+      <Name>skins\stick figure\stick figure running0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0018.xnb</Output>
+      <Time>2012-07-19T14:24:55.5936318-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure running0019.png</Source>
+      <Name>skins\stick figure\stick figure running0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure running0019.xnb</Output>
+      <Time>2012-07-19T14:24:55.6886373-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure sliding.png</Source>
+      <Name>skins\stick figure\stick figure sliding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure sliding.xnb</Output>
+      <Time>2012-07-19T14:26:26.4418281-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

@@ -60,7 +60,7 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
 				if (selected == 0)
-					Game1.currentRoom = new Room(Levels.levels[0], false);
+					Game1.currentRoom = new Room(Levels.levels[0], true);
 				else if (selected == 1)
 					Game1.currentRoom = new LevelSelect();
 				else if (selected == 2)

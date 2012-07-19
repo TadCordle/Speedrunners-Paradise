@@ -118,7 +118,7 @@ namespace Speedrunning_Game
 			skinPreviews = new Texture2D[6];
 			skinPreviews[0] = Content.Load<Texture2D>("skins/speed runner/speed runner normal0001");
 //			skinPreviews[1] = Content.Load<Texture2D>("skins/squirrel/squirrel normal0001");
-//			skinPreviews[2] = Content.Load<Texture2D>("skins/stick figure/stick figure normal0001");
+			skinPreviews[2] = Content.Load<Texture2D>("skins/stick figure/stick figure normal0001");
 //			skinPreviews[3] = Content.Load<Texture2D>("skins/brody/brody normal0001");
 //			skinPreviews[4] = Content.Load<Texture2D>("skins/newell/newell normal0001");
 //			skinPreviews[5] = Content.Load<Texture2D>("skins/ninja/ninja normal0001");
