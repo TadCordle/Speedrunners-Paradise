@@ -110,8 +110,10 @@ namespace Speedrunning_Game
 			position += velocity;
 			if (platform != null)
 			{
+				// Fix retarded platform switching direction and making you spazz out glitch
 				if (Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed) && prevPlatSpeed != 0)
-					velocity.Y = platform.velocity.Y;
+					position.Y += 2;
+
 				position += platform.velocity;
 				prevPlatSpeed = platform.velocity.Y;
 			}

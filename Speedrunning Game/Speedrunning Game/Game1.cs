@@ -76,8 +76,6 @@ namespace Speedrunning_Game
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			LoadNewSkin(this, "speed runner");
-
 			finishTex = Content.Load<Texture2D>("finish");
 			poleTex = Content.Load<Texture2D>("pole");
 			lineTex = Content.Load<Texture2D>("pixel");
@@ -151,6 +149,7 @@ namespace Speedrunning_Game
 			currentRoom = new MainMenu(true);
 
 			Settings.GetSettings();
+			LoadNewSkin(this, Settings.skin);
 
 			MediaPlayer.IsRepeating = true;
 			MediaPlayer.Play(grassMusic);
@@ -166,6 +165,7 @@ namespace Speedrunning_Game
 		public static void LoadNewSkin(Game game, string skinName)
 		{
 			selectedSkin = skinName;
+			Settings.skin = skinName;
 
 			skinManager.Dispose();
 			skinManager = new ContentManager(game.Services, "Content/skins");
@@ -185,7 +185,7 @@ namespace Speedrunning_Game
 				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " midair000" + i.ToString());
 			guyMidair = new AnimatedTexture(images, 3, false, true);
 
-			guyZiplining = new AnimatedTexture(images[images.Length - 1]);
+			guyZiplining = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " ziplining"));
 			guySliding = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " sliding"));
 			guyDeadGround = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " dead"));
 			images = new Texture2D[25];

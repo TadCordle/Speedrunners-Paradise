@@ -15,6 +15,7 @@ namespace Speedrunning_Game
 	{
 		public static float musicVol, soundVol;
 		public static Dictionary<string, Keys> controls = new Dictionary<string,Keys>();
+		public static string skin;
 
 		private int selectedIndex;
 		private bool entercheck, deleteCheck, verifyCheck, upcheck, downcheck, selected;
@@ -67,6 +68,8 @@ namespace Speedrunning_Game
 					MediaPlayer.Volume = 0.6f * musicVol;
 					Game1.run.Volume = Settings.soundVol;
 					Game1.slide.Volume = Settings.soundVol;
+					skin = reader.ReadLine().Split(' ')[1].Replace("_", " ");
+					Game1.LoadNewSkin(Game1.game, skin);
 					controls["MoveLeft"] = (Keys)Enum.Parse(typeof(Keys), reader.ReadLine().Split(' ')[1]);
 					controls["MoveRight"] = (Keys)Enum.Parse(typeof(Keys), reader.ReadLine().Split(' ')[1]);
 					controls["Jump"] = (Keys)Enum.Parse(typeof(Keys), reader.ReadLine().Split(' ')[1]);
@@ -92,6 +95,8 @@ namespace Speedrunning_Game
 		{
 			musicVol = 1f;
 			soundVol = 1f;
+			skin = "speed runner";
+			Game1.LoadNewSkin(Game1.game, skin);
 			controls["MoveLeft"] = Keys.Left;
 			controls["MoveRight"] = Keys.Right;
 			controls["Jump"] = Keys.Space;
@@ -103,6 +108,7 @@ namespace Speedrunning_Game
 			StreamWriter writer = new StreamWriter("settings.txt");
 			writer.WriteLine("MusicVolume " + (1f).ToString());
 			writer.WriteLine("SFXVolume " + (1f).ToString());
+			writer.WriteLine("Skin " + skin.Replace(" ", "_"));
 			writer.WriteLine("MoveLeft " + Keys.Left.ToString());
 			writer.WriteLine("MoveRight " + Keys.Right.ToString());
 			writer.WriteLine("Jump/WallJump " + Keys.Space.ToString());
@@ -115,11 +121,12 @@ namespace Speedrunning_Game
 			writer.Dispose();
 		}
 
-		private static void SaveSettings()
+		public static void SaveSettings()
 		{
 			StreamWriter writer = new StreamWriter("settings.txt");
 			writer.WriteLine("MusicVolume " + musicVol.ToString());
 			writer.WriteLine("SFXVolume " + soundVol.ToString());
+			writer.WriteLine("Skin " + skin.Replace(" ", "_"));
 			writer.WriteLine("MoveLeft " + controls["MoveLeft"].ToString());
 			writer.WriteLine("MoveRight " + controls["MoveRight"].ToString());
 			writer.WriteLine("Jump/WallJump " + controls["Jump"].ToString());

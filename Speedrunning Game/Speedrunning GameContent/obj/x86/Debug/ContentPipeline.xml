@@ -1770,6 +1770,24 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure sliding.xnb</Output>
       <Time>2012-07-19T14:26:26.4418281-04:00</Time>
     </Item>
+    <Item>
+      <Source>skins\speed runner\speed runner ziplining.png</Source>
+      <Name>skins\speed runner\speed runner ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\speed runner\speed runner ziplining.xnb</Output>
+      <Time>2012-06-03T12:45:21.8901555-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\stick figure\stick figure ziplining.png</Source>
+      <Name>skins\stick figure\stick figure ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure ziplining.xnb</Output>
+      <Time>2012-07-19T17:01:38.0600406-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

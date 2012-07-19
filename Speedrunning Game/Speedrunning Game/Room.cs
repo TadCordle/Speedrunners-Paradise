@@ -427,7 +427,7 @@ namespace Speedrunning_Game
 					foreach (Box b in boxes)
 						b.Update();
 
-					// Update floating platforms
+					// Find platforms
 					var plats = from Wall f in walls
 								where f is FloatingPlatform
 								select f as FloatingPlatform;

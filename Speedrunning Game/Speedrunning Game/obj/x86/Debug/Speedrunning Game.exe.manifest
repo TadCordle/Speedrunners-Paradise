@@ -90,7 +90,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Pg3kmof7+6O7MmRDB58/w33HtA0=</dsig:DigestValue>
+        <dsig:DigestValue>qNjOX0yWxKkUXzOhCsnYDbfjWl0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1039,6 +1039,15 @@
       <dsig:DigestValue>3rtWvx0GRCjUebkhqaKcXaJcmyo=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\skins\speed runner\speed runner ziplining.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NtXQfH3SljoDB0Pe5h+H98ADXnQ=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\skins\stick figure\stick figure dead midair0001.xnb" size="16571">
     <hash>
       <dsig:Transforms>
@@ -1703,6 +1712,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>8GjIxFcEMjVhZTvYciC3mu0EWr0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\stick figure\stick figure ziplining.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wQMnNMJ+a9ljhhd9ewoG9IiMfSU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\sounds\boost.xnb" size="97037">

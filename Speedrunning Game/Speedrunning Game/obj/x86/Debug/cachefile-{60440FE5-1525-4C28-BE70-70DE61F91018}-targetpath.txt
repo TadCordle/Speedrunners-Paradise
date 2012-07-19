@@ -199,3 +199,5 @@ Content\skins\stick figure\stick figure running0017.xnb
 Content\skins\stick figure\stick figure running0018.xnb
 Content\skins\stick figure\stick figure running0019.xnb
 Content\skins\stick figure\stick figure sliding.xnb
+Content\skins\speed runner\speed runner ziplining.xnb
+Content\skins\stick figure\stick figure ziplining.xnb

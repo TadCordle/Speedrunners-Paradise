@@ -51,8 +51,12 @@ namespace Speedrunning_Game
 
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && entercheck)
 			{
-				Game1.LoadNewSkin(Game1.game, choices[currentSelection]);
-				entercheck = false;
+				if (Game1.skinPreviews[currentSelection] != null)
+				{
+					Game1.LoadNewSkin(Game1.game, choices[currentSelection]);
+					Settings.SaveSettings();
+					entercheck = false;
+				}
 			}
 		}
 
