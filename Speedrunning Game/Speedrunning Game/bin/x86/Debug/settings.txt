@@ -1,4 +1,4 @@
-MusicVolume 0.5000005
+MusicVolume 1
 SFXVolume 1
 MoveLeft Left
 MoveRight Right

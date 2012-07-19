@@ -18,7 +18,7 @@ namespace Speedrunning_Game
 		public SkinSelection()
 		{
 			currentSelection = 0;
-			choices = new string[10];
+			choices = new string[6];
 			choices[0] = "speed runner";
 			choices[1] = "squirrel";
 			choices[2] = "stick figure";
@@ -29,32 +29,45 @@ namespace Speedrunning_Game
 			entercheck = false;
 		}
 
-		public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
+		public override void Update(GameTime gameTime)
 		{
 			if (!Keyboard.GetState().IsKeyDown(Keys.Up))
-				upcheck = false;
+				upcheck = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.Down))
-				downcheck = false;
+				downcheck = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.Enter))
-				entercheck = false;
+				entercheck = true;
 
 			if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck)
+			{
 				currentSelection = Math.Max(0, currentSelection - 1);
+				upcheck = false;
+			}
 			if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck)
-				currentSelection = Math.Min(currentSelection + 1, choices.Length);
+			{
+				currentSelection = Math.Min(currentSelection + 1, choices.Length - 1);
+				downcheck = false;
+			}
 
-			if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && entercheck)
+			{
 				Game1.LoadNewSkin(Game1.game, choices[currentSelection]);
+				entercheck = false;
+			}
 		}
 
-		public override void Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
+		public override void Draw(SpriteBatch sb)
 		{
 			sb.Draw(Game1.backgrounds[0], new Rectangle(0, 0, 960, 720), Color.White);
 
 			sb.DrawString(Game1.mnufont, "Skin Select", new Vector2(384, 10), Color.White);
 			sb.DrawString(Game1.mnufont, "Skin Select", new Vector2(385, 11), Color.Black);
 
-			// Draw selection stuff
+			for (int i = 0; i < 6; i++)
+			{
+				sb.Draw(Game1.skinPreviews[i] != null ? Game1.skinPreviews[i] : Game1.prevLocked, new Vector2(50, i * 80 + 100), currentSelection == i ? Color.White : Color.DarkGray);
+				sb.DrawString(Game1.mnufont, choices[i], new Vector2(130, i * 80 + 120), currentSelection == i ? Color.Yellow : (Game1.selectedSkin == choices[i] ? Color.Lime : Color.White));
+			}
 		}
 	}
 }

@@ -20,6 +20,7 @@ namespace Speedrunning_Game
 		public static Game game;
 		public static AnimatedTexture guyNormal, guyRunning, guyMidair, guySliding, guyZiplining, guyDeadGround, guyDeadMidair;
 		public static Texture2D[] skinPreviews;
+		public static string selectedSkin;
 		public static Texture2D prevLocked;
 		public static Room currentRoom;
 		public static Texture2D wallTex;
@@ -164,6 +165,8 @@ namespace Speedrunning_Game
 		}
 		public static void LoadNewSkin(Game game, string skinName)
 		{
+			selectedSkin = skinName;
+
 			skinManager.Dispose();
 			skinManager = new ContentManager(game.Services, "Content/skins");
 
