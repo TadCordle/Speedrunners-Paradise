@@ -1,3 +1,4 @@
 Jeffrey Bardon (I have no name) - Doom Climb, Marathon
-Davit Goldman, Andrew Kim - Beating my times
-Andrew Fishberg - Collision programming/graphics
+Andrew Kim - Rocket Run
+David Goldman, Andrew Kim - Testing/Beating my times
+Andrew Fishberg - Collision programming/skins artist

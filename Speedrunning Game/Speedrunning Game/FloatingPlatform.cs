@@ -15,6 +15,7 @@ namespace Speedrunning_Game
 		public Vector2 velocity, position;
 		
 		private Texture2D texture;
+		private int updateCount = 0;
 
 		public FloatingPlatform(Vector2 position, float angle, float speed) : base(new Rectangle((int)position.X, (int)position.Y, 96, 32))
 		{
@@ -30,6 +31,7 @@ namespace Speedrunning_Game
 
 		public void Update()
 		{
+			updateCount++;
 			position += velocity;
 			UpdateHitBox();
 			foreach (Wall w in Game1.currentRoom.Walls)

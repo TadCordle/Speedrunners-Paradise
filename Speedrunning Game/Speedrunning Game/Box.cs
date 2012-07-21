@@ -15,8 +15,10 @@ namespace Speedrunning_Game
 		private Rectangle groundBox;
 		public Vector2 position, velocity, acceleration;
 
+		private FloatingPlatform platform;
 		private Vector2 startPosition;
 		private Texture2D tex;
+		private int updateCount = 0;
 
 		public Box(int x, int y)
 		{
@@ -24,9 +26,10 @@ namespace Speedrunning_Game
 			crushed = false;
 			startPosition = position = new Vector2(x, y);
 			acceleration = new Vector2(0, 0.4f);
+
 			velocity = Vector2.Zero;
 			hitBox = new Rectangle(x, y, 32, 32);
-			groundBox = new Rectangle(x, y + 32, 32, 2);
+			groundBox = new Rectangle(x, y + 32, 32, 3);
 			tex = Game1.boxTex;
 		}
 		private void UpdateHitBox()
@@ -39,6 +42,7 @@ namespace Speedrunning_Game
 
 		public void Update()
 		{
+			updateCount++;
 			if (grabbed)
 			{
 				// Snap to player
@@ -49,15 +53,24 @@ namespace Speedrunning_Game
 			else
 			{
 				// Update position and velocity
-				position += velocity;
 				velocity += acceleration;
+				position += velocity;
+				if (platform != null)
+					position.X += platform.velocity.X;
 				UpdateHitBox();
 
 				// Wall collisions
+				platform = null;
 				foreach (Wall w in Game1.currentRoom.Walls)
 				{
 					if (w is PlatformWall)
 						continue;
+
+					if (w is FloatingPlatform && this.groundBox.Intersects(w.Bounds))
+					{
+						if (groundBox.Intersects(w.Bounds))
+							platform = (FloatingPlatform)w;
+					}
 
 					if (this.hitBox.Intersects(w.Bounds))
 					{
@@ -115,8 +128,6 @@ namespace Speedrunning_Game
 									this.velocity.X += Math.Sign(velocity.X) * -1 * 0.5f;
 									if (Math.Sign(temp) != Math.Sign(velocity.X))
 										velocity.X = 0;
-									if (w is FloatingPlatform && resV.Y < 0)
-										this.position += ((FloatingPlatform)w).velocity;
 								}
 							}
 						}
@@ -128,10 +139,12 @@ namespace Speedrunning_Game
 				// Box collisions
 				foreach (Box b in Game1.currentRoom.Boxes)
 				{
+					if (this == b)
+						continue;
 					if (this.groundBox.Intersects(b.hitBox))
 					{
 						this.position.Y = b.position.Y - 32;
-						this.velocity.Y = 0;
+						this.velocity.X += b.velocity.X;
 						this.velocity.Y = 0;
 						float temp = this.velocity.X;
 						this.velocity.X += Math.Sign(velocity.X) * -1 * 0.5f;

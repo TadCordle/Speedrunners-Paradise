@@ -423,16 +423,16 @@ namespace Speedrunning_Game
 					foreach (Booster b in boosters)
 						b.Update();
 
-					// Update boxes
-					foreach (Box b in boxes)
-						b.Update();
-
 					// Find platforms
 					var plats = from Wall f in walls
 								where f is FloatingPlatform
 								select f as FloatingPlatform;
 					foreach (FloatingPlatform f in plats)
 						f.Update();
+
+					// Update boxes
+					foreach (Box b in boxes)
+						b.Update();
 
 					// Update character
 					Runner.Update();

@@ -83,14 +83,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="212992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="213504">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>qNjOX0yWxKkUXzOhCsnYDbfjWl0=</dsig:DigestValue>
+        <dsig:DigestValue>VGsKY7SQhR1noxqGBh/zz12T9Kc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1549,7 +1549,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>usjEbDTMRT0xl6pmAcNZbYqoQPM=</dsig:DigestValue>
+      <dsig:DigestValue>e3npT6z1ig9mn1/Pfpvz50h4NCg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0003.xnb" size="16571">
@@ -1558,7 +1558,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>e3npT6z1ig9mn1/Pfpvz50h4NCg=</dsig:DigestValue>
+      <dsig:DigestValue>cPJJhs8+J9m9mlHg2xegOyCoEf8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0004.xnb" size="16571">
@@ -1567,7 +1567,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>E4/zfDCX3coxEhbrxPDRAIrYhk4=</dsig:DigestValue>
+      <dsig:DigestValue>rzwh9F60NH4vwN3SfBU/j922cCk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0005.xnb" size="16571">
@@ -1576,7 +1576,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>cPJJhs8+J9m9mlHg2xegOyCoEf8=</dsig:DigestValue>
+      <dsig:DigestValue>2fcWxkYkaOq0R2cbrgAEDqbvLAM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0006.xnb" size="16571">
@@ -1585,7 +1585,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>EeQ+gHVm0SVAsFqNEk7TyLZwvG4=</dsig:DigestValue>
+      <dsig:DigestValue>+jzOtYznzLT2R5QNN7fGQtM4ejE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0007.xnb" size="16571">
@@ -1594,7 +1594,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rzwh9F60NH4vwN3SfBU/j922cCk=</dsig:DigestValue>
+      <dsig:DigestValue>NNggMxVKCg8P/TwiL+yJCVotvIo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0008.xnb" size="16571">
@@ -1603,7 +1603,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>NNggMxVKCg8P/TwiL+yJCVotvIo=</dsig:DigestValue>
+      <dsig:DigestValue>EeQ+gHVm0SVAsFqNEk7TyLZwvG4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0009.xnb" size="16571">
@@ -1612,7 +1612,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>2fcWxkYkaOq0R2cbrgAEDqbvLAM=</dsig:DigestValue>
+      <dsig:DigestValue>E4/zfDCX3coxEhbrxPDRAIrYhk4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0010.xnb" size="16571">
@@ -1621,7 +1621,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>+jzOtYznzLT2R5QNN7fGQtM4ejE=</dsig:DigestValue>
+      <dsig:DigestValue>usjEbDTMRT0xl6pmAcNZbYqoQPM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0011.xnb" size="16571">
@@ -1630,7 +1630,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>2fcWxkYkaOq0R2cbrgAEDqbvLAM=</dsig:DigestValue>
+      <dsig:DigestValue>Y2AKoxY5hMgQA+Mh5knRIaePu88=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0012.xnb" size="16571">
@@ -1639,7 +1639,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>NNggMxVKCg8P/TwiL+yJCVotvIo=</dsig:DigestValue>
+      <dsig:DigestValue>e3npT6z1ig9mn1/Pfpvz50h4NCg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0013.xnb" size="16571">
@@ -1648,7 +1648,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rzwh9F60NH4vwN3SfBU/j922cCk=</dsig:DigestValue>
+      <dsig:DigestValue>cPJJhs8+J9m9mlHg2xegOyCoEf8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0014.xnb" size="16571">
@@ -1657,7 +1657,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>EeQ+gHVm0SVAsFqNEk7TyLZwvG4=</dsig:DigestValue>
+      <dsig:DigestValue>rzwh9F60NH4vwN3SfBU/j922cCk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0015.xnb" size="16571">
@@ -1666,7 +1666,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>cPJJhs8+J9m9mlHg2xegOyCoEf8=</dsig:DigestValue>
+      <dsig:DigestValue>2fcWxkYkaOq0R2cbrgAEDqbvLAM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0016.xnb" size="16571">
@@ -1675,7 +1675,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>E4/zfDCX3coxEhbrxPDRAIrYhk4=</dsig:DigestValue>
+      <dsig:DigestValue>+jzOtYznzLT2R5QNN7fGQtM4ejE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0017.xnb" size="16571">
@@ -1684,7 +1684,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>e3npT6z1ig9mn1/Pfpvz50h4NCg=</dsig:DigestValue>
+      <dsig:DigestValue>NNggMxVKCg8P/TwiL+yJCVotvIo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0018.xnb" size="16571">
@@ -1693,7 +1693,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>usjEbDTMRT0xl6pmAcNZbYqoQPM=</dsig:DigestValue>
+      <dsig:DigestValue>EeQ+gHVm0SVAsFqNEk7TyLZwvG4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure running0019.xnb" size="16571">
@@ -1702,7 +1702,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Y2AKoxY5hMgQA+Mh5knRIaePu88=</dsig:DigestValue>
+      <dsig:DigestValue>E4/zfDCX3coxEhbrxPDRAIrYhk4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\stick figure\stick figure sliding.xnb" size="16571">
@@ -1720,7 +1720,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>wQMnNMJ+a9ljhhd9ewoG9IiMfSU=</dsig:DigestValue>
+      <dsig:DigestValue>NP8jOqumRgCP6AIOkrB8ezRH8lE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\sounds\boost.xnb" size="97037">

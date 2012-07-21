@@ -2,7 +2,7 @@
 x Intro
 x Intro 2
 x Outside the box
-x There and back
+* 
 x Wall jump
 
 -- Cave --
@@ -14,17 +14,17 @@ x Marathon
 
 -- Night --
 x Mystic
-* 
-* Platform Hell
+x There and back
+* Only Floating Platform
 *
 *
 
 -- Factory --
 x Long Level
-*
+x Hurry
 *
 * Kill Yourself
-* The rocket room
+x The rocket room
 
 -- Lava --
 *
