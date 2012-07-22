@@ -1,4 +1,5 @@
 using System;
+using System.Windows.Forms;
 
 namespace Speedrunning_Game
 {
@@ -9,10 +10,15 @@ namespace Speedrunning_Game
         /// </summary>
         static void Main(string[] args)
         {
-            using (Game1 game = new Game1())
-            {
-                game.Run();
-            }
+			LoginForm login = new LoginForm();
+			DialogResult result = login.ShowDialog();
+			if (result == DialogResult.OK || result == DialogResult.Ignore)
+			{
+				using (Game1 game = new Game1(result == DialogResult.OK))
+				{
+					game.Run();
+				}
+			}
         }
     }
 }

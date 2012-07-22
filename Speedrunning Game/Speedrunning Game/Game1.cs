@@ -15,6 +15,8 @@ namespace Speedrunning_Game
 {
 	public class Game1 : Microsoft.Xna.Framework.Game
 	{
+		public static string userName;
+
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 		public static Game game;
@@ -42,13 +44,15 @@ namespace Speedrunning_Game
 		public static Song grassMusic, lavaMusic, nightMusic, caveMusic, factoryMusic;
 		public static bool playingGrass, playingLava, playingNight, playingCave, playingFactory;
 		public static bool exit = false;
+		public static bool online;
 
 		static ContentManager skinManager;
 
 		private bool pressEscape = false;
 
-		public Game1()
+		public Game1(bool on)
 		{
+			online = on;
 			game = this;
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 720;
