@@ -61,15 +61,23 @@ namespace Speedrunning_Game
 		private string levelName;
 		private string levelID;
 		private int time, record, goalBeaten;
-		private bool custom, write, writeNext, pcheck, rcheck, fcheck, freeroaming;
+		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, freeroaming, lcheck, upcheck, downcheck;
+		public bool viewingLeaderboards;
+		private string[][] leaderboardData;
+		private int leaderboardPage;
+		private bool canScrollDown;
 
 		public bool Freeroam { get { return freeroaming; } }
 
 		public Room()
 		{
+			upload = true;
+			canScrollDown = false;
 			goalBeaten = 0;
 			pcheck = true;
 			rcheck = false;
+			fcheck = false;
+			lcheck = true;
 			write = true;
 			writeNext = true;
 			time = 0;
@@ -84,6 +92,8 @@ namespace Speedrunning_Game
 			boxes = new List<Box>();
 			launchers = new List<RocketLauncher>();
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
+			viewingLeaderboards = false;
+			leaderboardPage = 0;
 		}
 
 		public Room(string file, bool freeroam)
@@ -390,6 +400,12 @@ namespace Speedrunning_Game
 				pcheck = true;
 			if (!Keyboard.GetState().IsKeyDown(Settings.controls["Freeroam"]))
 				fcheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.L))
+				lcheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.Up))
+				upcheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.Down))
+				downcheck = true;
 
 			// Restart the current level when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]) && rcheck)
@@ -410,14 +426,43 @@ namespace Speedrunning_Game
 			}
 
 			// Pause the game when P is pressed
-			if (Keyboard.GetState().IsKeyDown(Settings.controls["Pause"]) && pcheck)
+			if (Keyboard.GetState().IsKeyDown(Settings.controls["Pause"]) && pcheck && !viewingLeaderboards)
 			{
 				pcheck = false;
 				Paused = !Paused;
 			}
 
+			if (Keyboard.GetState().IsKeyDown(Keys.L) && lcheck && (Paused || Finished) && Game1.online)
+			{
+				lcheck = false;
+				if (!viewingLeaderboards)
+				{
+					viewingLeaderboards = true;
+					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
+					canScrollDown = leaderboardData.Length == 11;
+				}
+				else
+					viewingLeaderboards = false;
+			}
+
+			if (viewingLeaderboards)
+			{
+				if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck && leaderboardPage > 0)
+				{
+					leaderboardPage--;
+					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
+					canScrollDown = true;
+				}
+				else if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck && canScrollDown)
+				{
+					leaderboardPage++;
+					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
+					canScrollDown = leaderboardData.Length == 11;
+				}
+			}
+
 			// Update freeroam cam
-			if (freeroaming)
+			if (freeroaming && !Paused)
 			{
 				if (Keyboard.GetState().IsKeyDown(Keys.Left))
 					viewBox.X -= 8;
@@ -498,7 +543,7 @@ namespace Speedrunning_Game
 				if (write)
 				{
 					write = false;
-					
+
 					// Get goal beaten, if any
 					if (time <= goals[0])
 						goalBeaten = 1;
@@ -536,11 +581,15 @@ namespace Speedrunning_Game
 						writer.Dispose();
 						File.Delete("Content\\records.txt");
 						File.Move("Content\\recordstemp.txt", "Content\\records.txt");
-
-						// Upload score to leaderboard
-						if (Game1.online)
-							WebStuff.WriteScore(time, Game1.userName, levelID);
 					}
+				}
+
+				if (upload)
+				{
+					// Upload score to leaderboard
+					upload = false;
+					if (Game1.online)
+						WebStuff.WriteScore(time, Game1.userName, levelID);
 				}
 
 				if (writeNext && !custom && Levels.Index < Levels.levels.Count() - 1)
@@ -690,7 +739,7 @@ namespace Speedrunning_Game
 			}
 
 			// Freeroam instructions
-			if (freeroaming)
+			if (freeroaming && !viewingLeaderboards)
 			{
 				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(0, 30), Color.White);
 				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(1, 31), Color.Black);
@@ -698,14 +747,44 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, "Use the arrow keys to check out the level before you play", new Vector2(1, 61), Color.Black);
 			}
 
-			if (Paused || Finished || Runner.health <= 0 || freeroaming)
+			if ((Paused || Finished || Runner.health <= 0 || freeroaming) && !viewingLeaderboards)
 			{
 				sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming ? 782 : 750, 690), Color.White);
 				if (freeroaming && !Paused || Runner.health <= 0 && !Paused)
 					sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming? 783 : 751, 691), Color.Black);
 			}
 
-			if (Finished)
+			if (viewingLeaderboards)
+			{
+				// Draw level's leaderboard
+
+				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(264, 10), Color.White);
+				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(265, 11), drawHue);
+
+				if (leaderboardPage > 0)
+					sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
+				if (canScrollDown)
+					sb.DrawString(Game1.mnufont, "v", new Vector2(12, 520), Color.Lime);
+
+				if (leaderboardData[0][0] == "")
+					sb.DrawString(Game1.mnufont, "There's nothing here... yet.", new Vector2(100, 70), Color.Lime);
+				else
+				{
+					for (int i = 0; i < leaderboardData.Length - 1; i++)
+					{
+						sb.DrawString(Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 70), Color.White);
+						sb.DrawString(Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 70), Color.White);
+						sb.DrawString(Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 70), Color.White);
+					}
+					sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 675), Color.Lime);
+					sb.DrawString(Game1.mnufont, Game1.userName, new Vector2(200, 675), Color.Lime);
+					sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 675), Color.Lime);
+				}
+				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 675), Color.Lime);
+				sb.DrawString(Game1.mnufont, Game1.userName, new Vector2(200, 675), Color.Lime);
+				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 675), Color.Lime);
+			}
+			else if (Finished)
 			{
 				// Draw finished level screen
 
@@ -735,6 +814,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, goalBeaten != 0 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : "Do better next time!", new Vector2(382, 400), Color.Yellow);
 
+				sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
 				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 630), Color.White);
 				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
 			}
@@ -765,6 +845,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 310), goalBeaten == 2 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 
+				sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
 				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White);
 				sb.DrawString(Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White);
 			}

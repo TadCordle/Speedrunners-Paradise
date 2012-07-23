@@ -209,6 +209,7 @@ namespace Speedrunning_Game
 				pressEscape = true;
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape) && pressEscape || exit)
 			{
+				currentRoom.viewingLeaderboards = false;
 				pressEscape = false;
 				if (currentRoom is MainMenu)
 					this.Exit();

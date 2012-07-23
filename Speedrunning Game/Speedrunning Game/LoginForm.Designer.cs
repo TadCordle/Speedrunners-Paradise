@@ -35,6 +35,7 @@
 			this.btnLogin = new System.Windows.Forms.Button();
 			this.btnNew = new System.Windows.Forms.Button();
 			this.btnOffline = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// txtUsername
@@ -73,7 +74,7 @@
 			// 
 			// btnLogin
 			// 
-			this.btnLogin.Location = new System.Drawing.Point(12, 73);
+			this.btnLogin.Location = new System.Drawing.Point(12, 128);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.Size = new System.Drawing.Size(75, 23);
 			this.btnLogin.TabIndex = 4;
@@ -83,7 +84,7 @@
 			// 
 			// btnNew
 			// 
-			this.btnNew.Location = new System.Drawing.Point(93, 73);
+			this.btnNew.Location = new System.Drawing.Point(93, 128);
 			this.btnNew.Name = "btnNew";
 			this.btnNew.Size = new System.Drawing.Size(84, 23);
 			this.btnNew.TabIndex = 5;
@@ -93,7 +94,7 @@
 			// 
 			// btnOffline
 			// 
-			this.btnOffline.Location = new System.Drawing.Point(183, 73);
+			this.btnOffline.Location = new System.Drawing.Point(183, 128);
 			this.btnOffline.Name = "btnOffline";
 			this.btnOffline.Size = new System.Drawing.Size(75, 23);
 			this.btnOffline.TabIndex = 6;
@@ -101,12 +102,23 @@
 			this.btnOffline.UseVisualStyleBackColor = true;
 			this.btnOffline.Click += new System.EventHandler(this.btnOffline_Click);
 			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(18, 78);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(233, 39);
+			this.label3.TabIndex = 7;
+			this.label3.Text = "NOTE: Your account is only used for uploading\r\nscores to the leaderboards. Even i" +
+    "f you log in as\r\nsomeone else, you may overwrite local records.";
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.ClientSize = new System.Drawing.Size(268, 108);
+			this.ClientSize = new System.Drawing.Size(268, 163);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.btnOffline);
 			this.Controls.Add(this.btnNew);
 			this.Controls.Add(this.btnLogin);
@@ -131,5 +143,6 @@
 		private System.Windows.Forms.Button btnLogin;
 		private System.Windows.Forms.Button btnNew;
 		private System.Windows.Forms.Button btnOffline;
+		private System.Windows.Forms.Label label3;
 	}
 }

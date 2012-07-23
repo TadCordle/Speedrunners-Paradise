@@ -97,19 +97,22 @@ namespace Speedrunning_Game
 
 		public static string WriteScore(int time, string username, string levelID)
 		{
-			string postString = "Code=" + levelID.Substring(0, 64) + "&Username=" + username + "&Time=" + time.ToString();
+			string infostring = levelID.Substring(0, 64) + username + time + "test";
+			string postString = "Code=" + levelID.Substring(0, 64) + "&Username=" + username + "&Time=" + time + "&Hash=" + HashString(infostring);
 			string response = WebPost("http://srpgame.x10.mx/uploadscore.php", postString);
 			return response;
 		}
 
-		public static string[][] GetScores(string levelID, string username)
+		public static string[][] GetScores(string levelID, string username, int start)
 		{
-			string postString = "Code=" + levelID.Substring(0, 64) + "&Username=" + username;
+			string postString = "Code=" + levelID.Substring(0, 64) + "&Username=" + username + "&Start=" + start;
 			string response = WebPost("http://srpgame.x10.mx/getscores.php", postString);
-			string[] rows = response.Split('@');
-			string[][] table = new string[rows.Length][];
+			string[] separate = response.Split('*');
+			string[] rows = separate[0].Split('@');
+			string[][] table = new string[rows.Length + 1][];
 			for (int i = 0; i < rows.Length; i++)
 				table[i] = rows[i].Split('$');
+			table[rows.Length] = separate[1].Split('$');
 			return table;
 		}
 	}
