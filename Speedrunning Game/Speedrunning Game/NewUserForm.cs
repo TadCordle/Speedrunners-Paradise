@@ -38,12 +38,12 @@ namespace Speedrunning_Game
 				MessageBox.Show("Your confirmed password does not match your password.");
 				return;
 			}
-			else if (LoginForm.FindName(txtUsername.Text) != "$ $ $")
+			else if (WebStuff.FindName(txtUsername.Text) != "$ $ $")
 			{
 				MessageBox.Show("That username already exists! Pick another.");
 				return;
 			}
-			LoginForm.CreateName(txtUsername.Text, txtPassword.Text, txtEmail.Text);
+			WebStuff.CreateName(txtUsername.Text, txtPassword.Text, txtEmail.Text);
 			DialogResult = DialogResult.OK;
 		}
 	}

@@ -151,6 +151,7 @@
     <Compile Include="SkinSelection.cs" />
     <Compile Include="Tileset.cs" />
     <Compile Include="Wall.cs" />
+    <Compile Include="WebStuff.cs" />
     <Compile Include="ZipLine.cs" />
   </ItemGroup>
   <ItemGroup>

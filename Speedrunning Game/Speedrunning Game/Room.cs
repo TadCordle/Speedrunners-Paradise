@@ -59,6 +59,7 @@ namespace Speedrunning_Game
 		private int[] goals; // 0 = gold, 1 = silver, 2 = bronze
 		private Tileset wallSet;
 		private string levelName;
+		private string levelID;
 		private int time, record, goalBeaten;
 		private bool custom, write, writeNext, pcheck, rcheck, fcheck, freeroaming;
 
@@ -89,7 +90,9 @@ namespace Speedrunning_Game
 			: this()
 		{
 			freeroaming = freeroam;
-			
+
+			DateTime editTime = File.GetLastWriteTime(file);
+
 			// Get level name
 			levelName = file.Split('\\')[file.Split('\\').Length - 1].Replace(".srl", "");
 			custom = true;
@@ -97,6 +100,17 @@ namespace Speedrunning_Game
 			SimpleAES decryptor = new SimpleAES();
 			StreamReader levelReader = new StreamReader(file);
 			string[] line;
+
+			// Get level id
+			levelID = levelReader.ReadLine();
+
+			// Get last edited time and compare to time of save
+			DateTime savedTime = DateTime.Parse(decryptor.DecryptString(levelReader.ReadLine()));
+			if (savedTime.ToString() != editTime.ToString())
+			{
+				System.Windows.Forms.MessageBox.Show("The level could not be opened because it was edited outside of the level editor.");
+				Game1.exit = true;
+			}
 
 			// Get level theme
 			line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
@@ -522,6 +536,10 @@ namespace Speedrunning_Game
 						writer.Dispose();
 						File.Delete("Content\\records.txt");
 						File.Move("Content\\recordstemp.txt", "Content\\records.txt");
+
+						// Upload score to leaderboard
+						if (Game1.online)
+							WebStuff.WriteScore(time, Game1.userName, levelID);
 					}
 				}
 
