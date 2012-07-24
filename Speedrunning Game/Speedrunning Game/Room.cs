@@ -771,31 +771,30 @@ namespace Speedrunning_Game
 			{
 				// Draw level's leaderboard
 
-				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(264, 10), Color.White);
-				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(265, 11), drawHue);
+				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(340, 10), Color.White);
+				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(341, 11), drawHue);
 
 				if (leaderboardPage > 0)
-					sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
+					sb.DrawString(Game1.mnufont, "^", new Vector2(12, 90), Color.Lime);
 				if (canScrollDown)
-					sb.DrawString(Game1.mnufont, "v", new Vector2(12, 520), Color.Lime);
+					sb.DrawString(Game1.mnufont, "v", new Vector2(12, 540), Color.Lime);
 
+				sb.DrawString(Game1.mnufont, "Worldwide Records", new Vector2(40, 55), Color.Lime);
 				if (leaderboardData[0][0] == "")
-					sb.DrawString(Game1.mnufont, "There's nothing here... yet.", new Vector2(100, 70), Color.Lime);
+					sb.DrawString(Game1.mnufont, "There's nothing here... yet.", new Vector2(100, 135), Color.Lime);
 				else
 				{
 					for (int i = 0; i < leaderboardData.Length - 1; i++)
 					{
-						sb.DrawString(Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 70), Color.White);
-						sb.DrawString(Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 70), Color.White);
-						sb.DrawString(Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 70), Color.White);
+						sb.DrawString(Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 100), Color.White);
+						sb.DrawString(Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 100), Color.White);
+						sb.DrawString(Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 100), Color.White);
 					}
-					sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 675), Color.Lime);
-					sb.DrawString(Game1.mnufont, Game1.userName, new Vector2(200, 675), Color.Lime);
-					sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 675), Color.Lime);
 				}
-				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 675), Color.Lime);
-				sb.DrawString(Game1.mnufont, Game1.userName, new Vector2(200, 675), Color.Lime);
-				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 675), Color.Lime);
+				sb.DrawString(Game1.mnufont, "Your Rank", new Vector2(40, 620), Color.Yellow);
+				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 665), Color.Lime);
+				sb.DrawString(Game1.mnufont, Game1.userName, new Vector2(200, 665), Color.Lime);
+				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime);
 			}
 			else if (Finished)
 			{
