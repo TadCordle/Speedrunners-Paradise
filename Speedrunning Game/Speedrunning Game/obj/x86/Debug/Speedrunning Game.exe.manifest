@@ -102,7 +102,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XzkZQdHN7RyYLObI3Im4nlNwKtk=</dsig:DigestValue>
+        <dsig:DigestValue>OOEM5YpI3rn84+C70VfFuoBxd5Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -383,6 +383,681 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>Xm+bILc8+oFa+LpJXyLdwmE8ivQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bYnojIRUBhyxIdFp7bldD8ech7I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>E9bpiJQUCNGYatMhr0bAPPHtS4o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>c66oh0wHYofMl2PbGK6sZOdNHyI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IxdpaYfSmCoAQhao7E3thymaLAg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>le0sOgUOWrzumgzDeJFSaCgd8ng=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ALEaF+B+g7kBWRt4bfIOS/1saSc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7khXxIfhbBkWorYo+vmXpMi8+nU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MYKlcbSMIwatMyWmjaHrPAbDk14=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>moGVN8JSBK5emmZ5OySmS2JOdPU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>N6FyPYnq0ku1N/QaLeswgvFDX0E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wgT8RHgvI/jvnKZp/BQnC4T++cw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y9MiWrXBCNV0ebFz1790CTexLAA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Fovgd+a18PIGZqplB1h1Ygt7tl0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Dedexkur9A9UPso+Y/93pl1Qh2k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nfrhFKWmjcReQHElNqXS3WlPmEA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3O+TMxNSEwxjTeuX46ekB03W/sc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LbNe42GDLWWADzFr908jJW/kK8o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>G7iAKt5FDYP39YWSW7w+xcqO4nE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4MABiB4FfAJFtO+O7dW5XZxUI3g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0020.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Pj0mzLNGgDWbN4LUfEQCexibmfs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0021.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KMc//3BqPXlbY9n24Ty1LgtvLks=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0022.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tvutA9Lnc/qZ5D/wfvD1C/hJ8WA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0023.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6ZjdLHXNz2JQYSOKJ4cFuItAOZc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0024.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GrZdVaV6pl02jsSuY2pEC1pRGo4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead midair0025.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DHjaNLN4W4QZC10icmtrepWN5/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy dead.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xJhDTKBGWIpToY/sooyTKYYCqJI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JL9iCFxhcC6tpt4WUJE5KOyMiZI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>laX8/ilmfKVxmh9PuUA60yJ8F3A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qN66FSnTsro2wivaaP74hDoFnI0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jWNOaW1PYaTJCTBFAiVgo7VRB6g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3PZaZ2shQUpqjncPAauD2+w1Xt8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>n38yJo1o151//dIPV1QPPN3cAQc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LGsuN1YAU/nvlgQvr4fOS23fGmY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cyZJQVZffnrvymaWChZ06W8H6ys=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9nZIW6XAlXPJIZlP0CO8hMhv93I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jl62IYjqF3eI8Z2ZVLthT+1LSrw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cnWSw09J+y5yTg+Z1Ssb91fwoCo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8nko2HcreN3twWkq1kk+Q24xQhg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ikGACNoFHWW2goQ9K1QSXADmgS0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+L5z33ekv1rAGtCp2DqptfN9AWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WIoE0gnACVmWPJg7OFh+O8qdrh4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rxk6Jk2zPnumCYMF9j+VQRITS0g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pdNQ+cFEfmYk8g/W/8aA6J5u4/0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cELKCGlR8MdfGFxF8c1dcTFRhPI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>h1pRk9gdQpHCu6yHVqX836DTcwE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1zkuYBurKOSoQ53FfShGxp92r5M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0tmy/mkCO1FEzLoGHCJ10HkqKz8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6XtlMR8DfmLssIzJdDTOHbLiGyA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3o33sweeqGdCSChhoDsqf2baUMw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ufnq8fdz4D2yIDaFRfqkkADID1Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>W3kv48keCDXukqs1jtx2JcsF2yQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gRzOXZmvBPIcI7WgcyDk9Z7TRHo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7A7hJMmyzw63TR7AbbSMwikxAFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy normal0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y2pfNwPKRoJu821/Qp4YJUwvxB0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xsPV3mVu0LVsTOojgOUJuymfvas=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RmfqTcpdQGTPfGJwbKUxu8C+R/w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NF7pCZesNw4zcdhR7+M56QAs8Zk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iYquatqBtGw9Hb5/qI91N6aIeNg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NDH8icDS7Wq+9PIMXtVdn3qUIUg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>76kB509mGArFxulg5BeFZamE3Z8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+v5n7vBZphnIaJcsY9sAC5xH7Lg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Prycb/moF6IWKSsjUK/x0Yq3D8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HO0t8otKbY9rHyKvpjcpBereF7w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IYJtJbK3JDmT1W6DKoc+ENO+8mQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bco3/4UcNPXu4BlAMNNICHjCCVI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uCG68FCWXVtC011ESmif+pRp+B8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>p3bZGufUM7Il6A0gao5aUH43Eyg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BphxOzL59wSPIDqau6XoikaYJcc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NDH8icDS7Wq+9PIMXtVdn3qUIUg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CItMCswHA+xFNtBtoDma4DbKQkk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TYwDv5U22fXMg5trFewrAciL3bY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cc129XdgqQjgFrb7bVj7TudJLyA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy running0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>//ylVtwi+nDqw2hTxW5yUo4YIu0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy sliding.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Hz8yRolVWEZY5BvjsyMHHwxyn7E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mr guy\mr guy ziplining.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tcMLEBMYHtyWGriS8Qj7JUAgBhk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\speed runner\speed runner dead midair0001.xnb" size="16571">

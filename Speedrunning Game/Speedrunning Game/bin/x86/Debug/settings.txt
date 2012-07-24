@@ -1,6 +1,6 @@
 MusicVolume 0.5000005
 SFXVolume 1
-Skin stick_figure
+Skin mr_guy
 MoveLeft Left
 MoveRight Right
 Jump/WallJump Space

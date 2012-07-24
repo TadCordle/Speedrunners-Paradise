@@ -1788,6 +1788,681 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\stick figure\stick figure ziplining.xnb</Output>
       <Time>2012-07-21T01:19:51.9393502-04:00</Time>
     </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0001.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0001.xnb</Output>
+      <Time>2012-07-24T12:37:45.3492562-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0002.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0002.xnb</Output>
+      <Time>2012-07-24T12:37:45.5332668-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0003.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0003.xnb</Output>
+      <Time>2012-07-24T12:37:45.7092768-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0004.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0004.xnb</Output>
+      <Time>2012-07-24T12:37:45.8942874-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0005.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0005.xnb</Output>
+      <Time>2012-07-24T12:37:46.0732977-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0006.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0006.xnb</Output>
+      <Time>2012-07-24T12:37:46.2503078-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0007.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0007.xnb</Output>
+      <Time>2012-07-24T12:37:46.4533194-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0008.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0008.xnb</Output>
+      <Time>2012-07-24T12:37:46.6363299-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0009.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0009.xnb</Output>
+      <Time>2012-07-24T12:37:46.8503421-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0010.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0010.xnb</Output>
+      <Time>2012-07-24T12:37:47.0323525-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0011.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0011.xnb</Output>
+      <Time>2012-07-24T12:37:47.2173631-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0012.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0012.xnb</Output>
+      <Time>2012-07-24T12:37:47.4003736-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0013.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0013.xnb</Output>
+      <Time>2012-07-24T12:37:47.618386-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0014.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0014.xnb</Output>
+      <Time>2012-07-24T12:37:47.7903959-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0015.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0015.xnb</Output>
+      <Time>2012-07-24T12:37:47.9724063-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0016.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0016.xnb</Output>
+      <Time>2012-07-24T12:37:48.1414159-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0017.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0017.xnb</Output>
+      <Time>2012-07-24T12:37:48.3094256-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0018.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0018.xnb</Output>
+      <Time>2012-07-24T12:37:48.4734349-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0019.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0019.xnb</Output>
+      <Time>2012-07-24T12:37:48.6444447-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0020.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0020.xnb</Output>
+      <Time>2012-07-24T12:37:48.842456-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0021.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0021.xnb</Output>
+      <Time>2012-07-24T12:37:49.0124658-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0022.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0022.xnb</Output>
+      <Time>2012-07-24T12:37:49.1874758-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0023.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0023.xnb</Output>
+      <Time>2012-07-24T12:37:49.3524852-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0024.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0024.xnb</Output>
+      <Time>2012-07-24T12:37:49.5134944-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead midair0025.png</Source>
+      <Name>skins\mr guy\mr guy dead midair0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead midair0025.xnb</Output>
+      <Time>2012-07-24T12:37:49.6195005-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy dead.png</Source>
+      <Name>skins\mr guy\mr guy dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy dead.xnb</Output>
+      <Time>2012-07-24T12:39:02.8556894-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0001.png</Source>
+      <Name>skins\mr guy\mr guy midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0001.xnb</Output>
+      <Time>2012-07-24T12:33:41.3643011-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0002.png</Source>
+      <Name>skins\mr guy\mr guy midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0002.xnb</Output>
+      <Time>2012-07-24T12:33:41.5143097-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0003.png</Source>
+      <Name>skins\mr guy\mr guy midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0003.xnb</Output>
+      <Time>2012-07-24T12:33:41.6693186-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0004.png</Source>
+      <Name>skins\mr guy\mr guy midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0004.xnb</Output>
+      <Time>2012-07-24T12:33:41.8193271-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0005.png</Source>
+      <Name>skins\mr guy\mr guy midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0005.xnb</Output>
+      <Time>2012-07-24T12:33:41.9713358-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0006.png</Source>
+      <Name>skins\mr guy\mr guy midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0006.xnb</Output>
+      <Time>2012-07-24T12:33:42.1223445-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0007.png</Source>
+      <Name>skins\mr guy\mr guy midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0007.xnb</Output>
+      <Time>2012-07-24T12:33:42.2913541-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0008.png</Source>
+      <Name>skins\mr guy\mr guy midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0008.xnb</Output>
+      <Time>2012-07-24T12:33:42.446363-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy midair0009.png</Source>
+      <Name>skins\mr guy\mr guy midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy midair0009.xnb</Output>
+      <Time>2012-07-24T12:33:42.551369-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0001.png</Source>
+      <Name>skins\mr guy\mr guy normal0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0001.xnb</Output>
+      <Time>2012-07-24T12:13:04.5755608-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0002.png</Source>
+      <Name>skins\mr guy\mr guy normal0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0002.xnb</Output>
+      <Time>2012-07-24T12:13:04.7695719-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0003.png</Source>
+      <Name>skins\mr guy\mr guy normal0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0003.xnb</Output>
+      <Time>2012-07-24T12:13:04.9225807-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0004.png</Source>
+      <Name>skins\mr guy\mr guy normal0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0004.xnb</Output>
+      <Time>2012-07-24T12:13:05.0845899-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0005.png</Source>
+      <Name>skins\mr guy\mr guy normal0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0005.xnb</Output>
+      <Time>2012-07-24T12:13:05.2385988-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0006.png</Source>
+      <Name>skins\mr guy\mr guy normal0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0006.xnb</Output>
+      <Time>2012-07-24T12:13:05.3896074-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0007.png</Source>
+      <Name>skins\mr guy\mr guy normal0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0007.xnb</Output>
+      <Time>2012-07-24T12:13:05.5426161-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0008.png</Source>
+      <Name>skins\mr guy\mr guy normal0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0008.xnb</Output>
+      <Time>2012-07-24T12:13:05.7306269-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0009.png</Source>
+      <Name>skins\mr guy\mr guy normal0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0009.xnb</Output>
+      <Time>2012-07-24T12:13:05.8906361-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0010.png</Source>
+      <Name>skins\mr guy\mr guy normal0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0010.xnb</Output>
+      <Time>2012-07-24T12:13:06.046645-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0011.png</Source>
+      <Name>skins\mr guy\mr guy normal0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0011.xnb</Output>
+      <Time>2012-07-24T12:13:06.2026539-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0012.png</Source>
+      <Name>skins\mr guy\mr guy normal0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0012.xnb</Output>
+      <Time>2012-07-24T12:13:06.3576628-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0013.png</Source>
+      <Name>skins\mr guy\mr guy normal0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0013.xnb</Output>
+      <Time>2012-07-24T12:13:06.5336728-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0014.png</Source>
+      <Name>skins\mr guy\mr guy normal0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0014.xnb</Output>
+      <Time>2012-07-24T12:13:06.6886817-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0015.png</Source>
+      <Name>skins\mr guy\mr guy normal0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0015.xnb</Output>
+      <Time>2012-07-24T12:13:06.8446906-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0016.png</Source>
+      <Name>skins\mr guy\mr guy normal0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0016.xnb</Output>
+      <Time>2012-07-24T12:13:07.0307013-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0017.png</Source>
+      <Name>skins\mr guy\mr guy normal0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0017.xnb</Output>
+      <Time>2012-07-24T12:13:07.18371-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0018.png</Source>
+      <Name>skins\mr guy\mr guy normal0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0018.xnb</Output>
+      <Time>2012-07-24T12:13:07.340719-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy normal0019.png</Source>
+      <Name>skins\mr guy\mr guy normal0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy normal0019.xnb</Output>
+      <Time>2012-07-24T12:13:07.4447249-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0001.png</Source>
+      <Name>skins\mr guy\mr guy running0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0001.xnb</Output>
+      <Time>2012-07-24T12:20:56.4805523-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0002.png</Source>
+      <Name>skins\mr guy\mr guy running0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0002.xnb</Output>
+      <Time>2012-07-24T12:20:56.6135599-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0003.png</Source>
+      <Name>skins\mr guy\mr guy running0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0003.xnb</Output>
+      <Time>2012-07-24T12:20:56.7455674-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0004.png</Source>
+      <Name>skins\mr guy\mr guy running0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0004.xnb</Output>
+      <Time>2012-07-24T12:20:56.9235776-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0005.png</Source>
+      <Name>skins\mr guy\mr guy running0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0005.xnb</Output>
+      <Time>2012-07-24T12:20:57.0645857-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0006.png</Source>
+      <Name>skins\mr guy\mr guy running0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0006.xnb</Output>
+      <Time>2012-07-24T12:20:57.2005934-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0007.png</Source>
+      <Name>skins\mr guy\mr guy running0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0007.xnb</Output>
+      <Time>2012-07-24T12:20:57.3416015-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0008.png</Source>
+      <Name>skins\mr guy\mr guy running0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0008.xnb</Output>
+      <Time>2012-07-24T12:20:57.4796094-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0009.png</Source>
+      <Name>skins\mr guy\mr guy running0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0009.xnb</Output>
+      <Time>2012-07-24T12:20:57.6186174-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0010.png</Source>
+      <Name>skins\mr guy\mr guy running0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0010.xnb</Output>
+      <Time>2012-07-24T12:20:57.7566252-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0011.png</Source>
+      <Name>skins\mr guy\mr guy running0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0011.xnb</Output>
+      <Time>2012-07-24T12:20:57.892633-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0012.png</Source>
+      <Name>skins\mr guy\mr guy running0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0012.xnb</Output>
+      <Time>2012-07-24T12:20:58.0306409-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0013.png</Source>
+      <Name>skins\mr guy\mr guy running0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0013.xnb</Output>
+      <Time>2012-07-24T12:20:58.1666487-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0014.png</Source>
+      <Name>skins\mr guy\mr guy running0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0014.xnb</Output>
+      <Time>2012-07-24T12:20:58.3046566-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0015.png</Source>
+      <Name>skins\mr guy\mr guy running0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0015.xnb</Output>
+      <Time>2012-07-24T12:20:58.4406644-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0016.png</Source>
+      <Name>skins\mr guy\mr guy running0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0016.xnb</Output>
+      <Time>2012-07-24T12:20:58.5756721-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0017.png</Source>
+      <Name>skins\mr guy\mr guy running0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0017.xnb</Output>
+      <Time>2012-07-24T12:20:58.7096798-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0018.png</Source>
+      <Name>skins\mr guy\mr guy running0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0018.xnb</Output>
+      <Time>2012-07-24T12:20:58.8466876-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy running0019.png</Source>
+      <Name>skins\mr guy\mr guy running0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy running0019.xnb</Output>
+      <Time>2012-07-24T12:20:58.9576939-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy sliding.png</Source>
+      <Name>skins\mr guy\mr guy sliding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy sliding.xnb</Output>
+      <Time>2012-07-24T12:27:53.7244172-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mr guy\mr guy ziplining.png</Source>
+      <Name>skins\mr guy\mr guy ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy ziplining.xnb</Output>
+      <Time>2012-07-24T12:29:09.2787387-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

@@ -144,7 +144,7 @@ namespace Speedrunning_Game
 			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				// Make sure wall effects player
-				if (w is PlatformWall || !w.Bounds.Intersects(Game1.currentRoom.ViewBox))
+				if (w is PlatformWall || (!w.Bounds.Intersects(Game1.currentRoom.ViewBox) && !Game1.currentRoom.Freeroam))
 					continue;
 
 				// If you're standing on it, apply ground friction and say that you're standing

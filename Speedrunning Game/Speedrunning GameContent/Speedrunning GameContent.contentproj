@@ -1112,6 +1112,383 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="skins\mr guy\mr guy dead midair0001.png">
+      <Name>mr guy dead midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0002.png">
+      <Name>mr guy dead midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0003.png">
+      <Name>mr guy dead midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0004.png">
+      <Name>mr guy dead midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0005.png">
+      <Name>mr guy dead midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0006.png">
+      <Name>mr guy dead midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0007.png">
+      <Name>mr guy dead midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0008.png">
+      <Name>mr guy dead midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0009.png">
+      <Name>mr guy dead midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0010.png">
+      <Name>mr guy dead midair0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0011.png">
+      <Name>mr guy dead midair0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0012.png">
+      <Name>mr guy dead midair0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0013.png">
+      <Name>mr guy dead midair0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0014.png">
+      <Name>mr guy dead midair0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0015.png">
+      <Name>mr guy dead midair0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0016.png">
+      <Name>mr guy dead midair0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0017.png">
+      <Name>mr guy dead midair0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0018.png">
+      <Name>mr guy dead midair0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0019.png">
+      <Name>mr guy dead midair0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0020.png">
+      <Name>mr guy dead midair0020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0021.png">
+      <Name>mr guy dead midair0021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0022.png">
+      <Name>mr guy dead midair0022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0023.png">
+      <Name>mr guy dead midair0023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0024.png">
+      <Name>mr guy dead midair0024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead midair0025.png">
+      <Name>mr guy dead midair0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy dead.png">
+      <Name>mr guy dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0001.png">
+      <Name>mr guy midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0002.png">
+      <Name>mr guy midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0003.png">
+      <Name>mr guy midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0004.png">
+      <Name>mr guy midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0005.png">
+      <Name>mr guy midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0006.png">
+      <Name>mr guy midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0007.png">
+      <Name>mr guy midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0008.png">
+      <Name>mr guy midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy midair0009.png">
+      <Name>mr guy midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0001.png">
+      <Name>mr guy normal0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0002.png">
+      <Name>mr guy normal0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0003.png">
+      <Name>mr guy normal0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0004.png">
+      <Name>mr guy normal0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0005.png">
+      <Name>mr guy normal0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0006.png">
+      <Name>mr guy normal0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0007.png">
+      <Name>mr guy normal0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0008.png">
+      <Name>mr guy normal0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0009.png">
+      <Name>mr guy normal0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0010.png">
+      <Name>mr guy normal0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0011.png">
+      <Name>mr guy normal0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0012.png">
+      <Name>mr guy normal0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0013.png">
+      <Name>mr guy normal0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0014.png">
+      <Name>mr guy normal0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0015.png">
+      <Name>mr guy normal0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0016.png">
+      <Name>mr guy normal0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0017.png">
+      <Name>mr guy normal0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0018.png">
+      <Name>mr guy normal0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy normal0019.png">
+      <Name>mr guy normal0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0001.png">
+      <Name>mr guy running0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0002.png">
+      <Name>mr guy running0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0003.png">
+      <Name>mr guy running0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0004.png">
+      <Name>mr guy running0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0005.png">
+      <Name>mr guy running0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0006.png">
+      <Name>mr guy running0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0007.png">
+      <Name>mr guy running0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0008.png">
+      <Name>mr guy running0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0009.png">
+      <Name>mr guy running0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0010.png">
+      <Name>mr guy running0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0011.png">
+      <Name>mr guy running0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0012.png">
+      <Name>mr guy running0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0013.png">
+      <Name>mr guy running0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0014.png">
+      <Name>mr guy running0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0015.png">
+      <Name>mr guy running0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0016.png">
+      <Name>mr guy running0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0017.png">
+      <Name>mr guy running0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0018.png">
+      <Name>mr guy running0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy running0019.png">
+      <Name>mr guy running0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy sliding.png">
+      <Name>mr guy sliding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\mr guy\mr guy ziplining.png">
+      <Name>mr guy ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
