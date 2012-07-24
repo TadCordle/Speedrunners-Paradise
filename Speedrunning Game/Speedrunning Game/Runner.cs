@@ -144,7 +144,7 @@ namespace Speedrunning_Game
 			foreach (Wall w in Game1.currentRoom.Walls)
 			{
 				// Make sure wall effects player
-				if (w is PlatformWall || (!w.Bounds.Intersects(Game1.currentRoom.ViewBox) && controllable))
+				if (w is PlatformWall || !w.Bounds.Intersects(Game1.currentRoom.ViewBox))
 					continue;
 
 				// If you're standing on it, apply ground friction and say that you're standing
@@ -243,8 +243,7 @@ namespace Speedrunning_Game
 							}
 						}
 					}
-					if (!(w is FloatingPlatform && health <= 0))
-						this.position += resV;
+					this.position += resV;
 					UpdateHitBox();
 				}
 

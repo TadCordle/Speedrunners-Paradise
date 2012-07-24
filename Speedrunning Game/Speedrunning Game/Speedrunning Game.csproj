@@ -94,6 +94,9 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Speedrunning Game Forms">
+      <HintPath>..\..\..\Speedrunning Game Forms\Speedrunning Game Forms\bin\Debug\Speedrunning Game Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -118,21 +121,9 @@
     <Compile Include="Booster.cs" />
     <Compile Include="Box.cs" />
     <Compile Include="Explosion.cs" />
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mirror.cs" />
     <Compile Include="DeathWall.cs" />
     <Compile Include="Message.cs" />
-    <Compile Include="NewUserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewUserForm.Designer.cs">
-      <DependentUpon>NewUserForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="PlatformWall.cs" />
     <Compile Include="Finish.cs" />
     <Compile Include="FloatingPlatform.cs" />
@@ -151,7 +142,6 @@
     <Compile Include="SkinSelection.cs" />
     <Compile Include="Tileset.cs" />
     <Compile Include="Wall.cs" />
-    <Compile Include="WebStuff.cs" />
     <Compile Include="ZipLine.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,14 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Speedrunning Game_TemporaryKey.pfx" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewUserForm.resx">
-      <DependentUpon>NewUserForm.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

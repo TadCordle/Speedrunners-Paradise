@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 using Game_Maker_Library;
+using Speedrunning_Game_Forms;
 
 namespace Speedrunning_Game
 {
@@ -62,7 +63,7 @@ namespace Speedrunning_Game
 		private string levelID;
 		private int time, record, goalBeaten;
 		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, freeroaming, lcheck, upcheck, downcheck;
-		public bool viewingLeaderboards;
+		public bool viewingLeaderboards, canViewLeaderboards;
 		private string[][] leaderboardData;
 		private int leaderboardPage;
 		private bool canScrollDown;
@@ -122,6 +123,9 @@ namespace Speedrunning_Game
 				Game1.exit = true;
 			}
 
+			// Check if level will have a leaderboard
+			canViewLeaderboards = decryptor.DecryptString(levelReader.ReadLine()) == "1";
+
 			// Get level theme
 			line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
 			Theme = FindTheme(line[0]);
@@ -169,23 +173,32 @@ namespace Speedrunning_Game
 			SimpleAES decryptor = new SimpleAES();
 			string[] line;
 
+			// Get level id
+			levelID = lines[0];
+
+			// Get last edited time and compare to time of save
+			DateTime savedTime = DateTime.Parse(decryptor.DecryptString(lines[1]));
+
+			// Check if level will have a leaderboard
+			canViewLeaderboards = decryptor.DecryptString(lines[2]) == "1";
+
 			// Get level theme
-			line = decryptor.DecryptString(lines[0]).Split(' ');
+			line = decryptor.DecryptString(lines[3]).Split(' ');
 			Theme = FindTheme(line[0]);
 			wallSet = new Tileset(Game1.tileSet[(int)Theme], 32, 32, 3, 3);
 
 			// Get room dimensions
-			line = decryptor.DecryptString(lines[1]).Split(' ');
+			line = decryptor.DecryptString(lines[4]).Split(' ');
 			roomWidth = int.Parse(line[0]);
 			roomHeight = int.Parse(line[1]);
 
 			// Get goal times
-			line = decryptor.DecryptString(lines[2]).Split(' ');
+			line = decryptor.DecryptString(lines[5]).Split(' ');
 			for (int i = 0; i < 3; i++)
 				goals[i] = int.Parse(line[i]);
 
 			// Get objects and tiles
-			int index = 3;
+			int index = 6;
 			while (index < lines.Length)
 			{
 				line = decryptor.DecryptString(lines[index]).Split(' ');
@@ -432,7 +445,7 @@ namespace Speedrunning_Game
 				Paused = !Paused;
 			}
 
-			if (Keyboard.GetState().IsKeyDown(Keys.L) && lcheck && (Paused || Finished) && Game1.online)
+			if (Keyboard.GetState().IsKeyDown(Keys.L) && lcheck && (Paused || Finished) && Game1.online && canViewLeaderboards)
 			{
 				lcheck = false;
 				if (!viewingLeaderboards)
@@ -584,7 +597,7 @@ namespace Speedrunning_Game
 					}
 				}
 
-				if (upload)
+				if (upload && canViewLeaderboards)
 				{
 					// Upload score to leaderboard
 					upload = false;
@@ -814,7 +827,8 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, goalBeaten != 0 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : "Do better next time!", new Vector2(382, 400), Color.Yellow);
 
-				sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
+				if (Game1.online && canViewLeaderboards)
+					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
 				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 630), Color.White);
 				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
 			}
@@ -845,7 +859,8 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 310), goalBeaten == 2 ? Color.Lime : Color.White);
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 
-				sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
+				if (Game1.online && canViewLeaderboards)
+					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
 				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White);
 				sb.DrawString(Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White);
 			}

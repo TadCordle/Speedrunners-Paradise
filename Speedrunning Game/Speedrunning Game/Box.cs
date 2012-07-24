@@ -56,7 +56,7 @@ namespace Speedrunning_Game
 				velocity += acceleration;
 				position += velocity;
 				if (platform != null)
-					position.X += platform.velocity.X;
+					position += platform.velocity;
 				UpdateHitBox();
 
 				// Wall collisions
@@ -144,12 +144,14 @@ namespace Speedrunning_Game
 					if (this.groundBox.Intersects(b.hitBox))
 					{
 						this.position.Y = b.position.Y - 32;
-						this.velocity.X += b.velocity.X;
+						this.position.X += b.velocity.X;
 						this.velocity.Y = 0;
 						float temp = this.velocity.X;
 						this.velocity.X += Math.Sign(velocity.X) * -1 * 0.5f;
 						if (Math.Sign(temp) != Math.Sign(velocity.X))
 							velocity.X = 0;
+						if (b.platform != null && this.platform == null)
+							this.platform = b.platform;
 						UpdateHitBox();
 					}
 				}
