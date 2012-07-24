@@ -83,14 +83,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="34304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="38912">
       <assemblyIdentity name="Speedrunning Game Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9n7f4BJBxyhyMEX1kEmf00nYmKE=</dsig:DigestValue>
+        <dsig:DigestValue>O+TqDLEMFETXZf5ALr1uAyL2SDA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,7 +102,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OOEM5YpI3rn84+C70VfFuoBxd5Y=</dsig:DigestValue>
+        <dsig:DigestValue>bIEfjc0Ovq4VuB7hfi6gYuA4TG0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

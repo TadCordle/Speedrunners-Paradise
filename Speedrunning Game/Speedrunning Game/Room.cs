@@ -115,14 +115,6 @@ namespace Speedrunning_Game
 			// Get level id
 			levelID = levelReader.ReadLine();
 
-			// Get last edited time and compare to time of save
-			DateTime savedTime = DateTime.Parse(decryptor.DecryptString(levelReader.ReadLine()));
-			if (savedTime.ToString() != editTime.ToString())
-			{
-				System.Windows.Forms.MessageBox.Show("The level could not be opened because it was edited outside of the level editor.");
-				Game1.exit = true;
-			}
-
 			// Check if level will have a leaderboard
 			canViewLeaderboards = decryptor.DecryptString(levelReader.ReadLine()) == "1";
 
@@ -176,29 +168,26 @@ namespace Speedrunning_Game
 			// Get level id
 			levelID = lines[0];
 
-			// Get last edited time and compare to time of save
-			DateTime savedTime = DateTime.Parse(decryptor.DecryptString(lines[1]));
-
 			// Check if level will have a leaderboard
-			canViewLeaderboards = decryptor.DecryptString(lines[2]) == "1";
+			canViewLeaderboards = decryptor.DecryptString(lines[1]) == "1";
 
 			// Get level theme
-			line = decryptor.DecryptString(lines[3]).Split(' ');
+			line = decryptor.DecryptString(lines[2]).Split(' ');
 			Theme = FindTheme(line[0]);
 			wallSet = new Tileset(Game1.tileSet[(int)Theme], 32, 32, 3, 3);
 
 			// Get room dimensions
-			line = decryptor.DecryptString(lines[4]).Split(' ');
+			line = decryptor.DecryptString(lines[3]).Split(' ');
 			roomWidth = int.Parse(line[0]);
 			roomHeight = int.Parse(line[1]);
 
 			// Get goal times
-			line = decryptor.DecryptString(lines[5]).Split(' ');
+			line = decryptor.DecryptString(lines[4]).Split(' ');
 			for (int i = 0; i < 3; i++)
 				goals[i] = int.Parse(line[i]);
 
 			// Get objects and tiles
-			int index = 6;
+			int index = 5;
 			while (index < lines.Length)
 			{
 				line = decryptor.DecryptString(lines[index]).Split(' ');
@@ -781,7 +770,7 @@ namespace Speedrunning_Game
 
 				sb.DrawString(Game1.mnufont, "Worldwide Records", new Vector2(40, 55), Color.Lime);
 				if (leaderboardData[0][0] == "")
-					sb.DrawString(Game1.mnufont, "There's nothing here... yet.", new Vector2(100, 135), Color.Lime);
+					sb.DrawString(Game1.mnufont, "There's nothing here... yet.", new Vector2(40, 100), Color.White);
 				else
 				{
 					for (int i = 0; i < leaderboardData.Length - 1; i++)

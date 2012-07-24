@@ -100,7 +100,7 @@ namespace Speedrunning_Game
 				else
 				{
 					StreamReader findGoals = new StreamReader("Content\\rooms\\" + name + ".srl");
-					for (int skip = 1; skip <= 5; skip++)
+					for (int skip = 1; skip <= 4; skip++)
 						findGoals.ReadLine();
 					string[] goals = decryptor.DecryptString(findGoals.ReadLine()).Split(' ');
 					for (int j = 2; j >= 0; j--)

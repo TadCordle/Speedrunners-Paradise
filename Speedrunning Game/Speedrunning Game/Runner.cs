@@ -288,6 +288,16 @@ namespace Speedrunning_Game
 					{
 						position.Y = b.position.Y - 64;
 						velocity.Y = 0;
+						if (b.platform != null)
+						{
+							if (platform == null)
+							{
+								platform = b.platform;
+								if (!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
+									velocity.X = 0;
+							}
+							isOnPlatform = true;
+						}
 						if (!isSliding)
 							groundFriction.X = Math.Sign(velocity.X) * -1 * 0.5f;
 						else

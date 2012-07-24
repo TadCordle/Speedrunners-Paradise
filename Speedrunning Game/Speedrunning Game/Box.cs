@@ -14,8 +14,8 @@ namespace Speedrunning_Game
 		public Rectangle hitBox;
 		private Rectangle groundBox;
 		public Vector2 position, velocity, acceleration;
+		public FloatingPlatform platform;
 
-		private FloatingPlatform platform;
 		private Vector2 startPosition;
 		private Texture2D tex;
 		private int updateCount = 0;
