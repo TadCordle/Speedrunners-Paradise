@@ -158,36 +158,36 @@ namespace Speedrunning_Game
 		{
 			freeroaming = freeroam;
 			
-			// Get level name
-			levelName = ".MAIN.Level" + (Levels.Index + 1).ToString();
-			custom = false;
-
 			SimpleAES decryptor = new SimpleAES();
 			string[] line;
 
+			// Get leve name
+			levelName = lines[0];
+			custom = false;
+
 			// Get level id
-			levelID = lines[0];
+			levelID = lines[1];
 
 			// Check if level will have a leaderboard
-			canViewLeaderboards = decryptor.DecryptString(lines[1]) == "1";
+			canViewLeaderboards = decryptor.DecryptString(lines[2]) == "1";
 
 			// Get level theme
-			line = decryptor.DecryptString(lines[2]).Split(' ');
+			line = decryptor.DecryptString(lines[3]).Split(' ');
 			Theme = FindTheme(line[0]);
 			wallSet = new Tileset(Game1.tileSet[(int)Theme], 32, 32, 3, 3);
 
 			// Get room dimensions
-			line = decryptor.DecryptString(lines[3]).Split(' ');
+			line = decryptor.DecryptString(lines[4]).Split(' ');
 			roomWidth = int.Parse(line[0]);
 			roomHeight = int.Parse(line[1]);
 
 			// Get goal times
-			line = decryptor.DecryptString(lines[4]).Split(' ');
+			line = decryptor.DecryptString(lines[5]).Split(' ');
 			for (int i = 0; i < 3; i++)
 				goals[i] = int.Parse(line[i]);
 
 			// Get objects and tiles
-			int index = 5;
+			int index = 6;
 			while (index < lines.Length)
 			{
 				line = decryptor.DecryptString(lines[index]).Split(' ');
@@ -210,7 +210,7 @@ namespace Speedrunning_Game
 				string s = decryptor.DecryptString(reader.ReadLine());
 				if (s.Split(' ')[0] == levelName)
 				{
-					record = int.Parse(s.Split(' ')[1]);
+					record = int.Parse(s.Split(' ')[2]);
 					recordFound = true;
 					break;
 				}
@@ -221,7 +221,7 @@ namespace Speedrunning_Game
 			{
 				record = -1;
 				StreamWriter writer = new StreamWriter("Content\\records.txt", true);
-				writer.WriteLine(decryptor.EncryptToString(levelName + " -1"));
+				writer.WriteLine(decryptor.EncryptToString(levelName + " 0 -1"));
 				writer.Flush();
 				writer.Dispose();
 			}
@@ -386,7 +386,7 @@ namespace Speedrunning_Game
 				if (recordSearch.Split(' ')[0] != levelName)
 					record = -1;
 				else
-					record = int.Parse(recordSearch.Split(' ')[1]);
+					record = int.Parse(recordSearch.Split(' ')[2]);
 			}
 			else
 				record = -1;
@@ -571,13 +571,13 @@ namespace Speedrunning_Game
 							if (line.Split(' ')[0] == levelName)
 							{
 								found = true;
-								writer.WriteLine(encryptor.EncryptToString(levelName + " " + time.ToString()));
+								writer.WriteLine(encryptor.EncryptToString(levelName + " " + (custom ? "1" : "0") + " " + time.ToString()));
 							}
 							else
 								writer.WriteLine(encryptor.EncryptToString(line));
 						}
 						if (!found)
-							writer.WriteLine(encryptor.EncryptToString(levelName + " " + time.ToString()));
+							writer.WriteLine(encryptor.EncryptToString(levelName + " " + (custom ? "1" : "0") + " " + time.ToString()));
 						reader.Dispose();
 						writer.Flush();
 						writer.Dispose();
@@ -601,7 +601,7 @@ namespace Speedrunning_Game
 					bool recordFound = false;
 					StreamReader reader = new StreamReader("Content\\records.txt");
 					SimpleAES encryptor = new SimpleAES();
-					string name = ".MAIN.Level" + (Levels.Index + 2).ToString();
+					string name = Levels.levels[Levels.Index + 1][0];
 					while (!reader.EndOfStream)
 					{
 						string s = encryptor.DecryptString(reader.ReadLine());
@@ -616,7 +616,7 @@ namespace Speedrunning_Game
 					if (!recordFound)
 					{
 						StreamWriter writer = new StreamWriter("Content\\records.txt", true);
-						writer.WriteLine(encryptor.EncryptToString(name + " -1"));
+						writer.WriteLine(encryptor.EncryptToString(name + " 0 -1"));
 						writer.Flush();
 						writer.Dispose();
 					}
@@ -628,7 +628,12 @@ namespace Speedrunning_Game
 					if (!custom)
 					{
 						Levels.Index++;
-						Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
+						if (Levels.Index == Levels.levels.Count())
+						{
+							// You win
+						}
+						else
+							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 					}
 					else
 					{

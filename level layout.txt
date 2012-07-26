@@ -1,8 +1,8 @@
 -- Grass --
 x Intro
 x Intro 2
-x Outside the box
 * 
+x Outside the box
 x Wall jump
 
 -- Cave --
@@ -24,13 +24,13 @@ x Long Level
 x Hurry
 *
 * Kill Yourself
-x The rocket room
+*
 
 -- Lava --
 *
 x Doom Climb
 * Maintain Fast Speed
-*
+x Rocket Run
 *
 
 * Credits level (a bunch of sign posts with names)

@@ -19,7 +19,7 @@ namespace Speedrunning_Game
 		private bool pressEnter;
 		private int maxSelected;
 		private int scope;
-		private List<Tuple<string, int, int>> levels;
+		private List<Tuple<string, int, int, bool>> levels; // Name, record, goal, custom
 		private Texture2D background;
 
 		public LevelSelect()
@@ -32,7 +32,7 @@ namespace Speedrunning_Game
 			roomHeight = 720;
 			roomWidth = 960;
 
-			levels = new List<Tuple<string, int, int>>();
+			levels = new List<Tuple<string, int, int, bool>>();
 			selected = 0;
 			scope = 0;
 
@@ -43,9 +43,9 @@ namespace Speedrunning_Game
 			SimpleAES decryptor = new SimpleAES();
 			while (!findMainLevels.EndOfStream)
 			{
-				string name = decryptor.DecryptString(findMainLevels.ReadLine()).Split(' ')[0];
-				if (name.Length > 6 && name.Substring(0, 6) == ".MAIN.")
-					levels.Add(new Tuple<string, int, int>(name, -1, -1));
+				string[] level = decryptor.DecryptString(findMainLevels.ReadLine()).Split(' ');
+				if (level[1] == "0")
+					levels.Add(new Tuple<string, int, int, bool>(level[0], -1, -1, false));
 			}
 			findMainLevels.Close();
 			findMainLevels.Dispose();
@@ -55,7 +55,7 @@ namespace Speedrunning_Game
 				Directory.CreateDirectory("Content\\rooms");
 			string[] choices = Directory.GetFiles("Content\\rooms");
 			foreach (string s in choices)
-				levels.Add(new Tuple<string, int, int>(s.Split('\\')[s.Split('\\').Length - 1].Replace(".srl", ""), -1, -1));
+				levels.Add(new Tuple<string, int, int, bool>(s.Split('\\')[s.Split('\\').Length - 1].Replace(".srl", ""), -1, -1, true));
 			maxSelected = levels.Count - 1;
 
 			// Find record/medal achieved in each level
@@ -73,28 +73,25 @@ namespace Speedrunning_Game
 				string line = decryptor.DecryptString(readRecords.ReadLine());
 				while (line.Split(' ')[0] != name && !readRecords.EndOfStream)
 					line = decryptor.DecryptString(readRecords.ReadLine());
+				bool iscustom = true;
 				if (line.Split(' ')[0] == name)
-					levels[i] = new Tuple<string, int, int>(levels[i].Item1, int.Parse(line.Split(' ')[1]), -1);
+				{
+					levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, int.Parse(line.Split(' ')[2]), -1, levels[i].Item4);
+					iscustom = line.Split(' ')[1] == "1";
+				}
 				readRecords.Close();
 				readRecords.Dispose();
 
 				// Find goal times
-				if (name.Length >= 6 && name.Substring(0, 6) == ".MAIN.")
+				if (!iscustom)
 				{
-					int index = 0;
-					int temp;
-					int findNum = name.Length - 1;
-					while (int.TryParse(name.Substring(findNum), out temp))
-					{
-						index = int.Parse(name.Substring(findNum));
-						findNum--;
-					}
-					index--;
-					string[] goals = decryptor.DecryptString(Levels.levels[index][2]).Split(' ');
+					string findIndex = name.Split('_')[1];
+					int index = int.Parse(findIndex) - 1;
+					string[] goals = decryptor.DecryptString(Levels.levels[index][5]).Split(' ');
 					for (int j = 2; j >= 0; j--)
 					{
 						if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
-							levels[i] = new Tuple<string, int, int>(levels[i].Item1, levels[i].Item2, j);
+							levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, j, levels[i].Item4);
 					}
 				}
 				else
@@ -106,7 +103,7 @@ namespace Speedrunning_Game
 					for (int j = 2; j >= 0; j--)
 					{
 						if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
-							levels[i] = new Tuple<string, int, int>(levels[i].Item1, levels[i].Item2, j);
+							levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, j, levels[i].Item4);
 					}
 				}
 			}
@@ -156,17 +153,11 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
-				if (levels[selected].Item1.Length >= 6 && levels[selected].Item1.Substring(0, 6) == ".MAIN.")
+				if (!levels[selected].Item4)
 				{
-					int ret = 0;
-					int newRet = 0;
-					int index = levels[selected].Item1.Length - 1;
-					while (int.TryParse(levels[selected].Item1.Substring(index), out ret))
-					{
-						newRet = ret;
-						index--;
-					}
-					Levels.Index = newRet - 1;
+					string[] name = levels[selected].Item1.Split('_');
+					int index = int.Parse(name[1]);
+					Levels.Index = index - 1;
 					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 				}
 				else
