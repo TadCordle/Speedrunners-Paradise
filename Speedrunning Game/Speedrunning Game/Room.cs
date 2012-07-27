@@ -50,6 +50,9 @@ namespace Speedrunning_Game
 		private List<RocketLauncher> launchers;
 		public List<RocketLauncher> Launchers { get { return launchers; } }
 
+		private List<Flamethrower> flamethrowers;
+		public List<Flamethrower> Flamethrowers { get { return flamethrowers; } }
+
 		public Runner Runner { get; set; }
 		public Finish Finish { get; set; }
 		public LevelTheme Theme { get; set; }
@@ -92,6 +95,7 @@ namespace Speedrunning_Game
 			messages = new List<Message>();
 			boxes = new List<Box>();
 			launchers = new List<RocketLauncher>();
+			flamethrowers = new List<Flamethrower>();
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 			viewingLeaderboards = false;
 			leaderboardPage = 0;
@@ -306,6 +310,8 @@ namespace Speedrunning_Game
 				walls.Add(new Mirror(int.Parse(line[1]), int.Parse(line[2]), int.Parse(line[3]), int.Parse(line[4])));
 			else if (line[0] == "launcher")
 				launchers.Add(new RocketLauncher(new Vector2(int.Parse(line[1]), int.Parse(line[2]))));
+			else if (line[0] == "flamethrower")
+				flamethrowers.Add(new Flamethrower(int.Parse(line[1]), int.Parse(line[2]), float.Parse(line[3]), int.Parse(line[4])));
 		}
 
 		private void BuildTiles()
@@ -514,6 +520,10 @@ namespace Speedrunning_Game
 						}
 					}
 
+					// Update flamethrowers
+					foreach (Flamethrower f in flamethrowers)
+						f.Update();
+
 					// Move viewbox to keep up with character
 					UpdateViewBox(freeroaming);
 
@@ -629,17 +639,12 @@ namespace Speedrunning_Game
 					{
 						Levels.Index++;
 						if (Levels.Index == Levels.levels.Count())
-						{
-							// You win
-						}
+							Game1.currentRoom = new MainMenu(false);
 						else
 							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 					}
 					else
-					{
-						MainMenu back = new MainMenu(false);
-						Game1.currentRoom = back;
-					}
+						Game1.currentRoom = new LevelSelect();
 				}
 			}
 		}
@@ -735,6 +740,29 @@ namespace Speedrunning_Game
 							 select z;
 			foreach (ZipLine z in zipsInView)
 				z.Draw(sb, drawHue);
+
+			// Draw flamethrowers
+			foreach (Flamethrower f in flamethrowers)
+			{
+				if (!f.drawBox.Intersects(viewBox))
+				{
+					bool intersects = false;
+					foreach (Flamethrower.Flame fl in f.flames)
+					{
+						if (fl.drawBox.Intersects(viewBox))
+						{
+							intersects = true;
+							break;
+						}
+					}
+					if (intersects)
+						f.Draw(sb, drawHue);
+				}
+				else
+				{
+					f.Draw(sb, drawHue);
+				}
+			}
 
 			// Draw launchers
 			foreach (RocketLauncher r in launchers)

@@ -1,8 +1,8 @@
 -- Grass --
 x Intro
 x Intro 2
-* 
 x Outside the box
+* Many Paths
 x Wall jump
 
 -- Cave --
@@ -10,7 +10,7 @@ x Marathon
 * 
 * Plays itself
 *
-*
+* Ziplines Everywhere
 
 -- Night --
 x Mystic

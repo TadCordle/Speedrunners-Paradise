@@ -34,6 +34,7 @@ namespace Speedrunning_Game
 		public static Texture2D boxTex;
 		public static AnimatedTexture boosterTex;
 		public static Texture2D explosionTex, rocketTex, launcherTex;
+		public static Texture2D flamethrowerTex;
 		public static SpriteFont titlefont, mnufont, msgfont;
 		public static Texture2D[] tileSet, deathWallSet;
 		public static Texture2D mirrorTex;
@@ -93,6 +94,7 @@ namespace Speedrunning_Game
 			explosionTex = Content.Load<Texture2D>("explosion particle");
 			rocketTex = Content.Load<Texture2D>("rocket");
 			launcherTex = Content.Load<Texture2D>("launcher");
+			flamethrowerTex = Content.Load<Texture2D>("flamethrower");
 
 			tileSet = new Texture2D[5];
 			deathWallSet = new Texture2D[5];

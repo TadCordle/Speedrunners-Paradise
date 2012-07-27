@@ -17,7 +17,7 @@ namespace Speedrunning_Game
 		public Vector2 position, velocity, acceleration; // Kinematics
 		public bool controllable; // Only reads key feedback when true
 		public bool movedLeft; // To determine which way the character is facing
-		public int health; // Tells you when to die
+		public float health; // Tells you when to die
 
 		private AnimatedTexture normal, running, midair, sliding, ziplining, deadGround, deadMidair; // Animations
 		private AnimatedTexture current; // Current animation to be drawn
@@ -91,6 +91,9 @@ namespace Speedrunning_Game
 			}
 			else
 				healthTracker = 0;
+
+			if (health > 10)
+				health = 10;
 
 			// If something is slowing you down, stop it from speeding you up in the opposite direction
 			if (Math.Sign(velocity.X + acceleration.X) != Math.Sign(velocity.X) && velocity.X != 0)
@@ -353,6 +356,26 @@ namespace Speedrunning_Game
 					this.health -= 6;
 					this.velocity += r.rocket.velocity * 1.5f;
 				}
+
+			// Check for fire collision
+			foreach (Flamethrower f in Game1.currentRoom.Flamethrowers)
+			{
+				bool brk = false;
+				foreach (Flamethrower.Flame fl in f.flames)
+				{
+					if (!fl.drawBox.Intersects(Game1.currentRoom.ViewBox))
+						continue;
+					if (fl.drawBox.Intersects(this.hitBox))
+					{
+						health -= 0.6f;
+						velocity += fl.velocity * 0.06f;
+						brk = true;
+						break;
+					}
+				}
+				if (brk)
+					break;
+			}
 
 			// Check if level finish reached
 			if (Game1.currentRoom.Finish != null && !Game1.currentRoom.Finished)

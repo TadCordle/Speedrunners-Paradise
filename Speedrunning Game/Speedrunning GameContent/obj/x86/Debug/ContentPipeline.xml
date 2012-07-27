@@ -407,7 +407,7 @@
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\night.xnb</Output>
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\night.wma</Extra>
-      <Time>2012-07-14T10:25:18.5186081-04:00</Time>
+      <Time>2012-07-27T10:34:36.9807394-04:00</Time>
     </Item>
     <Item>
       <Source>music\cave.mp3</Source>
@@ -417,7 +417,7 @@
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.xnb</Output>
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\cave.wma</Extra>
-      <Time>2012-07-14T11:11:52.1309779-04:00</Time>
+      <Time>2012-07-27T10:58:04.7422588-04:00</Time>
     </Item>
     <Item>
       <Source>music\factory.mp3</Source>
@@ -427,7 +427,7 @@
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\factory.xnb</Output>
       <Extra>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\music\factory.wma</Extra>
-      <Time>2012-07-14T14:08:01.1146247-04:00</Time>
+      <Time>2012-07-27T11:09:29.5854296-04:00</Time>
     </Item>
     <Item>
       <Source>skins\speed runner\speed runner dead midair0001.png</Source>
@@ -2462,6 +2462,15 @@
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mr guy\mr guy ziplining.xnb</Output>
       <Time>2012-07-24T12:29:09.2787387-04:00</Time>
+    </Item>
+    <Item>
+      <Source>flamethrower.png</Source>
+      <Name>flamethrower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\flamethrower.xnb</Output>
+      <Time>2012-07-27T08:43:08.4650067-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
