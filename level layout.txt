@@ -2,21 +2,20 @@
 @ Intro
 @ Intro 2
 @ Outside the box
-@ Many Paths
 @ Wall jump
+@ Many Paths
 
 -- Cave --
 @ Cave Quest (Marathon)
 * 
 * Plays itself
-* Boxes (Dumbed down)
+@ Boxes
 * Ziplines Everywhere
 
--- Night --
-x Mystic
-x There and back
+@ Mystic
+@ There and back
 * Only Floating Platform
-x Long Level
+@ Many Paths 2 (Long Level)
 *
 
 -- Factory --
@@ -31,6 +30,6 @@ x Going Down
 x Doom Climb
 * Maintain Fast Speed
 x Rocket Run
-* Going Up (Dumbed down that one jump)
+x Going Up
 
 * Credits level (a bunch of sign posts with names)

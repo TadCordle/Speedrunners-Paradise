@@ -95,14 +95,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="226816">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="335360">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>sLqQcrbWQvo1Z97cBhn5dsqkfzg=</dsig:DigestValue>
+        <dsig:DigestValue>PNqQxzp5C0BiOcfBG3Bfo9vxvUA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2446,13 +2446,13 @@
       <dsig:DigestValue>QlyrZ7cJnrGgVthD2yhtAdcUMVw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\sounds\explosion.xnb" size="6473">
+  <file name="Content\sounds\explosion.xnb" size="6201">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>6NhgjUqt41pmGfCPLVjvJMAHlTM=</dsig:DigestValue>
+      <dsig:DigestValue>b0o89Pp4vapD4dKdpo5h2WuqQdE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\sounds\finish.xnb" size="133737">

@@ -114,21 +114,21 @@ namespace Speedrunning_Game
 			{
 				// Fix retarded platform switching direction and making you spazz out glitch
 				if (!(Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed) && prevPlatSpeed > 0))
-				{
 					position += platform.velocity;
-					prevPlatSpeed = platform.velocity.Y;
-				}
+				prevPlatSpeed = platform.velocity.Y;
 			}
 			UpdateHitBox();
 
 			// Stay inside screen
 			if (hitBox.Left < 0)
 			{
+				velocity.X = 0;
 				position.X = -16;
 				UpdateHitBox();
 			}
 			else if (hitBox.Right > Game1.currentRoom.roomWidth)
 			{
+				velocity.X = 0;
 				position.X = Game1.currentRoom.roomWidth - 48;
 				UpdateHitBox();
 			}
@@ -286,7 +286,7 @@ namespace Speedrunning_Game
 			{
 				foreach (Box b in Game1.currentRoom.Boxes)
 				{
-					if (groundHitBox.Intersects(b.hitBox))
+					if (groundHitBox.Intersects(b.hitBox) && groundHitBox.Y < b.hitBox.Y + 12)
 					{
 						position.Y = b.position.Y - 64;
 						velocity.Y = 0;
