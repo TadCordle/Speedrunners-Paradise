@@ -91,7 +91,6 @@ namespace Speedrunning_Game
 			}
 			else
 				healthTracker = 0;
-
 			if (health > 10)
 				health = 10;
 
@@ -114,11 +113,11 @@ namespace Speedrunning_Game
 			if (platform != null)
 			{
 				// Fix retarded platform switching direction and making you spazz out glitch
-				if (Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed) && prevPlatSpeed != 0)
-					position.Y += 2;
-
-				position += platform.velocity;
-				prevPlatSpeed = platform.velocity.Y;
+				if (!(Math.Sign(platform.velocity.Y) != Math.Sign(prevPlatSpeed) && prevPlatSpeed > 0))
+				{
+					position += platform.velocity;
+					prevPlatSpeed = platform.velocity.Y;
+				}
 			}
 			UpdateHitBox();
 

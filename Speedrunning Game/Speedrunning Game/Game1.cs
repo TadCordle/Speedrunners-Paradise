@@ -61,8 +61,6 @@ namespace Speedrunning_Game
 			Content.RootDirectory = "Content";
 			skinManager = new ContentManager(this.Services, "Content");
 
-//			this.TargetElapsedTime = TimeSpan.FromSeconds(0.5f);
-
 			if (!File.Exists("Content\\records.txt"))
 			{
 				StreamWriter w = new StreamWriter("Content\\records.txt");
@@ -207,6 +205,11 @@ namespace Speedrunning_Game
 
 		protected override void Update(GameTime gameTime)
 		{
+//			if (Keyboard.GetState().IsKeyDown(Keys.Z))
+//				this.TargetElapsedTime = TimeSpan.FromSeconds(0.5f);
+//			else
+//				this.TargetElapsedTime = TimeSpan.FromSeconds(0.016f);
+
 			if (!Keyboard.GetState().IsKeyDown(Keys.Escape))
 				pressEscape = true;
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape) && pressEscape || exit)

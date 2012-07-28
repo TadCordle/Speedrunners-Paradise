@@ -1,36 +1,36 @@
 -- Grass --
-x Intro
-x Intro 2
-x Outside the box
-* Many Paths
-x Wall jump
+@ Intro
+@ Intro 2
+@ Outside the box
+@ Many Paths
+@ Wall jump
 
 -- Cave --
-x Marathon
+@ Cave Quest (Marathon)
 * 
 * Plays itself
-*
+* Boxes (Dumbed down)
 * Ziplines Everywhere
 
 -- Night --
 x Mystic
 x There and back
 * Only Floating Platform
-*
+x Long Level
 *
 
 -- Factory --
-x Long Level
+*
 x Hurry
 *
 * Kill Yourself
-*
+x Going Down
 
 -- Lava --
-*
+* Flamethrower Run
 x Doom Climb
 * Maintain Fast Speed
 x Rocket Run
-*
+* Going Up (Dumbed down that one jump)
 
 * Credits level (a bunch of sign posts with names)

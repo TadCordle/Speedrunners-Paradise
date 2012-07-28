@@ -52,11 +52,11 @@ namespace Speedrunning_Game
 			public void Draw(SpriteBatch sb)
 			{
 				Color hue = new Color(255, (22 - currentLife) * 11, 0);
-				sb.Draw(texture, drawBox, hue);
+				sb.Draw(texture, new Rectangle(drawBox.X - Game1.currentRoom.ViewBox.X, drawBox.Y - Game1.currentRoom.ViewBox.Y, 16, 16), hue);
 			}
 		}
 
-		public Flamethrower(int x, int y, float angle, int interval)
+		public Flamethrower(int x, int y, float angle, int interval, int delay)
 		{
 			flames = new List<Flame>();
 			on = false;
@@ -65,7 +65,7 @@ namespace Speedrunning_Game
 			drawBox = new Rectangle((int)position.X, (int)position.Y, 32, 32);
 			this.angle = angle;
 			this.interval = interval;
-			intervalCount = 0;
+			intervalCount = interval - delay;
 			r = new Random();
 		}
 
@@ -95,7 +95,6 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
-			sb.DrawString(Game1.mnufont, on.ToString(), new Vector2(position.X, position.Y - 32), Color.Red);
 			sb.Draw(texture, new Vector2(position.X + 16 - Game1.currentRoom.ViewBox.X, position.Y + 16 - Game1.currentRoom.ViewBox.Y), null, c, angle + MathHelper.PiOver2, new Vector2(16, 16), Vector2.One, SpriteEffects.None, 0);
 			foreach (Flame f in flames)
 				f.Draw(sb);

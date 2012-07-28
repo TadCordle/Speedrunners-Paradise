@@ -311,7 +311,7 @@ namespace Speedrunning_Game
 			else if (line[0] == "launcher")
 				launchers.Add(new RocketLauncher(new Vector2(int.Parse(line[1]), int.Parse(line[2]))));
 			else if (line[0] == "flamethrower")
-				flamethrowers.Add(new Flamethrower(int.Parse(line[1]), int.Parse(line[2]), float.Parse(line[3]), int.Parse(line[4])));
+				flamethrowers.Add(new Flamethrower(int.Parse(line[1]), int.Parse(line[2]), float.Parse(line[3]), int.Parse(line[4]), int.Parse(line[5])));
 		}
 
 		private void BuildTiles()
