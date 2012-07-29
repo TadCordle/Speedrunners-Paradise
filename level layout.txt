@@ -8,28 +8,28 @@
 -- Cave --
 @ Cave Quest (Marathon)
 @ Meerkat Maze
-* Plays itself
+* 
 @ Boxes
-* Ziplines Everywhere
+* Wires
 
 @ Mystic
 @ There and back
 * Only Floating Platform
 @ Many Paths 2 (Long Level)
-*
+* Something with rockets
 
 -- Factory --
-*
-x Hurry
-*
+* 
+@ The Catch (Hurry)
+* Run from flamethrowers turning on
 * Kill Yourself
-x Going Down
+@ Going Down
 
 -- Lava --
 * Flamethrower Run
-x Doom Climb
+@ Doom Climb
 * Maintain Fast Speed
-x Rocket Run
-x Going Up
+@ Rocket Run
+@ The Final Climb (Going Up)
 
 * Credits level (a bunch of sign posts with names)

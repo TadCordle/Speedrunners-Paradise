@@ -648,7 +648,7 @@ namespace Speedrunning_Game
 						}
 					}
 					else
-						Game1.currentRoom = new LevelSelect();
+						Game1.currentRoom = new LevelSelect(1);
 				}
 			}
 		}

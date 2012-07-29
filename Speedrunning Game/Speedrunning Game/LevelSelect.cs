@@ -14,15 +14,15 @@ namespace Speedrunning_Game
 	class LevelSelect : Room
 	{
 		private int selected;
-		private bool pressDown;
-		private bool pressUp;
-		private bool pressEnter;
+		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressEnter;
 		private int maxSelected;
 		private int scope;
+		private int tab;
 		private List<Tuple<string, int, int, bool>> levels; // Name, record, goal, custom
+		private List<Tuple<string, int, int, bool>> page;
 		private Texture2D background;
 
-		public LevelSelect()
+		public LevelSelect(int tab)
 		{
 			pressDown = true;
 			pressUp = true;
@@ -35,6 +35,7 @@ namespace Speedrunning_Game
 			levels = new List<Tuple<string, int, int, bool>>();
 			selected = 0;
 			scope = 0;
+			this.tab = tab;
 
 			// Add main levels
 			if (!File.Exists("Content\\records.txt"))
@@ -56,7 +57,6 @@ namespace Speedrunning_Game
 			string[] choices = Directory.GetFiles("Content\\rooms");
 			foreach (string s in choices)
 				levels.Add(new Tuple<string, int, int, bool>(s.Split('\\')[s.Split('\\').Length - 1].Replace(".srl", ""), -1, -1, true));
-			maxSelected = levels.Count - 1;
 
 			// Find record/medal achieved in each level
 			for (int i = 0; i < levels.Count; i++)
@@ -111,6 +111,14 @@ namespace Speedrunning_Game
 				}
 			}
 
+			page = new List<Tuple<string, int, int, bool>>();
+			var it = from Tuple<string, int, int, bool> t in levels
+					 where t.Item4 == (tab == 1)
+					 select t;
+			foreach (Tuple<string, int, int, bool> t in it)
+				page.Add(t);
+			maxSelected = page.Count - 1;
+
 			if (!Game1.playingGrass)
 				MediaPlayer.Play(Game1.grassMusic);
 			Game1.ResetMusic();
@@ -126,6 +134,10 @@ namespace Speedrunning_Game
 				pressUp = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.Enter))
 				pressEnter = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.PageDown))
+				pressPageDown = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.PageUp))
+				pressPageUp = true;
 
 			// Cycle through choices when keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown)
@@ -137,6 +149,50 @@ namespace Speedrunning_Game
 			{
 				pressUp = false;
 				selected--;
+			}
+
+			// Cycle through pages when keys are pressed
+			if (Keyboard.GetState().IsKeyDown(Keys.PageDown) && pressPageDown)
+			{
+				pressPageDown = false;
+				selected += 11;
+				selected -= selected % 11;
+				if (selected > maxSelected)
+					selected = maxSelected;
+			}
+			else if (Keyboard.GetState().IsKeyDown(Keys.PageUp) && pressPageUp)
+			{
+				pressPageUp = false;
+				selected -= selected % 11;
+				selected -= 11;
+				if (selected < 0)
+					selected = 0;
+			}
+
+			// Change category when arrow keys are pressed
+			if (Keyboard.GetState().IsKeyDown(Keys.Left))
+			{
+				tab = 0;
+				page.Clear();
+				var it = from Tuple<string, int, int, bool> t in levels
+						 where !t.Item4
+					     select t;
+				foreach (Tuple<string, int, int, bool> t in it)
+					page.Add(t);
+				maxSelected = page.Count - 1;
+				selected = 0;
+			}
+			else if (Keyboard.GetState().IsKeyDown(Keys.Right))
+			{
+				tab = 1;
+				page.Clear();
+				var it = from Tuple<string, int, int, bool> t in levels
+						 where t.Item4
+						 select t;
+				foreach (Tuple<string, int, int, bool> t in it)
+					page.Add(t);
+				maxSelected = page.Count - 1;
+				selected = 0;
 			}
 
 			// Bound selections
@@ -156,15 +212,15 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
-				if (!levels[selected].Item4)
+				if (!page[selected].Item4)
 				{
-					string[] name = levels[selected].Item1.Split('_');
+					string[] name = page[selected].Item1.Split('_');
 					int index = int.Parse(name[1]);
 					Levels.Index = index - 1;
 					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 				}
 				else
-					Game1.currentRoom = new Room("Content\\rooms\\" + levels[selected].Item1 + ".srl", true);
+					Game1.currentRoom = new Room("Content\\rooms\\" + page[selected].Item1 + ".srl", true);
 			}
 		}
 
@@ -179,16 +235,24 @@ namespace Speedrunning_Game
 			if (scope < maxSelected / 11 && maxSelected > 10)
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
 
-			// Draw text
-			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(264, 10), Color.White);
-			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.Black);
-			for (int i = 0; i < levels.Count; i++)
-			{
-				sb.DrawString(Game1.mnufont, levels[i].Item1.Split('\\')[levels[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
-				sb.DrawString(Game1.mnufont, levels[i].Item2 != -1 ? TimeToString(levels[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
-				if (levels[i].Item3 != -1)
-					sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), levels[i].Item3 == 0 ? Color.Gold : (levels[i].Item3 == 1 ? Color.Silver : Color.Brown));
-			}
+			// Draw header
+			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.White);
+			sb.DrawString(Game1.mnufont, "<-", new Vector2(450, 10), Color.Lime);
+			sb.DrawString(Game1.mnufont, "->", new Vector2(670, 10), Color.Lime);
+			sb.DrawString(Game1.mnufont, "Main", new Vector2(485, 10), tab == 0 ? Color.Yellow : Color.White);
+			sb.DrawString(Game1.mnufont, "Custom", new Vector2(565, 10), tab == 1 ? Color.Yellow : Color.White);
+
+			// Draw levels list
+			if (page.Count == 0)
+				sb.DrawString(Game1.mnufont, "You don't have any " + (tab == 0 ? "levels unlocked!" : "custom levels!"), new Vector2(50, 70), Color.White);
+			else
+				for (int i = 0; i < page.Count; i++)
+				{
+					sb.DrawString(Game1.mnufont, page[i].Item1.Split('\\')[page[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
+					sb.DrawString(Game1.mnufont, page[i].Item2 != -1 ? TimeToString(page[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
+					if (page[i].Item3 != -1)
+						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : Color.Brown));
+				}
 		}
 
 		// Returns millisecond count in "mm:ss.sss" format

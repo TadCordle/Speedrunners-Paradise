@@ -110,7 +110,10 @@ namespace Speedrunning_Game
 							if (resV.X > 0 && velocity.X < 0 || resV.X < 0 && velocity.X > 0)
 							{
 								if (w is DeathWall)
+								{
+									velocity = Vector2.Zero;
 									position = startPosition;
+								}
 								else
 									this.velocity.X = 0;
 							}
@@ -120,7 +123,10 @@ namespace Speedrunning_Game
 							if (resV.Y > 0 && velocity.Y < 0 || resV.Y < 0 && velocity.Y > 0)
 							{
 								if (w is DeathWall)
+								{
+									velocity = Vector2.Zero;
 									position = startPosition;
+								}
 								else
 								{
 									this.velocity.Y = 0;
@@ -177,7 +183,10 @@ namespace Speedrunning_Game
 
 				// Send back to starting position if fallen off screen
 				if (this.position.Y > Game1.currentRoom.roomHeight)
+				{
+					velocity = Vector2.Zero;
 					position = startPosition;
+				}
 
 				UpdateHitBox();
 			}
