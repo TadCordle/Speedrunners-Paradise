@@ -641,7 +641,11 @@ namespace Speedrunning_Game
 						if (Levels.Index == Levels.levels.Count())
 							Game1.currentRoom = new MainMenu(false);
 						else
+						{
+							while (Levels.levels[Levels.Index][0] == "")
+								Levels.Index++;
 							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
+						}
 					}
 					else
 						Game1.currentRoom = new LevelSelect();

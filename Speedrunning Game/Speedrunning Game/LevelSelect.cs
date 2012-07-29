@@ -85,13 +85,16 @@ namespace Speedrunning_Game
 				// Find goal times
 				if (!iscustom)
 				{
-					string findIndex = name.Split('_')[1];
-					int index = int.Parse(findIndex) - 1;
-					string[] goals = decryptor.DecryptString(Levels.levels[index][5]).Split(' ');
-					for (int j = 2; j >= 0; j--)
+					if (name != "")
 					{
-						if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
-							levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, j, levels[i].Item4);
+						string findIndex = name.Split('_')[1];
+						int index = int.Parse(findIndex) - 1;
+						string[] goals = decryptor.DecryptString(Levels.levels[index][5]).Split(' ');
+						for (int j = 2; j >= 0; j--)
+						{
+							if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
+								levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, j, levels[i].Item4);
+						}
 					}
 				}
 				else
