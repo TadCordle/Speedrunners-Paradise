@@ -95,14 +95,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="450560">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="471040">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4NHBqfD6Qamg5oNaKVXMP2UCB3s=</dsig:DigestValue>
+        <dsig:DigestValue>eBlzMBk7hJPa/ApXrMwMbm13vZg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -193,7 +193,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>E1vb+ujH4vsmW1/mwOQgtP8gWc0=</dsig:DigestValue>
+      <dsig:DigestValue>k9ilRaHUGLaJd47scorVLdXg6fw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\finish.xnb" size="8379">

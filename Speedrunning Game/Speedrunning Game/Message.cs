@@ -19,7 +19,14 @@ namespace Speedrunning_Game
 		public Message(Vector2 position, string message)
 		{
 			this.position = position;
-			this.msg = message;
+			this.msg = message.Replace("<Left>", Settings.controls["MoveLeft"].ToString())
+							  .Replace("<Right>", Settings.controls["MoveRight"].ToString())
+							  .Replace("<Jump>", Settings.controls["Jump"].ToString())
+							  .Replace("<Slide>", Settings.controls["Slide"].ToString())
+							  .Replace("<Box>", Settings.controls["Box"].ToString())
+							  .Replace("<Pause>", Settings.controls["Pause"].ToString())
+							  .Replace("<Restart>", Settings.controls["Restart"].ToString())
+							  .Replace("<Freeroam>", Settings.controls["Freeroam"].ToString());
 			hitBox = new Rectangle((int)position.X, (int)position.Y, 32, 32);
 		}
 

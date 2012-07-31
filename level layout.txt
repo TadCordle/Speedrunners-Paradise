@@ -1,3 +1,7 @@
+* = unfinished
+x = finished but not added
+@ = added
+
 -- Grass --
 @ Intro
 @ Intro 2
@@ -8,7 +12,7 @@
 -- Cave --
 @ Cave Quest (Marathon)
 @ Meerkat Maze
-* 
+@ Candles
 @ Boxes
 * Wires
 

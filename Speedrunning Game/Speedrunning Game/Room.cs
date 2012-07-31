@@ -59,7 +59,7 @@ namespace Speedrunning_Game
 		public bool Finished { get; set; }
 		public bool Paused { get; set; }
 
-		private HashSet<Vector3> tiles; // x, y, z = index
+		private List<int>[,] tiles;
 		private int[] goals; // 0 = gold, 1 = silver, 2 = bronze
 		private Tileset wallSet;
 		private string levelName;
@@ -85,7 +85,6 @@ namespace Speedrunning_Game
 			write = true;
 			writeNext = true;
 			time = 0;
-			tiles = new HashSet<Vector3>();
 			Finished = false;
 			goals = new int[3];
 			walls = new List<Wall>();
@@ -131,7 +130,7 @@ namespace Speedrunning_Game
 			line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
 			roomWidth = int.Parse(line[0]);
 			roomHeight = int.Parse(line[1]);
-			
+
 			// Get goal times
 			line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
 			for (int i = 0; i < 3; i++)
@@ -316,7 +315,13 @@ namespace Speedrunning_Game
 
 		private void BuildTiles()
 		{
-			tiles.Clear();
+			tiles = new List<int>[roomHeight / 32 + 1, roomWidth / 32 + 1];
+			for (int i = 0; i < tiles.GetLength(0); i++)
+				for (int j = 0; j < tiles.GetLength(1); j++)
+				{
+					tiles[i, j] = new List<int>();
+					tiles[i, j].Add(-1);
+				}
 
 			// Fill each wall object with middle tiles
 			var realWalls = from Wall w in walls
@@ -326,7 +331,8 @@ namespace Speedrunning_Game
 			{
 				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
 					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
-						tiles.Add(new Vector3(x, y, 4));
+						if (x >= 0 && x <= roomWidth && y >= 0 && y <= roomHeight)
+							tiles[y / 32, x / 32].Insert(0, 4);
 			}
 			
 			// Fill each death wall with death tile
@@ -337,7 +343,8 @@ namespace Speedrunning_Game
 			{
 				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
 					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
-						tiles.Add(new Vector3(x, y, 9));
+						if (x >= 0 && x <= roomWidth && y >= 0 && y <= roomHeight)
+							tiles[y / 32, x / 32].Insert(0, 9);
 			}
 
 			// Fill each mirror with mirror tile
@@ -348,33 +355,37 @@ namespace Speedrunning_Game
 			{
 				for (int x = w.Bounds.X; x < w.Bounds.Right; x += 32)
 					for (int y = w.Bounds.Y; y < w.Bounds.Bottom; y += 32)
-						tiles.Add(new Vector3(x, y, 10));
+						if (x >= 0 && x <= roomWidth && y >= 0 && y <= roomHeight)
+							tiles[y / 32, x / 32].Insert(0, 10);
 			}
 
+			int newHeight = roomHeight / 32;
+			int newWidth = roomWidth / 32;
+
 			// Find all corners and sides and attach corresponding tile
-			for (int x = 0; x < roomWidth; x += 32)
-				for (int y = 0; y < roomHeight; y++)
-					if (tiles.Contains(new Vector3(x, y, 4)))
+			for (int x = 0; x <= newWidth; x++)
+				for (int y = 0; y <= newHeight; y++)
+					if (tiles[y, x].Count > 0 && tiles[y, x][0] == 4)
 					{
 						// Corners
-						if (!tiles.Contains(new Vector3(x - 32, y, 4)) && !tiles.Contains(new Vector3(x - 32, y - 32, 4)) && !tiles.Contains(new Vector3(x, y - 32, 4)))
-							tiles.Add(new Vector3(x - 32, y - 32, 0));
-						if (!tiles.Contains(new Vector3(x - 32, y, 4)) && !tiles.Contains(new Vector3(x - 32, y + 32, 4)) && !tiles.Contains(new Vector3(x, y + 32, 4)))
-							tiles.Add(new Vector3(x - 32, y + 32, 2));
-						if (!tiles.Contains(new Vector3(x + 32, y, 4)) && !tiles.Contains(new Vector3(x + 32, y - 32, 4)) && !tiles.Contains(new Vector3(x, y - 32, 4)))
-							tiles.Add(new Vector3(x + 32, y - 32, 6));
-						if (!tiles.Contains(new Vector3(x + 32, y, 4)) && !tiles.Contains(new Vector3(x + 32, y + 32, 4)) && !tiles.Contains(new Vector3(x, y + 32, 4)))
-							tiles.Add(new Vector3(x + 32, y + 32, 8));
+						if (x - 1 >= 0 && x - 1 <= newWidth && y - 1 >= 0 && y - 1 <= newHeight && tiles[y, x - 1][0] != 4 && tiles[y - 1, x - 1][0] != 4 && tiles[y - 1, x][0] != 4)
+							tiles[y - 1, x - 1].Add(0);
+						if (x - 1 >= 0 && x - 1 <= newWidth && y + 1 >= 0 && y + 1 <= newHeight && tiles[y, x - 1][0] != 4 && tiles[y + 1, x - 1][0] != 4 && tiles[y + 1, x][0] != 4)
+							tiles[y + 1, x - 1].Add(2);
+						if (x + 1 >= 0 && x + 1 <= newWidth && y - 1 >= 0 && y - 1 <= newHeight && tiles[y, x + 1][0] != 4 && tiles[y - 1, x + 1][0] != 4 && tiles[y - 1, x][0] != 4)
+							tiles[y - 1, x + 1].Add(6);
+						if (x + 1 >= 0 && x + 1 <= newWidth && y + 1 >= 0 && y + 1 <= newHeight && tiles[y, x + 1][0] != 4 && tiles[y + 1, x + 1][0] != 4 && tiles[y + 1, x][0] != 4)
+							tiles[y + 1, x + 1].Add(8);
 
 						// Sides
-						if (!tiles.Contains(new Vector3(x - 32, y, 4)))
-							tiles.Add(new Vector3(x - 32, y, 1));
-						if (!tiles.Contains(new Vector3(x, y - 32, 4)))
-							tiles.Add(new Vector3(x, y - 32, 3));
-						if (!tiles.Contains(new Vector3(x, y + 32, 4)))
-							tiles.Add(new Vector3(x, y + 32, 5));
-						if (!tiles.Contains(new Vector3(x + 32, y, 4)))
-							tiles.Add(new Vector3(x + 32, y, 7));
+						if (x - 1 >= 0 && x - 1 <= newWidth && tiles[y, x - 1][0] != 4)
+							tiles[y, x - 1].Add(1);
+						if (y - 1 >= 0 && y - 1 <= newHeight && tiles[y - 1, x][0] != 4)
+							tiles[y - 1, x].Add(3);
+						if (y + 1 >= 0 && y + 1 <= newHeight && tiles[y + 1, x][0] != 4)
+							tiles[y + 1, x].Add(5);
+						if (x + 1 >= 0 && x + 1 <= newWidth && tiles[y, x + 1][0] != 4)
+							tiles[y, x + 1].Add(7);
 					}
 		}
 
@@ -642,7 +653,7 @@ namespace Speedrunning_Game
 							Game1.currentRoom = new MainMenu(false);
 						else
 						{
-							while (Levels.levels[Levels.Index][0] == "")
+							while (Levels.Index < Levels.levels.Length && Levels.levels[Levels.Index][0] == "")
 								Levels.Index++;
 							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
 						}
@@ -691,18 +702,19 @@ namespace Speedrunning_Game
 			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, viewBox.Width, viewBox.Height), drawHue);
 
 			// Draw tiles
-			var tilesInView = from Vector3 v in tiles
-							  where v.X >= viewBox.Left - 32 && v.X <= viewBox.Right && v.Y >= viewBox.Top - 32 && v.Y <= viewBox.Bottom
-							  select v;
-			foreach (Vector3 v in tilesInView)
-			{
-				if (v.Z <= 8)
-					sb.Draw(Game1.tileSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), wallSet.Tiles[(int)v.Z], drawHue);
-				else if (v.Z == 9)
-					sb.Draw(Game1.deathWallSet[(int)Theme], new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), drawHue);
-				else if (v.Z == 10)
-					sb.Draw(Game1.mirrorTex, new Rectangle((int)v.X - viewBox.X, (int)v.Y - viewBox.Y, 32, 32), drawHue);
-			}
+			int startx = viewBox.X / 32, starty = viewBox.Y / 32;
+			int maxX = viewBox.Right / 32, maxY = viewBox.Bottom / 32;
+			for (int x = startx; x <= maxX; x++)
+				for (int y = starty; y <= maxY; y++)
+					for (int i = 0; i < tiles[y, x].Count; i++)
+					{
+						if (tiles[y, x][i] <= 8 && tiles[y, x][i] != -1)
+							sb.Draw(Game1.tileSet[(int)Theme], new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32), wallSet.Tiles[tiles[y, x][i]], drawHue);
+						else if (tiles[y, x][i] == 9)
+							sb.Draw(Game1.deathWallSet[(int)Theme], new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32), drawHue);
+						else if (tiles[y, x][i] == 10)
+							sb.Draw(Game1.mirrorTex, new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32), drawHue);
+					}
 
 			// Draw messages
 			var msgInView = from Message m in messages
