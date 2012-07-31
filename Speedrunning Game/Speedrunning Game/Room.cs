@@ -702,8 +702,8 @@ namespace Speedrunning_Game
 			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, viewBox.Width, viewBox.Height), drawHue);
 
 			// Draw tiles
-			int startx = viewBox.X / 32, starty = viewBox.Y / 32;
-			int maxX = viewBox.Right / 32, maxY = viewBox.Bottom / 32;
+			int startx = viewBox.X / 32, starty = Math.Max(0, viewBox.Y / 32);
+			int maxX = Math.Min(viewBox.Right / 32, roomWidth / 32), maxY = viewBox.Bottom / 32;
 			for (int x = startx; x <= maxX; x++)
 				for (int y = starty; y <= maxY; y++)
 					for (int i = 0; i < tiles[y, x].Count; i++)

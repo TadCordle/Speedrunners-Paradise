@@ -14,7 +14,7 @@ x = finished but not added
 @ Meerkat Maze
 @ Candles
 @ Boxes
-* Wires
+@ Wires
 
 @ Mystic
 @ There and back
