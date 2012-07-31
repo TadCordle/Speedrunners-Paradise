@@ -1,4 +1,4 @@
-MusicVolume 0.5000005
+MusicVolume 0
 SFXVolume 1
 Skin stick_figure
 MoveLeft Left
