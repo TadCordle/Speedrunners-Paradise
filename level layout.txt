@@ -1,7 +1,3 @@
-* = unfinished
-x = finished but not added
-@ = added
-
 -- Grass --
 @ Intro
 @ Intro 2
@@ -18,7 +14,7 @@ x = finished but not added
 
 @ Mystic
 @ There and back
-* Only Floating Platform
+* Dilapidation
 @ Many Paths 2 (Long Level)
 * Something with rockets
 
