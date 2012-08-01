@@ -176,7 +176,7 @@ namespace Speedrunning_Game
 				page.Clear();
 				var it = from Tuple<string, int, int, bool> t in levels
 						 where !t.Item4
-					     select t;
+						 select t;
 				foreach (Tuple<string, int, int, bool> t in it)
 					page.Add(t);
 				maxSelected = page.Count - 1;
@@ -217,13 +217,21 @@ namespace Speedrunning_Game
 					string[] name = page[selected].Item1.Split('_');
 					int index = int.Parse(name[1]);
 					Levels.Index = index - 1;
-					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true, new ReplayRecorder());
 				}
 				else
-					Game1.currentRoom = new Room("Content\\rooms\\" + page[selected].Item1 + ".srl", true);
+				{
+					try
+					{
+						Game1.currentRoom = new Room("Content\\rooms\\" + page[selected].Item1 + ".srl", true, new ReplayRecorder());
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem loading the level; the level file may not be in the correct format", "Level Load Error");
+					}
+				}
 			}
 		}
-
 		public override void Draw(SpriteBatch sb)
 		{
 			// Draw background

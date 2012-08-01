@@ -62,7 +62,7 @@ namespace Speedrunning_Game
 				if (selected == 0)
 				{
 					Levels.Index = 0;
-					Game1.currentRoom = new Room(Levels.levels[0], true);
+					Game1.currentRoom = new Room(Levels.levels[0], true, new ReplayRecorder());
 				}
 				else if (selected == 1)
 					Game1.currentRoom = new LevelSelect(0);

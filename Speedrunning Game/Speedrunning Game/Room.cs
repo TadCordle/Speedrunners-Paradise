@@ -70,6 +70,7 @@ namespace Speedrunning_Game
 		private string[][] leaderboardData;
 		private int leaderboardPage;
 		private bool canScrollDown;
+		public ReplayRecorder recorder;
 
 		public bool Freeroam { get { return freeroaming; } }
 
@@ -100,12 +101,11 @@ namespace Speedrunning_Game
 			leaderboardPage = 0;
 		}
 
-		public Room(string file, bool freeroam)
+		public Room(string file, bool freeroam, ReplayRecorder recorder)
 			: this()
 		{
 			freeroaming = freeroam;
-
-			DateTime editTime = File.GetLastWriteTime(file);
+			this.recorder = recorder;
 
 			// Get level name
 			levelName = file.Split('\\')[file.Split('\\').Length - 1].Replace(".srl", "");
@@ -156,11 +156,12 @@ namespace Speedrunning_Game
 			UpdateViewBox(false);
 		}
 
-		public Room(string[] lines, bool freeroam) 
+		public Room(string[] lines, bool freeroam, ReplayRecorder recorder) 
 			: this()
 		{
 			freeroaming = freeroam;
-			
+			this.recorder = recorder;
+
 			SimpleAES decryptor = new SimpleAES();
 			string[] line;
 
@@ -429,19 +430,17 @@ namespace Speedrunning_Game
 			// Restart the current level when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]) && rcheck)
 			{
-				// Play damaged sound
 				if (custom)
-					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false);
+					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, new ReplayRecorder());
 				else
-					Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, new ReplayRecorder());
 			}
 			else if (Keyboard.GetState().IsKeyDown(Settings.controls["Freeroam"]) && fcheck)
 			{
-				// Play damaged sound
 				if (custom)
-					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", true);
+					Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", true, new ReplayRecorder());
 				else
-					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
+					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true, new ReplayRecorder());
 			}
 
 			// Pause the game when P is pressed
@@ -497,6 +496,11 @@ namespace Speedrunning_Game
 			{
 				if (!Paused)
 				{
+					if (recorder.playing)
+						recorder.PlayFrame();
+					else
+						recorder.RecordFrame();
+
 					// Update booster animations
 					foreach (Booster b in boosters)
 						b.Update();
@@ -557,9 +561,9 @@ namespace Speedrunning_Game
 				if (time == 0)
 				{
 					if (custom)
-						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false);
+						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, new ReplayRecorder());
 					else
-						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false);
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, new ReplayRecorder());
 					return;
 				}
 
@@ -643,6 +647,17 @@ namespace Speedrunning_Game
 					}
 				}
 
+				// Check if they want to see replay
+				if (Keyboard.GetState().IsKeyDown(Keys.W))
+				{
+					recorder.playing = true;
+					recorder.start = true;
+					if (custom)
+						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, recorder);
+					else
+						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, recorder);
+				}
+
 				// Move to next level when enter is pressed, or back to menu if custom level
 				if (Keyboard.GetState().IsKeyDown(Keys.Enter))
 				{
@@ -655,7 +670,7 @@ namespace Speedrunning_Game
 						{
 							while (Levels.Index < Levels.levels.Length && Levels.levels[Levels.Index][0] == "")
 								Levels.Index++;
-							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true);
+							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true, new ReplayRecorder());
 						}
 					}
 					else
@@ -865,8 +880,9 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, goalBeaten != 0 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : "Do better next time!", new Vector2(382, 400), Color.Yellow);
 
 				if (Game1.online && canViewLeaderboards)
-					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
-				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 630), Color.White);
+					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White);
+				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 600), Color.White);
+				sb.DrawString(Game1.mnufont, "Press W to watch replay", new Vector2(670, 630), Color.White);
 				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
 			}
 			else if (Paused)

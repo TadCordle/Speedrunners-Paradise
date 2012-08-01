@@ -161,7 +161,9 @@ namespace Speedrunning_Game
 							if (platform == null)
 							{
 								platform = (FloatingPlatform)w;
-								if (!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
+								if (Game1.currentRoom.recorder.playing ?
+									!Game1.currentRoom.recorder.keystates[Settings.controls["MoveLeft"]] && !Game1.currentRoom.recorder.keystates[Settings.controls["MoveRight"]] :
+									!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
 									velocity.X = 0;
 							}
 							isOnPlatform = true;
@@ -261,7 +263,9 @@ namespace Speedrunning_Game
 							if (platform == null)
 							{
 								platform = (FloatingPlatform)w;
-								if (!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
+								if (Game1.currentRoom.recorder.playing ?
+									!Game1.currentRoom.recorder.keystates[Settings.controls["MoveLeft"]] && !Game1.currentRoom.recorder.keystates[Settings.controls["MoveRight"]] :
+									!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
 									velocity.X = 0;
 							}
 							isOnPlatform = true;
@@ -295,7 +299,9 @@ namespace Speedrunning_Game
 							if (platform == null)
 							{
 								platform = b.platform;
-								if (!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
+								if (Game1.currentRoom.recorder.playing ?
+									!Game1.currentRoom.recorder.keystates[Settings.controls["MoveLeft"]] && !Game1.currentRoom.recorder.keystates[Settings.controls["MoveRight"]] :
+									!Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]))
 									velocity.X = 0;
 							}
 							isOnPlatform = true;
@@ -403,7 +409,9 @@ namespace Speedrunning_Game
 			}
 
 			// Reset space key
-			if (!Keyboard.GetState().IsKeyDown(Settings.controls["Jump"]))
+			if (Game1.currentRoom.recorder.playing ?
+				!Game1.currentRoom.recorder.keystates[Settings.controls["Jump"]] :
+				!Keyboard.GetState().IsKeyDown(Settings.controls["Jump"]))
 			{
 				if (heldBox != null)
 					jumppresscheck = false;
@@ -412,7 +420,9 @@ namespace Speedrunning_Game
 				else if (canWallToLeft || canWallToRight)
 					wallpresscheck = false;
 			}
-			if (Keyboard.GetState().IsKeyDown(Settings.controls["Jump"]) && controllable)
+			if ((Game1.currentRoom.recorder.playing ?
+				Game1.currentRoom.recorder.keystates[Settings.controls["Jump"]] :
+				Keyboard.GetState().IsKeyDown(Settings.controls["Jump"])) && controllable)
 			{
 				// Jumping
 				if (isTouchingGround && !staySliding && !jumppresscheck)
@@ -463,7 +473,9 @@ namespace Speedrunning_Game
 			}
 
 			// Check for whether or not ziplining if control is being held
-			if ((Keyboard.GetState().IsKeyDown(Settings.controls["Slide"])) && controllable && !isTouchingGround)
+			if ((Game1.currentRoom.recorder.playing ?
+				Game1.currentRoom.recorder.keystates[Settings.controls["Slide"]] :
+				Keyboard.GetState().IsKeyDown(Settings.controls["Slide"])) && controllable && !isTouchingGround)
 			{
 				bool zipping = false;
 				foreach (ZipLine z in Game1.currentRoom.ZipLines)
@@ -502,7 +514,9 @@ namespace Speedrunning_Game
 			}
 
 			// Check for picking up boxes
-			if (Keyboard.GetState().IsKeyDown(Settings.controls["Box"]))
+			if (Game1.currentRoom.recorder.playing ?
+				Game1.currentRoom.recorder.keystates[Settings.controls["Box"]] :
+				Keyboard.GetState().IsKeyDown(Settings.controls["Box"]))
 			{
 				if (isTouchingGround && heldBox == null)
 					foreach (Box b in Game1.currentRoom.Boxes)
@@ -526,7 +540,9 @@ namespace Speedrunning_Game
 			}
 
 			// Slide when holding control
-			isSliding = (Keyboard.GetState().IsKeyDown(Settings.controls["Slide"]) || staySliding) && controllable && isTouchingGround;
+			isSliding = ((Game1.currentRoom.recorder.playing ?
+				Game1.currentRoom.recorder.keystates[Settings.controls["Slide"]] :
+				Keyboard.GetState().IsKeyDown(Settings.controls["Slide"])) || staySliding) && controllable && isTouchingGround;
 
 			// Don't get up if sliding under low ceiling
 			bool flag = true;
@@ -546,14 +562,18 @@ namespace Speedrunning_Game
 				staySliding = false;
 
 			// Move right
-			if (Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"]) && !isSliding && !isZipping && controllable)
+			if ((Game1.currentRoom.recorder.playing ?
+				Game1.currentRoom.recorder.keystates[Settings.controls["MoveRight"]] :
+				Keyboard.GetState().IsKeyDown(Settings.controls["MoveRight"])) && !isSliding && !isZipping && controllable)
 			{
 				canWallToRight = false;
 				acceleration.X = isTouchingGround ? 1.0f : 0.5f;
 				movedLeft = false;
 				if (isTouchingGround)
 					current = running;
-				if (Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]))
+				if (Game1.currentRoom.recorder.playing ?
+					Game1.currentRoom.recorder.keystates[Settings.controls["MoveLeft"]] :
+					Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]))
 				{
 					acceleration.X = 0.0f;
 					movedLeft = true;
@@ -561,7 +581,9 @@ namespace Speedrunning_Game
 				}
 			}
 			// Move left
-			else if (Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"]) && !isSliding && !isZipping && controllable)
+			else if ((Game1.currentRoom.recorder.playing ?
+				Game1.currentRoom.recorder.keystates[Settings.controls["MoveLeft"]] :
+				Keyboard.GetState().IsKeyDown(Settings.controls["MoveLeft"])) && !isSliding && !isZipping && controllable)
 			{
 				canWallToLeft = false;
 				acceleration.X = isTouchingGround ? -1.0f : -0.5f;

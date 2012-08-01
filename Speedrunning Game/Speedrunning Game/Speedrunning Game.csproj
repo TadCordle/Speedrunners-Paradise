@@ -131,6 +131,7 @@
     <Compile Include="Levels.cs" />
     <Compile Include="LevelSelect.cs" />
     <Compile Include="MainMenu.cs" />
+    <Compile Include="ReplayRecorder.cs" />
     <Compile Include="Rocket.cs" />
     <Compile Include="RocketLauncher.cs" />
     <Compile Include="Room.cs" />
