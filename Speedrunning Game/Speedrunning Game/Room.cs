@@ -506,9 +506,9 @@ namespace Speedrunning_Game
 				if (!Paused)
 				{
 					if (recorder.playing)
-						recorder.PlayFrame(gameTime);
+						recorder.PlayFrame();
 					else
-						recorder.RecordFrame(gameTime);
+						recorder.RecordFrame();
 
 					// Update booster animations
 					foreach (Booster b in boosters)

@@ -45,22 +45,23 @@ namespace Speedrunning_Game
 			start = true;
 
 			StreamReader reader = new StreamReader(filename);
-			string[] line = reader.ReadLine().Replace("}", "").Split('{');
-			while (line[0] != "")
+			string line = reader.ReadLine();
+			while (line != null && line != "")
 			{
-				int frame = int.Parse(line[0]);
-				string[] evts = line[1].Split(',');
+				string[] s = line.Replace("}", "").Split('{');
+				int frame = int.Parse(s[0]);
+				string[] evts = s[1].Split(',');
 				events.Add(frame, evts.ToList());
-				line = reader.ReadLine().Replace("}", "").Split('{');
+				line = reader.ReadLine();
 			}
 			while (!reader.EndOfStream)
 			{
-				line = reader.ReadLine().Split(' ');
-				recallibrater.Add(new Tuple<Vector2, Vector2>(new Vector2(float.Parse(line[0]), float.Parse(line[1])), new Vector2(float.Parse(line[2]), float.Parse(line[3]))));
+				string[] s = reader.ReadLine().Split(' ');
+				recallibrater.Add(new Tuple<Vector2, Vector2>(new Vector2(float.Parse(s[0]), float.Parse(s[1])), new Vector2(float.Parse(s[2]), float.Parse(s[3]))));
 			}
 		}
 
-		public void RecordFrame(GameTime gameTime)
+		public void RecordFrame()
 		{
 			List<string> evt = new List<string>();
 			KeyValuePair<Keys, bool>[] temp = keystates.ToArray();
@@ -84,10 +85,10 @@ namespace Speedrunning_Game
 			if (newEvent)
 				events.Add(time, evt);
 
-			if (time % 1000 < 10)
+			if (time % 60 == 0)
 				recallibrater.Add(new Tuple<Vector2, Vector2>(Game1.currentRoom.Runner.position, Game1.currentRoom.Runner.velocity));
 
-			time += gameTime.ElapsedGameTime.Milliseconds;
+			time++;
 		}
 
 		public void Save(string levelName)
@@ -114,7 +115,7 @@ namespace Speedrunning_Game
 			writer.Dispose();
 		}
 
-		public void PlayFrame(GameTime gameTime)
+		public void PlayFrame()
 		{
 			if (start)
 			{
@@ -142,13 +143,16 @@ namespace Speedrunning_Game
 				enumerator.MoveNext();
 			}
 
-			if (time % 1000 < 10)
+			if (time % 60 == 0)
 			{
-				Game1.currentRoom.Runner.position = recallibrater[time / 1000].Item1;
-				Game1.currentRoom.Runner.velocity = recallibrater[time / 1000].Item2;
+				if (recallibrater.Count > time / 60)
+				{
+					Game1.currentRoom.Runner.position = recallibrater[time / 60].Item1;
+					Game1.currentRoom.Runner.velocity = recallibrater[time / 60].Item2;
+				}
 			}
 
-			time += gameTime.ElapsedGameTime.Milliseconds;
+			time++;
 		}
 	}
 }

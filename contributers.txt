@@ -4,4 +4,3 @@ Andrew Kim - Rocket Run
 David Goldman, Andrew Kim - Testing/Beating my times
 Andrew Fishberg - Collision programming/skins artist
 Alan Kahn - Game mechanic ideas
-x10hosting.com - For hosting leaderboards
