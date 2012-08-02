@@ -13,15 +13,16 @@ namespace Speedrunning_Game
 	{
 		Dictionary<int, List<string>> events;
 		Dictionary<int, List<string>>.Enumerator enumerator;
+		List<Tuple<Vector2, Vector2>> recallibrater;
 
 		public Dictionary<Keys, bool> keystates;
 
 		public bool playing, start;
-		public int frameCount;
+		public int time;
 
 		public ReplayRecorder()
 		{
-			frameCount = 0;
+			time = 0;
 			playing = false;
 			start = false;
 
@@ -33,6 +34,8 @@ namespace Speedrunning_Game
 			keystates.Add(Settings.controls["Jump"], false);
 			keystates.Add(Settings.controls["Slide"], false);
 			keystates.Add(Settings.controls["Box"], false);
+
+			recallibrater = new List<Tuple<Vector2, Vector2>>();
 		}
 
 		public ReplayRecorder(string filename)
@@ -42,16 +45,22 @@ namespace Speedrunning_Game
 			start = true;
 
 			StreamReader reader = new StreamReader(filename);
-			while (!reader.EndOfStream)
+			string[] line = reader.ReadLine().Replace("}", "").Split('{');
+			while (line[0] != "")
 			{
-				string[] line = reader.ReadLine().Replace("}", "").Split('{');
 				int frame = int.Parse(line[0]);
 				string[] evts = line[1].Split(',');
 				events.Add(frame, evts.ToList());
+				line = reader.ReadLine().Replace("}", "").Split('{');
+			}
+			while (!reader.EndOfStream)
+			{
+				line = reader.ReadLine().Split(' ');
+				recallibrater.Add(new Tuple<Vector2, Vector2>(new Vector2(float.Parse(line[0]), float.Parse(line[1])), new Vector2(float.Parse(line[2]), float.Parse(line[3]))));
 			}
 		}
 
-		public void RecordFrame()
+		public void RecordFrame(GameTime gameTime)
 		{
 			List<string> evt = new List<string>();
 			KeyValuePair<Keys, bool>[] temp = keystates.ToArray();
@@ -73,9 +82,12 @@ namespace Speedrunning_Game
 				}
 			}
 			if (newEvent)
-				events.Add(frameCount, evt);
+				events.Add(time, evt);
 
-			frameCount++;
+			if (time % 1000 < 10)
+				recallibrater.Add(new Tuple<Vector2, Vector2>(Game1.currentRoom.Runner.position, Game1.currentRoom.Runner.velocity));
+
+			time += gameTime.ElapsedGameTime.Milliseconds;
 		}
 
 		public void Save(string levelName)
@@ -93,12 +105,16 @@ namespace Speedrunning_Game
 					writer.Write(element.Value[i] + (i == element.Value.Count - 1 ? "" : ","));
 				writer.WriteLine("}");
 			}
+			writer.WriteLine();
+			for (int i = 0; i < recallibrater.Count; i++)
+				writer.WriteLine(recallibrater[i].Item1.X + " " + recallibrater[i].Item1.Y + " " + recallibrater[i].Item2.X + " " + recallibrater[i].Item2.Y);
+
 			writer.Flush();
 			writer.Close();
 			writer.Dispose();
 		}
 
-		public void PlayFrame()
+		public void PlayFrame(GameTime gameTime)
 		{
 			if (start)
 			{
@@ -108,13 +124,13 @@ namespace Speedrunning_Game
 				keystates[Settings.controls["Slide"]] = false;
 				keystates[Settings.controls["Box"]] = false;
 
-				frameCount = 0;
+				time = 0;
 				start = false;
 				enumerator = events.GetEnumerator();
 				enumerator.MoveNext();
 			}
 
-			if (enumerator.Current.Key == frameCount)
+			if (enumerator.Current.Key == time)
 			{
 				foreach (string s in enumerator.Current.Value)
 				{
@@ -126,7 +142,13 @@ namespace Speedrunning_Game
 				enumerator.MoveNext();
 			}
 
-			frameCount++;
+			if (time % 1000 < 10)
+			{
+				Game1.currentRoom.Runner.position = recallibrater[time / 1000].Item1;
+				Game1.currentRoom.Runner.velocity = recallibrater[time / 1000].Item2;
+			}
+
+			time += gameTime.ElapsedGameTime.Milliseconds;
 		}
 	}
 }

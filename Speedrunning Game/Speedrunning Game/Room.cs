@@ -64,7 +64,8 @@ namespace Speedrunning_Game
 		private Tileset wallSet;
 		private string levelName;
 		private string levelID;
-		private int time, record, goalBeaten;
+		public int time;
+		private int record, goalBeaten;
 		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, scheck, ocheck, freeroaming, lcheck, upcheck, downcheck;
 		public bool viewingLeaderboards, canViewLeaderboards;
 		private string[][] leaderboardData;
@@ -505,9 +506,9 @@ namespace Speedrunning_Game
 				if (!Paused)
 				{
 					if (recorder.playing)
-						recorder.PlayFrame();
+						recorder.PlayFrame(gameTime);
 					else
-						recorder.RecordFrame();
+						recorder.RecordFrame(gameTime);
 
 					// Update booster animations
 					foreach (Booster b in boosters)
@@ -569,10 +570,11 @@ namespace Speedrunning_Game
 						openFD.Filter = "Replay Files (*.rpl)|*.rpl";
 						if (openFD.ShowDialog() == System.Windows.Forms.DialogResult.OK && File.Exists(openFD.FileName))
 						{
+							ReplayRecorder rec = new ReplayRecorder(openFD.FileName);
 							if (custom)
-								Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, new ReplayRecorder(openFD.FileName));
+								Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, rec);
 							else
-								Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, new ReplayRecorder(openFD.FileName));
+								Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, rec);
 						}
 					}
 				}
@@ -987,6 +989,10 @@ namespace Speedrunning_Game
 				// Draw timer
 				sb.DrawString(Game1.mnufont, TimeToString(time), Vector2.Zero, Color.White);
 				sb.DrawString(Game1.mnufont, TimeToString(time), Vector2.One, new Color(100, 100, 100));
+
+				// Show that playing replay
+				if (recorder.playing)
+					sb.DrawString(Game1.mnufont, "Replay", new Vector2(0, 30), Color.Lime);
 			}
 		}
 		
