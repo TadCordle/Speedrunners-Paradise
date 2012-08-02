@@ -1,0 +1,15 @@
+0{press MoveRight}
+34{press Slide}
+41{release Slide}
+84{press MoveLeft}
+85{release MoveRight}
+91{press Jump}
+95{release MoveLeft}
+99{release Jump}
+103{press Jump}
+110{release Jump}
+114{press MoveRight}
+165{press Jump}
+173{release Jump}
+194{press Jump}
+201{release Jump}

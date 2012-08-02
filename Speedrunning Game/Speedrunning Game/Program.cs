@@ -10,6 +10,7 @@ namespace Speedrunning_Game
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+		[STAThread]
         static void Main(string[] args)
         {
 			LoginForm login = new LoginForm();

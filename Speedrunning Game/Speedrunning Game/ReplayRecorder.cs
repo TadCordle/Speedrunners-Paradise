@@ -35,9 +35,20 @@ namespace Speedrunning_Game
 			keystates.Add(Settings.controls["Box"], false);
 		}
 
-		public ReplayRecorder(string filename) : base()
+		public ReplayRecorder(string filename)
+			: this()
 		{
 			playing = true;
+			start = true;
+
+			StreamReader reader = new StreamReader(filename);
+			while (!reader.EndOfStream)
+			{
+				string[] line = reader.ReadLine().Replace("}", "").Split('{');
+				int frame = int.Parse(line[0]);
+				string[] evts = line[1].Split(',');
+				events.Add(frame, evts.ToList());
+			}
 		}
 
 		public void RecordFrame()
@@ -52,7 +63,13 @@ namespace Speedrunning_Game
 				{
 					newEvent = true;
 					keystates[element.Key] = Keyboard.GetState().IsKeyDown(element.Key);
-					evt.Add((keystates[element.Key] ? "press " : "release ") + element.Key.ToString());
+					string result = "";
+					foreach (KeyValuePair<string, Keys> k in Settings.controls)
+					{
+						if (k.Value == element.Key)
+							result = k.Key;
+					}
+					evt.Add((keystates[element.Key] ? "press " : "release ") + result.ToString());
 				}
 			}
 			if (newEvent)
@@ -61,9 +78,24 @@ namespace Speedrunning_Game
 			frameCount++;
 		}
 
-		public void Save()
+		public void Save(string levelName)
 		{
-
+			int count = 0;
+			if (!Directory.Exists("Content\\replays"))
+				Directory.CreateDirectory("Content\\replays");
+			while (File.Exists("Content\\replays\\" + levelName + "_" + count.ToString() + ".rpl"))
+				count++;
+			StreamWriter writer = new StreamWriter("Content\\replays\\" + levelName + "_" + count.ToString() + ".rpl");
+			foreach (KeyValuePair<int, List<string>> element in events)
+			{
+				writer.Write(element.Key.ToString() + "{");
+				for (int i = 0; i < element.Value.Count; i++)
+					writer.Write(element.Value[i] + (i == element.Value.Count - 1 ? "" : ","));
+				writer.WriteLine("}");
+			}
+			writer.Flush();
+			writer.Close();
+			writer.Dispose();
 		}
 
 		public void PlayFrame()
@@ -87,7 +119,7 @@ namespace Speedrunning_Game
 				foreach (string s in enumerator.Current.Value)
 				{
 					string[] split = s.Split(' ');
-					Keys key = (Keys)Enum.Parse(typeof(Keys), split[1]);
+					Keys key = Settings.controls[split[1]];
 					keystates[key] = split[0] == "press";
 				}
 

@@ -65,12 +65,13 @@ namespace Speedrunning_Game
 		private string levelName;
 		private string levelID;
 		private int time, record, goalBeaten;
-		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, freeroaming, lcheck, upcheck, downcheck;
+		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, scheck, ocheck, freeroaming, lcheck, upcheck, downcheck;
 		public bool viewingLeaderboards, canViewLeaderboards;
 		private string[][] leaderboardData;
 		private int leaderboardPage;
 		private bool canScrollDown;
 		public ReplayRecorder recorder;
+		private bool recorderSaved;
 
 		public bool Freeroam { get { return freeroaming; } }
 
@@ -83,6 +84,8 @@ namespace Speedrunning_Game
 			rcheck = false;
 			fcheck = false;
 			lcheck = true;
+			scheck = false;
+			ocheck = false;
 			write = true;
 			writeNext = true;
 			time = 0;
@@ -99,6 +102,7 @@ namespace Speedrunning_Game
 			ViewBox = new Rectangle(0, 0, VIEWSIZE_X, VIEWSIZE_Y);
 			viewingLeaderboards = false;
 			leaderboardPage = 0;
+			recorderSaved = false;
 		}
 
 		public Room(string file, bool freeroam, ReplayRecorder recorder)
@@ -426,6 +430,10 @@ namespace Speedrunning_Game
 				upcheck = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.Down))
 				downcheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.S))
+				scheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.O))
+				ocheck = true;
 
 			// Restart the current level when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]) && rcheck)
@@ -550,6 +558,23 @@ namespace Speedrunning_Game
 				{
 					Game1.run.Stop();
 					Game1.slide.Stop();
+
+					if (Keyboard.GetState().IsKeyDown(Keys.O) && ocheck)
+					{
+						ocheck = false;
+						System.Windows.Forms.OpenFileDialog openFD = new System.Windows.Forms.OpenFileDialog();
+						if (!Directory.Exists("Content\\replays"))
+							Directory.CreateDirectory("Content\\replays");
+						openFD.InitialDirectory = "Content\\replays";
+						openFD.Filter = "Replay Files (*.rpl)|*.rpl";
+						if (openFD.ShowDialog() == System.Windows.Forms.DialogResult.OK && File.Exists(openFD.FileName))
+						{
+							if (custom)
+								Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, new ReplayRecorder(openFD.FileName));
+							else
+								Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, new ReplayRecorder(openFD.FileName));
+						}
+					}
 				}
 			}
 			else
@@ -567,7 +592,7 @@ namespace Speedrunning_Game
 					return;
 				}
 
-				if (write)
+				if (write && !recorder.playing)
 				{
 					write = false;
 
@@ -611,7 +636,7 @@ namespace Speedrunning_Game
 					}
 				}
 
-				if (upload && canViewLeaderboards)
+				if (upload && canViewLeaderboards && !recorder.playing)
 				{
 					// Upload score to leaderboard
 					upload = false;
@@ -619,7 +644,7 @@ namespace Speedrunning_Game
 						WebStuff.WriteScore(time, Game1.userName, levelID);
 				}
 
-				if (writeNext && !custom && Levels.Index < Levels.levels.Count() - 1)
+				if (writeNext && !custom && Levels.Index < Levels.levels.Count() - 1 && !recorder.playing)
 				{
 					// Add next level to level select if not already unlocked
 					writeNext = false;
@@ -656,6 +681,14 @@ namespace Speedrunning_Game
 						Game1.currentRoom = new Room("Content\\rooms\\" + levelName + ".srl", false, recorder);
 					else
 						Game1.currentRoom = new Room(Levels.levels[Levels.Index], false, recorder);
+				}
+
+				// Check if they want to save replay
+				if (Keyboard.GetState().IsKeyDown(Keys.S) && scheck)
+				{
+					scheck = false;
+					recorder.Save(levelName);
+					recorderSaved = true;
 				}
 
 				// Move to next level when enter is pressed, or back to menu if custom level
@@ -880,9 +913,12 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, goalBeaten != 0 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : "Do better next time!", new Vector2(382, 400), Color.Yellow);
 
 				if (Game1.online && canViewLeaderboards)
-					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White);
-				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 600), Color.White);
-				sb.DrawString(Game1.mnufont, "Press W to watch replay", new Vector2(670, 630), Color.White);
+					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White);
+				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 570), Color.White);
+				sb.DrawString(Game1.mnufont, "Press W to watch replay", new Vector2(670, 600), Color.White);
+				sb.DrawString(Game1.mnufont, "Press S to save replay", new Vector2(710, 630), Color.White);
+				if (recorderSaved)
+					sb.DrawString(Game1.mnufont, "Saved!", new Vector2(600, 630), Color.Cyan);
 				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
 			}
 			else if (Paused)
@@ -913,7 +949,8 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 340), goalBeaten == 3 ? Color.Lime : Color.White);
 
 				if (Game1.online && canViewLeaderboards)
-					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 600), Color.White);
+					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White);
+				sb.DrawString(Game1.mnufont, "Press O to open a replay", new Vector2(670, 600), Color.White);
 				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White);
 				sb.DrawString(Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White);
 			}
