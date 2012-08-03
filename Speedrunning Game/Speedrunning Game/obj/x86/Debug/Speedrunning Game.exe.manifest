@@ -83,26 +83,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="42496">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="45056">
       <assemblyIdentity name="Speedrunning Game Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QXkCL0sDOM/XEX7mKkD5n0bJZwM=</dsig:DigestValue>
+        <dsig:DigestValue>A9M0jvTFkwAhyKnYlpc3cDhZEjA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="598528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="599040">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>dLg0crO8U/Mx7CKw6NQD757XYEI=</dsig:DigestValue>
+        <dsig:DigestValue>MRRyOq0zaoU4Gc5wzmUtU6qFICM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -392,6 +392,159 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>Xm+bILc8+oFa+LpJXyLdwmE8ivQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario dead midair.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fwFH9HikHLeXT+d0Digdi/co+s8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario dead.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1hxGzFVx25/q7Ia0nhiBfhohQTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario normal.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>K14h+ZUss7qpieFz/2ysqVKocyA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario running0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RPS1EFvhytGaVbKCmsSAMqp8I9I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario running0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x3FW1xhmpDjvfI9ipeEnqqRF9z8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario running0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7ynVMAwuYF4KQd1XLZRroJCaVhs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario sliding.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QkAipvdmolUfy4PWGYK8gurjq0w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\mario\mario ziplining.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Y54xaC7pYn0vLTDPL6H02fJh6qg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\mr guy\mr guy dead midair0001.xnb" size="16571">

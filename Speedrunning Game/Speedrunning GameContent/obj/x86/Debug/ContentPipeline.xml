@@ -2472,6 +2472,159 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\flamethrower.xnb</Output>
       <Time>2012-07-27T08:43:08.4650067-04:00</Time>
     </Item>
+    <Item>
+      <Source>skins\mario\mario normal.png</Source>
+      <Name>skins\mario\mario normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario normal.xnb</Output>
+      <Time>2012-08-03T16:47:52.6370883-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0001.png</Source>
+      <Name>skins\mario\mario midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0001.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0002.png</Source>
+      <Name>skins\mario\mario midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0002.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0003.png</Source>
+      <Name>skins\mario\mario midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0003.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0004.png</Source>
+      <Name>skins\mario\mario midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0004.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0005.png</Source>
+      <Name>skins\mario\mario midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0005.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0006.png</Source>
+      <Name>skins\mario\mario midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0006.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0007.png</Source>
+      <Name>skins\mario\mario midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0007.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0008.png</Source>
+      <Name>skins\mario\mario midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0008.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario midair0009.png</Source>
+      <Name>skins\mario\mario midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario midair0009.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario running0001.png</Source>
+      <Name>skins\mario\mario running0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario running0001.xnb</Output>
+      <Time>2012-08-03T16:49:51.9909149-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario running0002.png</Source>
+      <Name>skins\mario\mario running0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario running0002.xnb</Output>
+      <Time>2012-08-03T16:50:40.666699-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario running0003.png</Source>
+      <Name>skins\mario\mario running0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario running0003.xnb</Output>
+      <Time>2012-08-03T16:51:33.6897318-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario sliding.png</Source>
+      <Name>skins\mario\mario sliding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario sliding.xnb</Output>
+      <Time>2012-08-03T16:54:29.9728146-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario ziplining.png</Source>
+      <Name>skins\mario\mario ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario ziplining.xnb</Output>
+      <Time>2012-08-03T16:55:42.1829448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario dead midair.png</Source>
+      <Name>skins\mario\mario dead midair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario dead midair.xnb</Output>
+      <Time>2012-08-03T17:02:30.2182831-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\mario\mario dead.png</Source>
+      <Name>skins\mario\mario dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario dead.xnb</Output>
+      <Time>2012-08-03T17:02:47.9202956-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

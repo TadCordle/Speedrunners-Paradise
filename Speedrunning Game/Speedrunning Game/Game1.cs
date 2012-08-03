@@ -122,7 +122,7 @@ namespace Speedrunning_Game
 //			skinPreviews[1] = Content.Load<Texture2D>("skins/squirrel/squirrel normal0001");
 			skinPreviews[2] = Content.Load<Texture2D>("skins/stick figure/stick figure normal0001");
 			skinPreviews[3] = Content.Load<Texture2D>("skins/mr guy/mr guy normal0001");
-//			skinPreviews[4] = Content.Load<Texture2D>("skins/newell/newell normal0001");
+			skinPreviews[4] = Content.Load<Texture2D>("skins/mario/mario normal");
 //			skinPreviews[5] = Content.Load<Texture2D>("skins/ninja/ninja normal0001");
 			prevLocked = Content.Load<Texture2D>("skins/locked");
 
@@ -150,7 +150,7 @@ namespace Speedrunning_Game
 			titlefont = Content.Load<SpriteFont>("titlefont");
 			msgfont = Content.Load<SpriteFont>("msgfont");
 			mnufont = Content.Load<SpriteFont>("mnufont");
-			currentRoom = new MainMenu(true);
+			currentRoom = new MainMenu(false);
 
 			Settings.GetSettings();
 			LoadNewSkin(this, Settings.skin);
@@ -174,15 +174,31 @@ namespace Speedrunning_Game
 			skinManager.Dispose();
 			skinManager = new ContentManager(game.Services, "Content/skins");
 
-			Texture2D[] images = new Texture2D[19];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " normal00" + (i > 9 ? "" : "0") + i.ToString());
-			guyNormal = new AnimatedTexture(images, 3, true, false);
+			Texture2D[] images;
+			if (skinName == "mario")
+				guyNormal = new AnimatedTexture(skinManager.Load<Texture2D>("mario/mario normal"));
+			else
+			{
+				images = new Texture2D[19];
+				for (int i = 1; i <= images.Length; i++)
+					images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " normal00" + (i > 9 ? "" : "0") + i.ToString());
+				guyNormal = new AnimatedTexture(images, 3, true, false);
+			}
 
-			images = new Texture2D[19];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " running00" + (i > 9 ? "" : "0") + i.ToString());
-			guyRunning = new AnimatedTexture(images, 1, true, false);
+			if (skinName == "mario")
+			{
+				images = new Texture2D[3];
+				for (int i = 1; i <= images.Length; i++)
+					images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " running000" + i.ToString());
+				guyRunning = new AnimatedTexture(images, 6, true, false);
+			}
+			else
+			{
+				images = new Texture2D[19];
+				for (int i = 1; i <= images.Length; i++)
+					images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " running00" + (i > 9 ? "" : "0") + i.ToString());
+				guyRunning = new AnimatedTexture(images, 1, true, false);
+			}
 
 			images = new Texture2D[9];
 			for (int i = 1; i <= images.Length; i++)
@@ -192,10 +208,16 @@ namespace Speedrunning_Game
 			guyZiplining = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " ziplining"));
 			guySliding = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " sliding"));
 			guyDeadGround = new AnimatedTexture(skinManager.Load<Texture2D>(skinName + "/" + skinName + " dead"));
-			images = new Texture2D[25];
-			for (int i = 1; i <= images.Length; i++)
-				images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " dead midair00" + (i > 9 ? "" : "0") + i.ToString());
-			guyDeadMidair = new AnimatedTexture(images, 1, true, false);
+
+			if (skinName == "mario")
+				guyDeadMidair = new AnimatedTexture(skinManager.Load<Texture2D>("mario/mario dead midair"));
+			else
+			{
+				images = new Texture2D[25];
+				for (int i = 1; i <= images.Length; i++)
+					images[i - 1] = skinManager.Load<Texture2D>(skinName + "/" + skinName + " dead midair00" + (i > 9 ? "" : "0") + i.ToString());
+				guyDeadMidair = new AnimatedTexture(images, 1, true, false);
+			}
 		}
 
 		protected override void UnloadContent()

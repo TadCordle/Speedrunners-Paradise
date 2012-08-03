@@ -27,7 +27,7 @@
 @ Going Down
 
 -- Lava --
-* Flamethrower Run
+* Flamethrowers everywhere
 @ Doom Climb
 * Maintain Fast Speed
 @ Rocket Run

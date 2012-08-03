@@ -23,7 +23,7 @@ namespace Speedrunning_Game
 			choices[1] = "squirrel";
 			choices[2] = "stick figure";
 			choices[3] = "mr guy";
-			choices[4] = "gabe newell";
+			choices[4] = "mario";
 			choices[5] = "ninja";
 			upcheck = downcheck = true;
 			entercheck = false;

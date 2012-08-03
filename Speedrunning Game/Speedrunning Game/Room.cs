@@ -698,14 +698,17 @@ namespace Speedrunning_Game
 				{
 					if (!custom)
 					{
-						Levels.Index++;
-						if (Levels.Index == Levels.levels.Count())
-							Game1.currentRoom = new MainMenu(false);
-						else
+						if (record > -1 || !recorder.playing)
 						{
-							while (Levels.Index < Levels.levels.Length && Levels.levels[Levels.Index][0] == "")
-								Levels.Index++;
-							Game1.currentRoom = new Room(Levels.levels[Levels.Index], true, new ReplayRecorder());
+							Levels.Index++;
+							if (Levels.Index == Levels.levels.Count())
+								Game1.currentRoom = new MainMenu(false);
+							else
+							{
+								while (Levels.Index < Levels.levels.Length && Levels.levels[Levels.Index][0] == "")
+									Levels.Index++;
+								Game1.currentRoom = new Room(Levels.levels[Levels.Index], true, new ReplayRecorder());
+							}
 						}
 					}
 					else
@@ -916,7 +919,7 @@ namespace Speedrunning_Game
 
 				if (Game1.online && canViewLeaderboards)
 					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White);
-				sb.DrawString(Game1.mnufont, "Press Enter to continue", new Vector2(670, 570), Color.White);
+				sb.DrawString(Game1.mnufont, (record > -1 || !recorder.playing ? "Press Enter" : "You must beat the level") + " to continue", new Vector2((record > -1 || !recorder.playing ? 670 : 516), 570), Color.White);
 				sb.DrawString(Game1.mnufont, "Press W to watch replay", new Vector2(670, 600), Color.White);
 				sb.DrawString(Game1.mnufont, "Press S to save replay", new Vector2(710, 630), Color.White);
 				if (recorderSaved)
