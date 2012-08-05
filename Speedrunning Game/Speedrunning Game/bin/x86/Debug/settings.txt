@@ -1,6 +1,6 @@
-MusicVolume 1
+MusicVolume 0
 SFXVolume 1
-Skin mario
+Skin stick_figure
 MoveLeft Left
 MoveRight Right
 Jump/WallJump Space

@@ -436,7 +436,7 @@ namespace Speedrunning_Game
 			if (!Keyboard.GetState().IsKeyDown(Keys.O))
 				ocheck = true;
 
-			// Restart the current level when R is pressed
+			// Restart when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]) && rcheck)
 			{
 				if (custom)
@@ -459,6 +459,7 @@ namespace Speedrunning_Game
 				Paused = !Paused;
 			}
 
+			// Show leaderboards when L is pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.L) && lcheck && (Paused || Finished) && Game1.online && canViewLeaderboards)
 			{
 				lcheck = false;
@@ -843,7 +844,7 @@ namespace Speedrunning_Game
 			}
 
 			// Freeroam instructions
-			if (freeroaming && !viewingLeaderboards)
+			if (freeroaming && !Paused)
 			{
 				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(0, 30), Color.White);
 				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(1, 31), Color.Black);

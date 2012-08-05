@@ -59,6 +59,8 @@ namespace Speedrunning_Game
 				string[] s = reader.ReadLine().Split(' ');
 				recallibrater.Add(new Tuple<Vector2, Vector2>(new Vector2(float.Parse(s[0]), float.Parse(s[1])), new Vector2(float.Parse(s[2]), float.Parse(s[3]))));
 			}
+			reader.Close();
+			reader.Dispose();
 		}
 
 		public void RecordFrame()

@@ -22,7 +22,7 @@
 -- Factory --
 @ Rooms 
 @ The Catch (Hurry)
-* Run from flamethrowers turning on
+@ Run from flamethrowers turning on
 * Kill Yourself
 @ Going Down
 
