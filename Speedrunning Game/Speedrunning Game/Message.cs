@@ -37,6 +37,7 @@ namespace Speedrunning_Game
 			if (Game1.currentRoom.Runner != null && hitBox.Intersects(Game1.currentRoom.Runner.hitBox))
 			{
 				Rectangle drawBox = new Rectangle((int)position.X + 16 - ((int)Game1.msgfont.MeasureString(msg).X + 2) / 2 - Game1.currentRoom.ViewBox.X, (int)position.Y - 40 - (int)Game1.msgfont.MeasureString(msg).Y + 2 - Game1.currentRoom.ViewBox.Y, (int)Game1.msgfont.MeasureString(msg).X + 2, (int)Game1.msgfont.MeasureString(msg).Y + 2);
+				sb.Draw(Game1.wallTex, new Rectangle(drawBox.X - 1, drawBox.Y - 1, drawBox.Width + 2, drawBox.Height + 2), Color.Black);
 				sb.Draw(Game1.wallTex, drawBox, drawHue == Color.White ? Color.DarkGray : Color.Gray);
 				sb.DrawString(Game1.msgfont, msg, new Vector2(drawBox.X, drawBox.Y), Color.Black);
 			}

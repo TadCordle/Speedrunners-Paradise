@@ -48,9 +48,9 @@ namespace Speedrunning_Game
 			pole2 = FindPole(r, pos2);
 
 			if (pole1.X < pole2.X)
-				DrawBox = new Rectangle(pole1.X, Math.Min(pole1.Y, pole2.Y), pole2.X + 16 - pole1.X, Math.Max(pole1.Bottom, pole2.Bottom) - Math.Min(pole1.Top, pole2.Top));
+				DrawBox = new Rectangle(pole1.X, Math.Min(pole1.Y, Math.Min(pole1.Bottom, Math.Min(pole2.Bottom, pole2.Y))), pole2.X + 16 - pole1.X, Math.Max(pole1.Bottom, Math.Max(pole1.Y, Math.Max(pole2.Y, pole2.Bottom))) - Math.Min(pole1.Y, Math.Min(pole1.Bottom, Math.Min(pole2.Bottom, pole2.Y))));
 			else
-				DrawBox = new Rectangle(pole2.X, Math.Min(pole1.Y, pole2.Y), pole1.X + 16 - pole2.X, Math.Max(pole1.Height, pole2.Height));
+				DrawBox = new Rectangle(pole2.X, Math.Min(pole1.Y, Math.Min(pole1.Bottom, Math.Min(pole2.Bottom, pole2.Y))), pole1.X + 16 - pole2.X, Math.Max(pole1.Bottom, Math.Max(pole1.Y, Math.Max(pole2.Y, pole2.Bottom))) - Math.Min(pole1.Y, Math.Min(pole1.Bottom, Math.Min(pole2.Bottom, pole2.Y))));
 		}
 
 		private Rectangle FindPole(Room r, Vector2 pos)
@@ -72,12 +72,12 @@ namespace Speedrunning_Game
 
 					if (w.Bounds.Contains((int)pos.X + 1, above))
 					{
-						final = new Rectangle((int)pos.X, above + 16, 16, (int)pos.Y - above + 16);
+						final = new Rectangle((int)pos.X, above, 16, (int)pos.Y - above + 16);
 						hit = true;
 					}
 					else if (w.Bounds.Contains((int)pos.X + 1, below))
 					{
-						final = new Rectangle((int)pos.X, (int)pos.Y, 16, below - (int)pos.Y - 16);
+						final = new Rectangle((int)pos.X, (int)pos.Y - 16, 16, below - (int)pos.Y);
 						hit = true;
 					}
 				}
@@ -86,7 +86,7 @@ namespace Speedrunning_Game
 			}
 
 			if (!hit)
-				final = new Rectangle((int)pos.X, (int)pos.Y, 16, below - (int)pos.Y);
+				final = new Rectangle((int)pos.X, (int)pos.Y - 16, 16, below - (int)pos.Y);
 
 			return final;
 		}
@@ -105,9 +105,11 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
+			sb.Draw(Game1.wallTex, new Rectangle(pole1.X - Game1.currentRoom.ViewBox.X - 1, pole1.Y - Game1.currentRoom.ViewBox.Y - 1, pole1.Width + 2, pole1.Height + 2), Color.Black);
+			sb.Draw(Game1.wallTex, new Rectangle(pole2.X - Game1.currentRoom.ViewBox.X - 1, pole2.Y - Game1.currentRoom.ViewBox.Y - 1, pole2.Width + 2, pole2.Height + 2), Color.Black);
 			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.ViewBox.X, pole1.Y - Game1.currentRoom.ViewBox.Y, pole1.Width, pole1.Height), c);
 			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.ViewBox.X, pole2.Y - Game1.currentRoom.ViewBox.Y, pole2.Width, pole2.Height), c);
-			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.ViewBox.X + 8, (int)pos1.Y - Game1.currentRoom.ViewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
+			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.ViewBox.X + (pos1.X > pos2.X ? 0 : 16), (int)pos1.Y - Game1.currentRoom.ViewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX) - ((int)Math.Sqrt((dY / dX * 16)*(dY / dX * 16) + 256)) /* (pos1.X > pos2.X ? -1 : 1)*/, 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
 		}
 	}
 }

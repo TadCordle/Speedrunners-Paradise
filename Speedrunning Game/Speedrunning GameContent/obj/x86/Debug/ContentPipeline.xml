@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\medal.xnb</Output>
-      <Time>2012-06-07T06:16:48.8392614-04:00</Time>
+      <Time>2012-08-07T23:40:35.8862058-04:00</Time>
     </Item>
     <Item>
       <Source>booster0001.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilegrass.xnb</Output>
-      <Time>2012-06-10T17:13:13.6095081-04:00</Time>
+      <Time>2012-08-07T23:20:06.6108952-04:00</Time>
     </Item>
     <Item>
       <Source>tiles\tilestest.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilelava.xnb</Output>
-      <Time>2012-06-10T17:19:55.3444368-04:00</Time>
+      <Time>2012-08-07T23:23:30.1615377-04:00</Time>
     </Item>
     <Item>
       <Source>tiles\tilenight.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilenight.xnb</Output>
-      <Time>2012-07-28T21:49:54.5319679-04:00</Time>
+      <Time>2012-08-07T23:32:09.1852241-04:00</Time>
     </Item>
     <Item>
       <Source>tiles\tilecave.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilecave.xnb</Output>
-      <Time>2012-06-10T17:43:12.796152-04:00</Time>
+      <Time>2012-08-07T23:26:20.439277-04:00</Time>
     </Item>
     <Item>
       <Source>message.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\message.xnb</Output>
-      <Time>2012-06-23T10:00:35.3027604-04:00</Time>
+      <Time>2012-08-07T23:34:50.8264695-04:00</Time>
     </Item>
     <Item>
       <Source>tiles\deathgrass.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\tiles\tilefactory.xnb</Output>
-      <Time>2012-07-13T12:23:23.840811-04:00</Time>
+      <Time>2012-08-07T23:27:08.2680126-04:00</Time>
     </Item>
     <Item>
       <Source>tiles\deathnight.png</Source>

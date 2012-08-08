@@ -1,6 +1,6 @@
 MusicVolume 0
 SFXVolume 1
-Skin stick_figure
+Skin speed_runner
 MoveLeft Left
 MoveRight Right
 Jump/WallJump Space
