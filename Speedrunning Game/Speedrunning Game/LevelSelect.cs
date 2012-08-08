@@ -95,6 +95,11 @@ namespace Speedrunning_Game
 							if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
 								levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, j, levels[i].Item4);
 						}
+						if (levels[i].Item3 == 0)
+						{
+							if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[3]))
+								levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, 3, levels[i].Item4);
+						}
 					}
 				}
 				else
@@ -259,7 +264,7 @@ namespace Speedrunning_Game
 					sb.DrawString(Game1.mnufont, page[i].Item1.Split('\\')[page[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
 					sb.DrawString(Game1.mnufont, page[i].Item2 != -1 ? TimeToString(page[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
 					if (page[i].Item3 != -1)
-						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : Color.Brown));
+						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : (page[i].Item3 == 2 ? Color.Brown : Color.LightBlue)));
 				}
 		}
 
