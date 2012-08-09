@@ -875,47 +875,40 @@ namespace Speedrunning_Game
 			// Freeroam instructions
 			if (freeroaming && !Paused)
 			{
-				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(0, 30), Color.White);
-				sb.DrawString(Game1.mnufont, "Freeroam cam", new Vector2(1, 31), Color.Black);
-				sb.DrawString(Game1.mnufont, "Use the arrow keys to check out the level before you play", new Vector2(0, 60), Color.White);
-				sb.DrawString(Game1.mnufont, "Use the arrow keys to check out the level before you play", new Vector2(1, 61), Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Freeroam cam", new Vector2(0, 30), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Use the arrow keys to check out the level before you play", new Vector2(0, 60), Color.White, Color.Black);
 			}
 
 			if ((Paused || Finished || Runner.health <= 0 || freeroaming) && !viewingLeaderboards)
-			{
-				sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming ? 782 : 750, 690), Color.White);
-				if (freeroaming && !Paused || Runner.health <= 0 && !Paused)
-					sb.DrawString(Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming? 783 : 751, 691), Color.Black);
-			}
+				DrawOutlineText(sb, Game1.mnufont, "Press R to " + (freeroaming ? "play" : "restart"), new Vector2(freeroaming ? 782 : 750, 690), Color.White, Color.Black);
 
 			if (viewingLeaderboards)
 			{
 				// Draw level's leaderboard
 
-				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(340, 10), Color.White);
-				sb.DrawString(Game1.mnufont, "Leaderboards", new Vector2(341, 11), drawHue);
+				DrawOutlineText(sb, Game1.mnufont, "Leaderboards", new Vector2(340, 10), Color.White, Color.Black);
 
 				if (leaderboardPage > 0)
 					sb.DrawString(Game1.mnufont, "^", new Vector2(12, 90), Color.Lime);
 				if (canScrollDown)
 					sb.DrawString(Game1.mnufont, "v", new Vector2(12, 540), Color.Lime);
 
-				sb.DrawString(Game1.mnufont, "Worldwide Records", new Vector2(40, 55), Color.Lime);
+				DrawOutlineText(sb, Game1.mnufont, "Worldwide Records", new Vector2(40, 55), Color.Lime, Color.Black);
 				if (leaderboardData[0][0] == "")
-					sb.DrawString(Game1.mnufont, "There's nothing here... yet.", new Vector2(40, 100), Color.White);
+					DrawOutlineText(sb, Game1.mnufont, "There's nothing here... yet.", new Vector2(40, 100), Color.White, Color.Black);
 				else
 				{
 					for (int i = 0; i < leaderboardData.Length - 1; i++)
 					{
-						sb.DrawString(Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 100), Color.White);
-						sb.DrawString(Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 100), Color.White);
-						sb.DrawString(Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 100), Color.White);
+						DrawOutlineText(sb, Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 100), Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 100), Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 100), Color.White, Color.Black);
 					}
 				}
-				sb.DrawString(Game1.mnufont, "Your Rank", new Vector2(40, 620), Color.Yellow);
-				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 665), Color.Lime);
-				sb.DrawString(Game1.mnufont, Game1.userName, new Vector2(200, 665), Color.Lime);
-				sb.DrawString(Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime);
+				DrawOutlineText(sb, Game1.mnufont, "Your Rank", new Vector2(40, 620), Color.Yellow, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 665), Color.Lime, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, Game1.userName, new Vector2(200, 665), Color.Lime, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime, Color.Black);
 			}
 			else if (Finished)
 			{
@@ -924,7 +917,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(180, 182), Color.White);
 				sb.DrawString(Game1.titlefont, "Level Complete!", new Vector2(182, 184), drawHue);
 
-				sb.DrawString(Game1.mnufont, "Previous Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 310), Color.White);
+				DrawOutlineText(sb, Game1.mnufont, "Previous Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 310), Color.White, Color.Black);
 				if (record != -1)
 				{
 					if (goals.Length > 3 && record <= goals[3])
@@ -937,31 +930,31 @@ namespace Speedrunning_Game
 						sb.Draw(Game1.medalTex, new Vector2(511, 310), Color.Brown);
 				}
 
-				sb.DrawString(Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 340), time < record || record == -1 ? Color.Lime : Color.Red);
+				DrawOutlineText(sb, Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 340), time < record || record == -1 ? Color.Lime : Color.Red, Color.Black);
 				if (time < record || record == -1)
-					sb.DrawString(Game1.mnufont, "New Personal Record!", new Vector2(208, 370), Color.Yellow);
+					DrawOutlineText(sb, Game1.mnufont, "New Personal Record!", new Vector2(208, 370), Color.Yellow, Color.Black);
 
 				if (goals.Length == 4)
 				{
 					sb.Draw(Game1.medalTex, new Vector2(612, 280), Color.LightBlue);
-					sb.DrawString(Game1.mnufont, TimeToString(goals[3]), new Vector2(644, 280), goalBeaten == 0 ? Color.Lime : Color.White);
+					DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[3]), new Vector2(644, 280), goalBeaten == 0 ? Color.Lime : Color.White, Color.Black);
 				}
 				sb.Draw(Game1.medalTex, new Vector2(612, 310), Color.Gold);
 				sb.Draw(Game1.medalTex, new Vector2(612, 340), Color.Silver);
 				sb.Draw(Game1.medalTex, new Vector2(612, 370), Color.Brown);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, goalBeaten != 0 && goalBeaten != -1 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : (goalBeaten == 0 ? "You beat the developer's record!" : "Do better next time!"), new Vector2(goalBeaten == 0 ? 320 : 382, 430), Color.Yellow);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, goalBeaten != 0 && goalBeaten != -1 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : (goalBeaten == 0 ? "You beat the developer's record!" : "Do better next time!"), new Vector2(goalBeaten == 0 ? 320 : 382, 430), Color.Yellow, Color.Black);
 
 				if (Game1.online && canViewLeaderboards)
-					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White);
-				sb.DrawString(Game1.mnufont, (record > -1 || !recorder.playing ? "Press Enter" : "You must beat the level") + " to continue", new Vector2((record > -1 || !recorder.playing ? 670 : 516), 570), Color.White);
-				sb.DrawString(Game1.mnufont, "Press W to watch replay", new Vector2(670, 600), Color.White);
-				sb.DrawString(Game1.mnufont, "Press S to save replay", new Vector2(710, 630), Color.White);
+					DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, (record > -1 || !recorder.playing ? "Press Enter" : "You must beat the level") + " to continue", new Vector2((record > -1 || !recorder.playing ? 670 : 516), 570), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press W to watch replay", new Vector2(670, 600), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press S to save replay", new Vector2(710, 630), Color.White, Color.Black);
 				if (recorderSaved)
-					sb.DrawString(Game1.mnufont, "Saved!", new Vector2(600, 630), Color.Cyan);
-				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
+					DrawOutlineText(sb, Game1.mnufont, "Saved!", new Vector2(600, 630), Color.Cyan, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White, Color.Black);
 			}
 			else if (Paused)
 			{
@@ -970,7 +963,7 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.titlefont, "Paused", new Vector2(360, 182), Color.White);
 				sb.DrawString(Game1.titlefont, "Paused", new Vector2(362, 184), drawHue);
 
-				sb.DrawString(Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 310), Color.White);
+				DrawOutlineText(sb, Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 310), Color.White, Color.Black);
 				if (record != -1)
 				{
 					if (goals.Length > 3 && record <= goals[3])
@@ -983,32 +976,32 @@ namespace Speedrunning_Game
 						sb.Draw(Game1.medalTex, new Vector2(511, 310), Color.Brown);
 				}
 
-				sb.DrawString(Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 340), time < record || record == -1 ? Color.Lime : Color.Red);
+				DrawOutlineText(sb, Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 340), time < record || record == -1 ? Color.Lime : Color.Red, Color.Black);
 
 				if (goals.Length == 4)
 				{
 					sb.Draw(Game1.medalTex, new Vector2(612, 280), Color.LightBlue);
-					sb.DrawString(Game1.mnufont, TimeToString(goals[3]), new Vector2(644, 280), goalBeaten == 0 ? Color.Lime : Color.White);
+					DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[3]), new Vector2(644, 280), goalBeaten == 0 ? Color.Lime : Color.White, Color.Black);
 				}
 				sb.Draw(Game1.medalTex, new Vector2(612, 310), Color.Gold);
 				sb.Draw(Game1.medalTex, new Vector2(612, 340), Color.Silver);
 				sb.Draw(Game1.medalTex, new Vector2(612, 370), Color.Brown);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White, Color.Black);
 
 				if (Game1.online && canViewLeaderboards)
-					sb.DrawString(Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White);
-				sb.DrawString(Game1.mnufont, "Press O to open a replay", new Vector2(670, 600), Color.White);
-				sb.DrawString(Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White);
-				sb.DrawString(Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White);
+					DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press O to open a replay", new Vector2(670, 600), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White, Color.Black);
 			}
 			else if (Runner.health <= 0)
 			{
 				sb.DrawString(Game1.titlefont, "You died!", new Vector2(360, 182), Color.White);
 				sb.DrawString(Game1.titlefont, "You died!", new Vector2(362, 184), Color.Black);
 
-				sb.DrawString(Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 310), Color.White);
+				DrawOutlineText(sb, Game1.mnufont, "Current Record: " + (record == -1 ? "--" : TimeToString(record)), new Vector2(176, 310), Color.White, Color.Black);
 				if (record != -1)
 				{
 					if (goals.Length > 3 && record <= goals[3])
@@ -1021,32 +1014,30 @@ namespace Speedrunning_Game
 						sb.Draw(Game1.medalTex, new Vector2(511, 310), Color.Brown);
 				}
 
-				sb.DrawString(Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 340), Color.Red);
+				DrawOutlineText(sb, Game1.mnufont, "Time: " + TimeToString(time), new Vector2(315, 340), Color.Red, Color.Black);
 
 				if (goals.Length == 4)
 				{
 					sb.Draw(Game1.medalTex, new Vector2(612, 280), Color.LightBlue);
-					sb.DrawString(Game1.mnufont, TimeToString(goals[3]), new Vector2(644, 280), goalBeaten == 0 ? Color.Lime : Color.White);
+					DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[3]), new Vector2(644, 280), goalBeaten == 0 ? Color.Lime : Color.White, Color.Black);
 				}
 				sb.Draw(Game1.medalTex, new Vector2(612, 310), Color.Gold);
 				sb.Draw(Game1.medalTex, new Vector2(612, 340), Color.Silver);
 				sb.Draw(Game1.medalTex, new Vector2(612, 370), Color.Brown);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White, Color.Black);
 
-				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White);
-				sb.DrawString(Game1.mnufont, "Press F to freeroam", new Vector2(726, 661), Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Press F to freeroam", new Vector2(725, 660), Color.White, Color.Black);
 			}
 			else
 			{
 				// Draw timer
-				sb.DrawString(Game1.mnufont, TimeToString(time), Vector2.Zero, Color.White);
-				sb.DrawString(Game1.mnufont, TimeToString(time), Vector2.One, new Color(100, 100, 100));
+				DrawOutlineText(sb, Game1.mnufont, TimeToString(time), Vector2.Zero, Color.White, Color.Black);
 
 				// Show that playing replay
 				if (recorder.playing)
-					sb.DrawString(Game1.mnufont, "Replay", new Vector2(0, 30), Color.Lime);
+					DrawOutlineText(sb, Game1.mnufont, "Replay", new Vector2(0, 30), Color.Lime, Color.Black);
 			}
 		}
 		
@@ -1055,6 +1046,15 @@ namespace Speedrunning_Game
 		{
 			TimeSpan t = TimeSpan.FromMilliseconds(time);
 			return String.Format("{0:00}:{1:00}.{2:000}", (int)t.TotalMinutes, t.Seconds, t.Milliseconds % 1000);
+		}
+
+		public void DrawOutlineText(SpriteBatch sb, SpriteFont fnt, string str, Vector2 position, Color front, Color back)
+		{
+			sb.DrawString(fnt, str, position - Vector2.One, back);
+			sb.DrawString(fnt, str, position + Vector2.One, back);
+			sb.DrawString(fnt, str, position + new Vector2(-1, 1), back);
+			sb.DrawString(fnt, str, position + new Vector2(1, -1), back);
+			sb.DrawString(fnt, str, position, front);
 		}
 
 		public enum LevelTheme

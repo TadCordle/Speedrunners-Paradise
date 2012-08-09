@@ -64,13 +64,12 @@ namespace Speedrunning_Game
 		{
 			sb.Draw(Game1.backgrounds[0], new Rectangle(0, 0, 960, 720), Color.White);
 
-			sb.DrawString(Game1.mnufont, "Skin Select", new Vector2(384, 10), Color.White);
-			sb.DrawString(Game1.mnufont, "Skin Select", new Vector2(385, 11), Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Skin Select", new Vector2(384, 10), Color.White, Color.Black);
 
 			for (int i = 0; i < 6; i++)
 			{
 				sb.Draw(Game1.skinPreviews[i] != null ? Game1.skinPreviews[i] : Game1.prevLocked, new Vector2(50, i * 80 + 100), currentSelection == i ? Color.White : Color.DarkGray);
-				sb.DrawString(Game1.mnufont, choices[i], new Vector2(130, i * 80 + 120), currentSelection == i ? Color.Yellow : (Game1.selectedSkin == choices[i] ? Color.Lime : Color.White));
+				DrawOutlineText(sb, Game1.mnufont, choices[i], new Vector2(130, i * 80 + 120), currentSelection == i ? Color.Yellow : (Game1.selectedSkin == choices[i] ? Color.Lime : Color.White), Color.Black);
 			}
 		}
 	}

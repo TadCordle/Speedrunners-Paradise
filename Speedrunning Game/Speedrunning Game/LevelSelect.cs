@@ -249,20 +249,20 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
 
 			// Draw header
-			sb.DrawString(Game1.mnufont, "Level Select", new Vector2(265, 11), Color.White);
+			DrawOutlineText(sb, Game1.mnufont, "Level Select", new Vector2(265, 11), Color.White, Color.Black);
 			sb.DrawString(Game1.mnufont, "<-", new Vector2(450, 10), Color.Lime);
 			sb.DrawString(Game1.mnufont, "->", new Vector2(670, 10), Color.Lime);
-			sb.DrawString(Game1.mnufont, "Main", new Vector2(485, 10), tab == 0 ? Color.Yellow : Color.White);
-			sb.DrawString(Game1.mnufont, "Custom", new Vector2(565, 10), tab == 1 ? Color.Yellow : Color.White);
+			DrawOutlineText(sb, Game1.mnufont, "Main", new Vector2(485, 10), tab == 0 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Custom", new Vector2(565, 10), tab == 1 ? Color.Yellow : Color.White, Color.Black);
 
 			// Draw levels list
 			if (page.Count == 0)
-				sb.DrawString(Game1.mnufont, "You don't have any " + (tab == 0 ? "levels unlocked!" : "custom levels!"), new Vector2(50, 70), Color.White);
+				DrawOutlineText(sb, Game1.mnufont, "You don't have any " + (tab == 0 ? "levels unlocked!" : "custom levels!"), new Vector2(50, 70), Color.White, Color.Black);
 			else
 				for (int i = 0; i < page.Count; i++)
 				{
-					sb.DrawString(Game1.mnufont, page[i].Item1.Split('\\')[page[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
-					sb.DrawString(Game1.mnufont, page[i].Item2 != -1 ? TimeToString(page[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White);
+					DrawOutlineText(sb, Game1.mnufont, page[i].Item1.Split('\\')[page[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
+					DrawOutlineText(sb, Game1.mnufont, page[i].Item2 != -1 ? TimeToString(page[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
 					if (page[i].Item3 != -1)
 						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : (page[i].Item3 == 2 ? Color.Brown : Color.LightBlue)));
 				}

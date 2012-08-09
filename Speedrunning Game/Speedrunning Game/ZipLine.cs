@@ -105,11 +105,11 @@ namespace Speedrunning_Game
 
 		public void Draw(SpriteBatch sb, Color c)
 		{
+			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.ViewBox.X + 8, (int)pos1.Y - Game1.currentRoom.ViewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX), 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
 			sb.Draw(Game1.wallTex, new Rectangle(pole1.X - Game1.currentRoom.ViewBox.X - 1, pole1.Y - Game1.currentRoom.ViewBox.Y - 1, pole1.Width + 2, pole1.Height + 2), Color.Black);
 			sb.Draw(Game1.wallTex, new Rectangle(pole2.X - Game1.currentRoom.ViewBox.X - 1, pole2.Y - Game1.currentRoom.ViewBox.Y - 1, pole2.Width + 2, pole2.Height + 2), Color.Black);
 			sb.Draw(poleTex, new Rectangle(pole1.X - Game1.currentRoom.ViewBox.X, pole1.Y - Game1.currentRoom.ViewBox.Y, pole1.Width, pole1.Height), c);
 			sb.Draw(poleTex, new Rectangle(pole2.X - Game1.currentRoom.ViewBox.X, pole2.Y - Game1.currentRoom.ViewBox.Y, pole2.Width, pole2.Height), c);
-			sb.Draw(lineTex, new Rectangle((int)pos1.X - Game1.currentRoom.ViewBox.X + (pos1.X > pos2.X ? 0 : 16), (int)pos1.Y - Game1.currentRoom.ViewBox.Y, (int)Math.Sqrt(dY * dY + dX * dX) - ((int)Math.Sqrt((dY / dX * 16)*(dY / dX * 16) + 256)) /* (pos1.X > pos2.X ? -1 : 1)*/, 2), null, lineColor == Color.White ? c : lineColor, angle, Vector2.Zero, SpriteEffects.None, 0);
 		}
 	}
 }
