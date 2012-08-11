@@ -219,7 +219,9 @@ namespace Speedrunning_Game
 			{
 				if (Keyboard.GetState().IsKeyDown(Keys.Y))
 				{
+					SimpleAES e = new SimpleAES();
 					StreamWriter writer = new StreamWriter("Content\\records.txt");
+					writer.WriteLine(e.EncryptToString("fullgame 0 -1"));
 					writer.Flush();
 					writer.Dispose();
 					verifyCheck = true;

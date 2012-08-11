@@ -1,0 +1,68 @@
+0{press MoveRight}
+3{press Jump}
+10{release Jump}
+55{press Slide}
+62{release Slide}
+66{press Slide}
+122{release Slide}
+127{press Slide}
+133{release Slide}
+138{press Slide}
+145{release Slide}
+150{press Slide}
+157{release Slide}
+161{press Slide}
+168{release Slide}
+173{press Slide}
+178{release Slide}
+221{press Slide}
+226{release Slide}
+232{press Slide}
+238{release Slide}
+243{press Slide}
+250{release Slide}
+254{press Slide}
+273{release Slide}
+320{press Slide}
+326{release Slide}
+330{press Slide}
+337{release Slide}
+362{press Slide}
+376{release Slide}
+410{press Slide}
+503{release Slide}
+562{press Slide}
+571{release Slide}
+575{press Slide}
+583{release Slide}
+588{press Slide}
+596{release Slide}
+600{press Slide}
+608{release Slide}
+613{press Slide}
+620{release Slide}
+625{press Slide}
+631{release Slide}
+653{press Slide}
+686{release Slide}
+707{release MoveRight}
+727{press MoveLeft}
+732{release MoveLeft}
+749{press MoveRight}
+762{release MoveRight}
+770{press Slide}
+
+32 224 0 0
+429.7733 298.9231 10.75695 4.964745
+1124.972 409.1111 9.635313 -3.747062
+1597.437 225.6833 7.200212 -2.205635
+2142.689 623.3979 13.81349 6.731184
+3103.766 972.4 16.59735 10.4
+4289.011 1876.891 22.26708 20.74302
+5625.037 2458.4 22.26708 17.19999
+6874.974 2660.857 8.181354 -12.8564
+7303.846 2386.51 7.586432 6.407044
+8055.473 3223.385 20.24475 19.88746
+9530.902 4944.262 25.34087 40.1916
+9904.41 3493.936 -9.616506E-07 -69.17168
+9799.669 107.6667 -20.68102 -34.46836

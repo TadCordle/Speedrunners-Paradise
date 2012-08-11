@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -61,7 +62,30 @@ namespace Speedrunning_Game
 			{
 				if (selected == 0)
 				{
+					SimpleAES enc = new SimpleAES();
+					if (!File.Exists("Content\\records.txt"))
+					{
+						StreamWriter w = new StreamWriter("Content\\records.txt");
+						w.WriteLine(enc.EncryptToString("fullgame 0 -1"));
+						w.Flush();
+						w.Dispose();
+					}
+					else
+					{
+						StreamReader r = new StreamReader("Content\\records.txt");
+						string s = enc.DecryptString(r.ReadLine());
+						while (s.Split(' ')[1] != "0" && s.Split(' ')[0] != "fullgame" && !r.EndOfStream)
+							s = enc.DecryptString(r.ReadLine());
+						if (s.Split(' ')[1] == "0" && s.Split(' ')[0] == "fullgame")
+							Game1.totalRecord = int.Parse(s.Split(' ')[2]);
+						else
+							Game1.totalRecord = -1;
+						r.Close();
+						r.Dispose();
+					}
+					Game1.finishedGame = false;
 					Levels.Index = 0;
+					Game1.startTotalTime = true;
 					Game1.currentRoom = new Room(Levels.levels[0], true, new ReplayRecorder());
 				}
 				else if (selected == 1)
@@ -85,11 +109,19 @@ namespace Speedrunning_Game
 			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(182, 100), Color.White);
 			sb.DrawString(Game1.titlefont, "Speed Runner's\n      Paradise", new Vector2(184, 102), Color.Black);
 
-			DrawOutlineText(sb, Game1.mnufont, "New game", new Vector2(420, 330), selected == 0 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "New Game", new Vector2(420, 330), selected == 0 ? Color.Yellow : Color.White, Color.Black);
+			if (selected == 0)
+				DrawOutlineText(sb, Game1.mnufont, "Full Game Record: " + (Game1.totalRecord == -1 ? "--" : TimeToString(Game1.totalRecord)), new Vector2(590, 330), Color.Cyan, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Select level", new Vector2(410, 400), selected == 1 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Settings", new Vector2(435, 470), selected == 2 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Exit", new Vector2(460, 540), selected == 3 ? Color.Yellow : Color.White, Color.Black);
 			return;
+		}
+
+		private string TimeToString(int time) // time = Time in milliseconds
+		{
+			TimeSpan t = TimeSpan.FromMilliseconds(time);
+			return String.Format("{0:00}:{1:00}.{2:000}", (int)t.TotalMinutes, t.Seconds, t.Milliseconds % 1000);
 		}
 	}
 }

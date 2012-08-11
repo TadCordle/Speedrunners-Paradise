@@ -22,8 +22,8 @@
 -- Factory --
 @ Rooms 
 @ The Catch (Hurry)
-@ Run from flamethrowers turning on
-* Kill Yourself
+@ Panic
+@ Many Paths 3 (Inner Workings)
 @ Going Down
 
 -- Lava --

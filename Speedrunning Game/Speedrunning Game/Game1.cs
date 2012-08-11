@@ -46,6 +46,10 @@ namespace Speedrunning_Game
 		public static bool playingGrass, playingLava, playingNight, playingCave, playingFactory;
 		public static bool exit = false;
 		public static bool online;
+		public static int totalTime;
+		public static int totalRecord;
+		public static bool startTotalTime;
+		public static bool finishedGame;
 
 		static ContentManager skinManager;
 
@@ -55,17 +59,35 @@ namespace Speedrunning_Game
 		{
 			online = on;
 			game = this;
+			totalTime = 0;
+			startTotalTime = false;
 			graphics = new GraphicsDeviceManager(this);
 			graphics.PreferredBackBufferHeight = 720;
 			graphics.PreferredBackBufferWidth = 960;
 			Content.RootDirectory = "Content";
 			skinManager = new ContentManager(this.Services, "Content");
-
+			finishedGame = false;
+			totalRecord = -1;
+			SimpleAES enc = new SimpleAES();
 			if (!File.Exists("Content\\records.txt"))
 			{
 				StreamWriter w = new StreamWriter("Content\\records.txt");
+				w.WriteLine(enc.EncryptToString("fullgame 0 -1"));
 				w.Flush();
 				w.Dispose();
+			}
+			else
+			{
+				StreamReader r = new StreamReader("Content\\records.txt");
+				string s = enc.DecryptString(r.ReadLine());
+				while (s.Split(' ')[1] != "0" && s.Split(' ')[0] != "fullgame" && !r.EndOfStream)
+					s = enc.DecryptString(r.ReadLine());
+				if (s.Split(' ')[1] == "0" && s.Split(' ')[0] == "fullgame")
+					totalRecord = int.Parse(s.Split(' ')[2]);
+				else
+					totalRecord = -1;
+				r.Close();
+				r.Dispose();
 			}
 		}
 
@@ -236,6 +258,33 @@ namespace Speedrunning_Game
 				pressEscape = true;
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape) && pressEscape || exit)
 			{
+				if (Game1.finishedGame)
+				{
+					Game1.finishedGame = false;
+					SimpleAES enc = new SimpleAES();
+					if (!File.Exists("Content\\records.txt"))
+					{
+						StreamWriter w = new StreamWriter("Content\\records.txt");
+						w.WriteLine(enc.EncryptToString("fullgame 0 -1"));
+						w.Flush();
+						w.Dispose();
+					}
+					else
+					{
+						StreamReader r = new StreamReader("Content\\records.txt");
+						string s = enc.DecryptString(r.ReadLine());
+						while (s.Split(' ')[1] != "0" && s.Split(' ')[0] != "fullgame" && !r.EndOfStream)
+							s = enc.DecryptString(r.ReadLine());
+						if (s.Split(' ')[1] == "0" && s.Split(' ')[0] == "fullgame")
+							totalRecord = int.Parse(s.Split(' ')[2]);
+						else
+							totalRecord = -1;
+						r.Close();
+						r.Dispose();
+					}
+				}
+				totalTime = 0;
+				startTotalTime = false;
 				currentRoom.viewingLeaderboards = false;
 				pressEscape = false;
 				if (currentRoom is MainMenu)

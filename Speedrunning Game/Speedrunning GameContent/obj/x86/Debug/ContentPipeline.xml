@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\finish.xnb</Output>
-      <Time>2012-06-04T22:53:20.3857332-04:00</Time>
+      <Time>2012-08-09T20:33:36.7050753-04:00</Time>
     </Item>
     <Item>
       <Source>pole.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\floating platform.xnb</Output>
-      <Time>2012-06-08T15:36:16.9949557-04:00</Time>
+      <Time>2012-08-09T20:39:38.8127867-04:00</Time>
     </Item>
     <Item>
       <Source>backgrounds\bgcave.jpg</Source>

@@ -38,14 +38,20 @@ namespace Speedrunning_Game
 			this.tab = tab;
 
 			// Add main levels
-			if (!File.Exists("Content\\records.txt"))
-				File.Create("Content\\records.txt");
-			StreamReader findMainLevels = new StreamReader("Content\\records.txt");
 			SimpleAES decryptor = new SimpleAES();
+			if (!File.Exists("Content\\records.txt"))
+			{
+				StreamWriter newRecords = new StreamWriter("Content\\records.txt");
+				newRecords.WriteLine(decryptor.EncryptToString("fullgame 0 -1"));
+				newRecords.Flush();
+				newRecords.Close();
+				newRecords.Dispose();
+			}
+			StreamReader findMainLevels = new StreamReader("Content\\records.txt");
 			while (!findMainLevels.EndOfStream)
 			{
 				string[] level = decryptor.DecryptString(findMainLevels.ReadLine()).Split(' ');
-				if (level[1] == "0")
+				if (level[1] == "0" && level[0] != "fullgame")
 					levels.Add(new Tuple<string, int, int, bool>(level[0], -1, -1, false));
 			}
 			findMainLevels.Close();
@@ -264,7 +270,7 @@ namespace Speedrunning_Game
 					DrawOutlineText(sb, Game1.mnufont, page[i].Item1.Split('\\')[page[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
 					DrawOutlineText(sb, Game1.mnufont, page[i].Item2 != -1 ? TimeToString(page[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
 					if (page[i].Item3 != -1)
-						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : (page[i].Item3 == 2 ? Color.Brown : Color.LightBlue)));
+						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : (page[i].Item3 == 2 ? Color.Brown : Color.SteelBlue)));
 				}
 		}
 

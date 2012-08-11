@@ -83,26 +83,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="45056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="46080">
       <assemblyIdentity name="Speedrunning Game Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>A9M0jvTFkwAhyKnYlpc3cDhZEjA=</dsig:DigestValue>
+        <dsig:DigestValue>g/Pm7Nt3Dpoou1TZvOIUADndZoI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="645632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="695296">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>688xKAbMA5+0S6uqG9986b9BT50=</dsig:DigestValue>
+        <dsig:DigestValue>ob09/Xc2a6UWbPojr5O+uKrC5Ic=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -202,7 +202,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>vtBhgtF5EM9mI9iPk2m0yzJ/VuI=</dsig:DigestValue>
+      <dsig:DigestValue>Jxwdsr0YA57PRcLU3APzPG8sh/c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\flamethrower.xnb" size="4283">
@@ -220,7 +220,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>5FaUPoyiYqsB3DP6Z33PqUrLoMQ=</dsig:DigestValue>
+      <dsig:DigestValue>rMr8pfxy9DOBiSBJqavqzQE2WO4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\launcher.xnb" size="4283">
