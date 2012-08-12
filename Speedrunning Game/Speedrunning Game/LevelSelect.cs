@@ -9,24 +9,35 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
+using Speedrunning_Game_Forms;
+
 namespace Speedrunning_Game
 {
 	class LevelSelect : Room
 	{
 		private int selected;
-		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressEnter;
+		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS;
 		private int maxSelected;
 		private int scope;
 		private int tab;
 		private List<Tuple<string, int, int, bool>> levels; // Name, record, goal, custom
-		private List<Tuple<string, int, int, bool>> page;
+		private List<Tuple<string, int, int, bool>> custompage;
+		private List<Tuple<string, string, string, int>> dlpage; // level name, level id, creator name, rating
 		private Texture2D background;
+		private bool lastpage;
+		private bool showingBox;
+		private string criteria;
 
 		public LevelSelect(int tab)
 		{
-			pressDown = true;
-			pressUp = true;
+			pressDown = false;
+			pressUp = false;
 			pressEnter = false;
+			pressLeft = false;
+			pressRight = false;
+			lastpage = false;
+			pressS = false;
+			showingBox = false;
 
 			background = Game1.backgrounds[0];
 			roomHeight = 720;
@@ -36,6 +47,9 @@ namespace Speedrunning_Game
 			selected = 0;
 			scope = 0;
 			this.tab = tab;
+
+			dlpage = new List<Tuple<string, string, string, int>>();
+			criteria = "";
 
 			// Add main levels
 			SimpleAES decryptor = new SimpleAES();
@@ -122,13 +136,13 @@ namespace Speedrunning_Game
 				}
 			}
 
-			page = new List<Tuple<string, int, int, bool>>();
+			custompage = new List<Tuple<string, int, int, bool>>();
 			var it = from Tuple<string, int, int, bool> t in levels
 					 where t.Item4 == (tab == 1)
 					 select t;
 			foreach (Tuple<string, int, int, bool> t in it)
-				page.Add(t);
-			maxSelected = page.Count - 1;
+				custompage.Add(t);
+			maxSelected = custompage.Count - 1;
 
 			if (!Game1.playingGrass)
 				MediaPlayer.Play(Game1.grassMusic);
@@ -149,6 +163,41 @@ namespace Speedrunning_Game
 				pressPageDown = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.PageUp))
 				pressPageUp = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.Left))
+				pressLeft = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.Right))
+				pressRight = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.S))
+				pressS = true;
+
+			// Enter search stuff
+			if (Keyboard.GetState().IsKeyDown(Keys.S) && pressS && tab == 2 && !showingBox)
+			{
+				pressS = false;
+				showingBox = true;
+				criteria = Microsoft.VisualBasic.Interaction.InputBox("Enter keyword for search.", "Enter Search Criteria");
+				showingBox = false;
+				if (criteria != "")
+				{
+					scope = 0;
+					selected = 0;
+					dlpage = WebStuff.GetLevels(criteria, scope * 11);
+					if (dlpage.Count == 0)
+					{
+						System.Windows.Forms.MessageBox.Show("The search didn't yield any results.", "Search Failed");
+						criteria = "";
+						dlpage = WebStuff.GetLevels(criteria, scope * 11);
+					}
+					maxSelected = dlpage.Count - 1;
+				}
+				else
+				{
+					scope = 0;
+					selected = 0;
+					dlpage = WebStuff.GetLevels(criteria, scope * 11);
+					maxSelected = dlpage.Count - 1;
+				}
+			}
 
 			// Cycle through choices when keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown)
@@ -166,54 +215,168 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.PageDown) && pressPageDown)
 			{
 				pressPageDown = false;
-				selected += 11;
-				selected -= selected % 11;
-				if (selected > maxSelected)
-					selected = maxSelected;
+				if (tab != 2)
+				{
+					selected += 11;
+					selected -= selected % 11;
+					if (selected > maxSelected)
+						selected = maxSelected;
+				}
+				else
+				{
+					List<Tuple<string, string, string, int>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
+					if (check.Count > 0)
+					{
+						dlpage = check;
+						maxSelected = dlpage.Count - 1;
+						scope++;
+						selected = 0;
+					}
+					else
+						lastpage = true;
+				}
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.PageUp) && pressPageUp)
 			{
 				pressPageUp = false;
-				selected -= selected % 11;
-				selected -= 11;
-				if (selected < 0)
-					selected = 0;
+				if (tab != 2)
+				{
+					selected -= selected % 11;
+					selected -= 11;
+					if (selected < 0)
+						selected = 0;
+				}
+				else
+				{
+					if (scope > 0)
+					{
+						selected = 0;
+						scope--;
+						dlpage = WebStuff.GetLevels(criteria, scope * 11);
+						maxSelected = dlpage.Count - 1;
+					}
+				}
 			}
 
 			// Change category when arrow keys are pressed
-			if (Keyboard.GetState().IsKeyDown(Keys.Left))
+			if (Keyboard.GetState().IsKeyDown(Keys.Left) && pressLeft && tab > 0)
 			{
-				tab = 0;
-				page.Clear();
-				var it = from Tuple<string, int, int, bool> t in levels
-						 where !t.Item4
-						 select t;
-				foreach (Tuple<string, int, int, bool> t in it)
-					page.Add(t);
-				maxSelected = page.Count - 1;
-				selected = 0;
+				pressLeft = false;
+				tab--;
+				lastpage = false;
+				if (tab == 0)
+				{
+					custompage.Clear();
+					var it = from Tuple<string, int, int, bool> t in levels
+							 where !t.Item4
+							 select t;
+					foreach (Tuple<string, int, int, bool> t in it)
+						custompage.Add(t);
+					maxSelected = custompage.Count - 1;
+					selected = 0;
+				}
+				else if (tab == 1)
+				{
+					custompage.Clear();
+					var it = from Tuple<string, int, int, bool> t in levels
+							 where t.Item4
+							 select t;
+					foreach (Tuple<string, int, int, bool> t in it)
+						custompage.Add(t);
+					maxSelected = custompage.Count - 1;
+					selected = 0;
+				}
+				else if (tab == 2)
+				{
+					scope = 0;
+					dlpage = WebStuff.GetLevels(criteria, 0);
+					maxSelected = dlpage.Count - 1;
+				}
 			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.Right))
+			else if (Keyboard.GetState().IsKeyDown(Keys.Right) && pressRight && tab < 2)
 			{
-				tab = 1;
-				page.Clear();
-				var it = from Tuple<string, int, int, bool> t in levels
-						 where t.Item4
-						 select t;
-				foreach (Tuple<string, int, int, bool> t in it)
-					page.Add(t);
-				maxSelected = page.Count - 1;
-				selected = 0;
+				pressRight = false;
+				tab++;
+				lastpage = false;
+				if (tab == 0)
+				{
+					custompage.Clear();
+					var it = from Tuple<string, int, int, bool> t in levels
+							 where !t.Item4
+							 select t;
+					foreach (Tuple<string, int, int, bool> t in it)
+						custompage.Add(t);
+					maxSelected = custompage.Count - 1;
+					selected = 0;
+				}
+				else if (tab == 1)
+				{
+					custompage.Clear();
+					var it = from Tuple<string, int, int, bool> t in levels
+							 where t.Item4
+							 select t;
+					foreach (Tuple<string, int, int, bool> t in it)
+						custompage.Add(t);
+					maxSelected = custompage.Count - 1;
+					selected = 0;
+				}
+				else if (tab == 2)
+				{
+					scope = 0;
+					dlpage = WebStuff.GetLevels(criteria, 0);
+					maxSelected = dlpage.Count - 1;
+				}
 			}
 
 			// Bound selections
 			if (selected < 0)
-				selected = 0;
+			{
+				if (tab != 2)
+					selected = 0;
+				else
+				{
+					if (scope > 0)
+					{
+						dlpage = WebStuff.GetLevels(criteria, (scope - 1) * 11);
+						maxSelected = dlpage.Count - 1;
+						scope--;
+						selected = 10;
+						lastpage = false;
+					}
+					else
+						selected = 0;
+				}
+			}
 			else if (selected > maxSelected)
-				selected = maxSelected;
+			{
+				if (tab != 2)
+					selected = maxSelected;
+				else
+				{
+					if (maxSelected == 10 && !lastpage)
+					{
+						List<Tuple<string, string, string, int>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
+						if (check.Count > 0)
+						{
+							dlpage = check;
+							maxSelected = dlpage.Count - 1;
+							scope++;
+							selected = 0;
+						}
+						else
+						{
+							lastpage = true;
+							selected = maxSelected;
+						}
+					}
+					else
+						selected = maxSelected;
+				}
+			}
 
 			// Set page and change background according to page
-			scope = selected / 11;
+			if (tab != 2)
+				scope = selected / 11;
 			background = Game1.backgrounds[scope % 5];
 
 			// Reset enter key
@@ -223,23 +386,27 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
-				if (!page[selected].Item4)
+				if (tab == 0)
 				{
-					string[] name = page[selected].Item1.Split('_');
+					string[] name = custompage[selected].Item1.Split('_');
 					int index = int.Parse(name[1]);
 					Levels.Index = index - 1;
 					Game1.currentRoom = new Room(Levels.levels[Levels.Index], true, new ReplayRecorder());
 				}
-				else
+				else if (tab == 1)
 				{
 					try
 					{
-						Game1.currentRoom = new Room("Content\\rooms\\" + page[selected].Item1 + ".srl", true, new ReplayRecorder());
+						Game1.currentRoom = new Room("Content\\rooms\\" + custompage[selected].Item1 + ".srl", true, new ReplayRecorder());
 					}
 					catch (Exception)
 					{
 						System.Windows.Forms.MessageBox.Show("There was a problem loading the level; the level file may not be in the correct format", "Level Load Error");
 					}
+				}
+				else
+				{
+					// Download selected level
 				}
 			}
 		}
@@ -251,26 +418,48 @@ namespace Speedrunning_Game
 			// Draw scroll arrows
 			if (scope > 0)
 				sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
-			if (scope < maxSelected / 11 && maxSelected > 10)
+			if (scope < maxSelected / 11 && maxSelected > 10 || tab == 2 && (!lastpage || maxSelected < 10))
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
 
 			// Draw header
 			DrawOutlineText(sb, Game1.mnufont, "Level Select", new Vector2(265, 11), Color.White, Color.Black);
 			sb.DrawString(Game1.mnufont, "<-", new Vector2(450, 10), Color.Lime);
-			sb.DrawString(Game1.mnufont, "->", new Vector2(670, 10), Color.Lime);
+			sb.DrawString(Game1.mnufont, "->", new Vector2(822, 10), Color.Lime);
 			DrawOutlineText(sb, Game1.mnufont, "Main", new Vector2(485, 10), tab == 0 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Custom", new Vector2(565, 10), tab == 1 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Download", new Vector2(675, 10), tab == 2 ? Color.Yellow : Color.White, Color.Black);
+
+			if (tab == 2)
+				DrawOutlineText(sb, Game1.msgfont, "Press S to enter a\nstring to search", Vector2.One * 5, Color.Cyan, Color.Black);
 
 			// Draw levels list
-			if (page.Count == 0)
+			if (custompage.Count == 0)
 				DrawOutlineText(sb, Game1.mnufont, "You don't have any " + (tab == 0 ? "levels unlocked!" : "custom levels!"), new Vector2(50, 70), Color.White, Color.Black);
 			else
-				for (int i = 0; i < page.Count; i++)
+				if (tab != 2)
 				{
-					DrawOutlineText(sb, Game1.mnufont, page[i].Item1.Split('\\')[page[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
-					DrawOutlineText(sb, Game1.mnufont, page[i].Item2 != -1 ? TimeToString(page[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
-					if (page[i].Item3 != -1)
-						sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), page[i].Item3 == 0 ? Color.Gold : (page[i].Item3 == 1 ? Color.Silver : (page[i].Item3 == 2 ? Color.Brown : Color.SteelBlue)));
+					for (int i = 0; i < custompage.Count; i++)
+					{
+						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item1.Split('\\')[custompage[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item2 != -1 ? TimeToString(custompage[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
+						if (custompage[i].Item3 != -1)
+							sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), custompage[i].Item3 == 0 ? Color.Gold : (custompage[i].Item3 == 1 ? Color.Silver : (custompage[i].Item3 == 2 ? Color.Brown : Color.SteelBlue)));
+					}
+				}
+				else
+				{
+					if (!Game1.online)
+						DrawOutlineText(sb, Game1.mnufont, "You have to log in to download levels.", new Vector2(50, 70), Color.White, Color.Black);
+					else
+					{
+						for (int i = 0; i < dlpage.Count; i++)
+						{
+							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item1, new Vector2(50, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
+							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item3, new Vector2(430, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
+							for (int j = 1; j <= 5; j++)
+								DrawOutlineText(sb, Game1.mnufont, "*", new Vector2(660 + j * 10, (1 + i + i / 11) * 60 + 15), j <= dlpage[i].Item4 ? Color.Yellow : Color.DarkGray, Color.Black);
+						}
+					}
 				}
 		}
 
