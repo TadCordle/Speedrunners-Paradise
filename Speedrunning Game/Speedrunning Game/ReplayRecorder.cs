@@ -17,7 +17,7 @@ namespace Speedrunning_Game
 
 		public Dictionary<Keys, bool> keystates;
 
-		public bool playing, start;
+		public bool playing, start, loaded;
 		public int time;
 
 		public ReplayRecorder()
@@ -25,6 +25,7 @@ namespace Speedrunning_Game
 			time = 0;
 			playing = false;
 			start = false;
+			loaded = false;
 
 			events = new Dictionary<int, List<string>>();
 
@@ -43,6 +44,7 @@ namespace Speedrunning_Game
 		{
 			playing = true;
 			start = true;
+			loaded = true;
 
 			StreamReader reader = new StreamReader(filename);
 			string line = reader.ReadLine();

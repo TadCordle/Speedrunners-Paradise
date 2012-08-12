@@ -2,5 +2,5 @@ Jeffrey Bardon (I have no name) - Doom Climb, Marathon
 (Solaireflaire) - Going Up, Going Down, Boxes
 Andrew Kim - Rocket Run
 David Goldman, Andrew Kim - Testing/Beating my times
-Andrew Fishberg - Collision programming/skins artist
+Andrew Fishberg - Collision programming/Game mechanic ideas
 Alan Kahn - Game mechanic ideas

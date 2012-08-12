@@ -144,8 +144,12 @@ namespace Speedrunning_Game
 			// Get objects and tiles
 			while (!levelReader.EndOfStream)
 			{
-				line = decryptor.DecryptString(levelReader.ReadLine()).Split(' ');
-				ParseObjectOrTile(line, freeroam);
+				string s = levelReader.ReadLine();
+				if (s.Length > 0)
+				{
+					line = decryptor.DecryptString(s).Split(' ');
+					ParseObjectOrTile(line, freeroam);
+				}
 			}
 			levelReader.Dispose();
 
@@ -705,7 +709,11 @@ namespace Speedrunning_Game
 					// Upload score to leaderboard
 					upload = false;
 					if (Game1.online)
+					{
 						WebStuff.WriteScore(time, Game1.userName, levelID);
+						if (Game1.finishedGame)
+							WebStuff.WriteScore(Game1.totalTime, Game1.userName, "fullgame");
+					}
 				}
 
 				if (writeNext && !custom && Levels.Index < Levels.levels.Count() - 1 && !recorder.playing)
@@ -760,7 +768,7 @@ namespace Speedrunning_Game
 				{
 					if (!custom)
 					{
-						if (!recorder.playing)
+						if (!recorder.playing || !recorder.loaded)
 						{
 							if (Game1.startTotalTime && Levels.Index == Levels.levels.Length - 2)
 								Game1.startTotalTime = false;
@@ -819,6 +827,7 @@ namespace Speedrunning_Game
 			sb.Draw(Game1.backgrounds[(int)Theme], new Rectangle(0, 0, viewBox.Width, viewBox.Height), drawHue);
 
 			// Draw tiles
+			List<Rectangle> deathWallList = new List<Rectangle>();
 			int startx = viewBox.X / 32, starty = Math.Max(0, viewBox.Y / 32);
 			int maxX = Math.Min(viewBox.Right / 32, roomWidth / 32), maxY = viewBox.Bottom / 32;
 			for (int x = startx; x <= maxX; x++)
@@ -828,10 +837,12 @@ namespace Speedrunning_Game
 						if (tiles[y, x][i] <= 8 && tiles[y, x][i] != -1)
 							sb.Draw(Game1.tileSet[(int)Theme], new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32), wallSet.Tiles[tiles[y, x][i]], drawHue);
 						else if (tiles[y, x][i] == 9)
-							sb.Draw(Game1.deathWallSet[(int)Theme], new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32), drawHue);
+							deathWallList.Add(new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32));
 						else if (tiles[y, x][i] == 10)
 							sb.Draw(Game1.mirrorTex, new Rectangle(x * 32 - viewBox.X, y * 32 - viewBox.Y, 32, 32), drawHue);
 					}
+			foreach (Rectangle r in deathWallList)
+				sb.Draw(Game1.deathWallSet[(int)Theme], r, drawHue);
 
 			// Draw ziplines
 			var zipsInView = from ZipLine z in ziplines
@@ -980,17 +991,19 @@ namespace Speedrunning_Game
 				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[0]), new Vector2(644, 310), goalBeaten == 1 ? Color.Lime : Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White, Color.Black);
-				DrawOutlineText(sb, Game1.mnufont, goalBeaten != 0 && goalBeaten != -1 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : (goalBeaten == 0 ? "You beat the developer's record!" : "Do better next time!"), new Vector2(goalBeaten == 0 ? 320 : 382, 415), Color.Yellow, Color.Black);
+
+				if (!recorder.playing)
+					DrawOutlineText(sb, Game1.mnufont, goalBeaten != 0 && goalBeaten != -1 ? ("You ran a " + (goalBeaten == 1 ? "gold" : (goalBeaten == 2 ? "silver" : "bronze")) + " time!") : (goalBeaten == 0 ? "You beat the developer's record!" : "Do better next time!"), new Vector2(goalBeaten == 0 ? 320 : 382, 415), Color.Yellow, Color.Black);
 
 				if (Game1.startTotalTime)
 				{
-					DrawOutlineText(sb, Game1.mnufont, "Full Game Time: " + TimeToString(Game1.totalTime), new Vector2(315, 475), Game1.totalTime < Game1.totalRecord && Game1.totalRecord != -1 ? Color.Lime : Color.Red, Color.Black);
+					DrawOutlineText(sb, Game1.mnufont, "Full Game Time: " + TimeToString(Game1.totalTime), new Vector2(315, 475), Game1.totalTime < Game1.totalRecord || Game1.totalRecord == -1 ? Color.Lime : Color.Red, Color.Black);
 					DrawOutlineText(sb, Game1.mnufont, "Previous Record: " + (Game1.totalRecord == -1 ? "--" : TimeToString(Game1.totalRecord)), new Vector2(301, 505), Color.White, Color.Black);
 				}
 
 				if (Game1.online && canViewLeaderboards)
 					DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White, Color.Black);
-				DrawOutlineText(sb, Game1.mnufont, (!recorder.playing ? "Press Enter" : "You must beat the level") + " to continue", new Vector2((record > -1 || !recorder.playing ? 670 : 516), 570), Color.White, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, (!recorder.playing || !recorder.loaded ? "Press Enter" : "You must beat the level") + " to continue", new Vector2((!recorder.playing || !recorder.loaded ? 670 : 516), 570), Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, "Press W to watch replay", new Vector2(670, 600), Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, "Press S to save replay", new Vector2(710, 630), Color.White, Color.Black);
 				if (recorderSaved)
