@@ -470,6 +470,7 @@ namespace Speedrunning_Game
 			if (!Keyboard.GetState().IsKeyDown(Keys.T))
 				tcheck = true;
 
+			// Rate level
 			if (Keyboard.GetState().IsKeyDown(Keys.T) && tcheck && Game1.online && custom)
 			{
 				tcheck = false;

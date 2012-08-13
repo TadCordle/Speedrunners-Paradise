@@ -16,7 +16,7 @@ namespace Speedrunning_Game
 	class LevelSelect : Room
 	{
 		private int selected;
-		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS, pressDel;
+		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS, pressDel, pressD;
 		private int maxSelected;
 		private int scope;
 		private int tab;
@@ -27,6 +27,8 @@ namespace Speedrunning_Game
 		private bool lastpage;
 		private bool showingBox;
 		private string criteria;
+		private int sortBy;
+		private string[] sortCrit = { "Date", "Rating" };
 
 		public LevelSelect(int tab)
 		{
@@ -39,6 +41,7 @@ namespace Speedrunning_Game
 			pressS = false;
 			showingBox = false;
 			pressDel = false;
+			pressD = false;
 
 			background = Game1.backgrounds[0];
 			roomHeight = 720;
@@ -51,6 +54,7 @@ namespace Speedrunning_Game
 
 			dlpage = new List<Tuple<string, string, string, double>>();
 			criteria = "";
+			sortBy = 0;
 
 			// Add main levels
 			SimpleAES decryptor = new SimpleAES();
@@ -174,6 +178,19 @@ namespace Speedrunning_Game
 				pressS = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.Delete))
 				pressDel = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.D))
+				pressD = true;
+
+			// Change sort by
+			if (Keyboard.GetState().IsKeyDown(Keys.D) && pressD)
+			{
+				pressD = false;
+				sortBy = Math.Abs(sortBy - 1);
+				scope = 0;
+				selected = 0;
+				dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
+				maxSelected = dlpage.Count - 1;
+			}
 
 			// Enter search stuff
 			if (Keyboard.GetState().IsKeyDown(Keys.S) && pressS && tab == 2 && !showingBox && Game1.online)
@@ -187,12 +204,12 @@ namespace Speedrunning_Game
 				{
 					scope = 0;
 					selected = 0;
-					dlpage = WebStuff.GetLevels(criteria, scope * 11);
+					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
 					if (dlpage.Count == 0)
 					{
 						System.Windows.Forms.MessageBox.Show("The search didn't yield any results.", "Search Failed");
 						criteria = "";
-						dlpage = WebStuff.GetLevels(criteria, scope * 11);
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
 					}
 					maxSelected = dlpage.Count - 1;
 				}
@@ -200,7 +217,7 @@ namespace Speedrunning_Game
 				{
 					scope = 0;
 					selected = 0;
-					dlpage = WebStuff.GetLevels(criteria, scope * 11);
+					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
 					maxSelected = dlpage.Count - 1;
 				}
 			}
@@ -242,7 +259,7 @@ namespace Speedrunning_Game
 				}
 				else if (Game1.online)
 				{
-					List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
+					List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope + 1) * 11);
 					if (check.Count > 0)
 					{
 						dlpage = check;
@@ -270,7 +287,7 @@ namespace Speedrunning_Game
 					{
 						selected = 0;
 						scope--;
-						dlpage = WebStuff.GetLevels(criteria, scope * 11);
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
 						maxSelected = dlpage.Count - 1;
 					}
 				}
@@ -307,7 +324,7 @@ namespace Speedrunning_Game
 				else if (tab == 2)
 				{
 					scope = 0;
-					dlpage = WebStuff.GetLevels(criteria, 0);
+					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
 					maxSelected = dlpage.Count - 1;
 				}
 			}
@@ -341,7 +358,7 @@ namespace Speedrunning_Game
 				else if (tab == 2)
 				{
 					scope = 0;
-					dlpage = WebStuff.GetLevels(criteria, 0);
+					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
 					maxSelected = dlpage.Count - 1;
 				}
 			}
@@ -355,7 +372,7 @@ namespace Speedrunning_Game
 				{
 					if (scope > 0)
 					{
-						dlpage = WebStuff.GetLevels(criteria, (scope - 1) * 11);
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope - 1) * 11);
 						maxSelected = dlpage.Count - 1;
 						scope--;
 						selected = 10;
@@ -373,7 +390,7 @@ namespace Speedrunning_Game
 				{
 					if (maxSelected == 10 && !lastpage)
 					{
-						List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
+						List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope + 1) * 11);
 						if (check.Count > 0)
 						{
 							dlpage = check;
@@ -484,6 +501,7 @@ namespace Speedrunning_Game
 								DrawOutlineText(sb, Game1.mnufont, "*", new Vector2(660 + j * 10, (1 + i + i / 11) * 60 + 15), j <= dlpage[i].Item4 ? Color.Yellow : Color.DarkGray, Color.Black);
 							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item4.ToString(), new Vector2(730, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
 						}
+						DrawOutlineText(sb, Game1.mnufont, "Press D to sort by " + sortCrit[Math.Abs(sortBy - 1)].ToLower(), new Vector2(660, 690), Color.Lime, Color.Black);
 					}
 				}
 		}
