@@ -83,26 +83,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="48128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game Forms.dll" size="49664">
       <assemblyIdentity name="Speedrunning Game Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>tYQaVQS6yfJZvxCBQwy6jQIaYkY=</dsig:DigestValue>
+        <dsig:DigestValue>2L5bMPSXhGeSKPneZCMrPOZtPAA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="737280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="735232">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>72E28qXgO6iEoF7XY1ZUkLq0Dso=</dsig:DigestValue>
+        <dsig:DigestValue>ojrNdoE9+DE6OCMijqMSToGz/Dw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

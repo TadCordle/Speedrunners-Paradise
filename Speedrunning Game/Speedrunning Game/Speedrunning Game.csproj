@@ -141,7 +141,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="SimpleAES.cs" />
+    <None Include="SimpleAES" />
     <Compile Include="SkinSelection.cs" />
     <Compile Include="Tileset.cs" />
     <Compile Include="Wall.cs" />

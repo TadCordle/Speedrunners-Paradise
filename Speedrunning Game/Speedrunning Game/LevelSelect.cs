@@ -22,7 +22,7 @@ namespace Speedrunning_Game
 		private int tab;
 		private List<Tuple<string, int, int, bool>> levels; // Name, record, goal, custom
 		private List<Tuple<string, int, int, bool>> custompage;
-		private List<Tuple<string, string, string, int>> dlpage; // level name, level id, creator name, rating
+		private List<Tuple<string, string, string, double>> dlpage; // level name, level id, creator name, rating
 		private Texture2D background;
 		private bool lastpage;
 		private bool showingBox;
@@ -48,7 +48,7 @@ namespace Speedrunning_Game
 			scope = 0;
 			this.tab = tab;
 
-			dlpage = new List<Tuple<string, string, string, int>>();
+			dlpage = new List<Tuple<string, string, string, double>>();
 			criteria = "";
 
 			// Add main levels
@@ -224,7 +224,7 @@ namespace Speedrunning_Game
 				}
 				else
 				{
-					List<Tuple<string, string, string, int>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
+					List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
 					if (check.Count > 0)
 					{
 						dlpage = check;
@@ -355,7 +355,7 @@ namespace Speedrunning_Game
 				{
 					if (maxSelected == 10 && !lastpage)
 					{
-						List<Tuple<string, string, string, int>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
+						List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
 						if (check.Count > 0)
 						{
 							dlpage = check;
@@ -386,6 +386,7 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
 			{
+				pressEnter = false;
 				if (tab == 0)
 				{
 					string[] name = custompage[selected].Item1.Split('_');
@@ -406,7 +407,9 @@ namespace Speedrunning_Game
 				}
 				else
 				{
-					// Download selected level
+					WebStuff.DownloadFile(dlpage[selected].Item2);
+					System.Windows.Forms.MessageBox.Show("The level has been downloaded and can be selected in the custom levels tab.", "Level Downloaded");
+					levels.Add(new Tuple<string, int, int, bool>(dlpage[selected].Item1, -1, -1, true));
 				}
 			}
 		}
@@ -458,6 +461,7 @@ namespace Speedrunning_Game
 							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item3, new Vector2(430, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
 							for (int j = 1; j <= 5; j++)
 								DrawOutlineText(sb, Game1.mnufont, "*", new Vector2(660 + j * 10, (1 + i + i / 11) * 60 + 15), j <= dlpage[i].Item4 ? Color.Yellow : Color.DarkGray, Color.Black);
+							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item4.ToString(), new Vector2(730, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
 						}
 					}
 				}
