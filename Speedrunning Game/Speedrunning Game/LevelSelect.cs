@@ -134,6 +134,8 @@ namespace Speedrunning_Game
 						if (levels[i].Item2 != -1 && levels[i].Item2 <= int.Parse(goals[j]))
 							levels[i] = new Tuple<string, int, int, bool>(levels[i].Item1, levels[i].Item2, j, levels[i].Item4);
 					}
+					findGoals.Close();
+					findGoals.Dispose();
 				}
 			}
 
@@ -179,6 +181,7 @@ namespace Speedrunning_Game
 				pressS = false;
 				showingBox = true;
 				criteria = Microsoft.VisualBasic.Interaction.InputBox("Enter keyword for search.", "Enter Search Criteria");
+				pressEnter = false;
 				showingBox = false;
 				if (criteria != "")
 				{
@@ -203,7 +206,7 @@ namespace Speedrunning_Game
 			}
 
 			// Delete selected custom level
-			if (Keyboard.GetState().IsKeyDown(Keys.Delete) && pressDel && tab == 1)
+			if (Keyboard.GetState().IsKeyDown(Keys.Delete) && pressDel && tab == 1 && !showingBox)
 			{
 				pressDel = false;
 				Tuple<string, int, int, bool> lvl = custompage[selected];
@@ -215,19 +218,19 @@ namespace Speedrunning_Game
 			}
 
 			// Cycle through choices when keys are pressed
-			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown)
+			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown && !showingBox)
 			{
 				pressDown = false;
 				selected++;
 			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.Up) && pressUp)
+			else if (Keyboard.GetState().IsKeyDown(Keys.Up) && pressUp && !showingBox)
 			{
 				pressUp = false;
 				selected--;
 			}
 
 			// Cycle through pages when keys are pressed
-			if (Keyboard.GetState().IsKeyDown(Keys.PageDown) && pressPageDown)
+			if (Keyboard.GetState().IsKeyDown(Keys.PageDown) && pressPageDown && !showingBox)
 			{
 				pressPageDown = false;
 				if (tab != 2)
@@ -251,7 +254,7 @@ namespace Speedrunning_Game
 						lastpage = true;
 				}
 			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.PageUp) && pressPageUp)
+			else if (Keyboard.GetState().IsKeyDown(Keys.PageUp) && pressPageUp && !showingBox)
 			{
 				pressPageUp = false;
 				if (tab != 2)
@@ -274,7 +277,7 @@ namespace Speedrunning_Game
 			}
 
 			// Change category when arrow keys are pressed
-			if (Keyboard.GetState().IsKeyDown(Keys.Left) && pressLeft && tab > 0)
+			if (Keyboard.GetState().IsKeyDown(Keys.Left) && pressLeft && tab > 0 && !showingBox)
 			{
 				pressLeft = false;
 				tab--;
@@ -308,7 +311,7 @@ namespace Speedrunning_Game
 					maxSelected = dlpage.Count - 1;
 				}
 			}
-			else if (Keyboard.GetState().IsKeyDown(Keys.Right) && pressRight && tab < 2)
+			else if (Keyboard.GetState().IsKeyDown(Keys.Right) && pressRight && tab < 2 && !showingBox)
 			{
 				pressRight = false;
 				tab++;
@@ -399,7 +402,7 @@ namespace Speedrunning_Game
 				pressEnter = true;
 
 			// Load selected level
-			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter)
+			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter && !showingBox)
 			{
 				pressEnter = false;
 				if (tab == 0)

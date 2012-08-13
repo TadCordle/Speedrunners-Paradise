@@ -1,0 +1,1 @@
+publish currently opened level instead of browsing

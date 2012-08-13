@@ -68,21 +68,24 @@ namespace Speedrunning_Game
 			DrawOutlineText(sb, Game1.mnufont, "Worldwide Records", new Vector2(40, 55), Color.Lime, Color.Black);
 			if (!Game1.online)
 				DrawOutlineText(sb, Game1.mnufont, "You must log in to view leaderboards", new Vector2(40, 100), Color.White, Color.Black);
-			else if (leaderboardData[0][0] == "")
-				DrawOutlineText(sb, Game1.mnufont, "There's nothing here... yet.", new Vector2(40, 100), Color.White, Color.Black);
 			else
 			{
-				for (int i = 0; i < leaderboardData.Length - 1; i++)
+				if (leaderboardData[0][0] == "")
+					DrawOutlineText(sb, Game1.mnufont, "There's nothing here... yet.", new Vector2(40, 100), Color.White, Color.Black);
+				else
 				{
-					DrawOutlineText(sb, Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 100), Color.White, Color.Black);
-					DrawOutlineText(sb, Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 100), Color.White, Color.Black);
-					DrawOutlineText(sb, Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 100), Color.White, Color.Black);
+					for (int i = 0; i < leaderboardData.Length - 1; i++)
+					{
+						DrawOutlineText(sb, Game1.mnufont, leaderboardData[i][0], new Vector2(40, i * 50 + 100), Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, leaderboardData[i][1], new Vector2(200, i * 50 + 100), Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, TimeToString(int.Parse(leaderboardData[i][2])), new Vector2(500, i * 50 + 100), Color.White, Color.Black);
+					}
 				}
+				DrawOutlineText(sb, Game1.mnufont, "Your Rank", new Vector2(40, 620), Color.Yellow, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 665), Color.Lime, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, Game1.userName, new Vector2(200, 665), Color.Lime, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime, Color.Black);
 			}
-			DrawOutlineText(sb, Game1.mnufont, "Your Rank", new Vector2(40, 620), Color.Yellow, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 665), Color.Lime, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, Game1.userName, new Vector2(200, 665), Color.Lime, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime, Color.Black);
 		}
 
 		// Returns millisecond count in "mm:ss.sss" format
