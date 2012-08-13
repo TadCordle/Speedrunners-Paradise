@@ -66,7 +66,7 @@ namespace Speedrunning_Game
 		private string levelID;
 		public int time;
 		private int record, goalBeaten;
-		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, scheck, ocheck, freeroaming, lcheck, upcheck, downcheck;
+		private bool custom, write, writeNext, upload, pcheck, rcheck, fcheck, scheck, ocheck, freeroaming, lcheck, upcheck, downcheck, tcheck;
 		public bool viewingLeaderboards, canViewLeaderboards;
 		private string[][] leaderboardData;
 		private int leaderboardPage;
@@ -87,6 +87,7 @@ namespace Speedrunning_Game
 			lcheck = false;
 			scheck = false;
 			ocheck = false;
+			tcheck = false;
 			write = true;
 			writeNext = true;
 			time = 0;
@@ -174,7 +175,7 @@ namespace Speedrunning_Game
 			SimpleAES decryptor = new SimpleAES();
 			string[] line;
 
-			// Get leve name
+			// Get level name
 			levelName = lines[0];
 			custom = false;
 
@@ -466,6 +467,22 @@ namespace Speedrunning_Game
 				scheck = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.O))
 				ocheck = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.T))
+				tcheck = true;
+
+			if (Keyboard.GetState().IsKeyDown(Keys.T) && tcheck && Game1.online && custom)
+			{
+				tcheck = false;
+				Paused = true;
+				int temp;
+				if (int.TryParse(Microsoft.VisualBasic.Interaction.InputBox("Enter a number from 1 to 5, 5 being a great level.", "Rate"), out temp))
+				{
+					if (temp > 0 && temp <= 5)
+						WebStuff.SendRating(temp, Game1.userName, levelID);
+					else
+						System.Windows.Forms.MessageBox.Show("Your rating must be a number between 1 and 5");
+				}
+			}
 
 			// Restart when R is pressed
 			if (Keyboard.GetState().IsKeyDown(Settings.controls["Restart"]) && rcheck)
@@ -508,12 +525,14 @@ namespace Speedrunning_Game
 			{
 				if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck && leaderboardPage > 0)
 				{
+					upcheck = false;
 					leaderboardPage--;
 					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
 					canScrollDown = true;
 				}
 				else if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck && canScrollDown)
 				{
+					downcheck = false;
 					leaderboardPage++;
 					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
 					canScrollDown = leaderboardData.Length == 11;
@@ -711,7 +730,7 @@ namespace Speedrunning_Game
 					if (Game1.online)
 					{
 						WebStuff.WriteScore(time, Game1.userName, levelID);
-						if (Game1.finishedGame)
+						if (Game1.finishedGame && !custom)
 							WebStuff.WriteScore(Game1.totalTime, Game1.userName, "fullgame");
 					}
 				}
@@ -1001,8 +1020,13 @@ namespace Speedrunning_Game
 					DrawOutlineText(sb, Game1.mnufont, "Previous Record: " + (Game1.totalRecord == -1 ? "--" : TimeToString(Game1.totalRecord)), new Vector2(301, 505), Color.White, Color.Black);
 				}
 
-				if (Game1.online && canViewLeaderboards)
-					DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White, Color.Black);
+				if (Game1.online)
+				{
+					if (custom)
+						DrawOutlineText(sb, Game1.mnufont, "Press T to rate this level", new Vector2(667, canViewLeaderboards ? 510 : 540), Color.White, Color.Black);
+					if (canViewLeaderboards)
+						DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 540), Color.White, Color.Black);
+				}
 				DrawOutlineText(sb, Game1.mnufont, (!recorder.playing || !recorder.loaded ? "Press Enter" : "You must beat the level") + " to continue", new Vector2((!recorder.playing || !recorder.loaded ? 670 : 516), 570), Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, "Press W to watch replay", new Vector2(670, 600), Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, "Press S to save replay", new Vector2(710, 630), Color.White, Color.Black);
@@ -1045,8 +1069,13 @@ namespace Speedrunning_Game
 				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[1]), new Vector2(644, 340), goalBeaten == 2 ? Color.Lime : Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, TimeToString(goals[2]), new Vector2(644, 370), goalBeaten == 3 ? Color.Lime : Color.White, Color.Black);
 
-				if (Game1.online && canViewLeaderboards)
-					DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White, Color.Black);
+				if (Game1.online)
+				{
+					if (custom)
+						DrawOutlineText(sb, Game1.mnufont, "Press T to rate this level", new Vector2(667, canViewLeaderboards ? 540 : 570), Color.White, Color.Black);
+					if (canViewLeaderboards)
+						DrawOutlineText(sb, Game1.mnufont, "Press L to view leaderboards", new Vector2(620, 570), Color.White, Color.Black);
+				}
 				DrawOutlineText(sb, Game1.mnufont, "Press O to open a replay", new Vector2(670, 600), Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, "Press P to unpause", new Vector2(736, 630), Color.White, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, "Press F to restart/freeroam", new Vector2(630, 660), Color.White, Color.Black);

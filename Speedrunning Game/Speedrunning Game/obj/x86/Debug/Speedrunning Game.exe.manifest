@@ -90,19 +90,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2L5bMPSXhGeSKPneZCMrPOZtPAA=</dsig:DigestValue>
+        <dsig:DigestValue>65JCpkI39twUsfrzb0VfQxn2bMQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="735232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="779776">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ojrNdoE9+DE6OCMijqMSToGz/Dw=</dsig:DigestValue>
+        <dsig:DigestValue>YcyIMlPeJvYlCCtj61ATkEx76V8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

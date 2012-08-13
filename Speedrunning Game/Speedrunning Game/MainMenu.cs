@@ -18,7 +18,7 @@ namespace Speedrunning_Game
 		private bool pressUp;
 		private bool pressEnter;
 
-		const int MAX_SELECTED = 3;
+		const int MAX_SELECTED = 4;
 
 		public MainMenu(bool pressEnter)
 		{
@@ -89,10 +89,12 @@ namespace Speedrunning_Game
 					Game1.currentRoom = new Room(Levels.levels[0], true, new ReplayRecorder());
 				}
 				else if (selected == 1)
-					Game1.currentRoom = new LevelSelect(0);
+					Game1.currentRoom = new FGLeaderboard();
 				else if (selected == 2)
-					Game1.currentRoom = new Settings();
+					Game1.currentRoom = new LevelSelect(0);
 				else if (selected == 3)
+					Game1.currentRoom = new Settings();
+				else if (selected == 4)
 					Game1.exit = true;
 			}
 
@@ -112,9 +114,10 @@ namespace Speedrunning_Game
 			DrawOutlineText(sb, Game1.mnufont, "New Game", new Vector2(420, 330), selected == 0 ? Color.Yellow : Color.White, Color.Black);
 			if (selected == 0)
 				DrawOutlineText(sb, Game1.mnufont, "Full Game Record: " + (Game1.totalRecord == -1 ? "--" : TimeToString(Game1.totalRecord)), new Vector2(590, 330), Color.Cyan, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, "Select level", new Vector2(410, 400), selected == 1 ? Color.Yellow : Color.White, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, "Settings", new Vector2(435, 470), selected == 2 ? Color.Yellow : Color.White, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, "Exit", new Vector2(460, 540), selected == 3 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Full Game Leaderboard", new Vector2(340, 400), selected == 1 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Select level", new Vector2(410, 470), selected == 2 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Settings", new Vector2(435, 540), selected == 3 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Exit", new Vector2(460, 610), selected == 4 ? Color.Yellow : Color.White, Color.Black);
 			return;
 		}
 

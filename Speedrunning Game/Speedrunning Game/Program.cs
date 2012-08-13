@@ -13,7 +13,7 @@ namespace Speedrunning_Game
 		[STAThread]
         static void Main(string[] args)
         {
-			LoginForm login = new LoginForm();
+			LoginForm login = new LoginForm(false);
 			DialogResult result = login.ShowDialog();
 			Game1.userName = login.username;
 			if (result == DialogResult.OK || result == DialogResult.Ignore)

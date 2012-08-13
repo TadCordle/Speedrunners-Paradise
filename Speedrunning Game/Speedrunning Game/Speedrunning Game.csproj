@@ -122,6 +122,7 @@
     <Compile Include="Booster.cs" />
     <Compile Include="Box.cs" />
     <Compile Include="Explosion.cs" />
+    <Compile Include="FGLeaderboard.cs" />
     <Compile Include="Flamethrower.cs" />
     <Compile Include="Mirror.cs" />
     <Compile Include="DeathWall.cs" />

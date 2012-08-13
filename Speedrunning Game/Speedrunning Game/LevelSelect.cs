@@ -16,7 +16,7 @@ namespace Speedrunning_Game
 	class LevelSelect : Room
 	{
 		private int selected;
-		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS;
+		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS, pressDel;
 		private int maxSelected;
 		private int scope;
 		private int tab;
@@ -38,6 +38,7 @@ namespace Speedrunning_Game
 			lastpage = false;
 			pressS = false;
 			showingBox = false;
+			pressDel = false;
 
 			background = Game1.backgrounds[0];
 			roomHeight = 720;
@@ -169,9 +170,11 @@ namespace Speedrunning_Game
 				pressRight = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.S))
 				pressS = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.Delete))
+				pressDel = true;
 
 			// Enter search stuff
-			if (Keyboard.GetState().IsKeyDown(Keys.S) && pressS && tab == 2 && !showingBox)
+			if (Keyboard.GetState().IsKeyDown(Keys.S) && pressS && tab == 2 && !showingBox && Game1.online)
 			{
 				pressS = false;
 				showingBox = true;
@@ -199,6 +202,18 @@ namespace Speedrunning_Game
 				}
 			}
 
+			// Delete selected custom level
+			if (Keyboard.GetState().IsKeyDown(Keys.Delete) && pressDel && tab == 1)
+			{
+				pressDel = false;
+				Tuple<string, int, int, bool> lvl = custompage[selected];
+				levels.Remove(lvl);
+				custompage.Remove(lvl);
+				maxSelected--;
+				string filename = "Content\\rooms\\" + lvl.Item1.Replace(' ', '_') + ".srl";
+				File.Delete(filename);
+			}
+
 			// Cycle through choices when keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown)
 			{
@@ -222,7 +237,7 @@ namespace Speedrunning_Game
 					if (selected > maxSelected)
 						selected = maxSelected;
 				}
-				else
+				else if (Game1.online)
 				{
 					List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, (scope + 1) * 11);
 					if (check.Count > 0)
@@ -246,7 +261,7 @@ namespace Speedrunning_Game
 					if (selected < 0)
 						selected = 0;
 				}
-				else
+				else if (Game1.online)
 				{
 					if (scope > 0)
 					{
@@ -333,7 +348,7 @@ namespace Speedrunning_Game
 			{
 				if (tab != 2)
 					selected = 0;
-				else
+				else if (Game1.online)
 				{
 					if (scope > 0)
 					{
@@ -351,7 +366,7 @@ namespace Speedrunning_Game
 			{
 				if (tab != 2)
 					selected = maxSelected;
-				else
+				else if (Game1.online)
 				{
 					if (maxSelected == 10 && !lastpage)
 					{
@@ -405,7 +420,7 @@ namespace Speedrunning_Game
 						System.Windows.Forms.MessageBox.Show("There was a problem loading the level; the level file may not be in the correct format", "Level Load Error");
 					}
 				}
-				else
+				else if (Game1.online)
 				{
 					WebStuff.DownloadFile(dlpage[selected].Item2);
 					System.Windows.Forms.MessageBox.Show("The level has been downloaded and can be selected in the custom levels tab.", "Level Downloaded");
@@ -455,6 +470,9 @@ namespace Speedrunning_Game
 						DrawOutlineText(sb, Game1.mnufont, "You have to log in to download levels.", new Vector2(50, 70), Color.White, Color.Black);
 					else
 					{
+						DrawOutlineText(sb, Game1.msgfont, "Level Name", new Vector2(40, 50), Color.Lime, Color.Black);
+						DrawOutlineText(sb, Game1.msgfont, "Level Author", new Vector2(420, 50), Color.Lime, Color.Black);
+						DrawOutlineText(sb, Game1.msgfont, "Rating", new Vector2(660, 50), Color.Lime, Color.Black);
 						for (int i = 0; i < dlpage.Count; i++)
 						{
 							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item1, new Vector2(50, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
