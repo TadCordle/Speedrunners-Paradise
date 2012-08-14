@@ -514,9 +514,17 @@ namespace Speedrunning_Game
 				lcheck = false;
 				if (!viewingLeaderboards)
 				{
-					viewingLeaderboards = true;
-					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
-					canScrollDown = leaderboardData.Length == 11;
+					try
+					{
+						viewingLeaderboards = true;
+						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
+						canScrollDown = leaderboardData.Length == 11;
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the leaderboards.", "Connection Error");
+						return;
+					}
 				}
 				else
 					viewingLeaderboards = false;
@@ -526,17 +534,33 @@ namespace Speedrunning_Game
 			{
 				if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck && leaderboardPage > 0)
 				{
-					upcheck = false;
-					leaderboardPage--;
-					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
-					canScrollDown = true;
+					try
+					{
+						upcheck = false;
+						leaderboardPage--;
+						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
+						canScrollDown = true;
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the leaderboards.", "Connection Error");
+						return;
+					}
 				}
 				else if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck && canScrollDown)
 				{
-					downcheck = false;
-					leaderboardPage++;
-					leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
-					canScrollDown = leaderboardData.Length == 11;
+					try
+					{
+						downcheck = false;
+						leaderboardPage++;
+						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
+						canScrollDown = leaderboardData.Length == 11;
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the leaderboards.", "Connection Error");
+						return;
+					}
 				}
 			}
 

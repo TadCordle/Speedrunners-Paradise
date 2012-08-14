@@ -185,10 +185,17 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.D) && pressD)
 			{
 				pressD = false;
-				sortBy = Math.Abs(sortBy - 1);
-				scope = 0;
-				selected = 0;
-				dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
+				try
+				{
+					sortBy = Math.Abs(sortBy - 1);
+					scope = 0;
+					selected = 0;
+					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
+				}
+				catch (Exception)
+				{
+					System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+				}
 				maxSelected = dlpage.Count - 1;
 			}
 
@@ -202,22 +209,46 @@ namespace Speedrunning_Game
 				showingBox = false;
 				if (criteria != "")
 				{
-					scope = 0;
-					selected = 0;
-					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+					try
+					{
+						scope = 0;
+						selected = 0;
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+						return;
+					} 
 					if (dlpage.Count == 0)
 					{
 						System.Windows.Forms.MessageBox.Show("The search didn't yield any results.", "Search Failed");
 						criteria = "";
-						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+						try
+						{
+							dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+						}
+						catch (Exception)
+						{
+							System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+							return;
+						}
 					}
 					maxSelected = dlpage.Count - 1;
 				}
 				else
 				{
-					scope = 0;
-					selected = 0;
-					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+					try
+					{
+						scope = 0;
+						selected = 0;
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+						return;
+					}
 					maxSelected = dlpage.Count - 1;
 				}
 			}
@@ -259,16 +290,24 @@ namespace Speedrunning_Game
 				}
 				else if (Game1.online)
 				{
-					List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope + 1) * 11);
-					if (check.Count > 0)
+					try
 					{
-						dlpage = check;
-						maxSelected = dlpage.Count - 1;
-						scope++;
-						selected = 0;
+						List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope + 1) * 11);
+						if (check.Count > 0)
+						{
+							dlpage = check;
+							maxSelected = dlpage.Count - 1;
+							scope++;
+							selected = 0;
+						}
+						else
+							lastpage = true;
 					}
-					else
-						lastpage = true;
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+						return;
+					}
 				}
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.PageUp) && pressPageUp && !showingBox)
@@ -285,10 +324,18 @@ namespace Speedrunning_Game
 				{
 					if (scope > 0)
 					{
-						selected = 0;
-						scope--;
-						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
-						maxSelected = dlpage.Count - 1;
+						try
+						{
+							selected = 0;
+							scope--;
+							dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], scope * 11);
+							maxSelected = dlpage.Count - 1;
+						}
+						catch (Exception)
+						{
+							System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+							return;
+						}
 					}
 				}
 			}
@@ -323,9 +370,17 @@ namespace Speedrunning_Game
 				}
 				else if (tab == 2)
 				{
-					scope = 0;
-					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
-					maxSelected = dlpage.Count - 1;
+					try
+					{
+						scope = 0;
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
+						maxSelected = dlpage.Count - 1;
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+						return;
+					}
 				}
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.Right) && pressRight && tab < 2 && !showingBox)
@@ -357,9 +412,17 @@ namespace Speedrunning_Game
 				}
 				else if (tab == 2)
 				{
-					scope = 0;
-					dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
-					maxSelected = dlpage.Count - 1;
+					try
+					{
+						scope = 0;
+						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
+						maxSelected = dlpage.Count - 1;
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+						return;
+					}
 				}
 			}
 
@@ -372,11 +435,19 @@ namespace Speedrunning_Game
 				{
 					if (scope > 0)
 					{
-						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope - 1) * 11);
-						maxSelected = dlpage.Count - 1;
-						scope--;
-						selected = 10;
-						lastpage = false;
+						try
+						{
+							dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope - 1) * 11);
+							maxSelected = dlpage.Count - 1;
+							scope--;
+							selected = 10;
+							lastpage = false;
+						}
+						catch (Exception)
+						{
+							System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+							return;
+						}
 					}
 					else
 						selected = 0;
@@ -390,18 +461,26 @@ namespace Speedrunning_Game
 				{
 					if (maxSelected == 10 && !lastpage)
 					{
-						List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope + 1) * 11);
-						if (check.Count > 0)
+						try
 						{
-							dlpage = check;
-							maxSelected = dlpage.Count - 1;
-							scope++;
-							selected = 0;
+							List<Tuple<string, string, string, double>> check = WebStuff.GetLevels(criteria, sortCrit[sortBy], (scope + 1) * 11);
+							if (check.Count > 0)
+							{
+								dlpage = check;
+								maxSelected = dlpage.Count - 1;
+								scope++;
+								selected = 0;
+							}
+							else
+							{
+								lastpage = true;
+								selected = maxSelected;
+							}
 						}
-						else
+						catch (Exception)
 						{
-							lastpage = true;
-							selected = maxSelected;
+							System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+							return;
 						}
 					}
 					else
@@ -442,9 +521,17 @@ namespace Speedrunning_Game
 				}
 				else if (Game1.online)
 				{
-					WebStuff.DownloadFile(dlpage[selected].Item2);
-					System.Windows.Forms.MessageBox.Show("The level has been downloaded and can be selected in the custom levels tab.", "Level Downloaded");
-					levels.Add(new Tuple<string, int, int, bool>(dlpage[selected].Item1, -1, -1, true));
+					try
+					{
+						WebStuff.DownloadFile(dlpage[selected].Item2);
+						System.Windows.Forms.MessageBox.Show("The level has been downloaded and can be selected in the custom levels tab.", "Level Downloaded");
+						levels.Add(new Tuple<string, int, int, bool>(dlpage[selected].Item1, -1, -1, true));
+					}
+					catch (Exception)
+					{
+						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
+						return;
+					}
 				}
 			}
 		}
