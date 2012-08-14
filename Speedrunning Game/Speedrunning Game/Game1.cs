@@ -145,7 +145,7 @@ namespace Speedrunning_Game
 			skinPreviews[2] = Content.Load<Texture2D>("skins/stick figure/stick figure normal0001");
 			skinPreviews[3] = Content.Load<Texture2D>("skins/mr guy/mr guy normal0001");
 			skinPreviews[4] = Content.Load<Texture2D>("skins/mario/mario normal");
-//			skinPreviews[5] = Content.Load<Texture2D>("skins/ninja/ninja normal0001");
+			skinPreviews[5] = Content.Load<Texture2D>("skins/ninja/ninja normal0001");
 			prevLocked = Content.Load<Texture2D>("skins/locked");
 
 			run = Content.Load<SoundEffect>("sounds/run").CreateInstance();

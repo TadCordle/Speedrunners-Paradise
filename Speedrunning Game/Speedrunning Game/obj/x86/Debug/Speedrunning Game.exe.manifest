@@ -95,14 +95,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="791040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speedrunning Game.exe" size="791552">
       <assemblyIdentity name="Speedrunning Game" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Awtis9ugWr6GFAEwxqLWUV1eUvw=</dsig:DigestValue>
+        <dsig:DigestValue>kSaoHJMx0eI+9JJMJJmvsn0thr8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1220,6 +1220,681 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>NEPByPx3KiRGZlcdPKVwHnQNfGQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3bKEgcYZErFZRRy4mW3c72+y2D4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3q2V4to/ldJlppWvKgJ0LqHFYvw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hRk8iPpZ45oiwrUg58hsplov8ok=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yjQEtT9xmbNqU0eCNt6PtTkpil8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>G7bxrq4azvjKdkiT4/Yv+uo4Apw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>G6AQ8pjgGUov0Ub8CszHmOqRMTU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QbUscldfq1MlRktfOrtjP8rgUcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hYvu3yz7Owa7LHabtAfLqx9F03s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5Pw00mCj2ACiyFoXCJSiSKZSYT8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cnmah7QzwFP7r3KJ/gfKOITLhWc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZNSw55GVTcYUpXOgP98dSPuW/CY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9V4FXT6OnU5IecyK8qQv6JsGdzI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JvkmbmQzXGDwgI8M9tGRun+veeg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JfVO0WKayAi22oWgcp20W6GQ/gE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Wv4xPgPOOq8hiPlbFCBNYOjAFAo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pO9E0kHJR7XISfvatG3azyL+oAI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qzNivkco7A+y57z4rrevZp4R6IU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FqxX0rO3WLcj2lJfwrB9bFBd+BQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KYR6XJo55Zc20sZcyavK4/rG17Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0020.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WKXxfnqC3KgSvH8RtN39B6NKPMU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0021.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QGkRrc6Endsy8GXPqsrxYDYXlF0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0022.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JfOPM5uCNqxeTbY6lF4J4Woe/9o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0023.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RmkWZ1wNOo6uS77LS8JJjB/lVWQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0024.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JzpBeJBt6OcezrBNj49kqmUSoxA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead midair0025.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LM0ZIneRDDzOFGo0/LimHte5Cy0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja dead.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xg7M39Wt9eqxL9vfqLOswMF76ik=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>h6LD33bYhR62MT0Sk+e0kE9w4/s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>b0FLZPmlt37ZMEHjaXuYtokSb9Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AW5nPoaO89HeU8rcYZgwIWsOsoE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>m6NRrmvYCKqbjeygSdHpnjAtYUc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>q2/zacBT+5PmlxwycHKjJqdmoKc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RrLi83dNi10v8PD0aVSEyK69gXA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>yp2y+O+JXPCMW7MRjN2ZCtjxgSg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ASoTtCsdex2dN8+T1ppIfzzlhPA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja midair0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pKRDhiV6ufppBcNKeJthUkwo5h4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QvsPK5z6etTfycOgz3hLfTCPwSM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hj8vk8lY/SSuwhjotiLMGKVcs2k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>L+AQA/FBHbyCBBNhj9lS2aFYWVo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>u3CO/pf/EckxWDL3XwIgHEjLtSE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fXCNskgPRPmlD6btgQUx8YpaYg0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>c8I9w51sB2C+eFlpX450EzMXAjQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2cRvorT/esgoCDXwnn/ZuvnEJ2o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uc0trSUI618b6m/yNmH9KrPiUrE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XVDKDgSxWrqWDMAKiW+eIdS0DgI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>O9OccS/v9/8E2lymq6fYjPqXPPU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MsQAQIixWITDEtfpd9+w/rEzuq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Xr/Zr2owlwsLTdEkMxtfMIY46U4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3kFV2Tgre89EBtN8PoegNGOFwYI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TlNPOAMFINQ8tLJIISK6mEJ/LZs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eCm99PFQeQKNZwqRq54qiR700Vw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pHp7iT+qNLevp5s9obeZ2SqNaUw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Zx1bulJ0aMw+2DPq371LaMLscb0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LD0+PdCGYfzvnYIhsxqvIMKNiwY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja normal0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7WDTYl0nD8twiBJ+IxHiMTVhvt4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0001.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>08APiad6aCVkH79EDIEKwxvghO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0002.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>82UATXRyQzhhVPnc1VUZSlTT5NM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0003.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rRznKT7goVnkisTmwRD8oEkrO54=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0004.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8ek/09GDZnRPTwYKaGpuvai3koI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0005.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Yqv4stUhSa9BkJQNdKPFQn8tyFU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0006.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cZjmQLFIdyBgN4glxATI9GZmlAk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0007.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5BfIc9LPKHsDxVU3NlEQ+X+jgNQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0008.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rl5+DtaHsx58h3RED2j1xY6AvUQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0009.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>avPEq5jQcEsWbKlIsecL5+1VuiU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0010.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+BZXAIVnH3FPz2LYjPKg5AhlLk4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0011.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GTkz4UnFk9UoQ4Jj985no3twdHc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0012.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rfDtX7E7aoR7S8Gy95Ut6ENpWPo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0013.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>U9HvxDqtga1zfbujXi78qNur7Jc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0014.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>a+H/Gl795UcODYnWr7T6midkqCE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0015.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PTOH3/a+ecAalIa8vJ1cV6dutfg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0016.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MaTPUoauQ47jMqoAJCevZXrP5Kc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0017.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NHdnL4KX3KD0LEIz9ls3AwaYH+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0018.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>e4b+wCmQqAeKq5xYmiHb3uBC0RA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja running0019.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PvKrMWEuo8Ahw8/UtmfkYKvIwxc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja sliding.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>16DBhGHOSSujnPeyNy4VLPf7V8k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\skins\ninja\ninja ziplining.xnb" size="16571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XW+q81ePLzUp39Mnf4m428T2xzc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\skins\speed runner\speed runner dead midair0001.xnb" size="16571">

@@ -306,3 +306,78 @@ C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Spe
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario ziplining.xnb
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario dead midair.xnb
 C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario dead.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0001.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0002.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0003.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0004.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0005.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0006.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0007.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0008.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0009.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0010.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0011.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0012.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0013.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0014.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0015.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0016.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0017.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0018.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0019.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0020.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0021.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0022.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0023.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0024.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0025.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0001.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0002.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0003.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0004.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0005.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0006.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0007.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0008.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0009.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0001.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0002.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0003.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0004.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0005.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0006.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0007.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0008.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0009.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0010.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0011.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0012.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0013.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0014.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0015.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0016.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0017.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0018.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0019.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0001.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0002.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0003.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0004.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0005.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0006.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0007.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0008.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0009.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0010.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0011.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0012.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0013.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0014.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0015.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0016.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0017.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0018.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0019.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja sliding.xnb
+C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja ziplining.xnb

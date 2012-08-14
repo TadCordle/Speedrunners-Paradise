@@ -2625,6 +2625,681 @@
       <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\mario\mario dead.xnb</Output>
       <Time>2012-08-03T17:02:47.9202956-04:00</Time>
     </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0001.png</Source>
+      <Name>skins\ninja\ninja dead midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0001.xnb</Output>
+      <Time>2012-08-14T12:52:36.0692376-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0002.png</Source>
+      <Name>skins\ninja\ninja dead midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0002.xnb</Output>
+      <Time>2012-08-14T12:52:36.1782438-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0003.png</Source>
+      <Name>skins\ninja\ninja dead midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0003.xnb</Output>
+      <Time>2012-08-14T12:52:36.2852499-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0004.png</Source>
+      <Name>skins\ninja\ninja dead midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0004.xnb</Output>
+      <Time>2012-08-14T12:52:36.3932561-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0005.png</Source>
+      <Name>skins\ninja\ninja dead midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0005.xnb</Output>
+      <Time>2012-08-14T12:52:36.5022623-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0006.png</Source>
+      <Name>skins\ninja\ninja dead midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0006.xnb</Output>
+      <Time>2012-08-14T12:52:36.6102685-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0007.png</Source>
+      <Name>skins\ninja\ninja dead midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0007.xnb</Output>
+      <Time>2012-08-14T12:52:36.7192748-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0008.png</Source>
+      <Name>skins\ninja\ninja dead midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0008.xnb</Output>
+      <Time>2012-08-14T12:52:36.828281-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0009.png</Source>
+      <Name>skins\ninja\ninja dead midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0009.xnb</Output>
+      <Time>2012-08-14T12:52:36.934287-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0010.png</Source>
+      <Name>skins\ninja\ninja dead midair0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0010.xnb</Output>
+      <Time>2012-08-14T12:52:37.0442933-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0011.png</Source>
+      <Name>skins\ninja\ninja dead midair0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0011.xnb</Output>
+      <Time>2012-08-14T12:52:37.1532996-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0012.png</Source>
+      <Name>skins\ninja\ninja dead midair0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0012.xnb</Output>
+      <Time>2012-08-14T12:52:37.2623058-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0013.png</Source>
+      <Name>skins\ninja\ninja dead midair0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0013.xnb</Output>
+      <Time>2012-08-14T12:52:37.3923132-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0014.png</Source>
+      <Name>skins\ninja\ninja dead midair0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0014.xnb</Output>
+      <Time>2012-08-14T12:52:37.5023195-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0015.png</Source>
+      <Name>skins\ninja\ninja dead midair0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0015.xnb</Output>
+      <Time>2012-08-14T12:52:37.6113258-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0016.png</Source>
+      <Name>skins\ninja\ninja dead midair0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0016.xnb</Output>
+      <Time>2012-08-14T12:52:37.7213321-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0017.png</Source>
+      <Name>skins\ninja\ninja dead midair0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0017.xnb</Output>
+      <Time>2012-08-14T12:52:37.8313384-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0018.png</Source>
+      <Name>skins\ninja\ninja dead midair0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0018.xnb</Output>
+      <Time>2012-08-14T12:52:37.9393445-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0019.png</Source>
+      <Name>skins\ninja\ninja dead midair0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0019.xnb</Output>
+      <Time>2012-08-14T12:52:38.0483508-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0020.png</Source>
+      <Name>skins\ninja\ninja dead midair0020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0020.xnb</Output>
+      <Time>2012-08-14T12:52:38.1663575-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0021.png</Source>
+      <Name>skins\ninja\ninja dead midair0021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0021.xnb</Output>
+      <Time>2012-08-14T12:52:38.2813641-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0022.png</Source>
+      <Name>skins\ninja\ninja dead midair0022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0022.xnb</Output>
+      <Time>2012-08-14T12:52:38.3983708-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0023.png</Source>
+      <Name>skins\ninja\ninja dead midair0023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0023.xnb</Output>
+      <Time>2012-08-14T12:52:38.5303783-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0024.png</Source>
+      <Name>skins\ninja\ninja dead midair0024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0024.xnb</Output>
+      <Time>2012-08-14T12:52:38.6773867-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead midair0025.png</Source>
+      <Name>skins\ninja\ninja dead midair0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead midair0025.xnb</Output>
+      <Time>2012-08-14T12:52:38.786393-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja dead.png</Source>
+      <Name>skins\ninja\ninja dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja dead.xnb</Output>
+      <Time>2012-08-14T12:49:50.9957959-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0001.png</Source>
+      <Name>skins\ninja\ninja midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0001.xnb</Output>
+      <Time>2012-08-14T12:42:46.3185058-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0002.png</Source>
+      <Name>skins\ninja\ninja midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0002.xnb</Output>
+      <Time>2012-08-14T12:42:46.4305122-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0003.png</Source>
+      <Name>skins\ninja\ninja midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0003.xnb</Output>
+      <Time>2012-08-14T12:42:46.5425186-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0004.png</Source>
+      <Name>skins\ninja\ninja midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0004.xnb</Output>
+      <Time>2012-08-14T12:42:46.6525249-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0005.png</Source>
+      <Name>skins\ninja\ninja midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0005.xnb</Output>
+      <Time>2012-08-14T12:42:46.7795321-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0006.png</Source>
+      <Name>skins\ninja\ninja midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0006.xnb</Output>
+      <Time>2012-08-14T12:42:46.8895384-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0007.png</Source>
+      <Name>skins\ninja\ninja midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0007.xnb</Output>
+      <Time>2012-08-14T12:42:47.0005448-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0008.png</Source>
+      <Name>skins\ninja\ninja midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0008.xnb</Output>
+      <Time>2012-08-14T12:42:47.1135512-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja midair0009.png</Source>
+      <Name>skins\ninja\ninja midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja midair0009.xnb</Output>
+      <Time>2012-08-14T12:42:47.2235575-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0001.png</Source>
+      <Name>skins\ninja\ninja normal0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0001.xnb</Output>
+      <Time>2012-08-14T12:29:52.240231-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0002.png</Source>
+      <Name>skins\ninja\ninja normal0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0002.xnb</Output>
+      <Time>2012-08-14T12:29:52.3472371-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0003.png</Source>
+      <Name>skins\ninja\ninja normal0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0003.xnb</Output>
+      <Time>2012-08-14T12:29:52.4562434-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0004.png</Source>
+      <Name>skins\ninja\ninja normal0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0004.xnb</Output>
+      <Time>2012-08-14T12:29:52.5802505-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0005.png</Source>
+      <Name>skins\ninja\ninja normal0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0005.xnb</Output>
+      <Time>2012-08-14T12:29:52.6882566-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0006.png</Source>
+      <Name>skins\ninja\ninja normal0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0006.xnb</Output>
+      <Time>2012-08-14T12:29:52.7982629-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0007.png</Source>
+      <Name>skins\ninja\ninja normal0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0007.xnb</Output>
+      <Time>2012-08-14T12:29:52.9072692-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0008.png</Source>
+      <Name>skins\ninja\ninja normal0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0008.xnb</Output>
+      <Time>2012-08-14T12:29:53.0172755-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0009.png</Source>
+      <Name>skins\ninja\ninja normal0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0009.xnb</Output>
+      <Time>2012-08-14T12:29:53.1272818-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0010.png</Source>
+      <Name>skins\ninja\ninja normal0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0010.xnb</Output>
+      <Time>2012-08-14T12:29:53.2382881-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0011.png</Source>
+      <Name>skins\ninja\ninja normal0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0011.xnb</Output>
+      <Time>2012-08-14T12:29:53.3482944-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0012.png</Source>
+      <Name>skins\ninja\ninja normal0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0012.xnb</Output>
+      <Time>2012-08-14T12:29:53.4803019-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0013.png</Source>
+      <Name>skins\ninja\ninja normal0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0013.xnb</Output>
+      <Time>2012-08-14T12:29:53.5903082-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0014.png</Source>
+      <Name>skins\ninja\ninja normal0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0014.xnb</Output>
+      <Time>2012-08-14T12:29:53.6993145-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0015.png</Source>
+      <Name>skins\ninja\ninja normal0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0015.xnb</Output>
+      <Time>2012-08-14T12:29:53.8073206-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0016.png</Source>
+      <Name>skins\ninja\ninja normal0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0016.xnb</Output>
+      <Time>2012-08-14T12:29:53.936328-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0017.png</Source>
+      <Name>skins\ninja\ninja normal0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0017.xnb</Output>
+      <Time>2012-08-14T12:29:54.0443342-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0018.png</Source>
+      <Name>skins\ninja\ninja normal0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0018.xnb</Output>
+      <Time>2012-08-14T12:29:54.1523404-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja normal0019.png</Source>
+      <Name>skins\ninja\ninja normal0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja normal0019.xnb</Output>
+      <Time>2012-08-14T12:29:54.2613466-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0001.png</Source>
+      <Name>skins\ninja\ninja running0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0001.xnb</Output>
+      <Time>2012-08-14T12:37:39.5869617-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0002.png</Source>
+      <Name>skins\ninja\ninja running0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0002.xnb</Output>
+      <Time>2012-08-14T12:37:39.695968-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0003.png</Source>
+      <Name>skins\ninja\ninja running0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0003.xnb</Output>
+      <Time>2012-08-14T12:37:39.8069743-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0004.png</Source>
+      <Name>skins\ninja\ninja running0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0004.xnb</Output>
+      <Time>2012-08-14T12:37:39.9159805-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0005.png</Source>
+      <Name>skins\ninja\ninja running0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0005.xnb</Output>
+      <Time>2012-08-14T12:37:40.0239867-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0006.png</Source>
+      <Name>skins\ninja\ninja running0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0006.xnb</Output>
+      <Time>2012-08-14T12:37:40.1319929-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0007.png</Source>
+      <Name>skins\ninja\ninja running0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0007.xnb</Output>
+      <Time>2012-08-14T12:37:40.2409991-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0008.png</Source>
+      <Name>skins\ninja\ninja running0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0008.xnb</Output>
+      <Time>2012-08-14T12:37:40.362006-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0009.png</Source>
+      <Name>skins\ninja\ninja running0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0009.xnb</Output>
+      <Time>2012-08-14T12:37:40.4710123-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0010.png</Source>
+      <Name>skins\ninja\ninja running0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0010.xnb</Output>
+      <Time>2012-08-14T12:37:40.5800185-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0011.png</Source>
+      <Name>skins\ninja\ninja running0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0011.xnb</Output>
+      <Time>2012-08-14T12:37:40.6880247-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0012.png</Source>
+      <Name>skins\ninja\ninja running0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0012.xnb</Output>
+      <Time>2012-08-14T12:37:40.7960309-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0013.png</Source>
+      <Name>skins\ninja\ninja running0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0013.xnb</Output>
+      <Time>2012-08-14T12:37:40.9050371-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0014.png</Source>
+      <Name>skins\ninja\ninja running0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0014.xnb</Output>
+      <Time>2012-08-14T12:37:41.0130433-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0015.png</Source>
+      <Name>skins\ninja\ninja running0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0015.xnb</Output>
+      <Time>2012-08-14T12:37:41.1210495-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0016.png</Source>
+      <Name>skins\ninja\ninja running0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0016.xnb</Output>
+      <Time>2012-08-14T12:37:41.2310558-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0017.png</Source>
+      <Name>skins\ninja\ninja running0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0017.xnb</Output>
+      <Time>2012-08-14T12:37:41.3390619-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0018.png</Source>
+      <Name>skins\ninja\ninja running0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0018.xnb</Output>
+      <Time>2012-08-14T12:37:41.4480682-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja running0019.png</Source>
+      <Name>skins\ninja\ninja running0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja running0019.xnb</Output>
+      <Time>2012-08-14T12:37:41.5560743-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja sliding.png</Source>
+      <Name>skins\ninja\ninja sliding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja sliding.xnb</Output>
+      <Time>2012-08-14T12:45:39.2333959-04:00</Time>
+    </Item>
+    <Item>
+      <Source>skins\ninja\ninja ziplining.png</Source>
+      <Name>skins\ninja\ninja ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Content\skins\ninja\ninja ziplining.xnb</Output>
+      <Time>2012-08-14T12:47:06.9854151-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

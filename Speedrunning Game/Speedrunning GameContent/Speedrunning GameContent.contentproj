@@ -1587,6 +1587,383 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="skins\ninja\ninja dead midair0001.png">
+      <Name>ninja dead midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0002.png">
+      <Name>ninja dead midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0003.png">
+      <Name>ninja dead midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0004.png">
+      <Name>ninja dead midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0005.png">
+      <Name>ninja dead midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0006.png">
+      <Name>ninja dead midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0007.png">
+      <Name>ninja dead midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0008.png">
+      <Name>ninja dead midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0009.png">
+      <Name>ninja dead midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0010.png">
+      <Name>ninja dead midair0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0011.png">
+      <Name>ninja dead midair0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0012.png">
+      <Name>ninja dead midair0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0013.png">
+      <Name>ninja dead midair0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0014.png">
+      <Name>ninja dead midair0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0015.png">
+      <Name>ninja dead midair0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0016.png">
+      <Name>ninja dead midair0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0017.png">
+      <Name>ninja dead midair0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0018.png">
+      <Name>ninja dead midair0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0019.png">
+      <Name>ninja dead midair0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0020.png">
+      <Name>ninja dead midair0020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0021.png">
+      <Name>ninja dead midair0021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0022.png">
+      <Name>ninja dead midair0022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0023.png">
+      <Name>ninja dead midair0023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0024.png">
+      <Name>ninja dead midair0024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead midair0025.png">
+      <Name>ninja dead midair0025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja dead.png">
+      <Name>ninja dead</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0001.png">
+      <Name>ninja midair0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0002.png">
+      <Name>ninja midair0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0003.png">
+      <Name>ninja midair0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0004.png">
+      <Name>ninja midair0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0005.png">
+      <Name>ninja midair0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0006.png">
+      <Name>ninja midair0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0007.png">
+      <Name>ninja midair0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0008.png">
+      <Name>ninja midair0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja midair0009.png">
+      <Name>ninja midair0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0001.png">
+      <Name>ninja normal0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0002.png">
+      <Name>ninja normal0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0003.png">
+      <Name>ninja normal0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0004.png">
+      <Name>ninja normal0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0005.png">
+      <Name>ninja normal0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0006.png">
+      <Name>ninja normal0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0007.png">
+      <Name>ninja normal0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0008.png">
+      <Name>ninja normal0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0009.png">
+      <Name>ninja normal0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0010.png">
+      <Name>ninja normal0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0011.png">
+      <Name>ninja normal0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0012.png">
+      <Name>ninja normal0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0013.png">
+      <Name>ninja normal0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0014.png">
+      <Name>ninja normal0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0015.png">
+      <Name>ninja normal0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0016.png">
+      <Name>ninja normal0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0017.png">
+      <Name>ninja normal0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0018.png">
+      <Name>ninja normal0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja normal0019.png">
+      <Name>ninja normal0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0001.png">
+      <Name>ninja running0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0002.png">
+      <Name>ninja running0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0003.png">
+      <Name>ninja running0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0004.png">
+      <Name>ninja running0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0005.png">
+      <Name>ninja running0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0006.png">
+      <Name>ninja running0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0007.png">
+      <Name>ninja running0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0008.png">
+      <Name>ninja running0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0009.png">
+      <Name>ninja running0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0010.png">
+      <Name>ninja running0010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0011.png">
+      <Name>ninja running0011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0012.png">
+      <Name>ninja running0012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0013.png">
+      <Name>ninja running0013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0014.png">
+      <Name>ninja running0014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0015.png">
+      <Name>ninja running0015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0016.png">
+      <Name>ninja running0016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0017.png">
+      <Name>ninja running0017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0018.png">
+      <Name>ninja running0018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja running0019.png">
+      <Name>ninja running0019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja sliding.png">
+      <Name>ninja sliding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="skins\ninja\ninja ziplining.png">
+      <Name>ninja ziplining</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

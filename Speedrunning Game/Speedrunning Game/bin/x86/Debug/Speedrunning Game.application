@@ -8,14 +8,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Speedrunning Game.exe.manifest" size="127512">
+    <dependentAssembly dependencyType="install" codebase="Speedrunning Game.exe.manifest" size="157721">
       <assemblyIdentity name="Speedrunning Game.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WOYuczflhHfIvkRVG4YG0MUupHw=</dsig:DigestValue>
+        <dsig:DigestValue>/UzbzdM4D+8oX2ttO4bNN0dMr5w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
