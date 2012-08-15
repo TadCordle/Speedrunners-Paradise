@@ -47,9 +47,10 @@ namespace Speedrunning_Game
 		public static bool exit = false;
 		public static bool online;
 		public static int totalTime;
-		public static int totalRecord;
+		public static int totalRecord, commRecord;
 		public static bool startTotalTime;
-		public static bool finishedGame;
+		public static bool finishedSS;
+		public static bool beatGame;
 
 		static ContentManager skinManager;
 
@@ -66,8 +67,9 @@ namespace Speedrunning_Game
 			graphics.PreferredBackBufferWidth = 960;
 			Content.RootDirectory = "Content";
 			skinManager = new ContentManager(this.Services, "Content");
-			finishedGame = false;
+			finishedSS = false;
 			totalRecord = -1;
+			commRecord = -1;
 			SimpleAES enc = new SimpleAES();
 			if (!File.Exists("Content\\records.txt"))
 			{
@@ -79,13 +81,30 @@ namespace Speedrunning_Game
 			else
 			{
 				StreamReader r = new StreamReader("Content\\records.txt");
-				string s = enc.DecryptString(r.ReadLine());
-				while (s.Split(' ')[1] != "0" && s.Split(' ')[0] != "fullgame" && !r.EndOfStream)
-					s = enc.DecryptString(r.ReadLine());
-				if (s.Split(' ')[1] == "0" && s.Split(' ')[0] == "fullgame")
-					totalRecord = int.Parse(s.Split(' ')[2]);
-				else
+				bool totalFound = false;
+				while (!r.EndOfStream)
+				{
+					string s = enc.DecryptString(r.ReadLine());
+					if (s.Split(' ')[1] == "0")
+					{
+						if (s.Split(' ')[0] == "Level_26_-_Credits")
+							beatGame = true;
+						else if (s.Split(' ')[0] == "fullgame")
+						{
+							totalRecord = int.Parse(s.Split(' ')[2]);
+							totalFound = true;
+						}
+						else
+						{
+							if (commRecord == -1)
+								commRecord = 0;
+							commRecord += int.Parse(s.Split(' ')[2]);
+						}
+					}
+				}
+				if (!totalFound)
 					totalRecord = -1;
+
 				r.Close();
 				r.Dispose();
 			}
@@ -258,9 +277,9 @@ namespace Speedrunning_Game
 				pressEscape = true;
 			if (Keyboard.GetState().IsKeyDown(Keys.Escape) && pressEscape || exit)
 			{
-				if (Game1.finishedGame)
+				if (Game1.finishedSS)
 				{
-					Game1.finishedGame = false;
+					Game1.finishedSS = false;
 					SimpleAES enc = new SimpleAES();
 					if (!File.Exists("Content\\records.txt"))
 					{

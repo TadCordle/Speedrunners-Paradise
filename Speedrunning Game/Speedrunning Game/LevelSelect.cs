@@ -553,6 +553,8 @@ namespace Speedrunning_Game
 			DrawOutlineText(sb, Game1.mnufont, "Main", new Vector2(485, 10), tab == 0 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Custom", new Vector2(565, 10), tab == 1 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Download", new Vector2(675, 10), tab == 2 ? Color.Yellow : Color.White, Color.Black);
+			if (tab == 0 && Game1.beatGame)
+				DrawOutlineText(sb, Game1.mnufont, "Total: " + TimeToString(Game1.commRecord), new Vector2(5, 10), Color.Cyan, Color.Black);
 
 			if (tab == 2)
 				DrawOutlineText(sb, Game1.msgfont, "Press S to enter a\nstring to search", Vector2.One * 5, Color.Cyan, Color.Black);

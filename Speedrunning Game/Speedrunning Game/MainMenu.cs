@@ -83,7 +83,7 @@ namespace Speedrunning_Game
 						r.Close();
 						r.Dispose();
 					}
-					Game1.finishedGame = false;
+					Game1.finishedSS = false;
 					Levels.Index = 0;
 					Game1.startTotalTime = true;
 					Game1.currentRoom = new Room(Levels.levels[0], true, new ReplayRecorder());

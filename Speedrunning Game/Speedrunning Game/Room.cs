@@ -631,7 +631,7 @@ namespace Speedrunning_Game
 					if (Runner.controllable)
 					{
 						time += gameTime.ElapsedGameTime.Milliseconds;
-						if (!Game1.finishedGame && Game1.startTotalTime && !recorder.playing)
+						if (!Game1.finishedSS && Game1.startTotalTime && !recorder.playing)
 							Game1.totalTime += gameTime.ElapsedGameTime.Milliseconds;
 					}
 				}
@@ -719,9 +719,12 @@ namespace Speedrunning_Game
 						File.Move("Content\\recordstemp.txt", "Content\\records.txt");
 					}
 
-					if (!Game1.finishedGame && Game1.startTotalTime && Levels.Index == Levels.levels.Length - 2 && (Game1.totalTime < Game1.totalRecord || Game1.totalRecord == -1))
+					if (Levels.Index == Levels.levels.Length - 2)
+						Game1.beatGame = true;
+
+					if (!Game1.finishedSS && Game1.startTotalTime && Levels.Index == Levels.levels.Length - 2 && (Game1.totalTime < Game1.totalRecord || Game1.totalRecord == -1))
 					{
-						Game1.finishedGame = true;
+						Game1.finishedSS = true;
 						StreamReader reader = new StreamReader("Content\\records.txt");
 						writer = new StreamWriter("Content\\recordstemp.txt", false);
 						bool found = false;
@@ -755,8 +758,33 @@ namespace Speedrunning_Game
 					if (Game1.online)
 					{
 						WebStuff.WriteScore(time, Game1.userName, levelID);
-						if (Game1.finishedGame && !custom)
+						if (Game1.finishedSS && !custom)
+						{
 							WebStuff.WriteScore(Game1.totalTime, Game1.userName, "fullgame");
+							if (Game1.totalTime < Game1.totalRecord)
+								Game1.totalRecord = Game1.totalTime;
+						}
+						if (Game1.beatGame && !custom)
+						{
+							Game1.commRecord = -1;
+							StreamReader r = new StreamReader("Content\\records.txt");
+							SimpleAES enc = new SimpleAES();
+							while (!r.EndOfStream)
+							{
+								string s = enc.DecryptString(r.ReadLine());
+								if (s.Split(' ')[1] == "0")
+								{
+									if (s.Split(' ')[0] != "Level_26_-_Credits" && s.Split(' ')[0] != "fullgame")
+									{
+										if (Game1.commRecord == -1)
+											Game1.commRecord = 0;
+										Game1.commRecord += int.Parse(s.Split(' ')[2]);
+									}
+								}
+							}
+							r.Close();
+							r.Dispose();
+						}
 					}
 				}
 
