@@ -70,6 +70,7 @@ namespace Speedrunning_Game
 			finishedSS = false;
 			totalRecord = -1;
 			commRecord = -1;
+
 			SimpleAES enc = new SimpleAES();
 			if (!File.Exists("Content\\records.txt"))
 			{
@@ -310,6 +311,8 @@ namespace Speedrunning_Game
 					this.Exit();
 				else if (currentRoom is SkinSelection)
 					currentRoom = new Settings();
+				else if (currentRoom is FGLeaderboard)
+					currentRoom = new LevelSelect(0);
 				else
 					currentRoom = new MainMenu(true);
 			}

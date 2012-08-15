@@ -17,14 +17,12 @@ namespace Speedrunning_Game
 		private int leaderboardPage;
 		private bool canScrollDown;
 		private bool upcheck, downcheck;
-		private string code;
 
 		public FGLeaderboard()
 		{
-			code = "fullgame";
 			if (Game1.online)
 			{
-				leaderboardData = WebStuff.GetScores(code, Game1.userName, leaderboardPage * 10);
+				leaderboardData = WebStuff.GetScores("fullgame", Game1.userName, leaderboardPage * 10);
 				canScrollDown = leaderboardData.Length == 11;
 			}
 		}
@@ -42,27 +40,14 @@ namespace Speedrunning_Game
 				{
 					upcheck = false;
 					leaderboardPage--;
-					leaderboardData = WebStuff.GetScores(code, Game1.userName, leaderboardPage * 10);
+					leaderboardData = WebStuff.GetScores("fullgame", Game1.userName, leaderboardPage * 10);
 					canScrollDown = true;
 				}
 				else if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck && canScrollDown)
 				{
 					downcheck = false;
 					leaderboardPage++;
-					leaderboardData = WebStuff.GetScores(code, Game1.userName, leaderboardPage * 10);
-					canScrollDown = leaderboardData.Length == 11;
-				}
-
-				if (Keyboard.GetState().IsKeyDown(Keys.Left) && code == "commulative")
-				{
-					code = "fullgame";
-					leaderboardData = WebStuff.GetScores(code, Game1.userName, leaderboardPage * 10);
-					canScrollDown = leaderboardData.Length == 11;
-				}
-				else if (Keyboard.GetState().IsKeyDown(Keys.Right) && code == "fullgame")
-				{
-					code = "commulative";
-					leaderboardData = WebStuff.GetScores(code, Game1.userName, leaderboardPage * 10);
+					leaderboardData = WebStuff.GetScores("fullgame", Game1.userName, leaderboardPage * 10);
 					canScrollDown = leaderboardData.Length == 11;
 				}
 			}
@@ -80,10 +65,6 @@ namespace Speedrunning_Game
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 540), Color.Lime);
 
 			DrawOutlineText(sb, Game1.mnufont, "Worldwide Records", new Vector2(40, 55), Color.Lime, Color.Black);
-			sb.DrawString(Game1.mnufont, "<-", new Vector2(450, 55), Color.Lime);
-			DrawOutlineText(sb, Game1.mnufont, "Single Segment", new Vector2(475, 55), code == "fullgame" ? Color.Yellow : Color.White, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, "Commulative", new Vector2(675, 55), code == "commulative" ? Color.Yellow : Color.White, Color.Black);
-			sb.DrawString(Game1.mnufont, "->", new Vector2(840, 55), Color.Lime);
 			if (!Game1.online)
 				DrawOutlineText(sb, Game1.mnufont, "You must log in to view leaderboards", new Vector2(40, 100), Color.White, Color.Black);
 			else

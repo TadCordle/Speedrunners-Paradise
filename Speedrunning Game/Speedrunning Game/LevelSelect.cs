@@ -16,7 +16,7 @@ namespace Speedrunning_Game
 	class LevelSelect : Room
 	{
 		private int selected;
-		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS, pressDel, pressD;
+		private bool pressDown, pressUp, pressPageDown, pressPageUp, pressLeft, pressRight, pressEnter, pressS, pressDel, pressD, pressY, pressN, pressL;
 		private int maxSelected;
 		private int scope;
 		private int tab;
@@ -26,9 +26,10 @@ namespace Speedrunning_Game
 		private Texture2D background;
 		private bool lastpage;
 		private bool showingBox;
+		private bool areYouSure;
 		private string criteria;
 		private int sortBy;
-		private string[] sortCrit = { "Date", "Rating" };
+		private string[] sortCrit = { "Date", "Stars" };
 
 		public LevelSelect(int tab)
 		{
@@ -42,6 +43,10 @@ namespace Speedrunning_Game
 			showingBox = false;
 			pressDel = false;
 			pressD = false;
+			pressY = false;
+			pressN = false;
+			areYouSure = false;
+			pressL = false;
 
 			background = Game1.backgrounds[0];
 			roomHeight = 720;
@@ -179,10 +184,20 @@ namespace Speedrunning_Game
 			if (!Keyboard.GetState().IsKeyDown(Keys.Delete))
 				pressDel = true;
 			if (!Keyboard.GetState().IsKeyDown(Keys.D))
-				pressD = true;
+				pressD = true; 
+			if (!Keyboard.GetState().IsKeyDown(Keys.Y))
+				pressY = true; 
+			if (!Keyboard.GetState().IsKeyDown(Keys.N))
+				pressN = true;
+			if (!Keyboard.GetState().IsKeyDown(Keys.L))
+				pressL = true;
+
+			// View full game leaderboard
+			if (Keyboard.GetState().IsKeyDown(Keys.L) && pressL && tab == 0 && Game1.online)
+				Game1.currentRoom = new FGLeaderboard();
 
 			// Change sort by
-			if (Keyboard.GetState().IsKeyDown(Keys.D) && pressD)
+			if (Keyboard.GetState().IsKeyDown(Keys.D) && pressD && !showingBox)
 			{
 				pressD = false;
 				try
@@ -257,6 +272,18 @@ namespace Speedrunning_Game
 			if (Keyboard.GetState().IsKeyDown(Keys.Delete) && pressDel && tab == 1 && !showingBox)
 			{
 				pressDel = false;
+				areYouSure = true;
+			}
+			if (Keyboard.GetState().IsKeyDown(Keys.N) && pressN && tab == 1 && !showingBox && areYouSure)
+			{
+				pressN = false;
+				areYouSure = false;
+			}
+			if (Keyboard.GetState().IsKeyDown(Keys.Y) && pressY && tab == 1 && !showingBox && areYouSure)
+			{
+				pressY = false;
+				pressDel = false;
+				areYouSure = false;
 				Tuple<string, int, int, bool> lvl = custompage[selected];
 				levels.Remove(lvl);
 				custompage.Remove(lvl);
@@ -268,11 +295,13 @@ namespace Speedrunning_Game
 			// Cycle through choices when keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.Down) && pressDown && !showingBox)
 			{
+				areYouSure = false;
 				pressDown = false;
 				selected++;
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.Up) && pressUp && !showingBox)
 			{
+				areYouSure = false;
 				pressUp = false;
 				selected--;
 			}
@@ -280,6 +309,7 @@ namespace Speedrunning_Game
 			// Cycle through pages when keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.PageDown) && pressPageDown && !showingBox)
 			{
+				areYouSure = false;
 				pressPageDown = false;
 				if (tab != 2)
 				{
@@ -312,6 +342,7 @@ namespace Speedrunning_Game
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.PageUp) && pressPageUp && !showingBox)
 			{
+				areYouSure = false;
 				pressPageUp = false;
 				if (tab != 2)
 				{
@@ -343,6 +374,8 @@ namespace Speedrunning_Game
 			// Change category when arrow keys are pressed
 			if (Keyboard.GetState().IsKeyDown(Keys.Left) && pressLeft && tab > 0 && !showingBox)
 			{
+				areYouSure = false;
+				criteria = "";
 				pressLeft = false;
 				tab--;
 				lastpage = false;
@@ -385,6 +418,7 @@ namespace Speedrunning_Game
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.Right) && pressRight && tab < 2 && !showingBox)
 			{
+				areYouSure = false;
 				pressRight = false;
 				tab++;
 				lastpage = false;
@@ -500,6 +534,7 @@ namespace Speedrunning_Game
 			// Load selected level
 			if (Keyboard.GetState().IsKeyDown(Keys.Enter) && pressEnter && !showingBox)
 			{
+				areYouSure = false;
 				pressEnter = false;
 				if (tab == 0)
 				{
@@ -553,14 +588,20 @@ namespace Speedrunning_Game
 			DrawOutlineText(sb, Game1.mnufont, "Main", new Vector2(485, 10), tab == 0 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Custom", new Vector2(565, 10), tab == 1 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Download", new Vector2(675, 10), tab == 2 ? Color.Yellow : Color.White, Color.Black);
-			if (tab == 0 && Game1.beatGame)
-				DrawOutlineText(sb, Game1.mnufont, "Total: " + TimeToString(Game1.commRecord), new Vector2(5, 10), Color.Cyan, Color.Black);
+			if (tab == 0)
+			{
+				if (Game1.beatGame)
+					DrawOutlineText(sb, Game1.mnufont, "All Levels: " + TimeToString(Game1.commRecord), new Vector2(717, 70), Color.Cyan, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, "Full Game Record: " + TimeToString(Game1.totalRecord), new Vector2(622, 100), Color.Cyan, Color.Black);
+				if (Game1.online)
+					DrawOutlineText(sb, Game1.mnufont, "Press L to view full\n  game leaderboard", new Vector2(728, 660), Color.White, Color.Black);
+			}
 
 			if (tab == 2)
 				DrawOutlineText(sb, Game1.msgfont, "Press S to enter a\nstring to search", Vector2.One * 5, Color.Cyan, Color.Black);
 
 			// Draw levels list
-			if (custompage.Count == 0)
+			if (custompage.Count == 0 && tab != 2)
 				DrawOutlineText(sb, Game1.mnufont, "You don't have any " + (tab == 0 ? "levels unlocked!" : "custom levels!"), new Vector2(50, 70), Color.White, Color.Black);
 			else
 				if (tab != 2)
@@ -568,9 +609,11 @@ namespace Speedrunning_Game
 					for (int i = 0; i < custompage.Count; i++)
 					{
 						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item1.Split('\\')[custompage[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
-						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item2 != -1 ? TimeToString(custompage[i].Item2) : "-- : -- . ---", new Vector2(550, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item2 != -1 ? TimeToString(custompage[i].Item2) : "-- : -- . ---", new Vector2(450, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
 						if (custompage[i].Item3 != -1)
-							sb.Draw(Game1.medalTex, new Vector2(670, (1 + i + i / 11) * 60 + 10 - scope * 720), custompage[i].Item3 == 0 ? Color.Gold : (custompage[i].Item3 == 1 ? Color.Silver : (custompage[i].Item3 == 2 ? Color.Brown : Color.SteelBlue)));
+							sb.Draw(Game1.medalTex, new Vector2(570, (1 + i + i / 11) * 60 + 10 - scope * 720), custompage[i].Item3 == 0 ? Color.Gold : (custompage[i].Item3 == 1 ? Color.Silver : (custompage[i].Item3 == 2 ? Color.Brown : Color.SteelBlue)));
+						if (selected == i && tab == 1 && areYouSure)
+							DrawOutlineText(sb, Game1.mnufont, "Permanently delete? (Y/N)", new Vector2(610, (1 + i + i / 11) * 60 + 10 - scope * 720), Color.Cyan, Color.Black);
 					}
 				}
 				else
@@ -590,7 +633,7 @@ namespace Speedrunning_Game
 								DrawOutlineText(sb, Game1.mnufont, "*", new Vector2(660 + j * 10, (1 + i + i / 11) * 60 + 15), j <= dlpage[i].Item4 ? Color.Yellow : Color.DarkGray, Color.Black);
 							DrawOutlineText(sb, Game1.mnufont, dlpage[i].Item4.ToString(), new Vector2(730, (1 + i + i / 11) * 60 + 10), i == selected ? Color.Yellow : Color.White, Color.Black);
 						}
-						DrawOutlineText(sb, Game1.mnufont, "Press D to sort by " + sortCrit[Math.Abs(sortBy - 1)].ToLower(), new Vector2(660, 690), Color.Lime, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, "Press D to sort by " + sortCrit[Math.Abs(sortBy - 1)].ToLower(), new Vector2(690, 692), Color.Lime, Color.Black);
 					}
 				}
 		}
