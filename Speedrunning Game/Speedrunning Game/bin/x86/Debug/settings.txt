@@ -1,6 +1,6 @@
 MusicVolume 1
 SFXVolume 1
-Skin mr_guy
+Skin stick_figure
 MoveLeft Left
 MoveRight Right
 Jump/WallJump Space

@@ -20,7 +20,7 @@ namespace Speedrunning_Game
 			currentSelection = 0;
 			choices = new string[6];
 			choices[0] = "speed runner";
-			choices[1] = "squirrel";
+			choices[1] = "blob";
 			choices[2] = "stick figure";
 			choices[3] = "mr guy";
 			choices[4] = "mario";
