@@ -18,7 +18,7 @@ namespace Speedrunning_Game
 		private bool pressUp;
 		private bool pressEnter;
 
-		const int MAX_SELECTED = 4;
+		const int MAX_SELECTED = 3;
 
 		public MainMenu(bool pressEnter)
 		{

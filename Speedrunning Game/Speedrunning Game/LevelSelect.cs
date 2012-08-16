@@ -401,20 +401,6 @@ namespace Speedrunning_Game
 					maxSelected = custompage.Count - 1;
 					selected = 0;
 				}
-				else if (tab == 2)
-				{
-					try
-					{
-						scope = 0;
-						dlpage = WebStuff.GetLevels(criteria, sortCrit[sortBy], 0);
-						maxSelected = dlpage.Count - 1;
-					}
-					catch (Exception)
-					{
-						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the database.", "Connection Error");
-						return;
-					}
-				}
 			}
 			else if (Keyboard.GetState().IsKeyDown(Keys.Right) && pressRight && tab < 2 && !showingBox)
 			{
@@ -422,18 +408,7 @@ namespace Speedrunning_Game
 				pressRight = false;
 				tab++;
 				lastpage = false;
-				if (tab == 0)
-				{
-					custompage.Clear();
-					var it = from Tuple<string, int, int, bool> t in levels
-							 where !t.Item4
-							 select t;
-					foreach (Tuple<string, int, int, bool> t in it)
-						custompage.Add(t);
-					maxSelected = custompage.Count - 1;
-					selected = 0;
-				}
-				else if (tab == 1)
+				if (tab == 1)
 				{
 					custompage.Clear();
 					var it = from Tuple<string, int, int, bool> t in levels
@@ -444,7 +419,7 @@ namespace Speedrunning_Game
 					maxSelected = custompage.Count - 1;
 					selected = 0;
 				}
-				else if (tab == 2)
+				else if (tab == 2 && Game1.online)
 				{
 					try
 					{
@@ -578,7 +553,7 @@ namespace Speedrunning_Game
 			// Draw scroll arrows
 			if (scope > 0)
 				sb.DrawString(Game1.mnufont, "^", new Vector2(12, 70), Color.Lime);
-			if (scope < maxSelected / 11 && maxSelected > 10 || tab == 2 && (!lastpage || maxSelected < 10))
+			if (scope < maxSelected / 11 && maxSelected > 10 || tab == 2 && Game1.online && (!lastpage || maxSelected < 10))
 				sb.DrawString(Game1.mnufont, "v", new Vector2(12, 668), Color.Lime);
 
 			// Draw header
@@ -597,7 +572,7 @@ namespace Speedrunning_Game
 					DrawOutlineText(sb, Game1.mnufont, "Press L to view full\n  game leaderboard", new Vector2(728, 660), Color.White, Color.Black);
 			}
 
-			if (tab == 2)
+			if (tab == 2 && Game1.online)
 				DrawOutlineText(sb, Game1.msgfont, "Press S to enter a\nstring to search", Vector2.One * 5, Color.Cyan, Color.Black);
 
 			// Draw levels list

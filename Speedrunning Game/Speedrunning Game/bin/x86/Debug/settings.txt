@@ -1,6 +1,6 @@
 MusicVolume 1
 SFXVolume 1
-Skin ninja
+Skin mr_guy
 MoveLeft Left
 MoveRight Right
 Jump/WallJump Space
