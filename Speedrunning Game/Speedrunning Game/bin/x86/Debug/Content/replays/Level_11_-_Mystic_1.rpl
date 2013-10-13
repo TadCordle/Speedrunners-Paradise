@@ -1,0 +1,77 @@
+0{press MoveRight}
+7{press Jump}
+12{release Jump}
+79{press Jump}
+88{release Jump}
+186{press Jump}
+195{release Jump}
+246{press Jump}
+255{release Jump}
+316{press Jump}
+324{release Jump}
+361{press Jump}
+371{release Jump}
+393{press Jump}
+402{release Jump}
+439{release MoveRight}
+441{press MoveLeft}
+448{release MoveLeft}
+479{press MoveRight}
+522{press Jump}
+534{release Jump}
+569{press MoveLeft,release MoveRight}
+580{release MoveLeft}
+587{press MoveLeft}
+591{release MoveLeft}
+611{press MoveRight}
+678{press Jump}
+686{release MoveRight}
+690{release Jump}
+698{press Jump}
+706{release Jump}
+711{press Jump}
+720{release Jump}
+724{press Jump}
+730{release Jump}
+736{press Jump}
+746{release Jump}
+757{press Jump}
+766{release Jump}
+770{press Jump}
+777{release Jump}
+789{press MoveRight}
+818{press Jump}
+828{release Jump}
+846{press Slide}
+893{press Jump}
+905{release Jump}
+951{press Jump}
+958{release Jump}
+998{press MoveLeft}
+999{release MoveRight}
+1000{release Slide}
+1013{release MoveLeft}
+1023{press MoveRight}
+1057{press Jump}
+1067{release Jump}
+1093{release MoveRight}
+
+128 128 0 0
+521.5 160.1999 7.5 10.8
+971.5 216.7998 7.5 6
+1421.5 448.7997 7.5 0
+1871.5 491.1996 7.5 11.2
+2321.5 458.5996 7.5 5.600001
+2771.5 448.1996 7.5 0
+2959.5 284.9996 5 2.900001
+3282 699.1995 4 17.19999
+3721.5 1299.799 7.5 -3.200001
+3983 1530.6 -1 12
+4178 1935 1 9.6
+4400.5 1761.9 8 -4.299999
+4408.5 1511.9 8 -3.899999
+4996.5 1483.201 12 -1.600001
+5716.5 1804.601 12 -7.600002
+6436.5 1855.201 12 -6.800002
+6964 1957.601 -3 8.8
+7185 2313.801 7.5 -1.200001

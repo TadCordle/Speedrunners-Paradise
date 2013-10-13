@@ -1,0 +1,46 @@
+0{press MoveRight}
+2{press Jump}
+8{release Jump}
+39{press Slide}
+64{release Slide}
+68{press Slide}
+119{release Slide}
+124{press Slide}
+132{release Slide}
+137{press Slide}
+146{release Slide}
+150{press Slide}
+158{release Slide}
+162{press Slide}
+168{release Slide}
+206{press Slide}
+215{release Slide}
+219{press Slide}
+225{release Slide}
+230{press Slide}
+237{release Slide}
+241{press Slide}
+250{release Slide}
+253{press Slide}
+262{release Slide}
+282{press Slide}
+363{release Slide}
+387{press Slide}
+573{release MoveRight}
+712{press MoveLeft}
+725{release MoveLeft}
+726{release Slide}
+
+32 224 0 0
+432.5303 300.3077 10.83713 5.001751
+1131.901 406.3889 9.704962 -3.774148
+1613.168 249.5544 7.924955 1.706965
+2246.687 671.9785 14.53106 7.46007
+3229.211 1113.2 16.69628 14.79999
+4477.542 2080 22.02106 0
+5798.187 2755 27.78927 13.89464
+7559.523 3104.4 29.48297 13.2
+9328.517 4356 29.48297 1.600003
+9904.102 3592.774 -2.360415E-06 -54.4791
+9904.102 1056.031 -2.360415E-06 -30.47901
+9695.063 39.75 -7.204022 -1.801006

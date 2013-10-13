@@ -1,0 +1,159 @@
+0{press MoveRight}
+6{press Jump}
+17{release Jump}
+34{release MoveRight}
+60{press Jump}
+69{press MoveRight}
+72{release Jump}
+116{release MoveRight}
+118{press MoveLeft}
+120{press Jump}
+127{release Jump}
+140{release MoveLeft}
+144{press Jump}
+152{release Jump}
+157{press Jump}
+163{release Jump}
+166{press Jump}
+173{release Jump}
+179{press MoveLeft}
+188{release MoveLeft}
+210{press MoveRight}
+224{press Jump}
+230{release Jump}
+261{press Jump}
+267{release Jump}
+280{release MoveRight}
+288{press MoveLeft}
+294{release MoveLeft}
+301{press MoveRight}
+311{press Jump}
+317{release Jump}
+348{press Slide}
+446{release MoveRight}
+455{press Jump}
+461{release Jump}
+465{press Jump}
+472{release Jump}
+476{press Jump}
+482{release Jump}
+487{press Jump}
+496{release Jump}
+499{press Jump}
+506{release Jump}
+512{press Jump}
+521{release Jump}
+571{press Jump}
+576{release Jump}
+581{press Jump}
+586{release Jump}
+592{release Slide}
+594{press MoveLeft}
+642{release MoveLeft}
+644{press MoveRight}
+678{press Slide}
+699{release Slide}
+702{release MoveRight}
+722{press MoveLeft}
+750{press Box}
+779{release MoveLeft}
+780{press MoveRight}
+788{press Slide}
+789{release MoveRight}
+824{press MoveRight}
+833{release Slide}
+839{press Jump}
+845{release Jump}
+847{release MoveRight}
+863{press MoveRight}
+870{release MoveRight}
+881{press Jump}
+886{press MoveLeft}
+887{release Jump}
+904{press Jump}
+909{release Jump}
+925{press Jump}
+930{release Jump}
+944{press Slide}
+978{release MoveLeft,press Jump}
+979{release Slide}
+986{release Jump}
+997{press Jump}
+1003{release Jump}
+1012{press MoveLeft}
+1031{press Jump}
+1038{release Jump}
+1050{press Jump}
+1056{release Jump}
+1061{release Box}
+1098{press Jump}
+1099{release MoveLeft}
+1103{release Jump}
+1108{press MoveRight}
+1114{release MoveRight}
+1150{press MoveLeft}
+1169{release MoveLeft}
+1175{press MoveRight}
+1181{release MoveRight}
+1208{press MoveLeft}
+1215{press Jump}
+1221{release Jump}
+1267{press Jump}
+1272{release Jump}
+1289{press Slide}
+1328{release Slide}
+1337{release MoveLeft}
+1344{press Slide}
+1383{press Jump}
+1390{release Jump}
+1402{press Jump}
+1408{release Jump}
+1423{press Jump}
+1431{release Jump}
+1434{release Slide}
+1437{press MoveRight}
+1447{release MoveRight}
+1466{press Jump}
+1472{press MoveLeft}
+1473{release Jump}
+1480{release MoveLeft}
+1522{press Jump}
+1524{press MoveLeft}
+1527{release Jump}
+1532{release MoveLeft}
+1554{press MoveRight}
+1558{release MoveRight}
+1565{press MoveLeft}
+1570{press Jump}
+1576{release Jump}
+1592{release MoveLeft}
+1593{press MoveRight}
+1601{release MoveRight}
+
+128 1184 0 0
+516 1184.2 5.5 0
+941.0226 960.5071 5.141797 0
+1016.515 669.2072 8 -2.299999
+1346.515 858.4072 7.5 -4.000001
+1916.508 685.2073 7.964102 3.199998
+2401.012 697.8 8.950689 1.790138
+3138.867 1152 17.77165 0
+3720.65 1062.6 8 -6.3
+3696.65 693.4004 -4.808253E-07 -8.700005
+3616.65 281.6001 -8 -0.2999988
+3293.65 471.6999 6.5 10.8
+3632.15 572.8995 0 8.400001
+3257.15 800.6998 -7.5 0.4
+3484.419 800.5549 7.653879 -10
+3600.495 593.355 -0.5 -2.800001
+3475.495 480.6551 -7.5 0
+3410.995 302.6549 4.5 1.300001
+3088.995 90.75481 -7.5 1.599999
+2725.584 59.37639 -4.059144 5.029668
+2443.953 224.473 0 0.4
+2104.761 15.20602 -7.746964 3.357191
+1634.485 47.5 -9.599909 2.399976
+1050.268 384.7196 -9.749391 0.4
+882.2794 139.4195 -7 -1.099999
+681.7794 119.0195 -4.5 3.2
+390.2794 167.8195 -4 4.8

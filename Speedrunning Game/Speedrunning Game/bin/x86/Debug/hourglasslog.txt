@@ -1,0 +1,1940 @@
+creating process "C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game.exe"...
+done creating process, got handle 0x8A8, PID = 7612.
+SYMBOL PATH: .;C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug;C:\Windows;C:\Windows\System32;C:\Windows\Symbols\dll
+attempting injection...
+Injecting "C:\Users\Tad\Desktop\hourglass-r81\hourglass-r81\wintasee.dll" by IAT (method 1) apparently succeeded.
+done injection. starting game thread
+entering debugger loop
+CREATED PROCESS: C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game.exe
+TRUSTED MODULE 0x00FE0000 - 0x010A7000 (C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game.exe)
+entrypoint = 0x10A277E
+LoadModuleSymbols(0x8A8, C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game.exe, 0x34C, 0xFE0000) = {BaseOfImage=0xFE0000, NumSyms=0, SymType=0x3, ModuleName=Speedrunning Game, ImageName=C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game.exe}
+LOADED DLL: C:\Windows\SysWOW64\ntdll.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\ntdll.dll, 0x34C, 0x775D0000) = {BaseOfImage=0x775D0000, NumSyms=2032, SymType=0x4, ModuleName=ntdll, ImageName=C:\Windows\SysWOW64\ntdll.dll}
+UNLOADED DLL: 
+UNLOADED DLL: 
+UNLOADED DLL: 
+UNLOADED DLL: 
+LOADED DLL: C:\Windows\SysWOW64\mscoree.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\mscoree.dll, 0x34C, 0x6C4A0000) = {BaseOfImage=0x6C4A0000, NumSyms=126, SymType=0x4, ModuleName=mscoree, ImageName=C:\Windows\SysWOW64\mscoree.dll}
+LOADED DLL: C:\Windows\SysWOW64\kernel32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\kernel32.dll, 0x34C, 0x76C00000) = {BaseOfImage=0x76C00000, NumSyms=1362, SymType=0x4, ModuleName=kernel32, ImageName=C:\Windows\SysWOW64\kernel32.dll}
+LOADED DLL: C:\Windows\SysWOW64\KernelBase.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\KernelBase.dll, 0x34C, 0x75100000) = {BaseOfImage=0x75100000, NumSyms=631, SymType=0x4, ModuleName=KernelBase, ImageName=C:\Windows\SysWOW64\KernelBase.dll}
+LOADED DLL: C:\Users\Tad\Desktop\hourglass-r81\hourglass-r81\wintasee.dll
+TRUSTED MODULE 0x10000000 - 0x100B6000 (C:\Users\Tad\Desktop\hourglass-r81\hourglass-r81\wintasee.dll)
+LoadModuleSymbols(0x8A8, C:\Users\Tad\Desktop\hourglass-r81\hourglass-r81\wintasee.dll, 0x34C, 0x10000000) = {BaseOfImage=0x10000000, NumSyms=0, SymType=0x3, ModuleName=wintasee, ImageName=C:\Users\Tad\Desktop\hourglass-r81\hourglass-r81\wintasee.dll}
+LOADED DLL: C:\Windows\SysWOW64\user32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\user32.dll, 0x34C, 0x757D0000) = {BaseOfImage=0x757D0000, NumSyms=1003, SymType=0x4, ModuleName=user32, ImageName=C:\Windows\SysWOW64\user32.dll}
+LOADED DLL: C:\Windows\SysWOW64\gdi32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\gdi32.dll, 0x34C, 0x75D70000) = {BaseOfImage=0x75D70000, NumSyms=727, SymType=0x4, ModuleName=gdi32, ImageName=C:\Windows\SysWOW64\gdi32.dll}
+LOADED DLL: C:\Windows\SysWOW64\lpk.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\lpk.dll, 0x34C, 0x775A0000) = {BaseOfImage=0x775A0000, NumSyms=11, SymType=0x4, ModuleName=lpk, ImageName=C:\Windows\SysWOW64\lpk.dll}
+LOADED DLL: C:\Windows\SysWOW64\usp10.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\usp10.dll, 0x34C, 0x75CD0000) = {BaseOfImage=0x75CD0000, NumSyms=44, SymType=0x4, ModuleName=usp10, ImageName=C:\Windows\SysWOW64\usp10.dll}
+LOADED DLL: C:\Windows\SysWOW64\msvcrt.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\msvcrt.dll, 0x34C, 0x754A0000) = {BaseOfImage=0x754A0000, NumSyms=1396, SymType=0x4, ModuleName=msvcrt, ImageName=C:\Windows\SysWOW64\msvcrt.dll}
+LOADED DLL: C:\Windows\SysWOW64\advapi32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\advapi32.dll, 0x34C, 0x74E70000) = {BaseOfImage=0x74E70000, NumSyms=806, SymType=0x4, ModuleName=advapi32, ImageName=C:\Windows\SysWOW64\advapi32.dll}
+LOADED DLL: C:\Windows\SysWOW64\sechost.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\sechost.dll, 0x34C, 0x751A0000) = {BaseOfImage=0x751A0000, NumSyms=60, SymType=0x4, ModuleName=sechost, ImageName=C:\Windows\SysWOW64\sechost.dll}
+LOADED DLL: C:\Windows\SysWOW64\rpcrt4.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\rpcrt4.dll, 0x34C, 0x76AE0000) = {BaseOfImage=0x76AE0000, NumSyms=540, SymType=0x4, ModuleName=rpcrt4, ImageName=C:\Windows\SysWOW64\rpcrt4.dll}
+LOADED DLL: C:\Windows\SysWOW64\sspicli.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\sspicli.dll, 0x34C, 0x74CB0000) = {BaseOfImage=0x74CB0000, NumSyms=97, SymType=0x4, ModuleName=sspicli, ImageName=C:\Windows\SysWOW64\sspicli.dll}
+LOADED DLL: C:\Windows\SysWOW64\cryptbase.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\cryptbase.dll, 0x34C, 0x74CA0000) = {BaseOfImage=0x74CA0000, NumSyms=11, SymType=0x4, ModuleName=cryptbase, ImageName=C:\Windows\SysWOW64\cryptbase.dll}
+LOADED DLL: C:\Windows\SysWOW64\imm32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\imm32.dll, 0x34C, 0x75770000) = {BaseOfImage=0x75770000, NumSyms=134, SymType=0x4, ModuleName=imm32, ImageName=C:\Windows\SysWOW64\imm32.dll}
+LOADED DLL: C:\Windows\SysWOW64\msctf.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\msctf.dll, 0x34C, 0x753D0000) = {BaseOfImage=0x753D0000, NumSyms=71, SymType=0x4, ModuleName=msctf, ImageName=C:\Windows\SysWOW64\msctf.dll}
+00001FBC: (f=0, t=6000) DllMain started, injection must have worked.
+got name for thread id=0x1FBC: "DllMain"
+UNKNOWN MESSAGE: EXTHWNDBUF: 269105092
+Call stack info(thread=0x348) : (id=0x1FBC) (name=DllMain)
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21DF90)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21E1E4 ("EXTHWNDBUF: 269105092"), 1, 0x48545845, 0x42444E57)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x1007F358 ("EXTHWNDBUF: %Iu"), 0x100A37C4)
+     c:\depot\hourglass-win32\src\wintasee\wintasee.cpp(1688) : DllMain(0x10000000, 1, 0x21F56C)
+     f:\dd\vctools\crt_bld\self_x86\crt\src\dllcrt0.c(330) : __DllMainCRTStartup(0x10000000, 0x21F284, 0x77609950)
+     f:\dd\vctools\crt_bld\self_x86\crt\src\dllcrt0.c(293) : _DllMainCRTStartup(0x10000000, 1, 0x21F56C)
+     ntdll!0x77609950 : RtlQueryEnvironmentVariable(0x10058FB4, 0x10000000, 1, 0x21F56C)?
+     ntdll!0x7760D8C9 : LdrResSearchResource(0x21F56C, 0x7EFDD000, 0x7EFDE000, 0x776D206C)?
+     ntdll!0x7761681C : RtlGetNtVersionNumbers(0x21F56C, 0x775D0000, 0x75C00C49, 0)?
+     ntdll!0x776152D6 : RtlSetUnhandledExceptionFilter(0x21F56C, 0x775D0000, 0, 0)?
+     ntdll!0x77609E79 : LdrInitializeThunk(0x21F56C, 0x775D0000, 0, 0x1002F)?
+00001FBC: (f=0, t=6000) WARNING: Loading module WINMM.dll to hook timeGetTime
+LOADED DLL: C:\Windows\SysWOW64\winmm.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\winmm.dll, 0x34C, 0x71BA0000) = {BaseOfImage=0x71BA0000, NumSyms=193, SymType=0x4, ModuleName=winmm, ImageName=C:\Windows\SysWOW64\winmm.dll}
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.timeGetTime) succeeded. 	(0x71BA26E0, 0x1000498B)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.timeGetSystemTime) succeeded. 	(0x71BC0A21, 0x10004A3B)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.QueryPerformanceCounter) succeeded. 	(0x76C11725, 0x10004B61)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.QueryPerformanceFrequency) succeeded. 	(0x76C141C0, 0x10004B9D)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.NtQueryPerformanceCounter) succeeded. 	(0x775EFD10, 0x10004BD9)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetSystemTime) succeeded. 	(0x76C15A66, 0x10004A77)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetSystemTimeAsFileTime) succeeded. 	(0x76C134D9, 0x10004AB1)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetLocalTime) succeeded. 	(0x76C15A76, 0x10004AEB)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetTickCount) succeeded. 	(0x76C1110C, 0x100049C5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetSystemTimes) succeeded. 	(0x76C9358D, 0x100049FF)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.NtQuerySystemTime) succeeded. 	(0x775F010C, 0x10004B25)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.timeSetEvent) succeeded. 	(0x71BAA65C, 0x10004C15)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.timeKillEvent) succeeded. 	(0x71BAA58C, 0x10004C51)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SetTimer) succeeded. 	(0x757E79FB, 0x10004C8D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.KillTimer) succeeded. 	(0x757E79DB, 0x10004CC9)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateTimerQueueTimer) succeeded. 	(0x76C2F7B3, 0x10004D05)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.QueueUserAPC) succeeded. 	(0x76C39F25, 0x10004DB9)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.LdrLoadDll) succeeded. 	(0x7760C45A, 0x10006FBC)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.KiUserCallbackDispatcher) succeeded. 	(0x775E00DC, 0x10007032)
+00001FBC: (f=0, t=6000) InterceptAPI(OLE32.dll.CoCreateInstance) failed! 	(0x0, 0x1000706B)
+00001FBC: (f=0, t=6000) InterceptAPI(OLE32.dll.CoCreateInstanceEx) failed! 	(0x0, 0x100070A6)
+00001FBC: (f=0, t=6000) InterceptAPI(OLE32.dll.CoGetClassObject) failed! 	(0x0, 0x100070E1)
+00001FBC: (f=0, t=6000) InterceptAPI(QUARTZ.DLL.DllGetClassObject) failed! 	(0x0, 0x100218BA)
+00001FBC: (f=0, t=6000) InterceptAPI(RPCRT4.dll.IUnknown_QueryInterface_Proxy) succeeded. 	(0x76B141CB, 0x1000711C)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.FlsGetValue) bypassed. 	(0x76C11252, 0x10007378)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.TlsGetValue) bypassed. 	(0x76C111E0, 0x10007333)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.FlsSetValue) succeeded. 	(0x76C141D8, 0x1000733D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.TlsSetValue) succeeded. 	(0x76C114FB, 0x10007329)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.ExitProcess) succeeded. 	(0x76C179E0, 0x100072F0)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateProcessA) succeeded. 	(0x76C11072, 0x1000727A)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateProcessW) succeeded. 	(0x76C1103D, 0x100072B5)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.RtlAllocateHeap) succeeded. 	(0x775FE046, 0x10007157)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.RtlCreateHeap) succeeded. 	(0x7761028F, 0x10007192)
+00001FBC: (f=0, t=6000) InterceptAPI(RPCRT4.dll.NdrAllocate) succeeded. 	(0x76B22540, 0x100071CD)
+00001FBC: (f=0, t=6000) InterceptAPI(RPCRT4.dll.NdrClientInitialize) succeeded. 	(0x76AF6FF1, 0x10007241)
+00001FBC: (f=0, t=6000) InterceptAPI(RPCRT4.dll.NdrClientInitializeNew) succeeded. 	(0x76AF6FB7, 0x10007208)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateThread) succeeded. 	(0x76C134A5, 0x100073B3)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.ExitThread) succeeded. 	(0x77627FDC, 0x100073EE)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.TerminateThread) succeeded. 	(0x76C179FF, 0x10007427)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetExitCodeThread) succeeded. 	(0x76C2D57D, 0x10007462)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.NtSetInformationThread) succeeded. 	(0x775EF98C, 0x1000749D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.TranslateMessage) succeeded. 	(0x757E7809, 0x10005B11)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetMessageA) succeeded. 	(0x757E7BD3, 0x10005937)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetMessageW) succeeded. 	(0x757E78E2, 0x10005973)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PeekMessageA) succeeded. 	(0x757F5F74, 0x100059AF)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PeekMessageW) succeeded. 	(0x757F05BA, 0x100059EB)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetQueueStatus) succeeded. 	(0x757F3924, 0x10005A27)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetInputState) succeeded. 	(0x757F8639, 0x10005A63)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetMessagePos) succeeded. 	(0x757F2A8D, 0x10005A9D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetMessageTime) succeeded. 	(0x7580F600, 0x10005AD7)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DispatchMessageA) succeeded. 	(0x757E7BBB, 0x10005B4D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DispatchMessageW) succeeded. 	(0x757E787B, 0x10005B89)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendMessageA) succeeded. 	(0x757F612E, 0x100057D1)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendMessageW) succeeded. 	(0x757E9679, 0x10005795)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PostMessageA) succeeded. 	(0x757F3BAA, 0x10005849)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PostMessageW) succeeded. 	(0x757F12A5, 0x1000580D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendNotifyMessageA) succeeded. 	(0x75846D5D, 0x1000562D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendNotifyMessageW) succeeded. 	(0x757F7668, 0x10005669)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendMessageTimeoutA) succeeded. 	(0x757F781F, 0x100056A5)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendMessageTimeoutW) succeeded. 	(0x757E97D2, 0x100056E1)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendMessageCallbackA) succeeded. 	(0x75846CFC, 0x1000571D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SendMessageCallbackW) succeeded. 	(0x757F76E0, 0x10005759)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PostThreadMessageA) succeeded. 	(0x757F3C61, 0x10005885)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PostThreadMessageW) succeeded. 	(0x757E8BFF, 0x100058C1)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.PostQuitMessage) succeeded. 	(0x757E9ABB, 0x100058FD)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DefWindowProcA) succeeded. 	(0x77612A63, 0x10005C3D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DefWindowProcW) succeeded. 	(0x776025FD, 0x10005C79)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.RegisterWindowMessageA) succeeded. 	(0x757F0AFA, 0x10005BC5)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.RegisterWindowMessageW) succeeded. 	(0x757E9EBD, 0x10005C01)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.CallNextHookEx) succeeded. 	(0x757F6285, 0x10006FF7)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.CreateWindowExA) succeeded. 	(0x757ED22E, 0x10005CB5)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.CreateWindowExW) succeeded. 	(0x757E8A29, 0x10005CF1)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DestroyWindow) succeeded. 	(0x757E9A55, 0x10005D2D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.CloseWindow) succeeded. 	(0x7582999A, 0x10005D69)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetActiveWindow) succeeded. 	(0x7580F5C7, 0x10006280)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetForegroundWindow) succeeded. 	(0x757F2320, 0x100062B9)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetFocus) succeeded. 	(0x757F0DEE, 0x100062F2)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SetWindowLongA) succeeded. 	(0x757F6110, 0x10005DA5)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SetWindowLongW) succeeded. 	(0x757E8332, 0x10005DE1)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetWindowLongA) succeeded. 	(0x757ED156, 0x10005E1D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetWindowLongW) succeeded. 	(0x757E6FFE, 0x10005E59)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MoveWindow) succeeded. 	(0x757F3698, 0x1000606D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SetWindowPos) succeeded. 	(0x757E8E4E, 0x100060A8)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.ShowWindow) succeeded. 	(0x757F0DFB, 0x100060E3)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetClientRect) succeeded. 	(0x757F0C62, 0x1000611E)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetWindowRect) succeeded. 	(0x757E7F34, 0x10006159)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.ClientToScreen) succeeded. 	(0x757F2606, 0x10006194)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.ScreenToClient) succeeded. 	(0x757F227D, 0x100061CF)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SetWindowTextA) succeeded. 	(0x757F7AEE, 0x1000620A)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SetWindowTextW) succeeded. 	(0x757F20EC, 0x10006245)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MessageBoxA) succeeded. 	(0x7583FD1E, 0x10005E95)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MessageBoxW) succeeded. 	(0x7583FD3F, 0x10005ED0)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MessageBoxExA) succeeded. 	(0x7583FCD6, 0x10005F0B)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MessageBoxExW) succeeded. 	(0x7583FCFA, 0x10005F46)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DialogBoxParamA) succeeded. 	(0x7582CB0C, 0x10005F81)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DialogBoxParamW) succeeded. 	(0x7580CFCA, 0x10005FBC)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DialogBoxIndirectParamA) succeeded. 	(0x7582CE64, 0x10005FF7)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.DialogBoxIndirectParamW) succeeded. 	(0x7580CBF3, 0x10006032)
+00001FBC: (f=0, t=6000) InterceptAPI(DINPUT.dll.DirectInputCreateA) failed! 	(0x0, 0x100074D8)
+00001FBC: (f=0, t=6000) InterceptAPI(DINPUT.dll.DirectInputCreateW) failed! 	(0x0, 0x10007513)
+00001FBC: (f=0, t=6000) InterceptAPI(DINPUT.dll.DirectInputCreateEx) failed! 	(0x0, 0x1000754E)
+00001FBC: (f=0, t=6000) InterceptAPI(DINPUT8.dll.DirectInput8Create) failed! 	(0x0, 0x10007589)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetAsyncKeyState) succeeded. 	(0x7580EB96, 0x100075C4)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetKeyState) succeeded. 	(0x757F291F, 0x100075FF)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetKeyboardState) succeeded. 	(0x7580EC68, 0x1000763A)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetLastInputInfo) succeeded. 	(0x757FB382, 0x10007675)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joyReleaseCapture) succeeded. 	(0x71BB1E6C, 0x10007761)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joySetCapture) succeeded. 	(0x71BB3479, 0x10007726)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joyGetPosEx) succeeded. 	(0x71BB2D1D, 0x1000779C)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joyGetPos) succeeded. 	(0x71BB3156, 0x100077D7)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joyGetNumDevs) succeeded. 	(0x71BB1895, 0x10007812)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joyGetDevCapsA) succeeded. 	(0x71BB2A91, 0x1000784B)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.joyGetDevCapsW) succeeded. 	(0x71BB29FF, 0x10007886)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetCursorPos) succeeded. 	(0x757F1218, 0x100076B0)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetCursorInfo) succeeded. 	(0x7584812F, 0x100076EB)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.StretchBlt) succeeded. 	(0x75D8B895, 0x100078C1)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.BitBlt) succeeded. 	(0x75D85EA6, 0x100078FC)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.SetDIBitsToDevice) succeeded. 	(0x75D86F81, 0x10007970)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.StretchDIBits) succeeded. 	(0x75D87435, 0x100079AB)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.GetPixel) succeeded. 	(0x75D8CBFB, 0x10007A5C)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.GetDeviceCaps) succeeded. 	(0x75D84DE0, 0x10007A97)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.ChoosePixelFormat) succeeded. 	(0x75DB588F, 0x100079E6)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.SetPixelFormat) succeeded. 	(0x75DB594C, 0x10007A21)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.SwapBuffers) succeeded. 	(0x75DB59FB, 0x10007937)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.CreateFontIndirectA) succeeded. 	(0x75D8CFFD, 0x10007AD2)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.CreateFontIndirectW) succeeded. 	(0x75D85C19, 0x10007B0D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.ChangeDisplaySettingsA) succeeded. 	(0x7584706C, 0x10007B48)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.ChangeDisplaySettingsW) succeeded. 	(0x758308B5, 0x10007B83)
+00001FBC: (f=0, t=6000) InterceptAPI(DDRAW.dll.DirectDrawCreate) failed! 	(0x0, 0x10007BBE)
+00001FBC: (f=0, t=6000) InterceptAPI(DDRAW.dll.DirectDrawCreateEx) failed! 	(0x0, 0x10007BF9)
+00001FBC: (f=0, t=6000) InterceptAPI(DDRAW.dll.CheckFullscreen) failed! 	(0x0, 0x10007C34)
+00001FBC: (f=0, t=6000) InterceptAPI(D3DIM.dll.Direct3DCreate) failed! 	(0x0, 0x10007CE3)
+00001FBC: (f=0, t=6000) InterceptAPI(D3DIM.dll.Direct3DCreateDevice) failed! 	(0x0, 0x10007D59)
+00001FBC: (f=0, t=6000) InterceptAPI(D3DIM700.dll.Direct3DCreate) failed! 	(0x0, 0x10007D1E)
+00001FBC: (f=0, t=6000) InterceptAPI(D3DIM700.dll.Direct3DCreateDevice) failed! 	(0x0, 0x10007D94)
+00001FBC: (f=0, t=6000) InterceptAPI(D3D8.dll.Direct3DCreate8) failed! 	(0x0, 0x10007CA8)
+00001FBC: (f=0, t=6000) InterceptAPI(D3D9.dll.Direct3DCreate9) failed! 	(0x0, 0x10007C6D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glBindTexture) failed! 	(0x0, 0x10007DCF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDeleteTextures) failed! 	(0x0, 0x10007E08)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGenTextures) failed! 	(0x0, 0x10007E41)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glAccum) failed! 	(0x0, 0x10007E7A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glAlphaFunc) failed! 	(0x0, 0x10007EB3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glBegin) failed! 	(0x0, 0x10007EEC)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glBitmap) failed! 	(0x0, 0x10007F25)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glBlendFunc) failed! 	(0x0, 0x10007F5E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCallList) failed! 	(0x0, 0x10007F97)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCallLists) failed! 	(0x0, 0x10007FD0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClear) failed! 	(0x0, 0x10008009)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClearAccum) failed! 	(0x0, 0x10008042)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClearColor) failed! 	(0x0, 0x1000807B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClearDepth) failed! 	(0x0, 0x100080B4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClearIndex) failed! 	(0x0, 0x100080ED)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClearStencil) failed! 	(0x0, 0x10008126)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glClipPlane) failed! 	(0x0, 0x1000815F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3b) failed! 	(0x0, 0x10008198)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3bv) failed! 	(0x0, 0x100081D1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3d) failed! 	(0x0, 0x1000820A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3dv) failed! 	(0x0, 0x10008243)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3f) failed! 	(0x0, 0x1000827C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3fv) failed! 	(0x0, 0x100082B5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3i) failed! 	(0x0, 0x100082EE)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3iv) failed! 	(0x0, 0x10008327)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3s) failed! 	(0x0, 0x10008360)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3sv) failed! 	(0x0, 0x10008399)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3ub) failed! 	(0x0, 0x100083D2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3ubv) failed! 	(0x0, 0x1000840B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3ui) failed! 	(0x0, 0x10008444)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3uiv) failed! 	(0x0, 0x1000847D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3us) failed! 	(0x0, 0x100084B6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor3usv) failed! 	(0x0, 0x100084EF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4b) failed! 	(0x0, 0x10008528)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4bv) failed! 	(0x0, 0x10008561)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4d) failed! 	(0x0, 0x1000859A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4dv) failed! 	(0x0, 0x100085D3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4f) failed! 	(0x0, 0x1000860C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4fv) failed! 	(0x0, 0x10008645)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4i) failed! 	(0x0, 0x1000867E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4iv) failed! 	(0x0, 0x100086B7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4s) failed! 	(0x0, 0x100086F0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4sv) failed! 	(0x0, 0x10008729)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4ub) failed! 	(0x0, 0x10008762)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4ubv) failed! 	(0x0, 0x1000879B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4ui) failed! 	(0x0, 0x100087D4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4uiv) failed! 	(0x0, 0x1000880D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4us) failed! 	(0x0, 0x10008846)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColor4usv) failed! 	(0x0, 0x1000887F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColorMask) failed! 	(0x0, 0x100088B8)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColorMaterial) failed! 	(0x0, 0x100088F1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCopyPixels) failed! 	(0x0, 0x1000892A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCullFace) failed! 	(0x0, 0x10008963)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDeleteLists) failed! 	(0x0, 0x1000899C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDepthFunc) failed! 	(0x0, 0x100089D5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDepthMask) failed! 	(0x0, 0x10008A0E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDepthRange) failed! 	(0x0, 0x10008A47)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDisable) failed! 	(0x0, 0x10008A80)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDrawBuffer) failed! 	(0x0, 0x10008AB9)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDrawPixels) failed! 	(0x0, 0x10008AF2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEdgeFlag) failed! 	(0x0, 0x10008B2B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEdgeFlagv) failed! 	(0x0, 0x10008B64)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEnable) failed! 	(0x0, 0x10008B9D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEnd) failed! 	(0x0, 0x10008BD6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEndList) failed! 	(0x0, 0x10008C0D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord1d) failed! 	(0x0, 0x10008C44)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord1dv) failed! 	(0x0, 0x10008C7D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord1f) failed! 	(0x0, 0x10008CB6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord1fv) failed! 	(0x0, 0x10008CEF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord2d) failed! 	(0x0, 0x10008D28)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord2dv) failed! 	(0x0, 0x10008D61)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord2f) failed! 	(0x0, 0x10008D9A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalCoord2fv) failed! 	(0x0, 0x10008DD3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalMesh1) failed! 	(0x0, 0x10008E0C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalMesh2) failed! 	(0x0, 0x10008E45)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalPoint1) failed! 	(0x0, 0x10008E7E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEvalPoint2) failed! 	(0x0, 0x10008EB7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFeedbackBuffer) failed! 	(0x0, 0x10008EF0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFinish) failed! 	(0x0, 0x10008F29)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFlush) failed! 	(0x0, 0x10008F60)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFogf) failed! 	(0x0, 0x10008F97)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFogfv) failed! 	(0x0, 0x10008FD0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFogi) failed! 	(0x0, 0x10009009)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFogiv) failed! 	(0x0, 0x10009042)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFrontFace) failed! 	(0x0, 0x1000907B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glFrustum) failed! 	(0x0, 0x100090B4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetBooleanv) failed! 	(0x0, 0x100090ED)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetClipPlane) failed! 	(0x0, 0x10009126)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetDoublev) failed! 	(0x0, 0x1000915F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetFloatv) failed! 	(0x0, 0x10009198)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetIntegerv) failed! 	(0x0, 0x100091D1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetLightfv) failed! 	(0x0, 0x1000920A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetLightiv) failed! 	(0x0, 0x10009243)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetMapdv) failed! 	(0x0, 0x1000927C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetMapfv) failed! 	(0x0, 0x100092B5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetMapiv) failed! 	(0x0, 0x100092EE)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetMaterialfv) failed! 	(0x0, 0x10009327)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetMaterialiv) failed! 	(0x0, 0x10009360)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetPixelMapfv) failed! 	(0x0, 0x10009399)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetPixelMapuiv) failed! 	(0x0, 0x100093D2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetPixelMapusv) failed! 	(0x0, 0x1000940B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetPolygonStipple) failed! 	(0x0, 0x10009444)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexEnvfv) failed! 	(0x0, 0x1000947D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexEnviv) failed! 	(0x0, 0x100094B6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexGendv) failed! 	(0x0, 0x100094EF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexGenfv) failed! 	(0x0, 0x10009528)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexGeniv) failed! 	(0x0, 0x10009561)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexImage) failed! 	(0x0, 0x1000959A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexLevelParameterfv) failed! 	(0x0, 0x100095D3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexLevelParameteriv) failed! 	(0x0, 0x1000960C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexParameterfv) failed! 	(0x0, 0x10009645)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetTexParameteriv) failed! 	(0x0, 0x1000967E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glHint) failed! 	(0x0, 0x100096B7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexMask) failed! 	(0x0, 0x100096F0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexd) failed! 	(0x0, 0x10009729)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexdv) failed! 	(0x0, 0x10009762)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexf) failed! 	(0x0, 0x1000979B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexfv) failed! 	(0x0, 0x100097D4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexi) failed! 	(0x0, 0x1000980D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexiv) failed! 	(0x0, 0x10009846)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexs) failed! 	(0x0, 0x1000987F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexsv) failed! 	(0x0, 0x100098B8)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glInitNames) failed! 	(0x0, 0x100098F1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightModelf) failed! 	(0x0, 0x10009928)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightModelfv) failed! 	(0x0, 0x10009961)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightModeli) failed! 	(0x0, 0x1000999A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightModeliv) failed! 	(0x0, 0x100099D3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightf) failed! 	(0x0, 0x10009A0C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightfv) failed! 	(0x0, 0x10009A45)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLighti) failed! 	(0x0, 0x10009A7E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLightiv) failed! 	(0x0, 0x10009AB7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLineStipple) failed! 	(0x0, 0x10009AF0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLineWidth) failed! 	(0x0, 0x10009B29)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glListBase) failed! 	(0x0, 0x10009B62)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLoadIdentity) failed! 	(0x0, 0x10009B9B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLoadMatrixd) failed! 	(0x0, 0x10009BD2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLoadMatrixf) failed! 	(0x0, 0x10009C0B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLoadName) failed! 	(0x0, 0x10009C44)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glLogicOp) failed! 	(0x0, 0x10009C7D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMap1d) failed! 	(0x0, 0x10009CB6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMap1f) failed! 	(0x0, 0x10009CEF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMap2d) failed! 	(0x0, 0x10009D28)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMap2f) failed! 	(0x0, 0x10009D61)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMapGrid1d) failed! 	(0x0, 0x10009D9A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMapGrid1f) failed! 	(0x0, 0x10009DD3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMapGrid2d) failed! 	(0x0, 0x10009E0C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMapGrid2f) failed! 	(0x0, 0x10009E45)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMaterialf) failed! 	(0x0, 0x10009E7E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMaterialfv) failed! 	(0x0, 0x10009EB7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMateriali) failed! 	(0x0, 0x10009EF0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMaterialiv) failed! 	(0x0, 0x10009F29)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMatrixMode) failed! 	(0x0, 0x10009F62)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMultMatrixd) failed! 	(0x0, 0x10009F9B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glMultMatrixf) failed! 	(0x0, 0x10009FD4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNewList) failed! 	(0x0, 0x1000A00D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3b) failed! 	(0x0, 0x1000A046)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3bv) failed! 	(0x0, 0x1000A07F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3d) failed! 	(0x0, 0x1000A0B8)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3dv) failed! 	(0x0, 0x1000A0F1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3f) failed! 	(0x0, 0x1000A12A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3fv) failed! 	(0x0, 0x1000A163)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3i) failed! 	(0x0, 0x1000A19C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3iv) failed! 	(0x0, 0x1000A1D5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3s) failed! 	(0x0, 0x1000A20E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormal3sv) failed! 	(0x0, 0x1000A247)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glOrtho) failed! 	(0x0, 0x1000A280)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPassThrough) failed! 	(0x0, 0x1000A2B9)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelMapfv) failed! 	(0x0, 0x1000A2F2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelMapuiv) failed! 	(0x0, 0x1000A32B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelMapusv) failed! 	(0x0, 0x1000A364)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelStoref) failed! 	(0x0, 0x1000A39D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelStorei) failed! 	(0x0, 0x1000A3D6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelTransferf) failed! 	(0x0, 0x1000A40F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelTransferi) failed! 	(0x0, 0x1000A448)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPixelZoom) failed! 	(0x0, 0x1000A481)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPointSize) failed! 	(0x0, 0x1000A4BA)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPolygonMode) failed! 	(0x0, 0x1000A4F3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPolygonStipple) failed! 	(0x0, 0x1000A52C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPopAttrib) failed! 	(0x0, 0x1000A565)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPopMatrix) failed! 	(0x0, 0x1000A59C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPopName) failed! 	(0x0, 0x1000A5D3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPushAttrib) failed! 	(0x0, 0x1000A60A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPushMatrix) failed! 	(0x0, 0x1000A643)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPushName) failed! 	(0x0, 0x1000A67A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2d) failed! 	(0x0, 0x1000A6B3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2dv) failed! 	(0x0, 0x1000A6EC)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2f) failed! 	(0x0, 0x1000A725)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2fv) failed! 	(0x0, 0x1000A75E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2i) failed! 	(0x0, 0x1000A797)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2iv) failed! 	(0x0, 0x1000A7D0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2s) failed! 	(0x0, 0x1000A809)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos2sv) failed! 	(0x0, 0x1000A842)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3d) failed! 	(0x0, 0x1000A87B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3dv) failed! 	(0x0, 0x1000A8B4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3f) failed! 	(0x0, 0x1000A8ED)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3fv) failed! 	(0x0, 0x1000A926)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3i) failed! 	(0x0, 0x1000A95F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3iv) failed! 	(0x0, 0x1000A998)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3s) failed! 	(0x0, 0x1000A9D1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos3sv) failed! 	(0x0, 0x1000AA0A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4d) failed! 	(0x0, 0x1000AA43)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4dv) failed! 	(0x0, 0x1000AA7C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4f) failed! 	(0x0, 0x1000AAB5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4fv) failed! 	(0x0, 0x1000AAEE)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4i) failed! 	(0x0, 0x1000AB27)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4iv) failed! 	(0x0, 0x1000AB60)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4s) failed! 	(0x0, 0x1000AB99)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRasterPos4sv) failed! 	(0x0, 0x1000ABD2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glReadBuffer) failed! 	(0x0, 0x1000AC0B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glReadPixels) failed! 	(0x0, 0x1000AC44)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRectd) failed! 	(0x0, 0x1000AC7D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRectdv) failed! 	(0x0, 0x1000ACB6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRectf) failed! 	(0x0, 0x1000ACEF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRectfv) failed! 	(0x0, 0x1000AD28)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRecti) failed! 	(0x0, 0x1000AD61)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRectiv) failed! 	(0x0, 0x1000AD9A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRects) failed! 	(0x0, 0x1000ADD3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRectsv) failed! 	(0x0, 0x1000AE0C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRotated) failed! 	(0x0, 0x1000AE45)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRotatef) failed! 	(0x0, 0x1000AE7E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glScaled) failed! 	(0x0, 0x1000AEB7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glScalef) failed! 	(0x0, 0x1000AEF0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glScissor) failed! 	(0x0, 0x1000AF29)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glSelectBuffer) failed! 	(0x0, 0x1000AF62)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glShadeModel) failed! 	(0x0, 0x1000AF9B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glStencilFunc) failed! 	(0x0, 0x1000AFD4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glStencilMask) failed! 	(0x0, 0x1000B00D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glStencilOp) failed! 	(0x0, 0x1000B046)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1d) failed! 	(0x0, 0x1000B07F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1dv) failed! 	(0x0, 0x1000B0B8)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1f) failed! 	(0x0, 0x1000B0F1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1fv) failed! 	(0x0, 0x1000B12A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1i) failed! 	(0x0, 0x1000B163)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1iv) failed! 	(0x0, 0x1000B19C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1s) failed! 	(0x0, 0x1000B1D5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord1sv) failed! 	(0x0, 0x1000B20E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2d) failed! 	(0x0, 0x1000B247)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2dv) failed! 	(0x0, 0x1000B280)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2f) failed! 	(0x0, 0x1000B2B9)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2fv) failed! 	(0x0, 0x1000B2F2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2i) failed! 	(0x0, 0x1000B32B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2iv) failed! 	(0x0, 0x1000B364)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2s) failed! 	(0x0, 0x1000B39D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord2sv) failed! 	(0x0, 0x1000B3D6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3d) failed! 	(0x0, 0x1000B40F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3dv) failed! 	(0x0, 0x1000B448)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3f) failed! 	(0x0, 0x1000B481)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3fv) failed! 	(0x0, 0x1000B4BA)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3i) failed! 	(0x0, 0x1000B4F3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3iv) failed! 	(0x0, 0x1000B52C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3s) failed! 	(0x0, 0x1000B565)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord3sv) failed! 	(0x0, 0x1000B59E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4d) failed! 	(0x0, 0x1000B5D7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4dv) failed! 	(0x0, 0x1000B610)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4f) failed! 	(0x0, 0x1000B649)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4fv) failed! 	(0x0, 0x1000B682)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4i) failed! 	(0x0, 0x1000B6BB)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4iv) failed! 	(0x0, 0x1000B6F4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4s) failed! 	(0x0, 0x1000B72D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoord4sv) failed! 	(0x0, 0x1000B766)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexEnvf) failed! 	(0x0, 0x1000B79F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexEnvfv) failed! 	(0x0, 0x1000B7D8)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexEnvi) failed! 	(0x0, 0x1000B811)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexEnviv) failed! 	(0x0, 0x1000B84A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexGend) failed! 	(0x0, 0x1000B883)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexGendv) failed! 	(0x0, 0x1000B8BC)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexGenf) failed! 	(0x0, 0x1000B8F5)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexGenfv) failed! 	(0x0, 0x1000B92E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexGeni) failed! 	(0x0, 0x1000B967)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexGeniv) failed! 	(0x0, 0x1000B9A0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexImage1D) failed! 	(0x0, 0x1000B9D9)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexImage2D) failed! 	(0x0, 0x1000BA12)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexParameterf) failed! 	(0x0, 0x1000BA4B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexParameterfv) failed! 	(0x0, 0x1000BA84)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexParameteri) failed! 	(0x0, 0x1000BABD)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexParameteriv) failed! 	(0x0, 0x1000BAF6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTranslated) failed! 	(0x0, 0x1000BB2F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTranslatef) failed! 	(0x0, 0x1000BB68)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2d) failed! 	(0x0, 0x1000BBA1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2dv) failed! 	(0x0, 0x1000BBDA)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2f) failed! 	(0x0, 0x1000BC13)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2fv) failed! 	(0x0, 0x1000BC4C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2i) failed! 	(0x0, 0x1000BC85)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2iv) failed! 	(0x0, 0x1000BCBE)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2s) failed! 	(0x0, 0x1000BCF7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex2sv) failed! 	(0x0, 0x1000BD30)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3d) failed! 	(0x0, 0x1000BD69)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3dv) failed! 	(0x0, 0x1000BDA2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3f) failed! 	(0x0, 0x1000BDDB)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3fv) failed! 	(0x0, 0x1000BE14)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3i) failed! 	(0x0, 0x1000BE4D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3iv) failed! 	(0x0, 0x1000BE86)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3s) failed! 	(0x0, 0x1000BEBF)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex3sv) failed! 	(0x0, 0x1000BEF8)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4d) failed! 	(0x0, 0x1000BF31)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4dv) failed! 	(0x0, 0x1000BF6A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4f) failed! 	(0x0, 0x1000BFA3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4fv) failed! 	(0x0, 0x1000BFDC)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4i) failed! 	(0x0, 0x1000C015)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4iv) failed! 	(0x0, 0x1000C04E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4s) failed! 	(0x0, 0x1000C087)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertex4sv) failed! 	(0x0, 0x1000C0C0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glViewport) failed! 	(0x0, 0x1000C0F9)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGenLists) failed! 	(0x0, 0x1000C132)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetError) failed! 	(0x0, 0x1000C16D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetString) failed! 	(0x0, 0x1000C1A6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIsEnabled) failed! 	(0x0, 0x1000C1E1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIsList) failed! 	(0x0, 0x1000C21C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glRenderMode) failed! 	(0x0, 0x1000C257)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glAreTexturesResident) failed! 	(0x0, 0x1000C292)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glArrayElement) failed! 	(0x0, 0x1000C2CD)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glColorPointer) failed! 	(0x0, 0x1000C306)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCopyTexImage1D) failed! 	(0x0, 0x1000C33F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCopyTexImage2D) failed! 	(0x0, 0x1000C378)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCopyTexSubImage1D) failed! 	(0x0, 0x1000C3B1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glCopyTexSubImage2D) failed! 	(0x0, 0x1000C3EA)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDisableClientState) failed! 	(0x0, 0x1000C423)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDrawArrays) failed! 	(0x0, 0x1000C45C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDrawElements) failed! 	(0x0, 0x1000C495)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEdgeFlagPointer) failed! 	(0x0, 0x1000C4CE)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glEnableClientState) failed! 	(0x0, 0x1000C507)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glGetPointerv) failed! 	(0x0, 0x1000C540)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexPointer) failed! 	(0x0, 0x1000C579)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexub) failed! 	(0x0, 0x1000C5B2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIndexubv) failed! 	(0x0, 0x1000C5EB)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glInterleavedArrays) failed! 	(0x0, 0x1000C624)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glIsTexture) failed! 	(0x0, 0x1000C65D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glNormalPointer) failed! 	(0x0, 0x1000C698)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPolygonOffset) failed! 	(0x0, 0x1000C6D1)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPopClientAttrib) failed! 	(0x0, 0x1000C70A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPrioritizeTextures) failed! 	(0x0, 0x1000C741)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glPushClientAttrib) failed! 	(0x0, 0x1000C77A)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexCoordPointer) failed! 	(0x0, 0x1000C7B3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexSubImage1D) failed! 	(0x0, 0x1000C7EC)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glTexSubImage2D) failed! 	(0x0, 0x1000C825)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glVertexPointer) failed! 	(0x0, 0x1000C85E)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.glDebugEntry) failed! 	(0x0, 0x1000C897)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.GlmfBeginGlsBlock) failed! 	(0x0, 0x1000C8D0)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.GlmfEndGlsBlock) failed! 	(0x0, 0x1000C909)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.GlmfCloseMetaFile) failed! 	(0x0, 0x1000C942)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.GlmfEndPlayback) failed! 	(0x0, 0x1000C97B)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.GlmfInitPlayback) failed! 	(0x0, 0x1000C9B4)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.GlmfPlayGlsRecord) failed! 	(0x0, 0x1000C9ED)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglChoosePixelFormat) failed! 	(0x0, 0x1000CA26)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglCopyContext) failed! 	(0x0, 0x1000CA61)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglCreateContext) failed! 	(0x0, 0x1000CA9C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglCreateLayerContext) failed! 	(0x0, 0x1000CAD7)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglDeleteContext) failed! 	(0x0, 0x1000CB12)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglDescribeLayerPlane) failed! 	(0x0, 0x1000CB4D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglDescribePixelFormat) failed! 	(0x0, 0x1000CB88)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglGetCurrentContext) failed! 	(0x0, 0x1000CBC3)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglGetCurrentDC) failed! 	(0x0, 0x1000CBFC)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglGetDefaultProcAddress) failed! 	(0x0, 0x1000CC35)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglGetLayerPaletteEntries) failed! 	(0x0, 0x1000CC70)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglGetPixelFormat) failed! 	(0x0, 0x1000CCAB)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglGetProcAddress) failed! 	(0x0, 0x1000CCE6)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglMakeCurrent) failed! 	(0x0, 0x1000CD21)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglRealizeLayerPalette) failed! 	(0x0, 0x1000CD5C)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglSetLayerPaletteEntries) failed! 	(0x0, 0x1000CD97)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglSetPixelFormat) failed! 	(0x0, 0x1000CDD2)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglShareLists) failed! 	(0x0, 0x1000CE0D)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglSwapBuffers) failed! 	(0x0, 0x1000CE48)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglSwapLayerBuffers) failed! 	(0x0, 0x1000CE83)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglSwapMultipleBuffers) failed! 	(0x0, 0x1000CEBE)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglUseFontBitmapsA) failed! 	(0x0, 0x1000CEF9)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglUseFontBitmapsW) failed! 	(0x0, 0x1000CF34)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglUseFontOutlinesA) failed! 	(0x0, 0x1000CF6F)
+00001FBC: (f=0, t=6000) InterceptAPI(OPENGL32.dll.wglUseFontOutlinesW) failed! 	(0x0, 0x1000CFAA)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_Flip) failed! 	(0x0, 0x1000CFE5)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_UpdateRect) failed! 	(0x0, 0x1000D01E)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_UpdateRects) failed! 	(0x0, 0x1000D055)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_GL_SwapBuffers) failed! 	(0x0, 0x1000D08C)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_SetVideoMode) failed! 	(0x0, 0x1000D0C3)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_LockSurface) failed! 	(0x0, 0x1000D0FC)
+00001FBC: (f=0, t=6000) InterceptAPI(SDL.dll.SDL_UnlockSurface) failed! 	(0x0, 0x1000D135)
+00001FBC: (f=0, t=6000) InterceptAPI(DSOUND.dll.DirectSoundCreate) failed! 	(0x0, 0x1000D16C)
+00001FBC: (f=0, t=6000) InterceptAPI(DSOUND.dll.DirectSoundCreate8) failed! 	(0x0, 0x1000D1A7)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.waveOutWrite) succeeded. 	(0x71BA4F7B, 0x1000D37F)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.waveOutGetPosition) succeeded. 	(0x71BC5520, 0x1000D2CE)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.waveOutReset) succeeded. 	(0x71BAADF9, 0x1000D309)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.waveOutOpen) succeeded. 	(0x71BA451E, 0x1000D344)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.Beep) succeeded. 	(0x76C852D8, 0x1000D3BA)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MessageBeep) succeeded. 	(0x757FC036, 0x1000D3F5)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.PlaySoundA) succeeded. 	(0x71BC441D, 0x1000D430)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.PlaySoundW) succeeded. 	(0x71BA2EF2, 0x1000D46B)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.mciSendCommandA) succeeded. 	(0x71BBA832, 0x1000D4A6)
+00001FBC: (f=0, t=6000) InterceptAPI(WINMM.dll.mciSendCommandW) succeeded. 	(0x71BBA28A, 0x1000D4E1)
+00001FBC: (f=0, t=6000) InterceptAPI(DSOUND.dll.DirectSoundEnumerateA) failed! 	(0x0, 0x1000D1E2)
+00001FBC: (f=0, t=6000) InterceptAPI(DSOUND.dll.DirectSoundEnumerateW) failed! 	(0x0, 0x1000D21D)
+00001FBC: (f=0, t=6000) InterceptAPI(DSOUND.dll.DirectSoundCaptureEnumerateA) failed! 	(0x0, 0x1000D258)
+00001FBC: (f=0, t=6000) InterceptAPI(DSOUND.dll.DirectSoundCaptureEnumerateW) failed! 	(0x0, 0x1000D293)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.Sleep) succeeded. 	(0x76C110FF, 0x100050C3)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.SleepEx) succeeded. 	(0x76C11215, 0x100050FD)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.WaitForSingleObject) succeeded. 	(0x76C11136, 0x10004EE5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.WaitForSingleObjectEx) bypassed. 	(0x76C11151, 0x10004F21)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.WaitForMultipleObjects) succeeded. 	(0x76C141F0, 0x10004F5D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.WaitForMultipleObjectsEx) bypassed. 	(0x76C1199E, 0x10004F99)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.SignalObjectAndWait) succeeded. 	(0x76C2F86C, 0x1000504D)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MsgWaitForMultipleObjects) succeeded. 	(0x757F0B4A, 0x10004FD5)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.MsgWaitForMultipleObjectsEx) bypassed. 	(0x757F0894, 0x10005011)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.NtWaitForSingleObject) bypassed. 	(0x775EF89C, 0x10004DF5)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.NtWaitForMultipleObjects) bypassed. 	(0x775F0128, 0x10004E31)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.RtlEnterCriticalSection) bypassed. 	(0x775F22A0, 0x10004E6D)
+00001FBC: (f=0, t=6000) InterceptAPI(NTDLL.dll.RtlTryEnterCriticalSection) bypassed. 	(0x77602520, 0x10004EA9)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.WaitMessage) succeeded. 	(0x7580F5A9, 0x10005089)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateMutexW) bypassed. 	(0x76C1421C, 0x10005321)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenMutexW) bypassed. 	(0x76C15121, 0x1000535D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateEventW) bypassed. 	(0x76C1183E, 0x1000517D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenEventW) bypassed. 	(0x76C115D6, 0x100051F5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateMutexA) bypassed. 	(0x76C14C3B, 0x100052A9)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenMutexA) bypassed. 	(0x76C2EC37, 0x100052E5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateEventA) bypassed. 	(0x76C1325C, 0x10005141)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenEventA) bypassed. 	(0x76C14A15, 0x100051B9)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.ReleaseMutex) bypassed. 	(0x76C1111E, 0x10005399)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateSemaphoreA) bypassed. 	(0x76C3D162, 0x100053D5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateSemaphoreW) bypassed. 	(0x76C2CA2A, 0x10005411)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenSemaphoreA) bypassed. 	(0x76C94A3B, 0x1000544D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenSemaphoreW) bypassed. 	(0x76C2EDD5, 0x10005489)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateWaitableTimerA) bypassed. 	(0x76C94C24, 0x100054C5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateWaitableTimerW) bypassed. 	(0x76C3BA93, 0x10005501)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenWaitableTimerA) bypassed. 	(0x76C94AE0, 0x1000553D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.OpenWaitableTimerW) bypassed. 	(0x76C9447F, 0x10005579)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.SetWaitableTimer) bypassed. 	(0x76C3BAF7, 0x10004D41)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CancelWaitableTimer) bypassed. 	(0x76C940DB, 0x10004D7D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.SetEvent) bypassed. 	(0x76C116C5, 0x10005231)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.ResetEvent) bypassed. 	(0x76C116DD, 0x1000526D)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.DuplicateHandle) bypassed. 	(0x76C11886, 0x100055F1)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CloseHandle) bypassed. 	(0x76C11410, 0x100055B5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CreateFileW) succeeded. 	(0x76C13F2C, 0x10006F81)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetSystemMetrics) succeeded. 	(0x757E7D2F, 0x1000632B)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetKeyboardLayoutNameA) succeeded. 	(0x75846BD9, 0x10006864)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetKeyboardLayoutNameW) succeeded. 	(0x758307B1, 0x1000689F)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetKeyboardLayout) succeeded. 	(0x757E8D26, 0x100068DA)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetACP) bypassed. 	(0x76C1179C, 0x10006366)
+00001FBC: (f=0, t=6000) rejump detected in target (from 0x76C3D191 to 0x76C14CED). following chain...
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetOEMCP) bypassed. 	(0x76C3D191, 0x1000639F)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCPInfo) bypassed. 	(0x76C15159, 0x100063D8)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCPInfoExA) bypassed. 	(0x76CA5A0F, 0x10006413)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCPInfoExW) bypassed. 	(0x76C3AED3, 0x1000644E)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetLocaleInfoA) bypassed. 	(0x76C2D5AD, 0x10006489)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetLocaleInfoW) bypassed. 	(0x76C13C12, 0x100064C4)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.LCMapStringA) bypassed. 	(0x76C3BC01, 0x100064FF)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.LCMapStringW) bypassed. 	(0x76C117B9, 0x1000653A)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.IsDBCSLeadByte) bypassed. 	(0x76C11748, 0x10006575)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.IsDBCSLeadByteEx) bypassed. 	(0x76C3CF3E, 0x100065B0)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.MultiByteToWideChar) bypassed. 	(0x76C1192E, 0x100065EB)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.WideCharToMultiByte) bypassed. 	(0x76C1170D, 0x10006626)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.GetKBCodePage) bypassed. 	(0x75829EB8, 0x10006661)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.ConvertDefaultLocale) bypassed. 	(0x76C2CE2E, 0x1000669A)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetThreadLocale) bypassed. 	(0x76C1359F, 0x100066D5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetSystemDefaultLCID) bypassed. 	(0x76C13279, 0x1000670E)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetUserDefaultLCID) bypassed. 	(0x76C13D75, 0x10006747)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetSystemDefaultUILanguage) bypassed. 	(0x76C32AEA, 0x10006780)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetUserDefaultUILanguage) bypassed. 	(0x76C1447B, 0x100067B9)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetSystemDefaultLangID) bypassed. 	(0x76C3D336, 0x100067F2)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetUserDefaultLangID) bypassed. 	(0x76C2D5C5, 0x1000682B)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.TranslateCharsetInfo) bypassed. 	(0x75D86143, 0x10006DE4)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.TextOutA) bypassed. 	(0x75D8EDA3, 0x10006E1F)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.TextOutW) bypassed. 	(0x75D8D41C, 0x10006E5A)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.ExtTextOutA) bypassed. 	(0x75D8DCE4, 0x10006E95)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.ExtTextOutW) bypassed. 	(0x75D88B7A, 0x10006ED0)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.PolyTextOutA) bypassed. 	(0x75DB48F5, 0x10006F0B)
+00001FBC: (f=0, t=6000) InterceptAPI(GDI32.dll.PolyTextOutW) bypassed. 	(0x75DB4821, 0x10006F46)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CompareStringA) bypassed. 	(0x76C13C2A, 0x10006915)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.CompareStringW) bypassed. 	(0x76C13B9A, 0x10006950)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCalendarInfoA) bypassed. 	(0x76C3A183, 0x1000698B)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCalendarInfoW) bypassed. 	(0x76C2D4FD, 0x100069C6)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetTimeFormatA) bypassed. 	(0x76C3A80A, 0x10006A01)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetTimeFormatW) bypassed. 	(0x76C2F449, 0x10006A3C)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetDateFormatA) bypassed. 	(0x76C3A921, 0x10006A77)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetDateFormatW) bypassed. 	(0x76C3349F, 0x10006AB2)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetNumberFormatA) bypassed. 	(0x76C3A555, 0x10006AED)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetNumberFormatW) bypassed. 	(0x76C2E6FC, 0x10006B28)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCurrencyFormatA) bypassed. 	(0x76CA546C, 0x10006B63)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetCurrencyFormatW) bypassed. 	(0x76C942FF, 0x10006B9E)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetTimeZoneInformation) bypassed. 	(0x76C1462A, 0x10006BD9)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SystemParametersInfoA) bypassed. 	(0x757F6C30, 0x10006C14)
+00001FBC: (f=0, t=6000) InterceptAPI(USER32.dll.SystemParametersInfoW) bypassed. 	(0x757E90D3, 0x10006C4F)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetStringTypeA) bypassed. 	(0x76C3822E, 0x10006C8A)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetStringTypeW) bypassed. 	(0x76C11946, 0x10006CC5)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetStringTypeExA) bypassed. 	(0x76C3822E, 0x10006D00)
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.GetStringTypeExW) bypassed. 	(0x76C15556, 0x10006D3B)
+00001FBC: (f=0, t=6000) rejump detected in target (from 0x76C944F9 to 0x76CB6116). following chain...
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.SetFileApisToOEM) bypassed. 	(0x76C944F9, 0x10006D76)
+00001FBC: (f=0, t=6000) rejump detected in target (from 0x76C944EF to 0x76CB610B). following chain...
+00001FBC: (f=0, t=6000) InterceptAPI(KERNEL32.dll.SetFileApisToANSI) bypassed. 	(0x76C944EF, 0x10006DAD)
+00001FBC: (f=0, t=6000) Hooking delayed load DLL: winmm.dll
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.mciSendCommandW) succeeded. 	(0x71BBA28A, 0x1000D4E1)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.mciSendCommandA) succeeded. 	(0x71BBA832, 0x1000D4A6)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.PlaySoundW) succeeded. 	(0x71BA2EF2, 0x1000D46B)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.PlaySoundA) succeeded. 	(0x71BC441D, 0x1000D430)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.waveOutOpen) succeeded. 	(0x71BA451E, 0x1000D344)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.waveOutReset) succeeded. 	(0x71BAADF9, 0x1000D309)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.waveOutGetPosition) succeeded. 	(0x71BC5520, 0x1000D2CE)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.waveOutWrite) succeeded. 	(0x71BA4F7B, 0x1000D37F)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joyGetDevCapsW) succeeded. 	(0x71BB29FF, 0x10007886)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joyGetDevCapsA) succeeded. 	(0x71BB2A91, 0x1000784B)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joyGetNumDevs) succeeded. 	(0x71BB1895, 0x10007812)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joyGetPos) succeeded. 	(0x71BB3156, 0x100077D7)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joyGetPosEx) succeeded. 	(0x71BB2D1D, 0x1000779C)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joySetCapture) succeeded. 	(0x71BB3479, 0x10007726)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.joyReleaseCapture) succeeded. 	(0x71BB1E6C, 0x10007761)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.timeKillEvent) succeeded. 	(0x71BAA58C, 0x10004C51)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.timeSetEvent) succeeded. 	(0x71BAA65C, 0x10004C15)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.timeGetSystemTime) succeeded. 	(0x71BC0A21, 0x10004A3B)
+00001FBC: (f=0, t=6000) already hooked. skipping.
+00001FBC: (f=0, t=6000) InterceptAPI(winmm.dll.timeGetTime) succeeded. 	(0x71BA26E0, 0x1000498B)
+00001FBC: (f=0, t=6000) version = 81, movie version = 81, OS = 6.1.
+STARTED THREAD: id=0x12E0, handle=0x34C
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=DllMain
+Call stack info(thread=0x348) : (id=0x1FBC) (name=DllMain)
+     ntdll!0x775EF99E : ZwSetInformationThread(104, 16, 1, 0x10000000)?
+     c:\depot\hourglass-win32\src\wintasee\wintasee.cpp(1749) : DllMain(0x10000000, 0x12E0, 0x21F56C)
+     f:\dd\vctools\crt_bld\self_x86\crt\src\dllcrt0.c(330) : __DllMainCRTStartup(0x10000000, 0x21F284, 0x77609950)
+     f:\dd\vctools\crt_bld\self_x86\crt\src\dllcrt0.c(293) : _DllMainCRTStartup(0x10000000, 1, 0x21F56C)
+     ntdll!0x77609950 : RtlQueryEnvironmentVariable(0x10058FB4, 0x10000000, 1, 0x21F56C)?
+     ntdll!0x7760D8C9 : LdrResSearchResource(0x21F56C, 0x7EFDD000, 0x7EFDE000, 0x776D206C)?
+     ntdll!0x7761681C : RtlGetNtVersionNumbers(0x21F56C, 0x775D0000, 0x75C00C49, 0)?
+     ntdll!0x776152D6 : RtlSetUnhandledExceptionFilter(0x21F56C, 0x775D0000, 0, 0)?
+     ntdll!0x77609E79 : LdrInitializeThunk(0x21F56C, 0x775D0000, 0, 0x1002F)?
+got name for as-yet-invalid thread id=0x0: "PostDllMain"
+got name for thread id=0x1FBC: "Main" (was "DllMain")
+00001FBC: (f=0, t=6000) DllMain returned. (fdwReason = 0x12E0)
+LOADED DLL: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll, 0x358, 0x6AF80000) = {BaseOfImage=0x6AF80000, NumSyms=126, SymType=0x4, ModuleName=mscoreei, ImageName=C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoreei.dll}
+000012E0: (f=0, t=6000) PostDllMain called.
+LOADED DLL: C:\Windows\SysWOW64\KBDUS.DLL
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\KBDUS.DLL, 0x358, 0x6C530000) = {BaseOfImage=0x6C530000, NumSyms=1, SymType=0x4, ModuleName=KBDUS, ImageName=C:\Windows\SysWOW64\KBDUS.DLL}
+UNLOADED DLL: C:\Windows\SysWOW64\KBDUS.DLL
+LOADED DLL: C:\Windows\SysWOW64\shlwapi.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\shlwapi.dll, 0x358, 0x75370000) = {BaseOfImage=0x75370000, NumSyms=920, SymType=0x4, ModuleName=shlwapi, ImageName=C:\Windows\SysWOW64\shlwapi.dll}
+000012E0: (f=0, t=6000) keyboardLayout = 00000409, hkl = 04090409 -> 04090409
+000012E0: (f=0, t=6000) found ClientLoadLibrary ApiNumber = 65. OS = 6.1
+000012E0: (f=0, t=6000) PostDllMain returned.
+STOPPED THREAD: id=0x12E0, handle=0x34C, name=
+LOADED DLL: C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll, 0x34C, 0x64160000) = {BaseOfImage=0x64160000, NumSyms=108, SymType=0x4, ModuleName=clr, ImageName=C:\Windows\Microsoft.NET\Framework\v4.0.30319\clr.dll}
+LOADED DLL: C:\Windows\SysWOW64\msvcr100_clr0400.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\msvcr100_clr0400.dll, 0x34C, 0x69AA0000) = {BaseOfImage=0x69AA0000, NumSyms=1621, SymType=0x4, ModuleName=msvcr100_clr0400, ImageName=C:\Windows\SysWOW64\msvcr100_clr0400.dll}
+Call stack info(thread=0x348) : 
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21E10C)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21E360 ("GIVEMEANAME: 0"), 0x561A60, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0, 0x642AA29C, 0, 228, 0)
+     clr!0x642AA25C : CreateApplicationContext(0x23F42309, 1, 0x1000000, 0)?
+     clr!0x642A9B5C : CreateApplicationContext(0x23F423D1, 1, 0x1000000, 0)?
+     clr!0x642A995D : CreateApplicationContext(0x23F420FD, 0, 1, 0)?
+     clr!0x6429E647 : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21E10C)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21E360 ("GIVEMEANAME: 0"), 0x561A60, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0, 0x642AA29C, 0, 228, 0)
+     clr!0x642AA25C : CreateApplicationContext(0x23F42309, 1, 0x1000000, 0)?
+     clr!0x642A9B5C : CreateApplicationContext(0x23F423D1, 1, 0x1000000, 0)?
+     clr!0x642A995D : CreateApplicationContext(0x23F420FD, 0, 1, 0)?
+     clr!0x6429E647 : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+got name for as-yet-invalid thread id=0x16B8: "0_unknown_at_6000"
+STARTED THREAD: id=0x16B8, handle=0x34C
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     ntdll!0x77646561 : RtlAddVectoredExceptionHandler(1, 0x64228EBC, 1, 0)?
+     clr!0x642AA002 : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+Call stack info(thread=0x348) : 
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21E108)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21E35C ("GIVEMEANAME: 0"), 0x561D68, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0xFC000, 0x64228E00, 0x46C320 ("{o+d"), 308, 0)
+     clr!0x6430A217 : GetPrivateContextsPerfCounters(0xFC000, 0x642B6F7B, 0, 0x23F4234D)?
+     clr!0x6430A093 : GetPrivateContextsPerfCounters(0, 0x642B6F7B, 0, 0x23F42305)?
+     clr!0x642B7333 : SetRuntimeInfo(0x23F423D1, 1, 0x1000000, 0)?
+     clr!0x642B740C : SetRuntimeInfo(0x23F420FD, 0, 1, 0)?
+     clr!0x6429E7AB : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21E108)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21E35C ("GIVEMEANAME: 0"), 0x561D68, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0xFC000, 0x64228E00, 0x46C320 ("{o+d"), 308, 0)
+     clr!0x6430A217 : GetPrivateContextsPerfCounters(0xFC000, 0x642B6F7B, 0, 0x23F4234D)?
+     clr!0x6430A093 : GetPrivateContextsPerfCounters(0, 0x642B6F7B, 0, 0x23F42305)?
+     clr!0x642B7333 : SetRuntimeInfo(0x23F423D1, 1, 0x1000000, 0)?
+     clr!0x642B740C : SetRuntimeInfo(0x23F420FD, 0, 1, 0)?
+     clr!0x6429E7AB : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+got name for as-yet-invalid thread id=0x1FB0: "1_unknown_at_6000"
+STARTED THREAD: id=0x1FB0, handle=0x358
+thread status: id=0x16B8, handle=0x34C, suspend=0, name=0_unknown_at_6000
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     clr!0x641793B6 : LogHelp_NoGuiOnAssert(94, 0x647519C4, 0x64751478, 0x21F580)?
+     clr!0x641A4765 : CreateAssemblyNameObject(4, 46, 0x23F423D1, 1)?
+     clr!0x6429EB2F : CreateApplicationContext(0x23F420FD, 0, 1, 0)?
+     clr!0x6429E80A : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+STARTED THREAD: id=0x1FE4, handle=0x314
+thread status: id=0x16B8, handle=0x34C, suspend=0, name=0_unknown_at_6000
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+thread status: id=0x1FB0, handle=0x358, suspend=0, name=1_unknown_at_6000
+Call stack info(thread=0x358) : (id=0x1FB0) (name=1_unknown_at_6000)
+     ntdll!0x775F06FE : ZwCreateIoCompletion(0x472EF14, 0x1000, 0x71931635, 0)?
+     ntdll!0x77617C37 : TpAllocPool(0x776D2090, 0x776D2044, 0x48AA54, 0x71931685)?
+     ntdll!0x7761E0CD : RtlDestroyHandleTable(0x48AA10, 0x48A9C0, 0, 0x440000)?
+     ntdll!0x7761E1AF : RtlDestroyHandleTable(0x48AA10, 0x48A9C0, 0, 0x440000)?
+     ntdll!0x77614E58 : TpSetWait(0x48A9D8, 0x77624C8D, 0x48A9C0, 0)?
+     ntdll!0x7761A833 : TpDisablePoolCallbackChecks(1, 0x48A9C0, 0x719309D1, 0x48995C)?
+     ntdll!0x7761A75D : TpDisablePoolCallbackChecks(0x48995C, 0x71930809, 0x4862B0, 0x4896B0)?
+     ntdll!0x7761E886 : TpAllocTimer(0x489738, 0x489910, 0x71930859, 0x7761E6F0 ("TpAllocTimer"))?
+     ntdll!0x7761E7A7 : TpAllocTimer(0x472F1F8, 0x76AFFACB, 0, 0x4862B0)?
+     ntdll!0x7761E6BC : TpAllocTimer(0x472F1F8, 0x76AFFACB, 0, 0x4862B0)?
+     KernelBase!0x7513742C : CreateThreadpoolTimer(0x76AFFACB, 0, 0, 0)?
+     rpcrt4!0x76B11C1E : RpcEpResolveBinding(0x76AFFACB, 0, 0x472F220, 0x487770)?
+     rpcrt4!0x76B11BED : RpcEpResolveBinding(1, 30000, 0x4855A0, 0x4897C8)?
+     rpcrt4!0x76AFAC9B : RpcBindingFree(0x4897C8, 0x4897C8, 0x472F278, 0x76AFDAFC)?
+     rpcrt4!0x76AFDBA0 : NdrNonEncapsulatedUnionMemorySize(0x487770, 0x4855A0, 0x4897C8, 0x472F294)?
+     rpcrt4!0x76AFDAFC : NdrNonEncapsulatedUnionMemorySize(1, 0x4897C8, 0x76AFA8B2, 0x76AF835C)?
+     rpcrt4!0x76AFA976 : RpcBindingFree(0x4855A0, 0x472F490, 256, 0x472F390)?
+     rpcrt4!0x76AFAAB9 : RpcBindingFree(0x46981C, 0x4897C8, 0, 0x487BA8)?
+     rpcrt4!0x76AF8282 : NDRCContextMarshall(0x46981C, 0x487470, 0x487BA8, 16)?
+     rpcrt4!0x76AF8247 : NDRCContextMarshall(0x472F390, 0x472F780, 0x74E8BA68, 0)?
+     rpcrt4!0x76AF7116 : NdrClientInitialize(0x4FD40785, 0x7760933B, -2, 1)?
+     rpcrt4!0x76B9015A : NdrClientCall2(0x74E8B9C8, 0x74E8EDFA, 0x472F780, 6)?
+     advapi32!0x74E91B9E : LsaClose(0x46981C, 0x4FD4075C, 0x7760933B, 0x74EE361C)?
+     advapi32!0x74E91B33 : LsaClose(0x469818, 0, 0, 0)?
+     advapi32!0x74E917C7 : ConvertStringSidToSidA(0, 0, 0, 0)?
+     advapi32!0x74E90C3A : ConvertStringSidToSidW(1, 0, 0x472F8EC, 0)?
+     advapi32!0x74E82007 : ConvertStringSecurityDescriptorToSecurityDescriptorW(0, 0, 0, 0x472F910)?
+     advapi32!0x74E81F87 : ConvertStringSecurityDescriptorToSecurityDescriptorW(0x472F910, 1, 0x472F8EC, 0x472F8D8)?
+     clr!0x642A25A3 : CreateApplicationContext(0x472FB2C, 0, 0x472FD7C, 0x642B823D)?
+     clr!0x642A2693 : CreateApplicationContext(0x472FB50, 12, 0x27A72B2D, 0)?
+     clr!0x642B823D : SetRuntimeInfo(0x642B7049, 0x27A72BE5, 0, 0x642B6F7B)?
+     clr!0x642A1A39 : CreateApplicationContext(0, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x46C320, 0, 0, 0x1FB0)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561D68)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561D68, 0x719307B5, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     ntdll!0x775F100A : NtOpenKeyEx(356, 0x21EAC0, 0, 0x20119)?
+     kernel32!0x76C12416 : RegOpenKeyExW(356, 0x21EBB0, 0, 0x20119)?
+     kernel32!0x76C12302 : RegOpenKeyExW(356, 0x21EBB0, 0, 0x20119)?
+     clr!0x641B434F : StrongNameFreeBuffer(356, 0x21EBB0, 0, 0x20019)?
+     clr!0x641B4C22 : StrongNameFreeBuffer(0, 0x21EBB0, 0, 0x21EBA4)?
+     clr!0x641C951E : StrongNameSignatureVerification(0x21ED5C, 45, 0x48AD10, 0x21EC4C ("LIST"))?
+     clr!0x641C8B1B : StrongNameSignatureVerification(0x21ED5C, 45, 0x48AD10, 1)?
+     clr!0x641C8568 : StrongNameSignatureVerification(0x21ED5C, 45, 0x467FAC, 0)?
+     clr!0x641C84A8 : StrongNameSignatureVerification(0x21EDF4, 45, 0x467FAC, 0x23F43831)?
+     clr!0x641B4B02 : StrongNameFreeBuffer(0x467F90, 0x23F43889, 0x467F00, 0)?
+     clr!0x642A07B1 : CreateApplicationContext(0x21EF0C, 0, 0, 0)?
+     clr!0x642A0D81 : CreateApplicationContext(0x21EF0C, 0x23F43979, 0x21F228, 0)?
+     clr!0x642A1D93 : CreateApplicationContext(0x485ED8, 0, 0x21EF5C, 0)?
+     clr!0x642A0BC1 : CreateApplicationContext(0x4879F8, 0x647519D4, 0, 0x485B30)?
+     clr!0x642A04C0 : CreateApplicationContext(0x485B30, 0x23F422BD, 0x6417E8BC, 0x64751478)?
+     clr!0x642A0670 : CreateApplicationContext(0x485B30, 0x23F4231D, 0x647519C4, 0x64751478)?
+     clr!0x6429ECA0 : CreateApplicationContext(0x23F423D1, 1, 0x1000000, 0)?
+     clr!0x6429EB91 : CreateApplicationContext(0x23F420FD, 0, 1, 0)?
+     clr!0x6429E80A : CreateApplicationContext(2, 0x23F420B5, 0, 1)?
+     clr!0x642157EE : GetCLRFunction(2, 0x23F42179, 0, 1)?
+     clr!0x64215791 : GetCLRFunction(2, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A4D : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+LOADED DLL: C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\3953b1d8b9b57e4957bff8f58145384e\mscorlib.ni.dll
+LoadModuleSymbols(0x8A8, C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\3953b1d8b9b57e4957bff8f58145384e\mscorlib.ni.dll, 0xA44, 0x62150000) = {BaseOfImage=0x62150000, NumSyms=0, SymType=0x0, ModuleName=mscorlib.ni, ImageName=C:\Windows\assembly\NativeImages_v4.0.30319_32\mscorlib\3953b1d8b9b57e4957bff8f58145384e\mscorlib.ni.dll}
+LOADED DLL: C:\Windows\SysWOW64\ole32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\ole32.dll, 0xA44, 0x74D10000) = {BaseOfImage=0x74D10000, NumSyms=394, SymType=0x4, ModuleName=ole32, ImageName=C:\Windows\SysWOW64\ole32.dll}
+00001FBC: (f=0, t=6000) Hooking delayed load DLL: ole32.dll
+00001FBC: (f=0, t=6000) InterceptAPI(ole32.dll.CoGetClassObject) succeeded. 	(0x74D454AD, 0x100070E1)
+00001FBC: (f=0, t=6000) InterceptAPI(ole32.dll.CoCreateInstanceEx) succeeded. 	(0x74D59D4E, 0x100070A6)
+00001FBC: (f=0, t=6000) InterceptAPI(ole32.dll.CoCreateInstance) succeeded. 	(0x74D59D0B, 0x1000706B)
+LOADED DLL: C:\Windows\Microsoft.NET\Framework\v4.0.30319\nlssorting.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\Framework\v4.0.30319\nlssorting.dll, 0xA44, 0x6C530000) = {BaseOfImage=0x0, NumSyms=0, SymType=0x0, ModuleName=, ImageName=}
+LOADED DLL: C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll, 0xA44, 0x6B800000) = {BaseOfImage=0x6B800000, NumSyms=2, SymType=0x4, ModuleName=clrjit, ImageName=C:\Windows\Microsoft.NET\Framework\v4.0.30319\clrjit.dll}
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll, 0xA44, 0x6C510000) = {BaseOfImage=0x6C510000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework.Game, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll}
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll, 0xA44, 0x3E0000) = {BaseOfImage=0x3E0000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework.Game, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll}
+UNLOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll
+LOADED DLL: C:\Windows\SysWOW64\cryptsp.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\cryptsp.dll, 0xA44, 0x71720000) = {BaseOfImage=0x71720000, NumSyms=41, SymType=0x4, ModuleName=cryptsp, ImageName=C:\Windows\SysWOW64\cryptsp.dll}
+LOADED DLL: C:\Windows\SysWOW64\rsaenh.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\rsaenh.dll, 0xA44, 0x716E0000) = {BaseOfImage=0x716E0000, NumSyms=27, SymType=0x4, ModuleName=rsaenh, ImageName=C:\Windows\SysWOW64\rsaenh.dll}
+LOADED DLL: C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll
+TRUSTED MODULE 0x6C4F0000 - 0x6C501000 (C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll)
+LoadModuleSymbols(0x8A8, C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll, 0xA44, 0x6C4F0000) = {BaseOfImage=0x6C4F0000, NumSyms=0, SymType=0x3, ModuleName=Speedrunning Game Forms, ImageName=C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll}
+LOADED DLL: C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll
+TRUSTED MODULE 0x00400000 - 0x00411000 (C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll)
+LoadModuleSymbols(0x8A8, C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll, 0xA44, 0x400000) = {BaseOfImage=0x400000, NumSyms=0, SymType=0x3, ModuleName=Speedrunning Game Forms, ImageName=C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll}
+UNLOADED DLL: C:\Users\Tad\Desktop\Documents\Visual Studio 2010\Projects\Speedrunning Game\Speedrunning Game\Speedrunning Game\bin\x86\Debug\Speedrunning Game Forms.dll
+STARTED THREAD: id=0x1860, handle=0xA44
+thread status: id=0x16B8, handle=0x34C, suspend=0, name=0_unknown_at_6000
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+thread status: id=0x1FB0, handle=0x358, suspend=0, name=1_unknown_at_6000
+Call stack info(thread=0x358) : (id=0x1FB0) (name=1_unknown_at_6000)
+     ntdll!0x775EF8B1 : ZwWaitForSingleObject(280, 2000, 0, 0x76C11151)?
+     kernel32!0x76C11194 : WaitForSingleObjectEx(280, 2000, 0, 0x27A72D1D)?
+     clr!0x6417EB5A : LogHelp_TerminateOnAssert(280, 2000, 0, 0x27A72DCD)?
+     clr!0x6417EB9B : LogHelp_TerminateOnAssert(0, 0x27A72D8D, 1, 0x46C2F0)?
+     clr!0x6417EA71 : LogHelp_TerminateOnAssert(2000, 0, 0, 0x472FC0C)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(2000, 0, 0, 0x472FD50)?
+     clr!0x642F4EA6 : GetPrivateContextsPerfCounters(0x46C2F0, 0x484630, 0x472FD50, 0x561D68)?
+     clr!0x642F4F63 : GetPrivateContextsPerfCounters(1, 0x472FD08, 0x484630, 0x472FCE8)?
+     clr!0x6430AF7C : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72AB9, 0x472FD50, 0)?
+     clr!0x6430AFFE : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72B19, 0, 1)?
+     clr!0x6430B0B9 : GetPrivateContextsPerfCounters(0, 0x473778, 0, 0x642F4F16)?
+     clr!0x6430BA97 : GetPrivateContextsPerfCounters(0x642F4F16, 8, 0x472FDB4, 0x642B7076)?
+     clr!0x6430BAAA : GetPrivateContextsPerfCounters(0x642F4F16, 0x27A72BE5, 0, 0x642B6F7B)?
+     clr!0x642B7076 : SetRuntimeInfo(0, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x46C320, 0, 0, 0x1FB0)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561D68)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561D68, 0x719307B5, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     ntdll!0x775EFE9A : ZwOpenEvent(0x100000, 0, 160, 0)?
+     ole32!0x74D3D8F0 : CoGetTreatAsClass(0x48EBE0, 0, 0x498128, 0)?
+     ole32!0x74E4BEC6 : WdtpInterfacePointer_UserUnmarshal(0x48EBE0, 0, 0x21D074, 0x7511143F)?
+     ole32!0x74D3D1E1 : CoGetTreatAsClass(0, 0, 0x74E4D6EE, 0x21D14C)?
+     ole32!0x74D3D369 : CoGetTreatAsClass(0, 0x479AD8, 0, 0x21D14C)?
+     ole32!0x74D261E5 : CoWaitForMultipleHandles(2, -1, 1, 0x498128)?
+     clr!0x642FCE17 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FCDA3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FACD3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAD94 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAE17 : GetPrivateContextsPerfCounters(-1, 1, 0, 0x21D304)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(-1, 1, 0, 0x21D31C)?
+     clr!0x641C2E80 : StrongNameSignatureVerification(0x647524A8, 0x498128, -1, 1)?
+     clr!0x641C2E5F : StrongNameSignatureVerification(0x498128, -1, 1, 0x23F405C1)?
+     clr!0x641C322F : StrongNameSignatureVerification(0x6417E8BC, 0x641C3194, 0x23F40251, 0x21DE08)?
+     clr!0x641C31D8 : StrongNameSignatureVerification(0x4939F0, 1, 0x4ACA98, 0x8000000A)?
+     clr!0x641A8E72 : StrongNameFreeBuffer(0x4939F0, 0x486AD8, 0x21D960, 0x21D94C)?
+     clr!0x641A81B9 : StrongNameFreeBuffer(0x473778, 1, 0x21D960, 0x21D94C)?
+     clr!0x641A848B : StrongNameFreeBuffer(0x21DE08, 1, 0, 0)?
+     clr!0x641A6334 : StrongNameFreeBuffer(0x23000005, 0x48D1C0, 0x23F40965, 0)?
+     clr!0x641A6376 : StrongNameFreeBuffer(0x473778, 0x23000005, 0x23F4379D, 0x1000015)?
+     clr!0x6430C2B7 : GetPrivateContextsPerfCounters(0x2A2EA4, 0x1000015, 0, 0x21E20C)?
+     clr!0x64238288 : GetCLRFunction(0, 0x1000015, 0x21E280, 0x21E270)?
+     clr!0x6423CAF7 : GetCLRFunction(0x2A2EA4, 0x2A2EA4, 0, 18)?
+     clr!0x6423E733 : GetCLRFunction(0x2A2EA4, 0x1000015, 1, 0x23F4351D)?
+     clr!0x6423E657 : GetCLRFunction(0x21E730, 0x2A2EA4, 0x10A1CEF, 0x21E374)?
+     clrjit!0x6B81F46B : ? (0x21E704, 0x380010, 1, 0)?
+     clrjit!0x6B803247 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B803396 : ? (0x2A2EA4, 1, 0x21E678, 0x21E528)?
+     clrjit!0x6B8034C9 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B805E4B : ? (0x6B85C288, 0x21E704, 0x21E678, 0x107014)?
+     clr!0x64242389 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242415 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x6424245B : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242230 : GetCLRFunction(0x2A4A8C, 0x484F88, 0x107014, 0x23F43CB1)?
+     clr!0x6424B87B : GetCLRFunction(0x484F88, 0, 0x23F43D01, 0x64195328)?
+     clr!0x6424BA28 : GetCLRFunction(0, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+     clr!0x641621BB : ? (0x2A3A50, 0x21ECB0, 0x64194227, 0x21ED00)?
+     clr!0x6416E9A8 : LogHelp_NoGuiOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21EE7C, 0x23F439D9, 0, 0x2A3A50)?
+     clr!0x642B887A : SetRuntimeInfo(0x2A3A50, 1, 0x21EFC4, 0)?
+     clr!0x642B8988 : SetRuntimeInfo(0, 0x23F42085, 0, 0xFE0000)?
+     clr!0x642B879C : SetRuntimeInfo(0xFE0000, 0, 0x23F42179, 0)?
+     clr!0x642B8B91 : SetRuntimeInfo(0xFE0000, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A92 : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+thread status: id=0x1FE4, handle=0x314, suspend=0, name=
+Call stack info(thread=0x314) : (id=0x1FE4) (name=)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0, 0x4C2FC28, 0x77609EF2, 0x48AAD8)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x48AAD8, 0x71230529, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+LOADED DLL: C:\Windows\SysWOW64\RpcRtRemote.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\RpcRtRemote.dll, 0xA78, 0x71F70000) = {BaseOfImage=0x71F70000, NumSyms=2, SymType=0x4, ModuleName=RpcRtRemote, ImageName=C:\Windows\SysWOW64\RpcRtRemote.dll}
+STARTED THREAD: id=0x1230, handle=0xA78
+thread status: id=0x16B8, handle=0x34C, suspend=0, name=0_unknown_at_6000
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+thread status: id=0x1860, handle=0xA44, suspend=0, name=
+Call stack info(thread=0xA44) : (id=0x1860) (name=)
+     ntdll!0x775F0542 : NtAlpcSendWaitReceivePort(564, 0x504FB38, 0x504FB34, 0x504FB24)?
+     rpcrt4!0x76B14954 : I_RpcAsyncSetHandle(0x776345D8 ("d:\win7sp1_gdr\minkernel\threadpool\ntdll\lpc.c"), 0x76B148EC, 0, 0x504FB9C)?
+     rpcrt4!0x76B148EC : I_RpcAsyncSetHandle(0x4B436C, 0, 0x504FBC4, 0x77634766)?
+     rpcrt4!0x76B1474F : RpcMgmtSetCancelTimeout(0x504FC08, 0x4B436C, 0x4B41C0, 0)?
+     ntdll!0x77634766 : RtlWow64EnableFsRedirectionEx(0x504FC08, 0, 0, 0x504FC88)?
+     ntdll!0x7762341F : TpSetTimer(0x489910, 0x504FD78, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70E50479, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+thread status: id=0x1FB0, handle=0x358, suspend=0, name=1_unknown_at_6000
+Call stack info(thread=0x358) : (id=0x1FB0) (name=1_unknown_at_6000)
+     ntdll!0x775EF8B1 : ZwWaitForSingleObject(280, 2000, 0, 0x76C11151)?
+     kernel32!0x76C11194 : WaitForSingleObjectEx(280, 2000, 0, 0x27A72D1D)?
+     clr!0x6417EB5A : LogHelp_TerminateOnAssert(280, 2000, 0, 0x27A72DCD)?
+     clr!0x6417EB9B : LogHelp_TerminateOnAssert(0, 0x27A72D8D, 1, 0x46C2F0)?
+     clr!0x6417EA71 : LogHelp_TerminateOnAssert(2000, 0, 0, 0x472FC0C)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(2000, 0, 0, 0x472FD50)?
+     clr!0x642F4EA6 : GetPrivateContextsPerfCounters(0x46C2F0, 0x484630, 0x472FD50, 0x561D68)?
+     clr!0x642F4F63 : GetPrivateContextsPerfCounters(1, 0x472FD08, 0x484630, 0x472FCE8)?
+     clr!0x6430AF7C : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72AB9, 0x472FD50, 0)?
+     clr!0x6430AFFE : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72B19, 0, 1)?
+     clr!0x6430B0B9 : GetPrivateContextsPerfCounters(0, 0x473778, 0, 0x642F4F16)?
+     clr!0x6430BA97 : GetPrivateContextsPerfCounters(0x642F4F16, 8, 0x472FDB4, 0x642B7076)?
+     clr!0x6430BAAA : GetPrivateContextsPerfCounters(0x642F4F16, 0x27A72BE5, 0, 0x642B6F7B)?
+     clr!0x642B7076 : SetRuntimeInfo(0, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x46C320, 0, 0, 0x1FB0)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561D68)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561D68, 0x719307B5, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     ntdll!0x775F0542 : NtAlpcSendWaitReceivePort(0x20000 ("Actx "), 0x4B8AD0, 0x4B2FD8, 0x4B8AD0)?
+     rpcrt4!0x76AF7A7F : I_RpcAllocate(0x21C9F0, 0x21CA1C, 0x21CE0C, 0x4B2F20)?
+     rpcrt4!0x76AF7982 : I_RpcAllocate(0x21C9F0, 0x21CA1C, 0x21C9CC, 0x76AF804B)?
+     rpcrt4!0x76AF7391 : I_RpcSendReceive(0x21C9F0, 0x74D57B00, 1, 0x21CDEC)?
+     rpcrt4!0x76AF804B : NdrSendReceive(0x21CA1C, 0x4B8C10, 0x76B90149, 0x4B873D09)?
+     rpcrt4!0x76AF801A : NdrGetBuffer(0x74D57B00, 0x74D48F8A, 0x21CE0C, 0x21CE48)?
+     ole32!0x74D3D7AB : CoGetTreatAsClass(0x4AAC48, 0x4AD6B8, 0x21CE80, 1)?
+     ole32!0x74D3D762 : CoGetTreatAsClass(0x21CE88, 0x21CE80, 0x21D034, 0x21CEF0)?
+     ole32!0x74D3D6A6 : CoGetTreatAsClass(0x21D034, 0x21CEF0, 0x4B4A98, 0x4B4A98)?
+     ole32!0x74D3D7DF : CoGetTreatAsClass(0x21D034, 0x21CEF0, 0, 0x21CF90)?
+     ole32!0x74D3CE67 : CoGetTreatAsClass(0x498128, 0x48EBE0, 0, 0x48F968)?
+     ole32!0x74D3D313 : CoGetTreatAsClass(0, 0, 0x74E4D6EE, 0x21D14C)?
+     ole32!0x74D3D369 : CoGetTreatAsClass(0, 0x479AD8, 0, 0x21D14C)?
+     ole32!0x74D261E5 : CoWaitForMultipleHandles(2, -1, 1, 0x498128)?
+     clr!0x642FCE17 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FCDA3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FACD3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAD94 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAE17 : GetPrivateContextsPerfCounters(-1, 1, 0, 0x21D304)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(-1, 1, 0, 0x21D31C)?
+     clr!0x641C2E80 : StrongNameSignatureVerification(0x647524A8, 0x498128, -1, 1)?
+     clr!0x641C2E5F : StrongNameSignatureVerification(0x498128, -1, 1, 0x23F405C1)?
+     clr!0x641C322F : StrongNameSignatureVerification(0x6417E8BC, 0x641C3194, 0x23F40251, 0x21DE08)?
+     clr!0x641C31D8 : StrongNameSignatureVerification(0x4939F0, 1, 0x4ACA98, 0x8000000A)?
+     clr!0x641A8E72 : StrongNameFreeBuffer(0x4939F0, 0x486AD8, 0x21D960, 0x21D94C)?
+     clr!0x641A81B9 : StrongNameFreeBuffer(0x473778, 1, 0x21D960, 0x21D94C)?
+     clr!0x641A848B : StrongNameFreeBuffer(0x21DE08, 1, 0, 0)?
+     clr!0x641A6334 : StrongNameFreeBuffer(0x23000005, 0x48D1C0, 0x23F40965, 0)?
+     clr!0x641A6376 : StrongNameFreeBuffer(0x473778, 0x23000005, 0x23F4379D, 0x1000015)?
+     clr!0x6430C2B7 : GetPrivateContextsPerfCounters(0x2A2EA4, 0x1000015, 0, 0x21E20C)?
+     clr!0x64238288 : GetCLRFunction(0, 0x1000015, 0x21E280, 0x21E270)?
+     clr!0x6423CAF7 : GetCLRFunction(0x2A2EA4, 0x2A2EA4, 0, 18)?
+     clr!0x6423E733 : GetCLRFunction(0x2A2EA4, 0x1000015, 1, 0x23F4351D)?
+     clr!0x6423E657 : GetCLRFunction(0x21E730, 0x2A2EA4, 0x10A1CEF, 0x21E374)?
+     clrjit!0x6B81F46B : ? (0x21E704, 0x380010, 1, 0)?
+     clrjit!0x6B803247 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B803396 : ? (0x2A2EA4, 1, 0x21E678, 0x21E528)?
+     clrjit!0x6B8034C9 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B805E4B : ? (0x6B85C288, 0x21E704, 0x21E678, 0x107014)?
+     clr!0x64242389 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242415 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x6424245B : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242230 : GetCLRFunction(0x2A4A8C, 0x484F88, 0x107014, 0x23F43CB1)?
+     clr!0x6424B87B : GetCLRFunction(0x484F88, 0, 0x23F43D01, 0x64195328)?
+     clr!0x6424BA28 : GetCLRFunction(0, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+     clr!0x641621BB : ? (0x2A3A50, 0x21ECB0, 0x64194227, 0x21ED00)?
+     clr!0x6416E9A8 : LogHelp_NoGuiOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21EE7C, 0x23F439D9, 0, 0x2A3A50)?
+     clr!0x642B887A : SetRuntimeInfo(0x2A3A50, 1, 0x21EFC4, 0)?
+     clr!0x642B8988 : SetRuntimeInfo(0, 0x23F42085, 0, 0xFE0000)?
+     clr!0x642B879C : SetRuntimeInfo(0xFE0000, 0, 0x23F42179, 0)?
+     clr!0x642B8B91 : SetRuntimeInfo(0xFE0000, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A92 : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+thread status: id=0x1FE4, handle=0x314, suspend=0, name=
+Call stack info(thread=0x314) : (id=0x1FE4) (name=)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0, 0x4C2FC28, 0x77609EF2, 0x48AAD8)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x48AAD8, 0x71230529, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+STARTED THREAD: id=0x1968, handle=0x9DC
+thread status: id=0x1230, handle=0xA78, suspend=0, name=
+Call stack info(thread=0xA78) : (id=0x1230) (name=)
+     ntdll!0x775F1F26 : NtWaitForWorkViaWorkerFactory(0x489910, 0x51FF900, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70FE0001, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+thread status: id=0x16B8, handle=0x34C, suspend=0, name=0_unknown_at_6000
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+thread status: id=0x1860, handle=0xA44, suspend=0, name=
+Call stack info(thread=0xA44) : (id=0x1860) (name=)
+     ntdll!0x775F1F26 : NtWaitForWorkViaWorkerFactory(0x489910, 0x504FD78, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70E50479, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+thread status: id=0x1FB0, handle=0x358, suspend=0, name=1_unknown_at_6000
+Call stack info(thread=0x358) : (id=0x1FB0) (name=1_unknown_at_6000)
+     ntdll!0x775EF8B1 : ZwWaitForSingleObject(280, 2000, 0, 0x76C11151)?
+     kernel32!0x76C11194 : WaitForSingleObjectEx(280, 2000, 0, 0x27A72D1D)?
+     clr!0x6417EB5A : LogHelp_TerminateOnAssert(280, 2000, 0, 0x27A72DCD)?
+     clr!0x6417EB9B : LogHelp_TerminateOnAssert(0, 0x27A72D8D, 1, 0x46C2F0)?
+     clr!0x6417EA71 : LogHelp_TerminateOnAssert(2000, 0, 0, 0x472FC0C)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(2000, 0, 0, 0x472FD50)?
+     clr!0x642F4EA6 : GetPrivateContextsPerfCounters(0x46C2F0, 0x484630, 0x472FD50, 0x561D68)?
+     clr!0x642F4F63 : GetPrivateContextsPerfCounters(1, 0x472FD08, 0x484630, 0x472FCE8)?
+     clr!0x6430AF7C : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72AB9, 0x472FD50, 0)?
+     clr!0x6430AFFE : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72B19, 0, 1)?
+     clr!0x6430B0B9 : GetPrivateContextsPerfCounters(0, 0x473778, 0, 0x642F4F16)?
+     clr!0x6430BA97 : GetPrivateContextsPerfCounters(0x642F4F16, 8, 0x472FDB4, 0x642B7076)?
+     clr!0x6430BAAA : GetPrivateContextsPerfCounters(0x642F4F16, 0x27A72BE5, 0, 0x642B6F7B)?
+     clr!0x642B7076 : SetRuntimeInfo(0, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x46C320, 0, 0, 0x1FB0)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561D68)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561D68, 0x719307B5, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21BC68)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21BEBC ("GIVEMEANAME: 0"), 0x562070, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0x2000, 0x74D3D864, 0x4ADB18, 592, 0)
+     ole32!0x74D3DA8E : CoGetTreatAsClass(0x1968, 0, 0, 0x74D3D3EA)?
+     ole32!0x74D3DA02 : CoGetTreatAsClass(0, 0, 0x74E4D6EE, 0x21D14C)?
+     ole32!0x74D3D369 : CoGetTreatAsClass(0, 0x479AD8, 0, 0x21D14C)?
+     ole32!0x74D261E5 : CoWaitForMultipleHandles(2, -1, 1, 0x498128)?
+     clr!0x642FCE17 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FCDA3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FACD3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAD94 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAE17 : GetPrivateContextsPerfCounters(-1, 1, 0, 0x21D304)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(-1, 1, 0, 0x21D31C)?
+     clr!0x641C2E80 : StrongNameSignatureVerification(0x647524A8, 0x498128, -1, 1)?
+     clr!0x641C2E5F : StrongNameSignatureVerification(0x498128, -1, 1, 0x23F405C1)?
+     clr!0x641C322F : StrongNameSignatureVerification(0x6417E8BC, 0x641C3194, 0x23F40251, 0x21DE08)?
+     clr!0x641C31D8 : StrongNameSignatureVerification(0x4939F0, 1, 0x4ACA98, 0x8000000A)?
+     clr!0x641A8E72 : StrongNameFreeBuffer(0x4939F0, 0x486AD8, 0x21D960, 0x21D94C)?
+     clr!0x641A81B9 : StrongNameFreeBuffer(0x473778, 1, 0x21D960, 0x21D94C)?
+     clr!0x641A848B : StrongNameFreeBuffer(0x21DE08, 1, 0, 0)?
+     clr!0x641A6334 : StrongNameFreeBuffer(0x23000005, 0x48D1C0, 0x23F40965, 0)?
+     clr!0x641A6376 : StrongNameFreeBuffer(0x473778, 0x23000005, 0x23F4379D, 0x1000015)?
+     clr!0x6430C2B7 : GetPrivateContextsPerfCounters(0x2A2EA4, 0x1000015, 0, 0x21E20C)?
+     clr!0x64238288 : GetCLRFunction(0, 0x1000015, 0x21E280, 0x21E270)?
+     clr!0x6423CAF7 : GetCLRFunction(0x2A2EA4, 0x2A2EA4, 0, 18)?
+     clr!0x6423E733 : GetCLRFunction(0x2A2EA4, 0x1000015, 1, 0x23F4351D)?
+     clr!0x6423E657 : GetCLRFunction(0x21E730, 0x2A2EA4, 0x10A1CEF, 0x21E374)?
+     clrjit!0x6B81F46B : ? (0x21E704, 0x380010, 1, 0)?
+     clrjit!0x6B803247 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B803396 : ? (0x2A2EA4, 1, 0x21E678, 0x21E528)?
+     clrjit!0x6B8034C9 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B805E4B : ? (0x6B85C288, 0x21E704, 0x21E678, 0x107014)?
+     clr!0x64242389 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242415 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x6424245B : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242230 : GetCLRFunction(0x2A4A8C, 0x484F88, 0x107014, 0x23F43CB1)?
+     clr!0x6424B87B : GetCLRFunction(0x484F88, 0, 0x23F43D01, 0x64195328)?
+     clr!0x6424BA28 : GetCLRFunction(0, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+     clr!0x641621BB : ? (0x2A3A50, 0x21ECB0, 0x64194227, 0x21ED00)?
+     clr!0x6416E9A8 : LogHelp_NoGuiOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21EE7C, 0x23F439D9, 0, 0x2A3A50)?
+     clr!0x642B887A : SetRuntimeInfo(0x2A3A50, 1, 0x21EFC4, 0)?
+     clr!0x642B8988 : SetRuntimeInfo(0, 0x23F42085, 0, 0xFE0000)?
+     clr!0x642B879C : SetRuntimeInfo(0xFE0000, 0, 0x23F42179, 0)?
+     clr!0x642B8B91 : SetRuntimeInfo(0xFE0000, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A92 : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+thread status: id=0x1FE4, handle=0x314, suspend=0, name=
+Call stack info(thread=0x314) : (id=0x1FE4) (name=)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0, 0x4C2FC28, 0x77609EF2, 0x48AAD8)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x48AAD8, 0x71230529, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+Call stack info(thread=0x348) : 
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21BC68)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21BEBC ("GIVEMEANAME: 0"), 0x562070, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0x2000, 0x74D3D864, 0x4ADB18, 592, 0)
+     ole32!0x74D3DA8E : CoGetTreatAsClass(0x1968, 0, 0, 0x74D3D3EA)?
+     ole32!0x74D3DA02 : CoGetTreatAsClass(0, 0, 0x74E4D6EE, 0x21D14C)?
+     ole32!0x74D3D369 : CoGetTreatAsClass(0, 0x479AD8, 0, 0x21D14C)?
+     ole32!0x74D261E5 : CoWaitForMultipleHandles(2, -1, 1, 0x498128)?
+     clr!0x642FCE17 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FCDA3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FACD3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAD94 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAE17 : GetPrivateContextsPerfCounters(-1, 1, 0, 0x21D304)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(-1, 1, 0, 0x21D31C)?
+     clr!0x641C2E80 : StrongNameSignatureVerification(0x647524A8, 0x498128, -1, 1)?
+     clr!0x641C2E5F : StrongNameSignatureVerification(0x498128, -1, 1, 0x23F405C1)?
+     clr!0x641C322F : StrongNameSignatureVerification(0x6417E8BC, 0x641C3194, 0x23F40251, 0x21DE08)?
+     clr!0x641C31D8 : StrongNameSignatureVerification(0x4939F0, 1, 0x4ACA98, 0x8000000A)?
+     clr!0x641A8E72 : StrongNameFreeBuffer(0x4939F0, 0x486AD8, 0x21D960, 0x21D94C)?
+     clr!0x641A81B9 : StrongNameFreeBuffer(0x473778, 1, 0x21D960, 0x21D94C)?
+     clr!0x641A848B : StrongNameFreeBuffer(0x21DE08, 1, 0, 0)?
+     clr!0x641A6334 : StrongNameFreeBuffer(0x23000005, 0x48D1C0, 0x23F40965, 0)?
+     clr!0x641A6376 : StrongNameFreeBuffer(0x473778, 0x23000005, 0x23F4379D, 0x1000015)?
+     clr!0x6430C2B7 : GetPrivateContextsPerfCounters(0x2A2EA4, 0x1000015, 0, 0x21E20C)?
+     clr!0x64238288 : GetCLRFunction(0, 0x1000015, 0x21E280, 0x21E270)?
+     clr!0x6423CAF7 : GetCLRFunction(0x2A2EA4, 0x2A2EA4, 0, 18)?
+     clr!0x6423E733 : GetCLRFunction(0x2A2EA4, 0x1000015, 1, 0x23F4351D)?
+     clr!0x6423E657 : GetCLRFunction(0x21E730, 0x2A2EA4, 0x10A1CEF, 0x21E374)?
+     clrjit!0x6B81F46B : ? (0x21E704, 0x380010, 1, 0)?
+     clrjit!0x6B803247 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B803396 : ? (0x2A2EA4, 1, 0x21E678, 0x21E528)?
+     clrjit!0x6B8034C9 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B805E4B : ? (0x6B85C288, 0x21E704, 0x21E678, 0x107014)?
+     clr!0x64242389 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242415 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x6424245B : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242230 : GetCLRFunction(0x2A4A8C, 0x484F88, 0x107014, 0x23F43CB1)?
+     clr!0x6424B87B : GetCLRFunction(0x484F88, 0, 0x23F43D01, 0x64195328)?
+     clr!0x6424BA28 : GetCLRFunction(0, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+     clr!0x641621BB : ? (0x2A3A50, 0x21ECB0, 0x64194227, 0x21ED00)?
+     clr!0x6416E9A8 : LogHelp_NoGuiOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21EE7C, 0x23F439D9, 0, 0x2A3A50)?
+     clr!0x642B887A : SetRuntimeInfo(0x2A3A50, 1, 0x21EFC4, 0)?
+     clr!0x642B8988 : SetRuntimeInfo(0, 0x23F42085, 0, 0xFE0000)?
+     clr!0x642B879C : SetRuntimeInfo(0xFE0000, 0, 0x23F42179, 0)?
+     clr!0x642B8B91 : SetRuntimeInfo(0xFE0000, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A92 : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21BC68)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21BEBC ("GIVEMEANAME: 0"), 0x562070, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0x2000, 0x74D3D864, 0x4ADB18, 592, 0)
+     ole32!0x74D3DA8E : CoGetTreatAsClass(0x1968, 0, 0, 0x74D3D3EA)?
+     ole32!0x74D3DA02 : CoGetTreatAsClass(0, 0, 0x74E4D6EE, 0x21D14C)?
+     ole32!0x74D3D369 : CoGetTreatAsClass(0, 0x479AD8, 0, 0x21D14C)?
+     ole32!0x74D261E5 : CoWaitForMultipleHandles(2, -1, 1, 0x498128)?
+     clr!0x642FCE17 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FCDA3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FACD3 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAD94 : GetPrivateContextsPerfCounters(1, 0x498128, 0, -1)?
+     clr!0x642FAE17 : GetPrivateContextsPerfCounters(-1, 1, 0, 0x21D304)?
+     clr!0x6417EA92 : LogHelp_TerminateOnAssert(-1, 1, 0, 0x21D31C)?
+     clr!0x641C2E80 : StrongNameSignatureVerification(0x647524A8, 0x498128, -1, 1)?
+     clr!0x641C2E5F : StrongNameSignatureVerification(0x498128, -1, 1, 0x23F405C1)?
+     clr!0x641C322F : StrongNameSignatureVerification(0x6417E8BC, 0x641C3194, 0x23F40251, 0x21DE08)?
+     clr!0x641C31D8 : StrongNameSignatureVerification(0x4939F0, 1, 0x4ACA98, 0x8000000A)?
+     clr!0x641A8E72 : StrongNameFreeBuffer(0x4939F0, 0x486AD8, 0x21D960, 0x21D94C)?
+     clr!0x641A81B9 : StrongNameFreeBuffer(0x473778, 1, 0x21D960, 0x21D94C)?
+     clr!0x641A848B : StrongNameFreeBuffer(0x21DE08, 1, 0, 0)?
+     clr!0x641A6334 : StrongNameFreeBuffer(0x23000005, 0x48D1C0, 0x23F40965, 0)?
+     clr!0x641A6376 : StrongNameFreeBuffer(0x473778, 0x23000005, 0x23F4379D, 0x1000015)?
+     clr!0x6430C2B7 : GetPrivateContextsPerfCounters(0x2A2EA4, 0x1000015, 0, 0x21E20C)?
+     clr!0x64238288 : GetCLRFunction(0, 0x1000015, 0x21E280, 0x21E270)?
+     clr!0x6423CAF7 : GetCLRFunction(0x2A2EA4, 0x2A2EA4, 0, 18)?
+     clr!0x6423E733 : GetCLRFunction(0x2A2EA4, 0x1000015, 1, 0x23F4351D)?
+     clr!0x6423E657 : GetCLRFunction(0x21E730, 0x2A2EA4, 0x10A1CEF, 0x21E374)?
+     clrjit!0x6B81F46B : ? (0x21E704, 0x380010, 1, 0)?
+     clrjit!0x6B803247 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B803396 : ? (0x2A2EA4, 1, 0x21E678, 0x21E528)?
+     clrjit!0x6B8034C9 : ? (0x21E704, 0x21E678, 0x21E528, 0x21E7C4)?
+     clrjit!0x6B805E4B : ? (0x6B85C288, 0x21E704, 0x21E678, 0x107014)?
+     clr!0x64242389 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242415 : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x6424245B : GetCLRFunction(0x498790, 0x21E6F8, 0x21E678, 0x107014)?
+     clr!0x64242230 : GetCLRFunction(0x2A4A8C, 0x484F88, 0x107014, 0x23F43CB1)?
+     clr!0x6424B87B : GetCLRFunction(0x484F88, 0, 0x23F43D01, 0x64195328)?
+     clr!0x6424BA28 : GetCLRFunction(0, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+     clr!0x641621BB : ? (0x2A3A50, 0x21ECB0, 0x64194227, 0x21ED00)?
+     clr!0x6416E9A8 : LogHelp_NoGuiOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21ED00, 0, 0x21ECD0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x2AC020, 0x21EEBC, 0x21EE7C, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21EE7C, 0x23F439D9, 0, 0x2A3A50)?
+     clr!0x642B887A : SetRuntimeInfo(0x2A3A50, 1, 0x21EFC4, 0)?
+     clr!0x642B8988 : SetRuntimeInfo(0, 0x23F42085, 0, 0xFE0000)?
+     clr!0x642B879C : SetRuntimeInfo(0xFE0000, 0, 0x23F42179, 0)?
+     clr!0x642B8B91 : SetRuntimeInfo(0xFE0000, 0x23F42125, 0, 0x76C11222)?
+     clr!0x642B8A92 : SetRuntimeInfo(0x23F421FD, 0, 0x76C11222, 0x7EFDE000)?
+     clr!0x642B3A30 : _CorExeMain(0x642B3A14, 0x21F7C8, 0x6C4A7F16, 0)?
+     mscoreei!0x6AF855AB : _CorExeMain(0, 0x6AF80000, 0x21F7DC, 0x6C4A4DE3)?
+     mscoree!0x6C4A7F16 : CreateConfigStream(0, 0x76C1339A, 0x7EFDE000, 0x21F81C)?
+     mscoree!0x6C4A4DE3 : _CorExeMain(0x7EFDE000, 0x75C0011D, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x6C4A4DDB, 0x7EFDE000, 0, 0)?
+got name for thread id=0x1968: "2_unknown_at_6000"
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll, 0xA80, 0x6A160000) = {BaseOfImage=0x6A160000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework.Graphic, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll}
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll, 0xA80, 0xDA0000) = {BaseOfImage=0xDA0000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework.Graphic, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll}
+UNLOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll, 0xA80, 0x6A160000) = {BaseOfImage=0x0, NumSyms=0, SymType=0x0, ModuleName=, ImageName=}
+LOADED DLL: C:\Windows\SysWOW64\msvcr100.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\msvcr100.dll, 0xA80, 0x691E0000) = {BaseOfImage=0x691E0000, NumSyms=0, SymType=0x3, ModuleName=msvcr100, ImageName=C:\Windows\SysWOW64\msvcr100.dll}
+LOADED DLL: C:\Windows\SysWOW64\D3DX9_41.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\D3DX9_41.dll, 0xA80, 0x64A20000) = {BaseOfImage=0x64A20000, NumSyms=336, SymType=0x4, ModuleName=D3DX9_41, ImageName=C:\Windows\SysWOW64\D3DX9_41.dll}
+LOADED DLL: C:\Windows\SysWOW64\d3d9.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\d3d9.dll, 0xA80, 0x6ADB0000) = {BaseOfImage=0x6ADB0000, NumSyms=14, SymType=0x4, ModuleName=d3d9, ImageName=C:\Windows\SysWOW64\d3d9.dll}
+LOADED DLL: C:\Windows\SysWOW64\version.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\version.dll, 0xA80, 0x74B80000) = {BaseOfImage=0x74B80000, NumSyms=15, SymType=0x4, ModuleName=version, ImageName=C:\Windows\SysWOW64\version.dll}
+LOADED DLL: C:\Windows\SysWOW64\d3d8thk.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\d3d8thk.dll, 0xA80, 0x6E920000) = {BaseOfImage=0x6E920000, NumSyms=56, SymType=0x4, ModuleName=d3d8thk, ImageName=C:\Windows\SysWOW64\d3d8thk.dll}
+LOADED DLL: C:\Windows\SysWOW64\dwmapi.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\dwmapi.dll, 0xA80, 0x71B00000) = {BaseOfImage=0x71B00000, NumSyms=55, SymType=0x4, ModuleName=dwmapi, ImageName=C:\Windows\SysWOW64\dwmapi.dll}
+00001FBC: (f=0, t=6000) Hooking delayed load DLL: d3d9.dll
+00001FBC: (f=0, t=6000) InterceptAPI(d3d9.dll.Direct3DCreate9) succeeded. 	(0x6AE10A62, 0x10007C6D)
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll, 0xA80, 0x69130000) = {BaseOfImage=0x69130000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll}
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll, 0xA80, 0xF00000) = {BaseOfImage=0xF00000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll}
+UNLOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll, 0xA80, 0x69130000) = {BaseOfImage=0x0, NumSyms=0, SymType=0x0, ModuleName=, ImageName=}
+LOADED DLL: C:\Windows\SysWOW64\oleaut32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\oleaut32.dll, 0xA80, 0x75E00000) = {BaseOfImage=0x75E00000, NumSyms=499, SymType=0x4, ModuleName=oleaut32, ImageName=C:\Windows\SysWOW64\oleaut32.dll}
+LOADED DLL: C:\Windows\SysWOW64\X3DAudio1_7.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\X3DAudio1_7.dll, 0xA80, 0x6B910000) = {BaseOfImage=0x6B910000, NumSyms=2, SymType=0x4, ModuleName=X3DAudio1_7, ImageName=C:\Windows\SysWOW64\X3DAudio1_7.dll}
+LOADED DLL: C:\Windows\SysWOW64\msvcp100.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\msvcp100.dll, 0xA80, 0x6A0F0000) = {BaseOfImage=0x6A0F0000, NumSyms=0, SymType=0x3, ModuleName=msvcp100, ImageName=C:\Windows\SysWOW64\msvcp100.dll}
+LOADED DLL: C:\Windows\SysWOW64\WindowsCodecs.dll
+LoadModuleSymbols(0x8A8, C:\Windows\SysWOW64\WindowsCodecs.dll, 0xA80, 0x6C140000) = {BaseOfImage=0x6C140000, NumSyms=115, SymType=0x4, ModuleName=WindowsCodecs, ImageName=C:\Windows\SysWOW64\WindowsCodecs.dll}
+Call stack info(thread=0x348) : 
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21C88C)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21CAE0 ("GIVEMEANAME: 0"), 0x562378, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0xFC000, 0x64228E00, 0x4980D8, 676, 0)
+     clr!0x6430A217 : GetPrivateContextsPerfCounters(0xFC000, 0x6426146D, 0x4C8D00, 0x23F40AF1)?
+     clr!0x6430A093 : GetPrivateContextsPerfCounters(0, 0x6426146D, 0x4C8D00, 0x23F40B09)?
+     clr!0x64261F3C : GetCLRFunction(0x24CE994, 0, 0x21DE1C, 0x23F40BAD)?
+     clr!0x64261DEB : GetCLRFunction(0x21DE1C, 0, 0x24CE974, 0x24CE994)?
+     mscorlib.ni!0x623FAEED : ? (1, 0x21DE30, 0x392B8F, 0x479AD8)?
+     mscorlib.ni!0x623FAE4C : ? (256, 37, 0x21DEC8, 0x64194227)?
+     clr!0x641621BB : ? (0, 0, 0x21E024, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21E140, 0x23F43FCD, 0, 0x64B078)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F43C55, 0x64195328, 0x6417E8BC, 0x21EA98)?
+     clr!0x642200F2 : GetCLRFunction(0, 0x23F43C39, 0x21EE58, 0x21EA98)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x10001, 0x21EBB4, 0x64195306, 0x6419530E)?
+     clr!0x641952E9 : LogHelp_TerminateOnAssert(0x6419530E, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x64195306 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     KernelBase!0x7510B9BC : RaiseException(0x40010006, 0, 2, 0x21C88C)?
+     KernelBase!0x75112AD6 : OutputDebugStringA(0x21CAE0 ("GIVEMEANAME: 0"), 0x562378, 0x45564947, 0x4E41454D)?
+     c:\depot\hourglass-win32\src\wintasee\print.cpp(68) : cmdprintf(0x10093A38 ("GIVEMEANAME: %d"), 0)
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(328) : MyCreateThread(0, 0xFC000, 0x64228E00, 0x4980D8, 676, 0)
+     clr!0x6430A217 : GetPrivateContextsPerfCounters(0xFC000, 0x6426146D, 0x4C8D00, 0x23F40AF1)?
+     clr!0x6430A093 : GetPrivateContextsPerfCounters(0, 0x6426146D, 0x4C8D00, 0x23F40B09)?
+     clr!0x64261F3C : GetCLRFunction(0x24CE994, 0, 0x21DE1C, 0x23F40BAD)?
+     clr!0x64261DEB : GetCLRFunction(0x21DE1C, 0, 0x24CE974, 0x24CE994)?
+     mscorlib.ni!0x623FAEED : ? (1, 0x21DE30, 0x392B8F, 0x479AD8)?
+     mscorlib.ni!0x623FAE4C : ? (256, 37, 0x21DEC8, 0x64194227)?
+     clr!0x641621BB : ? (0, 0, 0x21E024, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21E140, 0x23F43FCD, 0, 0x64B078)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F43C55, 0x64195328, 0x6417E8BC, 0x21EA98)?
+     clr!0x642200F2 : GetCLRFunction(0, 0x23F43C39, 0x21EE58, 0x21EA98)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x10001, 0x21EBB4, 0x64195306, 0x6419530E)?
+     clr!0x641952E9 : LogHelp_TerminateOnAssert(0x6419530E, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x64195306 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+got name for as-yet-invalid thread id=0xF9C: "3_unknown_at_6000"
+STARTED THREAD: id=0xF9C, handle=0xA80
+thread status: id=0x1230, handle=0xA78, suspend=0, name=
+Call stack info(thread=0xA78) : (id=0x1230) (name=)
+     ntdll!0x775F1F26 : NtWaitForWorkViaWorkerFactory(0x489910, 0x51FF900, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70FE0001, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+thread status: id=0x16B8, handle=0x34C, suspend=0, name=0_unknown_at_6000
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+thread status: id=0x1860, handle=0xA44, suspend=0, name=
+Call stack info(thread=0xA44) : (id=0x1860) (name=)
+     ntdll!0x775F1F26 : NtWaitForWorkViaWorkerFactory(0x489910, 0x504FD78, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70E50479, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+thread status: id=0x1968, handle=0x9DC, suspend=0, name=2_unknown_at_6000
+Call stack info(thread=0x9DC) : (id=0x1968) (name=2_unknown_at_6000)
+     ntdll!0x775EFD71 : ZwDelayExecution(60000, 0, 0x545FEAC, 0x74D3D98D)?
+     KernelBase!0x75113A8B : Sleep(60000, 0x4ADB18, 0x74D3CD48, 0)?
+     ole32!0x74D3D98D : CoGetTreatAsClass(0x40000000, 0x562070, 0x545FED4, 0x1005161D)?
+     ole32!0x74D3D87A : CoGetTreatAsClass(0x4ADB18, 0, 0, 0x1968)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x562070)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x562070, 0x70A40621, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x562070, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x562070, 0, 0)?
+thread status: id=0x1FB0, handle=0x358, suspend=0, name=1_unknown_at_6000
+Call stack info(thread=0x358) : (id=0x1FB0) (name=1_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0x472FB08, 0x472FB7C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0x472FBD0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 460, 0, -1)
+     clr!0x642F4EFF : GetPrivateContextsPerfCounters(0x46C2F0, 0x484630, 0x472FD50, 0x561D68)?
+     clr!0x642F4F63 : GetPrivateContextsPerfCounters(1, 0x472FD08, 0x484630, 0x472FCE8)?
+     clr!0x6430AF7C : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72AB9, 0x472FD50, 0)?
+     clr!0x6430AFFE : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72B19, 0, 1)?
+     clr!0x6430B0B9 : GetPrivateContextsPerfCounters(0, 0x473778, 0, 0x642F4F16)?
+     clr!0x6430BA97 : GetPrivateContextsPerfCounters(0x642F4F16, 8, 0x472FDB4, 0x642B7076)?
+     clr!0x6430BAAA : GetPrivateContextsPerfCounters(0x642F4F16, 0x27A72BE5, 0, 0x642B6F7B)?
+     clr!0x642B7076 : SetRuntimeInfo(0, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x46C320, 0, 0, 0x1FB0)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561D68)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561D68, 0x719307B5, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+thread status: id=0x1FBC, handle=0x348, suspend=0, name=Main
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     ntdll!0x775EFF31 : ZwYieldExecution(0, 129, 0, 0x21DD58)?
+     clr!0x6417E53B : LogHelp_TerminateOnAssert(0, 129, 0x23F40B09, 0)?
+     clr!0x64261FA2 : GetCLRFunction(0x24CE994, 0, 0x21DE1C, 0x23F40BAD)?
+     clr!0x64261DEB : GetCLRFunction(0x21DE1C, 0, 0x24CE974, 0x24CE994)?
+     mscorlib.ni!0x623FAEED : ? (1, 0x21DE30, 0x392B8F, 0x479AD8)?
+     mscorlib.ni!0x623FAE4C : ? (256, 37, 0x21DEC8, 0x64194227)?
+     clr!0x641621BB : ? (0, 0, 0x21E024, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21E024, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21E140, 0x23F43FCD, 0, 0x64B078)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F43C55, 0x64195328, 0x6417E8BC, 0x21EA98)?
+     clr!0x642200F2 : GetCLRFunction(0, 0x23F43C39, 0x21EE58, 0x21EA98)?
+     clr!0x641952D5 : LogHelp_TerminateOnAssert(0x10001, 0x21EBB4, 0x64195306, 0x6419530E)?
+     clr!0x641952E9 : LogHelp_TerminateOnAssert(0x6419530E, 0x23F43DE5, 0x21EE58, 0x21EBE4)?
+     clr!0x64195306 : LogHelp_TerminateOnAssert(0x6416E9A8, 0x2A3A50, 0x21ECB0, 0x64194227)?
+thread status: id=0x1FE4, handle=0x314, suspend=0, name=
+Call stack info(thread=0x314) : (id=0x1FE4) (name=)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0, 0x4C2FC28, 0x77609EF2, 0x48AAD8)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x48AAD8, 0x71230529, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll, 0x938, 0x6B980000) = {BaseOfImage=0x6B980000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework.Input.T, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll}
+LOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll
+LoadModuleSymbols(0x8A8, C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll, 0x938, 0x6B0000) = {BaseOfImage=0x6B0000, NumSyms=0, SymType=0x0, ModuleName=Microsoft.Xna.Framework.Input.T, ImageName=C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll}
+UNLOADED DLL: C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll
+LOADED DLL: C:\Windows\assembly\NativeImages_v4.0.30319_32\System\6f9f0467e8b2dd3f69b015c8e30ac945\System.ni.dll
+LoadModuleSymbols(0x8A8, C:\Windows\assembly\NativeImages_v4.0.30319_32\System\6f9f0467e8b2dd3f69b015c8e30ac945\System.ni.dll, 0x938, 0x63440000) = {BaseOfImage=0x63440000, NumSyms=0, SymType=0x0, ModuleName=System.ni, ImageName=C:\Windows\assembly\NativeImages_v4.0.30319_32\System\6f9f0467e8b2dd3f69b015c8e30ac945\System.ni.dll}
+LOADED DLL: C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\8c40f40ef36622109793788049fbe9ab\System.Drawing.ni.dll
+LoadModuleSymbols(0x8A8, C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\8c40f40ef36622109793788049fbe9ab\System.Drawing.ni.dll, 0x938, 0x64880000) = {BaseOfImage=0x64880000, NumSyms=0, SymType=0x0, ModuleName=System.Drawing.ni, ImageName=C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Drawing\8c40f40ef36622109793788049fbe9ab\System.Drawing.ni.dll}
+LOADED DLL: C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\3971e166cf827b6726e142f344061dc9\System.Windows.Forms.ni.dll
+LoadModuleSymbols(0x8A8, C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\3971e166cf827b6726e142f344061dc9\System.Windows.Forms.ni.dll, 0x938, 0x614B0000) = {BaseOfImage=0x614B0000, NumSyms=0, SymType=0x0, ModuleName=System.Windows.Forms.ni, ImageName=C:\Windows\assembly\NativeImages_v4.0.30319_32\System.Windows.Forms\3971e166cf827b6726e142f344061dc9\System.Windows.Forms.ni.dll}
+LOADED DLL: C:\Windows\winsxs\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\comctl32.dll
+LoadModuleSymbols(0x8A8, C:\Windows\winsxs\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\comctl32.dll, 0x938, 0x72C20000) = {BaseOfImage=0x72C20000, NumSyms=420, SymType=0x4, ModuleName=comctl32, ImageName=C:\Windows\winsxs\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.17514_none_ec83dffa859149af\comctl32.dll}
+exception 0xE0434352 (at 0x7510B9BC): EXCEPTION_COMPLUS (CCR)
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     KernelBase!0x7510B9BC : RaiseException(0xE0434352, 1, 5, 0x21B5A4)?
+     clr!0x64271140 : GetCLRFunction(0x24C1024, 0, 0, 0x23F46045)?
+     clr!0x6428BB1B : CopyPDBs(0x21B6AC, 0x4C4DF0, 0x23F4602D, 0x21B9C4)?
+     clr!0x64488359 : TranslateSecurityAttributes(0x24E9070, 0x24E9070, 0x24E9028, 0x21B6D4)?
+     mscorlib.ni!0x6238BFE9 : ? (0x24E9028, 0, 0x24E9060, 0x24E9024)?
+     mscorlib.ni!0x6238BFE9 : ? (0x24E9078, 0x24E8F44, 0x24E9024, 0x24E8F88)?
+     mscorlib.ni!0x6238BF4B : ? (0x8E9F5090, 0x4D032D75, 0xAFE5818A, 0xF1DA85BF)?
+     mscorlib.ni!0x6238BE7D : ? (0x8E9F5090, 0x4D032D75, 0xAFE5818A, 0xF1DA85BF)?
+     mscorlib.ni!0x6238C94C : ? (0x479AD8, 0x641621BB, 0, 2)?
+     mscorlib.ni!0x6238C8B4 : ? (0, 0, 0x21B95C, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21BA78, 0x23F41485, 0x2A2010, 0x479AD8)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F41521, 0x24D534C, 0x24D52D8, 0x24CA554)?
+     clr!0x6422820C : GetCLRFunction(0x24D3DA0, 0x24CA554, 0x21C3A8, 0x24D3DA0)?
+     mscorlib.ni!0x6238C4FC : ? (0, 0x24D52D8, 0x24D3DA0, 0x21C3F4)?
+     mscorlib.ni!0x6238C409 : ? (0x24CA554, 0x24D3CE4, 0x24D3DCC, 0x24D3DE4)?
+     mscorlib.ni!0x6240BC5D : ? (0x21C41C, 0x64194F32, 0x21C480, 0x64194227)?
+     clr!0x641621BB : ? (0x21C4D0, 0, 0x21C4A0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21C4D0, 0, 0x21C4A0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62328240, 0x21C710, 0x21C628, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62328240, 0x21C710, 0x21C628, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21C628, 0x23F4118D, 0x479AD8, 0x621D099C)?
+     clr!0x641C5FE4 : StrongNameSignatureVerification(0x21C858, 0x23F41ED9, 0x24D3E00, 0x24D3DE4)?
+     clr!0x641C613F : StrongNameSignatureVerification(0x479AD8, 0, 0x34C101C, 0x24D3CE4)?
+     mscorlib.ni!0x6240BAE1 : ? (0, 0x479AD8, 0x21C8E0, 0x21C8C4)?
+     mscorlib.ni!0x6240BDC8 : ? (43, 0x4C4CF0, 0x21C940, 0x64194227)?
+     clr!0x641621BB : ? (0x21C990, 0, 0x21C960, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21C990, 0, 0x21C960, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62326618, 0x21CB68, 0x21CB1C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62326618, 0x21CB68, 0x21CB1C, 0)?
+     clr!0x6427480D : GetCLRFunction(0x24D3CE4, 0x23F41A85, 0x21CD10, 0x24D3C80)?
+     clr!0x6427490F : GetCLRFunction(0x479AD8, 0x21CD10, 0x21CCF4, 0x641621BB)?
+     mscorlib.ni!0x62369824 : ? (0x21CD04, 0xE06D7363, 0x21CD70, 0x64194227)?
+     clr!0x641621BB : ? (0x21CDC0, 0, 0x21CD90, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21CDC0, 0, 0x21CD90, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62327870, 0x21CF4C, 0x21CF30, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62327870, 0x21CF4C, 0x21CF30, 0)?
+     clr!0x64214E05 : StrongNameErrorInfo(0x24D3C80, 0x23F4063D, 0x4C4CF0, 0x479AD8)?
+     clr!0x6428A279 : CopyPDBs(0x23F40711, 0, 0x4C4CF0, 0x479AD8)?
+     clr!0x6428A126 : CopyPDBs(0x23F40519, 0, 0x21D414, 0x21D414)?
+     clr!0x6428AFFF : CopyPDBs(0x4C4CF0, 0x23F4052D, 0x64710C14, 0x21D414)?
+     clr!0x6428BAF9 : CopyPDBs(0x21D3D4, 0x4C4CF0, 0x23F40271, 0x2A2010)?
+     clr!0x64418555 : CorLaunchApplication(1, 0, 0x80000001, 0x34C101C)?
+     mscorlib.ni!0x62383BB3 : ? (0, 0x479AD8, 0x21D47C, 0x21D460)?
+     mscorlib.ni!0x623839B3 : ? (0, 0, 0x21D4DC, 0x64194227)?
+     clr!0x641621BB : ? (0, 0, 0x21D638, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21D754, 0x23F409E1, 0x2A2010, 0x479AD8)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F4361D, 0x21E080, 0x24D3A14 ("|%Fb"), 0)?
+     clr!0x6422820C : GetCLRFunction(0, 0, 0, 0)?
+     System.Windows.Forms.ni!0x616625ED : ? (1, 0x21E11C, 0x616C9C05, 0x616C98D6)?
+     System.Windows.Forms.ni!0x616C9CB0 : ? (0x616C98D6, 0x776025FD, 0x6417E8BC, 0x24D220C)?
+     System.Windows.Forms.ni!0x616C9C05 : ? (1, 0x616C97D7, 0x776025FD, 0xB05DC)?
+     System.Windows.Forms.ni!0x616C9807 : ? (0xB05DC, 36, 0, 0x21E2EC)?
+     user32!0x757E62FA : gapfnScSendMessage(0xD60AEA, 0xB05DC (0xB05DC), 0x24 (WM_GETMINMAXINFO), 0)?
+     user32!0x757E6D3A : GetThreadDesktop(0, 0xD60AEA, 0xB05DC, 36)?
+     user32!0x757E6DE8 : GetThreadDesktop(0x1133CF0, 0, 36, 0)?
+     user32!0x757E8AD9 : RegisterClassW(0x21E2DC, 0, 0x21EC50, 0x775E0070)?
+     ntdll!0x775E010A : KiUserCallbackDispatcher(0, 0x21E634, 0x21E36C, 0)?
+     user32!0x757EA8E8 : UnregisterClassW(0x21E414, 0x618C0F10, 0x618C0B74, 0x618C0E68)?
+exception 0xC0000005 (at 0x64271DFC): attempt to read memory at 0x00000000
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     clr!0x64271DFC : GetCLRFunction(1, 0, 1, 0)?
+     clr!0x6427197D : GetCLRFunction(0x21A778, 0x21AE58, 0x10000, 0)?
+     clr!0x641807F9 : LogHelp_TerminateOnAssert(0x21A778, 0x64271882, 0x21AE58, 0x64271882)?
+     clr!0x641808CD : LogHelp_TerminateOnAssert(0x479AD8, 0x21AE58, 0x64180A4E, 0x21AA4C)?
+     clr!0x64180A4E : LogHelp_TerminateOnAssert(0x64271882, 0x21AE58, 0, 0)?
+     clr!0x64272CBE : GetCLRFunction(0x21AEAC, 0x479AD8, 0x21AE58, 0x23F47885)?
+     clr!0x64272BB9 : GetCLRFunction(0x21B044, 0x21B7A0, 0x21B094, 0x21B018)?
+     clr!0x642730F7 : GetCLRFunction(0x21B7A0, 0x21B018, 0, 0)?
+     clr!0x64273236 : GetCLRFunction(0x21B044, 0x21B7A0, 0x21B094, 0x21B018)?
+     ntdll!0x7762B459 : LdrRemoveLoadAsDataTable(0x21B044, 0x21B7A0, 0x21B094, 0x21B018)?
+     ntdll!0x7762B42B : LdrRemoveLoadAsDataTable(0x21B044, 0x21B094, 0x21B044, 0x21B094)?
+     ntdll!0x775E0133 : KiUserExceptionDispatcher(0xE0434352, 1, 5, 0x21B5A4)?
+     clr!0x64271140 : GetCLRFunction(0x24C1024, 0, 0, 0x23F46045)?
+     clr!0x6428BB1B : CopyPDBs(0x21B6AC, 0x4C4DF0, 0x23F4602D, 0x21B9C4)?
+     clr!0x64488359 : TranslateSecurityAttributes(0x24E9070, 0x24E9070, 0x24E9028, 0x21B6D4)?
+     mscorlib.ni!0x6238BFE9 : ? (0x24E9028, 0, 0x24E9060, 0x24E9024)?
+     mscorlib.ni!0x6238BFE9 : ? (0x24E9078, 0x24E8F44, 0x24E9024, 0x24E8F88)?
+     mscorlib.ni!0x6238BF4B : ? (0x8E9F5090, 0x4D032D75, 0xAFE5818A, 0xF1DA85BF)?
+     mscorlib.ni!0x6238BE7D : ? (0x8E9F5090, 0x4D032D75, 0xAFE5818A, 0xF1DA85BF)?
+     mscorlib.ni!0x6238C94C : ? (0x479AD8, 0x641621BB, 0, 2)?
+     mscorlib.ni!0x6238C8B4 : ? (0, 0, 0x21B95C, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21BA78, 0x23F41485, 0x2A2010, 0x479AD8)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F41521, 0x24D534C, 0x24D52D8, 0x24CA554)?
+     clr!0x6422820C : GetCLRFunction(0x24D3DA0, 0x24CA554, 0x21C3A8, 0x24D3DA0)?
+     mscorlib.ni!0x6238C4FC : ? (0, 0x24D52D8, 0x24D3DA0, 0x21C3F4)?
+     mscorlib.ni!0x6238C409 : ? (0x24CA554, 0x24D3CE4, 0x24D3DCC, 0x24D3DE4)?
+     mscorlib.ni!0x6240BC5D : ? (0x21C41C, 0x64194F32, 0x21C480, 0x64194227)?
+     clr!0x641621BB : ? (0x21C4D0, 0, 0x21C4A0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21C4D0, 0, 0x21C4A0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62328240, 0x21C710, 0x21C628, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62328240, 0x21C710, 0x21C628, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21C628, 0x23F4118D, 0x479AD8, 0x621D099C)?
+     clr!0x641C5FE4 : StrongNameSignatureVerification(0x21C858, 0x23F41ED9, 0x24D3E00, 0x24D3DE4)?
+     clr!0x641C613F : StrongNameSignatureVerification(0x479AD8, 0, 0x34C101C, 0x24D3CE4)?
+     mscorlib.ni!0x6240BAE1 : ? (0, 0x479AD8, 0x21C8E0, 0x21C8C4)?
+     mscorlib.ni!0x6240BDC8 : ? (43, 0x4C4CF0, 0x21C940, 0x64194227)?
+     clr!0x641621BB : ? (0x21C990, 0, 0x21C960, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21C990, 0, 0x21C960, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62326618, 0x21CB68, 0x21CB1C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62326618, 0x21CB68, 0x21CB1C, 0)?
+     clr!0x6427480D : GetCLRFunction(0x24D3CE4, 0x23F41A85, 0x21CD10, 0x24D3C80)?
+     clr!0x6427490F : GetCLRFunction(0x479AD8, 0x21CD10, 0x21CCF4, 0x641621BB)?
+     mscorlib.ni!0x62369824 : ? (0x21CD04, 0xE06D7363, 0x21CD70, 0x64194227)?
+     clr!0x641621BB : ? (0x21CDC0, 0, 0x21CD90, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21CDC0, 0, 0x21CD90, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62327870, 0x21CF4C, 0x21CF30, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62327870, 0x21CF4C, 0x21CF30, 0)?
+     clr!0x64214E05 : StrongNameErrorInfo(0x24D3C80, 0x23F4063D, 0x4C4CF0, 0x479AD8)?
+     clr!0x6428A279 : CopyPDBs(0x23F40711, 0, 0x4C4CF0, 0x479AD8)?
+     clr!0x6428A126 : CopyPDBs(0x23F40519, 0, 0x21D414, 0x21D414)?
+     clr!0x6428AFFF : CopyPDBs(0x4C4CF0, 0x23F4052D, 0x64710C14, 0x21D414)?
+     clr!0x6428BAF9 : CopyPDBs(0x21D3D4, 0x4C4CF0, 0x23F40271, 0x2A2010)?
+     clr!0x64418555 : CorLaunchApplication(1, 0, 0x80000001, 0x34C101C)?
+     mscorlib.ni!0x62383BB3 : ? (0, 0x479AD8, 0x21D47C, 0x21D460)?
+     mscorlib.ni!0x623839B3 : ? (0, 0, 0x21D4DC, 0x64194227)?
+     clr!0x641621BB : ? (0, 0, 0x21D638, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21D754, 0x23F409E1, 0x2A2010, 0x479AD8)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F4361D, 0x21E080, 0x24D3A14 ("|%Fb"), 0)?
+     clr!0x6422820C : GetCLRFunction(0, 0, 0, 0)?
+     System.Windows.Forms.ni!0x616625ED : ? (1, 0x21E11C, 0x616C9C05, 0x616C98D6)?
+     System.Windows.Forms.ni!0x616C9CB0 : ? (0x616C98D6, 0x776025FD, 0x6417E8BC, 0x24D220C)?
+     System.Windows.Forms.ni!0x616C9C05 : ? (1, 0x616C97D7, 0x776025FD, 0xB05DC)?
+     System.Windows.Forms.ni!0x616C9807 : ? (0xB05DC, 36, 0, 0x21E2EC)?
+     user32!0x757E62FA : gapfnScSendMessage(0xD60AEA, 0xB05DC (0xB05DC), 0x24 (WM_GETMINMAXINFO), 0)?
+     user32!0x757E6D3A : GetThreadDesktop(0, 0xD60AEA, 0xB05DC, 36)?
+     user32!0x757E6DE8 : GetThreadDesktop(0x1133CF0, 0, 36, 0)?
+     user32!0x757E8AD9 : RegisterClassW(0x21E2DC, 0, 0x21EC50, 0x775E0070)?
+     ntdll!0x775E010A : KiUserCallbackDispatcher(0, 0x21E634, 0x21E36C, 0)?
+     user32!0x757EA8E8 : UnregisterClassW(0x21E414, 0x618C0F10, 0x618C0B74, 0x618C0E68)?
+exception 0xC0000005 (at 0x64271DFC): attempt to read memory at 0x00000000
+Call stack info(thread=0x348) : (id=0x1FBC) (name=Main)
+     ntdll!0x775F15DE : ZwRaiseException(0x21A0D4, 0x21A124, 0, 0x23F44799)?
+     clr!0x643D5735 : GetAddrOfContractShutoffFlag(0x21A0D4, 0x21A124, 0x23F4444D, 0x479AD8)?
+     clr!0x643D7017 : GetAddrOfContractShutoffFlag(0x479AD8, 2, 2, 0x23F44A55)?
+     clr!0x643D10B4 : GetAddrOfContractShutoffFlag(0x80131506, 0x643D29F3, 0, 0x21A01C)?
+     clr!0x643D158E : GetAddrOfContractShutoffFlag(0x80131506, 0x643D29F3, 0, 0x21A01C)?
+     clr!0x643D29FE : GetAddrOfContractShutoffFlag(0x479AD8, 0x23F449F9, 0x4000, 0x21A01C)?
+     clr!0x6426C406 : GetCLRFunction(0x21A01C, 0x23F44989, 0, 0x21A01C)?
+     clr!0x6426C68F : GetCLRFunction(0x21A01C, 0x23F47655, 0x46BF70, 0x776D4724)?
+     clr!0x64228F5F : GetCLRFunction(0x21A01C, 0, 0x21A0D4, 0x21A0D4)?
+     ntdll!0x776462DE : RtlGetProcessHeaps(0x46BF70, 0x21A124, 0, 0x21A0BC)?
+     ntdll!0x7762B652 : RtlCaptureContext(0x21A0D4, 0x21A124, 0x479C78, 0)?
+     ntdll!0x7762B314 : LdrRemoveLoadAsDataTable(0x21A0D4, 0x21A124, 0x21A0D4, 0x21A124)?
+     ntdll!0x775E0133 : KiUserExceptionDispatcher(1, 0, 1, 0)?
+     clr!0x6427197D : GetCLRFunction(0x21A778, 0x21AE58, 0x10000, 0)?
+     clr!0x641807F9 : LogHelp_TerminateOnAssert(0x21A778, 0x64271882, 0x21AE58, 0x64271882)?
+     clr!0x641808CD : LogHelp_TerminateOnAssert(0x479AD8, 0x21AE58, 0x64180A4E, 0x21AA4C)?
+     clr!0x64180A4E : LogHelp_TerminateOnAssert(0x64271882, 0x21AE58, 0, 0)?
+     clr!0x64272CBE : GetCLRFunction(0x21AEAC, 0x479AD8, 0x21AE58, 0x23F47885)?
+     clr!0x64272BB9 : GetCLRFunction(0x21B044, 0x21B7A0, 0x21B094, 0x21B018)?
+     clr!0x642730F7 : GetCLRFunction(0x21B7A0, 0x21B018, 0, 0)?
+     clr!0x64273236 : GetCLRFunction(0x21B044, 0x21B7A0, 0x21B094, 0x21B018)?
+     ntdll!0x7762B459 : LdrRemoveLoadAsDataTable(0x21B044, 0x21B7A0, 0x21B094, 0x21B018)?
+     ntdll!0x7762B42B : LdrRemoveLoadAsDataTable(0x21B044, 0x21B094, 0x21B044, 0x21B094)?
+     ntdll!0x775E0133 : KiUserExceptionDispatcher(0xE0434352, 1, 5, 0x21B5A4)?
+     clr!0x64271140 : GetCLRFunction(0x24C1024, 0, 0, 0x23F46045)?
+     clr!0x6428BB1B : CopyPDBs(0x21B6AC, 0x4C4DF0, 0x23F4602D, 0x21B9C4)?
+     clr!0x64488359 : TranslateSecurityAttributes(0x24E9070, 0x24E9070, 0x24E9028, 0x21B6D4)?
+     mscorlib.ni!0x6238BFE9 : ? (0x24E9028, 0, 0x24E9060, 0x24E9024)?
+     mscorlib.ni!0x6238BFE9 : ? (0x24E9078, 0x24E8F44, 0x24E9024, 0x24E8F88)?
+     mscorlib.ni!0x6238BF4B : ? (0x8E9F5090, 0x4D032D75, 0xAFE5818A, 0xF1DA85BF)?
+     mscorlib.ni!0x6238BE7D : ? (0x8E9F5090, 0x4D032D75, 0xAFE5818A, 0xF1DA85BF)?
+     mscorlib.ni!0x6238C94C : ? (0x479AD8, 0x641621BB, 0, 2)?
+     mscorlib.ni!0x6238C8B4 : ? (0, 0, 0x21B95C, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21B95C, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21BA78, 0x23F41485, 0x2A2010, 0x479AD8)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F41521, 0x24D534C, 0x24D52D8, 0x24CA554)?
+     clr!0x6422820C : GetCLRFunction(0x24D3DA0, 0x24CA554, 0x21C3A8, 0x24D3DA0)?
+     mscorlib.ni!0x6238C4FC : ? (0, 0x24D52D8, 0x24D3DA0, 0x21C3F4)?
+     mscorlib.ni!0x6238C409 : ? (0x24CA554, 0x24D3CE4, 0x24D3DCC, 0x24D3DE4)?
+     mscorlib.ni!0x6240BC5D : ? (0x21C41C, 0x64194F32, 0x21C480, 0x64194227)?
+     clr!0x641621BB : ? (0x21C4D0, 0, 0x21C4A0, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21C4D0, 0, 0x21C4A0, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62328240, 0x21C710, 0x21C628, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62328240, 0x21C710, 0x21C628, 0)?
+     clr!0x64194419 : LogHelp_TerminateOnAssert(0x21C628, 0x23F4118D, 0x479AD8, 0x621D099C)?
+     clr!0x641C5FE4 : StrongNameSignatureVerification(0x21C858, 0x23F41ED9, 0x24D3E00, 0x24D3DE4)?
+     clr!0x641C613F : StrongNameSignatureVerification(0x479AD8, 0, 0x34C101C, 0x24D3CE4)?
+     mscorlib.ni!0x6240BAE1 : ? (0, 0x479AD8, 0x21C8E0, 0x21C8C4)?
+     mscorlib.ni!0x6240BDC8 : ? (43, 0x4C4CF0, 0x21C940, 0x64194227)?
+     clr!0x641621BB : ? (0x21C990, 0, 0x21C960, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21C990, 0, 0x21C960, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62326618, 0x21CB68, 0x21CB1C, 1)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62326618, 0x21CB68, 0x21CB1C, 0)?
+     clr!0x6427480D : GetCLRFunction(0x24D3CE4, 0x23F41A85, 0x21CD10, 0x24D3C80)?
+     clr!0x6427490F : GetCLRFunction(0x479AD8, 0x21CD10, 0x21CCF4, 0x641621BB)?
+     mscorlib.ni!0x62369824 : ? (0x21CD04, 0xE06D7363, 0x21CD70, 0x64194227)?
+     clr!0x641621BB : ? (0x21CDC0, 0, 0x21CD90, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x21CDC0, 0, 0x21CD90, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62327870, 0x21CF4C, 0x21CF30, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62327870, 0x21CF4C, 0x21CF30, 0)?
+     clr!0x64214E05 : StrongNameErrorInfo(0x24D3C80, 0x23F4063D, 0x4C4CF0, 0x479AD8)?
+     clr!0x6428A279 : CopyPDBs(0x23F40711, 0, 0x4C4CF0, 0x479AD8)?
+     clr!0x6428A126 : CopyPDBs(0x23F40519, 0, 0x21D414, 0x21D414)?
+     clr!0x6428AFFF : CopyPDBs(0x4C4CF0, 0x23F4052D, 0x64710C14, 0x21D414)?
+     clr!0x6428BAF9 : CopyPDBs(0x21D3D4, 0x4C4CF0, 0x23F40271, 0x2A2010)?
+     clr!0x64418555 : CorLaunchApplication(1, 0, 0x80000001, 0x34C101C)?
+     mscorlib.ni!0x62383BB3 : ? (0, 0x479AD8, 0x21D47C, 0x21D460)?
+     mscorlib.ni!0x623839B3 : ? (0, 0, 0x21D4DC, 0x64194227)?
+     clr!0x641621BB : ? (0, 0, 0x21D638, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x641964D3 : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x6419654C : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x641965BB : LogHelp_TerminateOnAssert(0, 0, 0x21D638, 0)?
+     clr!0x64196795 : LogHelp_TerminateOnAssert(0x21D754, 0x23F409E1, 0x2A2010, 0x479AD8)?
+     clr!0x641968DA : LogHelp_TerminateOnAssert(0x23F4361D, 0x21E080, 0x24D3A14 ("|%Fb"), 0)?
+     clr!0x6422820C : GetCLRFunction(0, 0, 0, 0)?
+     System.Windows.Forms.ni!0x616625ED : ? (1, 0x21E11C, 0x616C9C05, 0x616C98D6)?
+     System.Windows.Forms.ni!0x616C9CB0 : ? (0x616C98D6, 0x776025FD, 0x6417E8BC, 0x24D220C)?
+     System.Windows.Forms.ni!0x616C9C05 : ? (1, 0x616C97D7, 0x776025FD, 0xB05DC)?
+     System.Windows.Forms.ni!0x616C9807 : ? (0xB05DC, 36, 0, 0x21E2EC)?
+     user32!0x757E62FA : gapfnScSendMessage(0xD60AEA, 0xB05DC (0xB05DC), 0x24 (WM_GETMINMAXINFO), 0)?
+     user32!0x757E6D3A : GetThreadDesktop(0, 0xD60AEA, 0xB05DC, 36)?
+     user32!0x757E6DE8 : GetThreadDesktop(0x1133CF0, 0, 36, 0)?
+     user32!0x757E8AD9 : RegisterClassW(0x21E2DC, 0, 0x21EC50, 0x775E0070)?
+     ntdll!0x775E010A : KiUserCallbackDispatcher(0, 0x21E634, 0x21E36C, 0)?
+     user32!0x757EA8E8 : UnregisterClassW(0x21E414, 0x618C0F10, 0x618C0B74, 0x618C0E68)?
+Call stack info(thread=0x34C) : (id=0x16B8) (name=0_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0xD3FCD8, 0xD3FD4C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0xD3FDA0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 200, 0, -1)
+     clr!0x642AA468 : CreateApplicationContext(0x23062809, 0x40000000, 0, 0x561A60)?
+     clr!0x642AA3A6 : CreateApplicationContext(0x230628D5, 0x40000000, 0x561A60, 0x561A60)?
+     clr!0x642AA2E1 : CreateApplicationContext(0, 0, 0, 0x16B8)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561A60)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561A60, 0x753207E9, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561A60, 0, 0)?
+Call stack info(thread=0x358) : (id=0x1FB0) (name=1_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0x472FB08, 0x472FB7C, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(3, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(3, 0x472FBD0, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(3, 460, 0, -1)
+     clr!0x642F4EFF : GetPrivateContextsPerfCounters(0x46C2F0, 0x484630, 0x472FD50, 0x561D68)?
+     clr!0x642F4F63 : GetPrivateContextsPerfCounters(1, 0x472FD08, 0x484630, 0x472FCE8)?
+     clr!0x6430AF7C : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72AB9, 0x472FD50, 0)?
+     clr!0x6430AFFE : GetPrivateContextsPerfCounters(0x472FD50, 0x27A72B19, 0, 1)?
+     clr!0x6430B0B9 : GetPrivateContextsPerfCounters(0, 0x473778, 0, 0x642F4F16)?
+     clr!0x6430BA97 : GetPrivateContextsPerfCounters(0x642F4F16, 8, 0x472FDB4, 0x642B7076)?
+     clr!0x6430BAAA : GetPrivateContextsPerfCounters(0x642F4F16, 0x27A72BE5, 0, 0x642B6F7B)?
+     clr!0x642B7076 : SetRuntimeInfo(0, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x46C320, 0, 0, 0x1FB0)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x561D68)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x561D68, 0x719307B5, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x561D68, 0, 0)?
+Call stack info(thread=0x314) : (id=0x1FE4) (name=)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0, 0x4C2FC28, 0x77609EF2, 0x48AAD8)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x48AAD8, 0x71230529, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77622E25, 0x48AAD8, 0, 0)?
+Call stack info(thread=0xA44) : (id=0x1860) (name=)
+     ntdll!0x775F1F26 : NtWaitForWorkViaWorkerFactory(0x489910, 0x504FD78, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70E50479, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+Call stack info(thread=0xA78) : (id=0x1230) (name=)
+     ntdll!0x775F1F26 : NtWaitForWorkViaWorkerFactory(0x489910, 0x51FF900, 0x77609EF2, 0x489910)?
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x489910, 0x70FE0001, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x77623E45, 0x489910, 0, 0)?
+Call stack info(thread=0x9DC) : (id=0x1968) (name=2_unknown_at_6000)
+     ntdll!0x775EFD71 : ZwDelayExecution(60000, 0, 0x545FEAC, 0x74D3D98D)?
+     KernelBase!0x75113A8B : Sleep(60000, 0x4ADB18, 0x74D3CD48, 0)?
+     ole32!0x74D3D98D : CoGetTreatAsClass(0x40000000, 0x562070, 0x545FED4, 0x1005161D)?
+     ole32!0x74D3D87A : CoGetTreatAsClass(0x4ADB18, 0, 0, 0x1968)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x562070)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x562070, 0x70A40621, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x562070, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x562070, 0, 0)?
+Call stack info(thread=0xA80) : (id=0xF9C) (name=3_unknown_at_6000)
+     ntdll!0x775F013D : ZwWaitForMultipleObjects(0x57BEE68, 0x57BEEDC, 0, -1)?
+     kernel32!0x76C11A2C : WaitForMultipleObjectsEx(4, 0x7EFDE000, 0, -1)?
+     kernel32!0x76C14208 : WaitForMultipleObjects(4, 0x57BEF30, 0, -1)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\waithooks.cpp(411) : MyWaitForMultipleObjects(4, 640, 0, -1)
+     0x003938DE : ? (0x64C708, 0x64195202, 0x26AE26D1, 0x64195328)?
+     clr!0x641951EC : LogHelp_TerminateOnAssert(0x24CE9F8, 0x34C101C, 0x57BF15C, 0x62387FC4)?
+     mscorlib.ni!0x623FB00B : ? (0x24D0010, 0, 0x24CE9C4, 0x24D0010)?
+     mscorlib.ni!0x62387FC4 : ? (0, 0x24CE9C4, 0, 0)?
+     mscorlib.ni!0x62387F04 : ? (0x24CE9C4, 0, 0x4E2428, 0x57BF1C0)?
+     mscorlib.ni!0x623FAF98 : ? (0x57BF234, 0x77600179, 0x57BF220, 0x64194227)?
+     clr!0x641621BB : ? (0x57BF270, 0, 0x57BF240, 0)?
+     clr!0x64194227 : LogHelp_TerminateOnAssert(0x57BF270, 0, 0x57BF240, 0)?
+     clr!0x641943C4 : LogHelp_TerminateOnAssert(0x62327CA8, 0x57BF4CC, 0x57BF3E8, 0)?
+     clr!0x641943F9 : LogHelp_TerminateOnAssert(0x62327CA8, 0x57BF4CC, 0x57BF3E8, 0)?
+     clr!0x6426174E : GetCLRFunction(0x57BF744, 0x57BF670, 0x4E2428, 0x57BF650)?
+     clr!0x6430AF7C : GetPrivateContextsPerfCounters(0x57BF6B8, 0x26AE2001, 0x57BF6B8, 0)?
+     clr!0x6430AFFE : GetPrivateContextsPerfCounters(0x57BF6B8, 0x26AE20E1, 0, 0x4E2428)?
+     clr!0x6430B0B9 : GetPrivateContextsPerfCounters(1, 0, 1, 0x64261625)?
+     clr!0x6430B151 : GetPrivateContextsPerfCounters(1, 0x64261625, 0x57BF744, 2)?
+     clr!0x64261621 : GetCLRFunction(1, 0x64261625, 0x57BF744, 0x26AE21D5)?
+     clr!0x6426151C : GetCLRFunction(0x4C8D00, 0, 0, 0)?
+     clr!0x64228E48 : GetCLRFunction(0x4980D8, 0, 0, 0xF9C)?
+     c:\depot\hourglass-win32\src\wintasee\hooks\threadhooks.cpp(108) : MyThreadWrapperThread(0x562378)
+     kernel32!0x76C1339A : BaseThreadInitThunk(0x562378, 0x709A0009, 0, 0)?
+     ntdll!0x77609EF2 : RtlInitializeExceptionChain(0x10051594, 0x562378, 0, 0)?
+     ntdll!0x77609EC5 : RtlInitializeExceptionChain(0x10051594, 0x562378, 0, 0)?
+The game crashed...
+STOPPED THREAD: id=0x16B8, handle=0x34C, name=0_unknown_at_6000
+STOPPED THREAD: id=0x1FE4, handle=0x314, name=
+STOPPED THREAD: id=0x1FBC, handle=0x348, name=Main
+STOPPED THREAD: id=0x1FB0, handle=0x358, name=1_unknown_at_6000
+STOPPED THREAD: id=0x1968, handle=0x9DC, name=2_unknown_at_6000
+STOPPED THREAD: id=0xF9C, handle=0xA80, name=3_unknown_at_6000
+STOPPED THREAD: id=0x1230, handle=0xA78, name=
+Closing thread handle 0x9A4

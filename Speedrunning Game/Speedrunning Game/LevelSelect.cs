@@ -565,9 +565,9 @@ namespace Speedrunning_Game
 			DrawOutlineText(sb, Game1.mnufont, "Download", new Vector2(675, 10), tab == 2 ? Color.Yellow : Color.White, Color.Black);
 			if (tab == 0)
 			{
+				DrawOutlineText(sb, Game1.mnufont, "Full Game Record: " + (Game1.totalRecord == -1 ? "--" : TimeToString(Game1.totalRecord)), new Vector2(622, 70), Color.Cyan, Color.Black);
 				if (Game1.beatGame)
-					DrawOutlineText(sb, Game1.mnufont, "All Levels: " + TimeToString(Game1.commRecord), new Vector2(717, 70), Color.Cyan, Color.Black);
-				DrawOutlineText(sb, Game1.mnufont, "Full Game Record: " + TimeToString(Game1.totalRecord), new Vector2(622, 100), Color.Cyan, Color.Black);
+					DrawOutlineText(sb, Game1.mnufont, "All Levels: " + (Game1.commRecord == -1 ? "--" : TimeToString(Game1.commRecord)), new Vector2(717, 100), Color.Cyan, Color.Black);
 				if (Game1.online)
 					DrawOutlineText(sb, Game1.mnufont, "Press L to view full\n  game leaderboard", new Vector2(728, 660), Color.White, Color.Black);
 			}
@@ -584,7 +584,7 @@ namespace Speedrunning_Game
 					for (int i = 0; i < custompage.Count; i++)
 					{
 						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item1.Split('\\')[custompage[i].Item1.Split('\\').Length - 1].Replace(".srl", "").Replace("_", " "), new Vector2(50, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
-						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item2 != -1 ? TimeToString(custompage[i].Item2) : "-- : -- . ---", new Vector2(450, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
+						DrawOutlineText(sb, Game1.mnufont, custompage[i].Item2 != -1 ? TimeToString(custompage[i].Item2) : "--", new Vector2(450, (1 + i + i / 11) * 60 + 10 - scope * 720), i == selected ? Color.Yellow : Color.White, Color.Black);
 						if (custompage[i].Item3 != -1)
 							sb.Draw(Game1.medalTex, new Vector2(570, (1 + i + i / 11) * 60 + 10 - scope * 720), custompage[i].Item3 == 0 ? Color.Gold : (custompage[i].Item3 == 1 ? Color.Silver : (custompage[i].Item3 == 2 ? Color.Brown : Color.SteelBlue)));
 						if (selected == i && tab == 1 && areYouSure)

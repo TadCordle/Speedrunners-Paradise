@@ -479,7 +479,16 @@ namespace Speedrunning_Game
 				if (int.TryParse(Microsoft.VisualBasic.Interaction.InputBox("Enter a number from 1 to 5, 5 being a great level.", "Rate"), out temp))
 				{
 					if (temp > 0 && temp <= 5)
-						WebStuff.SendRating(temp, Game1.userName, levelID);
+					{
+						try
+						{
+							WebStuff.SendRating(temp, Game1.userName, levelID);
+						}
+						catch (Exception)
+						{
+							System.Windows.Forms.MessageBox.Show("Rating failed to upload. Please try again later.", "Rating Failed");
+						}
+					}
 					else
 						System.Windows.Forms.MessageBox.Show("Your rating must be a number between 1 and 5");
 				}
@@ -523,7 +532,7 @@ namespace Speedrunning_Game
 					catch (Exception)
 					{
 						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the leaderboards.", "Connection Error");
-						return;
+						viewingLeaderboards = false;
 					}
 				}
 				else
@@ -534,33 +543,31 @@ namespace Speedrunning_Game
 			{
 				if (Keyboard.GetState().IsKeyDown(Keys.Up) && upcheck && leaderboardPage > 0)
 				{
+					upcheck = false;
 					try
 					{
-						upcheck = false;
-						leaderboardPage--;
-						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
-						canScrollDown = true;
+						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, (leaderboardPage - 1) * 10);
 					}
 					catch (Exception)
 					{
 						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the leaderboards.", "Connection Error");
-						return;
 					}
+					leaderboardPage--;
+					canScrollDown = true;
 				}
 				else if (Keyboard.GetState().IsKeyDown(Keys.Down) && downcheck && canScrollDown)
 				{
+					downcheck = false;
 					try
 					{
-						downcheck = false;
-						leaderboardPage++;
-						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, leaderboardPage * 10);
-						canScrollDown = leaderboardData.Length == 11;
+						leaderboardData = WebStuff.GetScores(levelID, Game1.userName, (leaderboardPage + 1) * 10);
 					}
 					catch (Exception)
 					{
 						System.Windows.Forms.MessageBox.Show("There was a problem connecting to the leaderboards.", "Connection Error");
-						return;
 					}
+					leaderboardPage++;
+					canScrollDown = leaderboardData.Length == 11;
 				}
 			}
 
@@ -757,12 +764,19 @@ namespace Speedrunning_Game
 					upload = false;
 					if (Game1.online)
 					{
-						WebStuff.WriteScore(time, Game1.userName, levelID);
-						if (Game1.finishedSS && !custom)
+						try
 						{
-							WebStuff.WriteScore(Game1.totalTime, Game1.userName, "fullgame");
-							if (Game1.totalTime < Game1.totalRecord)
-								Game1.totalRecord = Game1.totalTime;
+							WebStuff.WriteScore(time, Game1.userName, levelID);
+							if (Game1.finishedSS && !custom)
+							{
+								WebStuff.WriteScore(Game1.totalTime, Game1.userName, "fullgame");
+								if (Game1.totalTime < Game1.totalRecord)
+									Game1.totalRecord = Game1.totalTime;
+							}
+						}
+						catch (Exception)
+						{
+							System.Windows.Forms.MessageBox.Show("Uploading score to leaderboards failed.", "Leaderboard Error");
 						}
 						if (Game1.beatGame && !custom)
 						{
@@ -1026,7 +1040,7 @@ namespace Speedrunning_Game
 				DrawOutlineText(sb, Game1.mnufont, "Your Rank", new Vector2(40, 620), Color.Yellow, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][0] == "-1" ? "--" : leaderboardData[leaderboardData.Length - 1][0], new Vector2(40, 665), Color.Lime, Color.Black);
 				DrawOutlineText(sb, Game1.mnufont, Game1.userName, new Vector2(200, 665), Color.Lime, Color.Black);
-				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "-- : -- . ---" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime, Color.Black);
+				DrawOutlineText(sb, Game1.mnufont, leaderboardData[leaderboardData.Length - 1][1] == "-1" ? "--" : TimeToString(int.Parse(leaderboardData[leaderboardData.Length - 1][1])), new Vector2(500, 665), Color.Lime, Color.Black);
 			}
 			else if (Finished)
 			{

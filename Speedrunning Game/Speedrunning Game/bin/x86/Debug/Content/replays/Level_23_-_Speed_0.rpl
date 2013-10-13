@@ -1,0 +1,63 @@
+0{press MoveRight,press Jump}
+9{release Jump}
+30{press Slide}
+67{release Slide}
+74{press Slide}
+80{release Slide}
+86{press Slide}
+94{release Slide}
+100{press Slide}
+114{release MoveRight}
+136{press Jump}
+142{release Jump}
+187{press Jump}
+193{release Jump}
+225{press Jump}
+230{release Jump,release Slide}
+256{press Slide}
+262{press MoveRight}
+302{release MoveRight}
+311{press Jump}
+318{release Jump}
+396{press MoveLeft}
+416{release Slide}
+423{press Slide}
+430{release Slide}
+435{press Slide}
+442{release Slide}
+446{press Slide}
+455{release MoveLeft}
+477{press Jump}
+484{release Jump}
+702{press Jump}
+708{release Jump}
+757{press Jump}
+764{release Jump}
+811{press Jump}
+818{release Jump}
+847{press MoveRight}
+907{release MoveRight}
+970{release Slide}
+971{press MoveLeft}
+1025{release MoveLeft}
+
+224 224 0 0
+614 342 7.5 13.59999
+1325.858 594.5 13.36818 3.538635
+2133.487 620.6434 13.46537 7.2
+2941.406 478.2434 13.46537 -4.400001
+3786.655 824.6667 17.07483 5.691611
+4937.758 887.2405 22.54684 9.199999
+5682.515 1578.798 -13.2517 6.721542
+4721.126 1838.121 -17.16248 -9.200001
+3363.281 1690.023 -23.17289 8.78958
+2256.59 2154.396 0 17.37373
+2876.725 3258.857 23.45195 3.350279
+4287.298 3283.609 23.5225 -3.200001
+5698.646 3273.409 23.5225 -1.200001
+7109.993 3275.009 23.5225 1.199999
+8524.33 3615.545 25.0313 5.120039
+8989.621 4384.229 -51 0
+6143.121 4401.026 -44.5 -4.8
+3755.621 4427.623 -31 2.8
+3536.621 5327.623 0 26.79998

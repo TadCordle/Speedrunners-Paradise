@@ -1,0 +1,98 @@
+1{press MoveRight}
+69{press Jump}
+75{release Jump}
+109{press Jump}
+115{release Jump}
+200{release MoveRight,press Jump}
+207{release Jump}
+219{press Jump}
+227{release Jump}
+232{press Jump}
+240{release Jump}
+245{press Jump}
+253{release Jump}
+258{press Jump}
+262{press MoveLeft}
+265{release Jump}
+279{release MoveLeft}
+291{press MoveRight}
+300{press Jump}
+307{release Jump}
+364{press Jump}
+372{release Jump}
+417{press Jump}
+424{release Jump}
+441{release MoveRight}
+466{press MoveLeft}
+473{release MoveLeft}
+502{press MoveRight}
+513{press Jump}
+521{release Jump}
+568{press Jump}
+577{release Jump}
+588{press Slide}
+606{press Jump}
+614{release Jump}
+722{press Jump}
+727{release Jump,release Slide}
+768{press Jump}
+774{release Jump}
+799{press Slide}
+834{release Slide}
+959{press Jump}
+968{release Jump}
+1011{press Jump}
+1018{release Jump}
+1049{press Jump}
+1055{release Jump}
+1070{release MoveRight}
+1079{press MoveLeft}
+1083{release MoveLeft}
+1096{press MoveRight}
+1109{press Jump}
+1110{release MoveRight}
+1115{release Jump}
+1130{press Jump}
+1139{release Jump}
+1150{press Jump}
+1155{press MoveRight}
+1157{release Jump}
+1174{press Slide}
+1180{release Slide}
+1185{press Slide}
+1191{release Slide}
+1196{press Slide}
+1202{release Slide}
+1207{press Slide}
+1253{release Slide}
+1273{press Jump}
+1279{release Jump}
+1288{press MoveLeft,release MoveRight}
+1299{release MoveLeft}
+1317{press MoveRight}
+1318{press Jump}
+1322{release Jump}
+
+128 608 0 0
+517.5 608.6005 7.5 0.4
+967.5 434.4006 7.5 -6.000001
+1417.5 608.6008 7.5 0
+1640 392.201 8 -4.699999
+1687 288.3009 4 0
+2123.5 288.5008 7.5 0.4
+2573.5 269.5007 7.5 -9.200001
+2937 288.1006 0 0
+3167.5 169.1003 7.5 0.3999995
+3765.5 176.9003 11.5 2.399999
+4455.5 235.1003 11.5 11.2
+5145.5 608.5002 11.5 0.4
+5781.5 461.1003 7.5 -5.600001
+6231.5 448.1002 7.5 0
+6681.5 608.5004 7.5 0.4
+7131.5 608.9009 7.5 -10
+7568.5 479.101 0.5 -6.800002
+7928 334.301 7.5 1.999999
+8144 313.6009 0 -3.899999
+8549.368 309.2 9.856123 3.942449
+9215.405 488.4 11.34483 2.4
+9653.194 468.7148 3.12132 -11.72132

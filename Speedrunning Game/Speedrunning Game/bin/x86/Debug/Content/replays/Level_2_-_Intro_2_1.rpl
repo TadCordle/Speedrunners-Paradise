@@ -1,0 +1,94 @@
+0{press MoveRight}
+9{press Jump}
+20{release Jump}
+38{press Slide}
+78{release Slide}
+99{press Slide}
+107{press Jump}
+114{release Jump}
+125{release MoveRight}
+127{press MoveLeft,release Slide}
+134{release MoveLeft}
+142{press MoveRight}
+151{press Slide}
+165{press Jump}
+173{release Jump}
+246{press Jump}
+253{release Jump}
+303{press Jump}
+312{release Jump}
+358{release MoveRight}
+374{press MoveLeft}
+375{release Slide}
+391{release MoveLeft}
+393{press MoveRight}
+421{press Slide,press Box}
+438{release Slide}
+450{press Jump}
+460{release Jump}
+520{release MoveRight}
+523{press Jump}
+532{release Jump}
+537{press Jump}
+548{release Jump}
+554{press Jump}
+563{press MoveLeft}
+564{release Jump}
+574{release MoveLeft}
+583{press MoveRight}
+591{press Jump}
+597{release Jump}
+599{release MoveRight}
+603{press MoveLeft}
+611{release MoveLeft}
+627{press MoveRight}
+643{press Jump}
+650{release Jump}
+653{release MoveRight}
+655{press MoveLeft}
+663{release MoveLeft}
+684{press MoveRight}
+696{press Jump}
+706{release Jump}
+748{press Jump}
+755{release Jump}
+776{press Slide}
+800{release Slide}
+806{press Slide}
+815{release Slide}
+817{press Slide}
+824{release Slide}
+826{press Jump}
+829{release Box}
+835{release Jump}
+849{press Slide}
+892{press Jump}
+901{release Jump}
+928{press Box}
+1019{press Jump}
+1024{release Jump}
+1028{press Jump}
+1034{release Jump}
+1046{release Slide,release Box}
+1057{release MoveRight}
+1058{press MoveLeft}
+1061{release MoveLeft}
+
+96 256 0 0
+494.9353 270.3 9.831076 4.423984
+1135.641 455.7111 10.26789 -5.200001
+1617.717 328.4112 9.767892 -14.90001
+2437.791 166.4106 13.76789 9.09999
+3263.86 224.4105 13.76789 0
+4089.929 302.8105 13.76789 12.4
+4400.827 608.6106 7.5 0.4
+4850.827 492.2109 7.5 1.599999
+5216.327 400.6112 -8 -6.7
+5414.327 254.8112 7.5 -6.800002
+5763.327 215.0111 5.5 -3.600001
+6102.327 200.6111 7.5 -0.8000005
+6552.327 208.811 7.5 2.399999
+7114.635 303.7654 10.46979 -4.800001
+7742.819 517.7653 10.46979 -7.200002
+8371.003 608.9653 10.46979 0.4
+8999.187 608.3658 10.46979 -10

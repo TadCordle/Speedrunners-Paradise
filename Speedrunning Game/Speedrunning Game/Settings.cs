@@ -279,8 +279,8 @@ namespace Speedrunning_Game
 			DrawOutlineText(sb, Game1.mnufont, "Miscellaneous", new Vector2(56, 470), Color.Lime, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Skin Selection", new Vector2(44, 500), selectedIndex == 10 ? Color.Yellow : Color.White, Color.Black);
 			DrawOutlineText(sb, Game1.mnufont, "Reset Settings to Default", new Vector2(44, 530), selectedIndex == 11 ? Color.Yellow : Color.White, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, "Reset All Records", new Vector2(44, 560), selectedIndex == 12 ? Color.Yellow : Color.White, Color.Black);
-			DrawOutlineText(sb, Game1.mnufont, deleteCheck ? "Are you sure? (y/n)" : (verifyCheck ? "Records deleted." : ""), new Vector2(320, 560), Color.Cyan, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, "Reset All Progress", new Vector2(44, 560), selectedIndex == 12 ? Color.Yellow : Color.White, Color.Black);
+			DrawOutlineText(sb, Game1.mnufont, deleteCheck ? "Are you sure? (y/n)" : (verifyCheck ? "Progress deleted." : ""), new Vector2(330, 560), Color.Cyan, Color.Black);
 		}
 	}
 }
