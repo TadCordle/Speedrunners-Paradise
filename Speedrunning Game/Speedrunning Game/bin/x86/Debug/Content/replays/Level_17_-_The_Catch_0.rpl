@@ -1,0 +1,108 @@
+0{press MoveRight}
+14{press Jump}
+23{release Jump}
+83{press MoveLeft}
+84{release MoveRight}
+89{press Jump}
+98{release Jump}
+107{release MoveLeft}
+111{press Jump}
+118{release Jump}
+136{press Jump}
+143{release Jump}
+147{press Jump}
+153{release Jump}
+157{press Jump}
+164{release Jump}
+165{press MoveLeft}
+198{press Jump}
+201{release MoveLeft}
+206{release Jump}
+224{press Jump}
+233{release Jump}
+238{press Jump}
+248{release Jump}
+253{press Box}
+263{press MoveRight}
+394{press Jump}
+397{press MoveLeft}
+398{release MoveRight}
+402{release Jump}
+413{press Jump}
+421{release Jump}
+422{release Box}
+424{release MoveLeft}
+435{press Jump}
+442{release Jump}
+447{press Jump}
+456{release Jump}
+461{press Jump}
+469{press MoveRight}
+471{release Jump}
+562{press Slide}
+580{release Slide}
+615{press Jump}
+623{release Jump}
+685{press Jump}
+698{release Jump,press Slide}
+773{release Slide}
+786{press Slide}
+909{release Slide}
+911{press Jump}
+915{release Jump}
+928{release MoveRight}
+936{press Jump}
+946{release Jump}
+955{press Jump}
+964{release Jump}
+969{press Jump}
+980{release Jump}
+983{press Jump}
+991{release Jump}
+995{press Jump}
+1001{release Jump}
+1005{press Jump}
+1011{release Jump}
+1016{press Jump}
+1024{release Jump}
+1027{press Jump}
+1034{release Jump}
+1037{press Jump}
+1045{release Jump}
+1073{press MoveRight}
+1117{press Jump}
+1124{release Jump}
+1135{release MoveRight}
+1138{press MoveLeft}
+1151{release MoveLeft}
+1173{press MoveRight}
+1198{release MoveRight}
+1200{press MoveLeft}
+1219{release MoveLeft}
+1234{press MoveRight}
+1248{press Jump}
+1259{release Jump}
+1283{press Slide}
+
+128 608 0 0
+525 572.0001 7.5 8
+752 444.0003 8 -4.299999
+672 259.2003 -8 1.300001
+456 98.70023 -8 -7.1
+402.7002 90.40031 8.2 4.400001
+669.3003 608.0003 7.5 0
+975.3003 442.4006 -5.5 -7.600002
+1088.8 186.8006 8 -0.2999988
+1346.8 608.1006 7.5 0
+1796.8 608.5012 7.5 0
+2246.8 564.7013 7.5 7.6
+2823.8 146.9013 16.5 -12.40001
+3771.775 360.4 16.5601 2.4
+4765.378 571.0002 16.5601 -5.6
+5758.982 544.8005 16.5601 0.4
+5936.263 362.5007 0 1.700001
+5968.263 211.7006 0 -1.899999
+6256.263 204.1007 0 9.300001
+6472.763 521.8006 7 -1.200001
+6667.263 358.8004 7.5 -0.7999997
+6852.263 249.0001 7.5 -9.600004

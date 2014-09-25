@@ -1,0 +1,12 @@
+0{press MoveRight,press Jump}
+7{release Jump}
+43{press Slide}
+48{release Slide}
+52{press Slide}
+57{release Slide}
+102{press Slide}
+107{release Slide}
+
+64 288 0 0
+488.0665 311.6648 10.3688 5.679438
+1196.616 1122.927 16.33398 9.869166

@@ -1,0 +1,110 @@
+0{press MoveRight}
+39{press Jump}
+46{release Jump}
+48{release MoveRight}
+78{press Jump}
+86{release Jump}
+117{press MoveLeft}
+130{press Jump}
+135{release MoveLeft}
+138{release Jump}
+181{press MoveRight}
+194{release MoveRight}
+248{press MoveRight}
+249{press Jump}
+253{release MoveRight}
+254{release Jump}
+280{press MoveRight}
+297{press Jump}
+307{release Jump}
+333{press Slide}
+397{press Jump}
+405{release Jump}
+461{release Slide}
+466{press Slide}
+473{release Slide}
+478{press Slide}
+485{release Slide}
+489{press Slide}
+518{press Jump}
+530{release Jump}
+578{press Jump}
+612{release Jump}
+646{press Box}
+648{release Slide}
+656{release MoveRight}
+668{press MoveLeft}
+686{press Jump}
+694{release Jump}
+726{press Slide}
+738{release Slide}
+744{press Slide}
+752{release Slide}
+758{press Slide}
+766{release Slide}
+772{press Slide}
+779{release Slide}
+785{press Slide}
+793{release Slide}
+798{press Slide}
+807{release Slide}
+818{press Slide}
+828{press Jump}
+853{release Jump}
+879{press Jump}
+887{release Jump}
+935{release Slide}
+952{press Slide}
+959{press Jump}
+977{release Jump}
+1010{release Slide}
+1170{press Jump}
+1174{release MoveLeft}
+1177{release Jump}
+1191{press Jump}
+1199{release Jump}
+1210{press Jump}
+1216{release Jump}
+1221{press MoveRight}
+1229{release MoveRight}
+1233{press MoveLeft}
+1241{press Jump}
+1251{release Jump}
+1274{press Jump}
+1282{release Jump}
+1375{press Jump}
+1379{release Jump}
+1409{release MoveLeft,press MoveRight}
+1443{press MoveLeft}
+1445{release MoveRight}
+1451{press Jump}
+1455{release Jump}
+1483{press Jump}
+1492{release Jump}
+
+288 576 0 0
+685 460.4004 7.5 -2
+1040.5 385.6003 2 0.8
+1243.5 384.7001 0 0.4
+1341 384.0996 0 0
+1569.209 291.7886 10.32843 -12.02843
+2188.911 192.9671 10.32843 0.4
+2808.614 265.567 10.32843 -1.200001
+3474.5 530.7 12.6238 1.89357
+4247.283 458.4905 12.93599 -1.600001
+5401.454 494.0906 20.136 -4.000001
+6514.221 240.6247 17.92851 -0.7224298
+6550.724 150.6778 -7.5 3.2
+5972.138 369.1429 -11.58501 3.310002
+5203.928 493.304 -13.15396 -5.600001
+4414.699 428.104 -13.15396 -2
+3744.962 576.3043 -7.653962 -10
+3219.059 510.4048 -8.700171 2.294974
+2870.653 608.0197 -7.5 0
+2420.653 608.4202 -7.5 0
+2160.653 444.8205 8 -4.299999
+1858.153 273.2205 -7.5 -2.800001
+1272.391 99.65577 -10.32843 5.17157
+733.1865 468.2881 -7.828427 -8.400002
+493.4072 576.0881 7 0
+232.4072 362.4883 -7.5 -3.600001

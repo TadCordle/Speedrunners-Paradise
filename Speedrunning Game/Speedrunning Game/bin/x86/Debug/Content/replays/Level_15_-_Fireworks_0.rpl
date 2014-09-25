@@ -1,109 +1,104 @@
 0{press MoveRight}
-1{press Jump}
+2{press Jump}
 11{release Jump}
-39{release MoveRight}
-45{press MoveLeft}
-60{release MoveLeft}
-111{press MoveLeft}
-112{press Jump}
-118{release Jump}
-127{release MoveLeft}
-137{press Jump}
-144{release Jump}
-147{press MoveRight}
-196{press Jump}
-203{release Jump}
-231{press Slide}
-292{release Slide}
-305{press Jump}
-313{release Jump}
-346{press Jump}
-352{release Jump}
-385{press Jump}
-392{release Jump}
-401{release MoveRight}
-405{press MoveLeft}
-410{release MoveLeft}
-417{press MoveRight}
-433{press Jump}
-438{release Jump}
-505{press Jump}
-511{release Jump}
-563{press Slide}
-581{release Slide}
-620{press Jump}
-628{release Jump}
-678{release MoveRight}
-684{press MoveLeft}
-700{release MoveLeft}
-730{press MoveLeft}
-737{release MoveLeft}
-762{press MoveRight}
-771{press Jump}
-776{release Jump}
-792{release MoveRight}
-807{press MoveLeft}
-820{release MoveLeft}
-835{press Jump}
-842{release Jump}
-847{press MoveRight}
-870{release MoveRight}
-888{press MoveRight}
-899{press Jump}
-900{release MoveRight}
-906{release Jump}
-911{press Jump}
-921{release Jump}
-925{press Jump}
-932{release Jump}
-936{press Jump}
-943{release Jump}
+27{release MoveRight}
+41{press MoveLeft}
+56{release MoveLeft}
+110{press MoveLeft,press Jump}
+119{release Jump}
+129{release MoveLeft}
+131{press Jump}
+135{press MoveRight}
+139{release Jump}
+185{press Jump}
+193{release Jump}
+206{press Slide}
+235{release Slide}
+241{press Slide}
+248{release Slide}
+254{press Slide}
+262{release Slide}
+267{press Slide}
+275{release Slide}
+280{press Slide}
+287{release Slide}
+295{press Jump}
+305{release Jump}
+336{press Jump}
+344{release Jump}
+372{press Jump}
+381{release Jump}
+415{press Jump}
+424{release Jump}
+446{press Slide}
+466{release Slide}
+492{press Jump}
+502{release Jump}
+540{press Slide}
+588{release Slide}
+604{press Jump}
+613{release Jump}
+656{press Jump}
+664{release Jump}
+672{press MoveLeft,release MoveRight}
+699{release MoveLeft}
+737{press MoveLeft}
+743{release MoveLeft}
+803{press MoveRight}
+806{press Jump}
+812{press Slide}
+831{release Jump}
+859{press Jump}
+860{release MoveRight}
+868{release Jump}
+870{release Slide}
+878{press Jump}
+885{release Jump}
+888{press Jump}
+897{release Jump}
+901{press Jump}
+910{release Jump}
+914{press Jump}
+925{release Jump}
 947{press Jump}
-955{release Jump}
-959{press Jump}
-966{release Jump}
-969{press Jump}
-976{press MoveLeft}
+957{release Jump}
+965{press Jump}
 977{release Jump}
-996{release MoveLeft}
-1007{press MoveRight}
-1014{press Jump}
-1022{release Jump}
-1030{release MoveRight}
-1035{press Jump}
-1044{release Jump}
-1048{press Jump}
-1056{press MoveLeft}
-1059{release Jump}
-1074{release MoveLeft}
+992{press Jump}
+1003{release Jump}
+1012{press Jump}
+1013{press MoveLeft}
+1020{release Jump}
+1026{release MoveLeft}
+1050{press MoveRight}
+1051{press Jump}
+1058{release Jump}
+1067{release MoveRight}
+1072{press MoveLeft}
+1078{release MoveLeft}
 1085{press MoveRight}
-1088{press Jump}
-1096{release Jump}
-1103{release MoveRight}
-1106{press MoveLeft}
-1115{release MoveLeft}
-1122{press MoveRight}
-1128{press Jump}
-1134{release Jump}
-1156{release MoveRight}
+1090{press Jump}
+1095{release Jump}
+1101{release MoveRight}
+1117{press MoveLeft}
+1124{release MoveLeft}
 
 96 1696 0 0
-434 1800.8 0.5 13.2
-415.5 1797.802 -4 -7.200002
-573.7093 1468.38 6.5 -1.180716
-1023.209 1452.908 7.5 7.2
-1608.846 1686.225 10.48931 5.660722
-2294.045 1128.812 -1.5 -2.299999
-2639.045 1082.912 6 3.6
-3087.545 1056.912 7.5 0.4
-3537.545 954.7131 7.5 3.6
-3987.545 1056.515 7.5 0.4
-4437.545 978.5154 7.5 5.6
-4786.346 1088.554 0 0.4
-5001.846 1022.956 8 -6.800002
-5308.999 1020.375 11.85904 -8.400002
-5972.532 1056.375 7.859035 -10
-6000.968 733.5753 -8 -7.5
-6047.968 660.3754 4.5 -8.000002
-6181.968 491.5754 -1 4.900002
-6439.968 365.3755 7.5 -5.600001
+404.5 1787.4 0 12.8
+382 1784.402 -4.5 -6.400002
+588.0294 1494.321 7.5 1.589101
+1049.116 1526.3 9.358331 4.152272
+1729.352 1647.14 21.12433 -18.2995
+2306.311 1138.953 3.5 1.700001
+2742.311 1084.553 7.5 -8.400002
+3192.311 1056.154 7.5 0
+3642.311 1037.955 7.5 8.799999
+4092.311 1056.157 7.5 0
+4560.311 1029.157 10.5 -8.800001
+4797.311 1088.757 0 0.4
+4953.311 1088.159 0 0
+5566.312 983.1605 15.98469 3.2
+6000.888 833.0607 0 -3.099999
+5936.888 685.0607 0 -2.699999
+6110.388 518.6608 5 -4.699999
+6316.388 426.8608 4.5 1.199999

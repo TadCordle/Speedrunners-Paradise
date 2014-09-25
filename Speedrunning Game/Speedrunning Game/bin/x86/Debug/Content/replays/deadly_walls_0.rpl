@@ -1,0 +1,26 @@
+10{press MoveLeft}
+13{press Jump}
+21{release MoveLeft,release Jump}
+26{press Jump}
+31{release Jump}
+40{press Jump}
+56{release Jump}
+60{press Jump}
+64{release Jump}
+72{press MoveRight}
+79{press Slide}
+84{release MoveRight}
+104{press MoveRight}
+105{release Slide}
+124{press Slide}
+133{release Slide}
+136{press Slide}
+145{release Slide}
+150{press Slide}
+153{release Slide}
+154{release MoveRight}
+
+448 0 0 0
+344.5 -61.89996 -8 0.1000012
+43.3121 172.3657 1 7.268977
+198.8701 543.969 -6 12.46803

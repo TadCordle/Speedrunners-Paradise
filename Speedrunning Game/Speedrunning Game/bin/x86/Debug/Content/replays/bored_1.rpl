@@ -1,0 +1,30 @@
+0{press MoveRight}
+4{press Jump}
+13{release Jump}
+28{release MoveRight}
+30{press Jump}
+38{release Jump}
+53{press MoveRight}
+59{press Jump}
+68{release Jump}
+97{press Jump}
+105{release Jump}
+160{press MoveLeft}
+161{release MoveRight}
+204{press Jump}
+207{release MoveLeft}
+211{release Jump}
+228{press MoveLeft}
+230{press Box}
+275{press Jump}
+283{release Jump}
+296{press Jump}
+304{release Jump}
+309{release Box}
+
+512 288 0 0
+461.5 96.09998 1 -10
+866 -118.1001 7.5 -1.200001
+1232.5 541.8997 0 22.79999
+1071 894.6994 -5.5 4
+624 847.4996 -7.5 -8.800001

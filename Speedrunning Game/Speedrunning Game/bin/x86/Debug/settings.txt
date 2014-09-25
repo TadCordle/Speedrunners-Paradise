@@ -1,6 +1,6 @@
 MusicVolume 0
-SFXVolume 1
-Skin stick_figure
+SFXVolume 0.4800005
+Skin ninja
 MoveLeft Left
 MoveRight Right
 Jump/WallJump Space

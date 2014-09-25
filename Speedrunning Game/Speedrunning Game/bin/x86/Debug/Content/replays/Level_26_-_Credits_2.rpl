@@ -1,0 +1,48 @@
+0{press MoveRight}
+14{press Jump}
+25{release Jump}
+70{press Jump}
+79{release Jump}
+88{press MoveLeft,release MoveRight}
+95{press Jump}
+104{release Jump}
+108{release MoveLeft}
+117{press Jump}
+124{release Jump}
+128{press Jump}
+136{release Jump}
+139{press Jump}
+148{release Jump}
+152{press MoveRight}
+168{press Slide}
+181{release Slide}
+200{press Slide}
+252{press Jump}
+260{release Jump}
+290{press Jump}
+296{release Jump}
+329{press Jump}
+335{release Jump}
+358{press Jump}
+364{release Jump}
+409{press Jump}
+415{release Jump}
+465{release Slide}
+469{press Slide}
+477{release Slide}
+480{press Slide}
+488{release Slide}
+502{press Slide}
+513{press Jump}
+521{release Jump}
+
+64 608 0 0
+461 512.6002 7.5 0
+672.5 390.2002 8 -6.7
+981.6196 303.3333 9.059792 2.013287
+1526.608 608.566 9.08371 0
+2071.633 440.3661 9.08371 -6.400002
+2616.657 279.1661 9.08371 -9.6
+3161.681 210.1661 9.08371 -6.000001
+3745.946 375.585 11.5008 3.454032
+4457.305 425.1705 11.87008 0.3999995
